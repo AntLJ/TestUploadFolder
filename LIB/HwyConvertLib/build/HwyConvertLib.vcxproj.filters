@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="公開ヘッダファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="非公開ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="非公開ファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分">
+      <UniqueIdentifier>{01dff026-a148-4f7f-91f2-08dda45cd514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分">
+      <UniqueIdentifier>{df7cb73c-f346-41d6-b6ba-ec1abf643376}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>非公開ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>非公開ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FacilNameChangeTable.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HwyConvert.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\INHwySchema.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2GS.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2HIGHWAY.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2HWYNODE.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2HWYSAME.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2ROADCODE.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sindy2RoadNode.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2ROADPOINT.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2TOLLGATELANE.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NvUnit.h">
+      <Filter>非公開ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NvObject.h">
+      <Filter>非公開ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\INHwyCommonUtility.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SindyFindMainLineFromJCTInterflow.h">
+      <Filter>非公開ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libHwyConvert.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2INHWY.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SINDY2INHWYINFO.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Customer.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\type.h">
+      <Filter>公開ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SindyFindHwyNode.h">
+      <Filter>公開ヘッダファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SindyHighwayTools.h">
+      <Filter>公開ヘッダファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SindyHighwayTrace.h">
+      <Filter>公開ヘッダファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2GS.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2HIGHWAY.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2HWYNODE.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2HWYSAME.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2ROADCODE.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Sindy2RoadNode.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2ROADPOINT.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2TOLLGATELANE.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2INHWY.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="HwyConvert.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="INHwySchema.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FacilNameChangeTable.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2INHWYINFO.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="NvUnit.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SindyFindHwyNode.cpp">
+      <Filter>非公開ファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClCompile>
+    <ClCompile Include="SindyHighwayTrace.cpp">
+      <Filter>非公開ファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClCompile>
+    <ClCompile Include="SindyHighwayTools.cpp">
+      <Filter>非公開ファイル\SindyHighwayCheck、SindyHighwayConvertの共通部分</Filter>
+    </ClCompile>
+    <ClCompile Include="INHwyCommonUtility.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SindyFindMainLineFromJCTInterflow.cpp">
+      <Filter>非公開ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

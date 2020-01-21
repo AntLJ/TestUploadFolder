@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a7c313f7-4428-4bb4-a552-92b0f2b8a9fa}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{faa9d6b1-3168-4775-b0c3-9b2af8c727f1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DRMAAdmin1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAAdmin2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAAdminLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAAllRoadLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAAllRoadLinkAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAAllRoadNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMABackGround.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMABaseRoadLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMABaseRoadLinkAttr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMABaseRoadNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMABeaconLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMACodeCommunity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMADevPlant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAFacilLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAFacilShape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMALoad2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMALoadProtocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAPlaceNameLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMARailwayLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMARecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMARoadLinkRelation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMASite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DRMAValues.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DRMAAdmin1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAdmin2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAdminLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadLink2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadLinkAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadLinkAttr2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAAllRoadNode2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABackGround.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadLink2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadLinkAttr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadLinkAttr2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABaseRoadNode2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMABeaconLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMACodeCommunity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DRMADevPlant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAFacilLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAFacilShape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALayer2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALayerLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALoad2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMALoadProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAOriginalValues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAPlaceNameLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMARailwayLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMARecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMARoadLinkRelation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMASite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DRMAValues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRunConfiguration id="88d9b624-2bb6-41c7-9c55-cd29e59cf2b3" name="ローカルのテストの実行" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>これは、ローカル テストの実行に対する既定のテストの実行構成です。</Description>
+  <Timeouts runTimeout="0" testTimeout="300000" agentNotRespondingTimeout="300000" deploymentTimeout="300000" />
+  <Deployment>
+    <DeploymentItem filename="test\data\Bug5369_1.dat" />
+  </Deployment>
+  <NamingScheme />
+  <Hosts />
+</TestRunConfiguration>

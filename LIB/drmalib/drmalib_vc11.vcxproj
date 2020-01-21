@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{603A570B-0C21-45D5-918A-81B48C24F0D6}</ProjectGuid>
+    <RootNamespace>drmalib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <TargetName>libdrma_vc11</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <TargetName>libdrma_vc11-gd</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/drmalib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release//drmalib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/drmalib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/drmalib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DRMAAdmin1.cpp" />
+    <ClCompile Include="DRMAAdmin2.cpp" />
+    <ClCompile Include="DRMAAdminLocation.cpp" />
+    <ClCompile Include="DRMAAllRoadLink.cpp" />
+    <ClCompile Include="DRMAAllRoadLinkAttr.cpp" />
+    <ClCompile Include="DRMAAllRoadNode.cpp" />
+    <ClCompile Include="DRMABackGround.cpp" />
+    <ClCompile Include="DRMABaseRoadLink.cpp" />
+    <ClCompile Include="DRMABaseRoadLinkAttr.cpp" />
+    <ClCompile Include="DRMABaseRoadNode.cpp" />
+    <ClCompile Include="DRMABeaconLocation.cpp" />
+    <ClCompile Include="DRMACodeCommunity.cpp" />
+    <ClCompile Include="DRMADevPlant.cpp" />
+    <ClCompile Include="DRMAFacilLocation.cpp" />
+    <ClCompile Include="DRMAFacilShape.cpp" />
+    <ClCompile Include="DRMALoad2.cpp" />
+    <ClCompile Include="DRMALoadProtocol.cpp" />
+    <ClCompile Include="DRMAPlaceNameLocation.cpp" />
+    <ClCompile Include="DRMARailwayLocation.cpp" />
+    <ClCompile Include="DRMARecord.cpp" />
+    <ClCompile Include="DRMARoadLinkRelation.cpp" />
+    <ClCompile Include="DRMASite.cpp" />
+    <ClCompile Include="DRMAValues.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DRMAAdmin1.h" />
+    <ClInclude Include="include\DRMAAdmin2.h" />
+    <ClInclude Include="include\DRMAAdminLocation.h" />
+    <ClInclude Include="include\DRMAAllRoadLink.h" />
+    <ClInclude Include="include\DRMAAllRoadLink2.h" />
+    <ClInclude Include="include\DRMAAllRoadLinkAttr.h" />
+    <ClInclude Include="include\DRMAAllRoadLinkAttr2.h" />
+    <ClInclude Include="include\DRMAAllRoadNode.h" />
+    <ClInclude Include="include\DRMAAllRoadNode2.h" />
+    <ClInclude Include="include\DRMABackGround.h" />
+    <ClInclude Include="include\DRMABaseRoadLink.h" />
+    <ClInclude Include="include\DRMABaseRoadLink2.h" />
+    <ClInclude Include="include\DRMABaseRoadLinkAttr.h" />
+    <ClInclude Include="include\DRMABaseRoadLinkAttr2.h" />
+    <ClInclude Include="include\DRMABaseRoadNode.h" />
+    <ClInclude Include="include\DRMABaseRoadNode2.h" />
+    <ClInclude Include="include\DRMABeaconLocation.h" />
+    <ClInclude Include="include\DRMACodeCommunity.h" />
+    <ClInclude Include="DRMADevPlant.h" />
+    <ClInclude Include="include\DRMAFacilLocation.h" />
+    <ClInclude Include="include\DRMAFacilShape.h" />
+    <ClInclude Include="include\DRMALayer.h" />
+    <ClInclude Include="include\DRMALayer2.h" />
+    <ClInclude Include="include\DRMALayerLoad.h" />
+    <ClInclude Include="include\DRMALoad.h" />
+    <ClInclude Include="include\DRMALoad2.h" />
+    <ClInclude Include="include\DRMALoadProtocol.h" />
+    <ClInclude Include="include\DRMAOriginalValues.h" />
+    <ClInclude Include="include\DRMAPlaceNameLocation.h" />
+    <ClInclude Include="include\DRMARailwayLocation.h" />
+    <ClInclude Include="include\DRMARecord.h" />
+    <ClInclude Include="include\DRMARoadLinkRelation.h" />
+    <ClInclude Include="include\DRMASite.h" />
+    <ClInclude Include="include\DRMAValues.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

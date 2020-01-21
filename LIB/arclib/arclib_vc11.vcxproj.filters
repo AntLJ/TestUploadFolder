@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="sindy">
+      <UniqueIdentifier>{3222fa11-dd29-43af-869e-3c15d5ace8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sindy\stamper">
+      <UniqueIdentifier>{2a8a5064-ec5d-4e98-81d1-0cbbacc3bf21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sindy\modifier">
+      <UniqueIdentifier>{9c8b6cfc-9167-489f-b433-d249dcba618a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sindy\lq_relation">
+      <UniqueIdentifier>{1aa21e10-94b7-4956-965b-4f0727638583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sindy\link_queue">
+      <UniqueIdentifier>{677b98d9-3293-474e-a5ed-182f9880f2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sindy\algorithm">
+      <UniqueIdentifier>{f1b835dc-9dfd-47d7-a479-3cd176d7efcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dataset.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectionDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectionFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectionFileListCtrl.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectionInfoString.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectPropertyDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectPropertyListDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYConnectPropertySet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYDraw.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYFreeStyleLogHeader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLinkTracer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLogFunctionExecutor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLogHeader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLogTypeSelector.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYMapTableFinder.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYPlant.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYRings.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYStdLogHeader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYTableFinder.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYTableName.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYTablesBuffer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dataset.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerComboBox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NamedItemComboBox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYAlgorithm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionDlgI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionFileCtrlI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionFileListCtrl.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionInfoString.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectionInfoStringI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectPropertyDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectPropertyListDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectPropertySet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYConnectPropertySetList.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYDatasetName.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYDraw.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYDrawI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYField.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFieldIndex.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFieldIndexMacro.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFieldValue.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFieldValueDomainName.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFieldValueString.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFreeStyleLogHeader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYFunctional.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYGeometry.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYImplicitCast.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYInClauseStream.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYInheritMacro.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYLinkTracer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYLogFunctionExecutor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYLogHeader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYLogHeaderImpl.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYLogTypeSelector.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYMapTableFinder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYNodeIdAttractor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYObjectId.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYObjectIdRange.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYPlant.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYRings.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYShapeFieldName.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYSpatialLinkTracer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYStdLogHeader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYTableFinder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYTableName.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYTablesBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYValueGetter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SiNDYValueSetSearcher.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexAttractor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\geodatabase.h">
+      <Filter>sindy</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation.h">
+      <Filter>sindy</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\mesh_shape_loader.h">
+      <Filter>sindy</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper.h">
+      <Filter>sindy</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\modify_date_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\modify_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\operator_modify_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\prog_modify_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\time_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\stamper\unary_modify_stamper.h">
+      <Filter>sindy\stamper</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\modifier\stamp_modifier.h">
+      <Filter>sindy\modifier</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\bidirectional.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\directional_interface.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\directional_watcher.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\edit_watcher.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\interface.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\reflect.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\lq_relation\watcher.h">
+      <Filter>sindy\lq_relation</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\link_queue\lq.h">
+      <Filter>sindy\link_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\link_queue\lq_list.h">
+      <Filter>sindy\link_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\link_queue\table.h">
+      <Filter>sindy\link_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="sindy\algorithm\transform_to_nq.h">
+      <Filter>sindy\algorithm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\errorstring.rh">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resource\sindylibui.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resource\sindylibui.rh">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

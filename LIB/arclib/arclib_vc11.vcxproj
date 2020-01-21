@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug MBCS|Win32">
+      <Configuration>Debug MBCS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MBCS|Win32">
+      <Configuration>Release MBCS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4962A8CD-5A9B-4480-BAF9-3A69DCEDF595}</ProjectGuid>
+    <RootNamespace>arclib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MBCS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MBCS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MBCS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug MBCS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)-ugd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MBCS|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)-gd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)-u</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MBCS|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../SiNDYLib;../WinLib;../tlb;../ArcHelperEx;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug MBCS|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../SiNDYLib;../WinLib;../tlb;../ArcHelperEx;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../SiNDYLib;../WinLib;../tlb;../;../ArcHelperEx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MBCS|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../SiNDYLib;../WinLib;../tlb;../;../ArcHelperEx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dataset.cpp" />
+    <ClCompile Include="SiNDYConnectionDlg.cpp" />
+    <ClCompile Include="SiNDYConnectionFile.cpp" />
+    <ClCompile Include="SiNDYConnectionFileListCtrl.cpp" />
+    <ClCompile Include="SiNDYConnectionInfoString.cpp" />
+    <ClCompile Include="SiNDYConnectPropertyDlg.cpp" />
+    <ClCompile Include="SiNDYConnectPropertyListDlg.cpp" />
+    <ClCompile Include="SiNDYConnectPropertySet.cpp" />
+    <ClCompile Include="SiNDYDraw.cpp" />
+    <ClCompile Include="SiNDYFreeStyleLogHeader.cpp" />
+    <ClCompile Include="SiNDYLinkTracer.cpp" />
+    <ClCompile Include="SiNDYLogFunctionExecutor.cpp" />
+    <ClCompile Include="SiNDYLogHeader.cpp" />
+    <ClCompile Include="SiNDYLogTypeSelector.cpp" />
+    <ClCompile Include="SiNDYMapTableFinder.cpp" />
+    <ClCompile Include="SiNDYPlant.cpp" />
+    <ClCompile Include="SiNDYRings.cpp" />
+    <ClCompile Include="SiNDYStdLogHeader.cpp" />
+    <ClCompile Include="SiNDYTableFinder.cpp" />
+    <ClCompile Include="SiNDYTableName.cpp" />
+    <ClCompile Include="SiNDYTablesBuffer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug MBCS|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MBCS|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dataset.h" />
+    <ClInclude Include="LayerComboBox.h" />
+    <ClInclude Include="NamedItemComboBox.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Resource2.h" />
+    <ClInclude Include="SiNDYAlgorithm.h" />
+    <ClInclude Include="SiNDYConnectionDlg.h" />
+    <ClInclude Include="SiNDYConnectionDlgI.h" />
+    <ClInclude Include="SiNDYConnectionFile.h" />
+    <ClInclude Include="SiNDYConnectionFileCtrlI.h" />
+    <ClInclude Include="SiNDYConnectionFileListCtrl.h" />
+    <ClInclude Include="SiNDYConnectionInfoString.h" />
+    <ClInclude Include="SiNDYConnectionInfoStringI.h" />
+    <ClInclude Include="SiNDYConnectPropertyDlg.h" />
+    <ClInclude Include="SiNDYConnectPropertyListDlg.h" />
+    <ClInclude Include="SiNDYConnectPropertySet.h" />
+    <ClInclude Include="SiNDYConnectPropertySetList.h" />
+    <ClInclude Include="SiNDYDatasetName.h" />
+    <ClInclude Include="SiNDYDraw.h" />
+    <ClInclude Include="SiNDYDrawI.h" />
+    <ClInclude Include="SiNDYField.h" />
+    <ClInclude Include="SiNDYFieldIndex.h" />
+    <ClInclude Include="SiNDYFieldIndexMacro.h" />
+    <ClInclude Include="SiNDYFieldValue.h" />
+    <ClInclude Include="SiNDYFieldValueDomainName.h" />
+    <ClInclude Include="SiNDYFieldValueString.h" />
+    <ClInclude Include="SiNDYFreeStyleLogHeader.h" />
+    <ClInclude Include="SiNDYFunctional.h" />
+    <ClInclude Include="SiNDYGeometry.h" />
+    <ClInclude Include="SiNDYImplicitCast.h" />
+    <ClInclude Include="SiNDYInClauseStream.h" />
+    <ClInclude Include="SiNDYInheritMacro.h" />
+    <ClInclude Include="SiNDYLinkTracer.h" />
+    <ClInclude Include="SiNDYLogFunctionExecutor.h" />
+    <ClInclude Include="SiNDYLogHeader.h" />
+    <ClInclude Include="SiNDYLogHeaderImpl.h" />
+    <ClInclude Include="SiNDYLogTypeSelector.h" />
+    <ClInclude Include="SiNDYMapTableFinder.h" />
+    <ClInclude Include="SiNDYNodeIdAttractor.h" />
+    <ClInclude Include="SiNDYObjectId.h" />
+    <ClInclude Include="SiNDYObjectIdRange.h" />
+    <ClInclude Include="SiNDYPlant.h" />
+    <ClInclude Include="SiNDYRings.h" />
+    <ClInclude Include="SiNDYShapeFieldName.h" />
+    <ClInclude Include="SiNDYSpatialLinkTracer.h" />
+    <ClInclude Include="SiNDYStdLogHeader.h" />
+    <ClInclude Include="SiNDYTableFinder.h" />
+    <ClInclude Include="SiNDYTableName.h" />
+    <ClInclude Include="SiNDYTablesBuffer.h" />
+    <ClInclude Include="SiNDYValueGetter.h" />
+    <ClInclude Include="SiNDYValueSetSearcher.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VertexAttractor.h" />
+    <ClInclude Include="sindy\geodatabase.h" />
+    <ClInclude Include="sindy\lq_relation.h" />
+    <ClInclude Include="sindy\mesh_shape_loader.h" />
+    <ClInclude Include="sindy\stamper.h" />
+    <ClInclude Include="sindy\stamper\modify_date_stamper.h" />
+    <ClInclude Include="sindy\stamper\modify_stamper.h" />
+    <ClInclude Include="sindy\stamper\operator_modify_stamper.h" />
+    <ClInclude Include="sindy\stamper\prog_modify_stamper.h" />
+    <ClInclude Include="sindy\stamper\time_stamper.h" />
+    <ClInclude Include="sindy\stamper\unary_modify_stamper.h" />
+    <ClInclude Include="sindy\modifier\stamp_modifier.h" />
+    <ClInclude Include="sindy\lq_relation\bidirectional.h" />
+    <ClInclude Include="sindy\lq_relation\directional_interface.h" />
+    <ClInclude Include="sindy\lq_relation\directional_watcher.h" />
+    <ClInclude Include="sindy\lq_relation\edit_watcher.h" />
+    <ClInclude Include="sindy\lq_relation\interface.h" />
+    <ClInclude Include="sindy\lq_relation\reflect.h" />
+    <ClInclude Include="sindy\lq_relation\watcher.h" />
+    <ClInclude Include="sindy\link_queue\lq.h" />
+    <ClInclude Include="sindy\link_queue\lq_list.h" />
+    <ClInclude Include="sindy\link_queue\table.h" />
+    <ClInclude Include="sindy\algorithm\transform_to_nq.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\errorstring.rh" />
+    <None Include="resource\sindylibui.rc2" />
+    <None Include="resource\sindylibui.rh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

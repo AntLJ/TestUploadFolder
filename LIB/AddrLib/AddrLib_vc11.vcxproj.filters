@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{6b885893-66eb-46d3-968b-55225ea4a1d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLib">
+      <UniqueIdentifier>{3f3dd71c-1b7a-4df4-920c-50c2197fb717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{d844da4a-2788-41e4-b4aa-8c2b0788e293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{1f846055-5eca-447a-b546-25ddde7e0d38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrBasePoint.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseAdmin.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseRepPoint.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Building.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CityAdmin.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CSAddrPoint.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GouPoint.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GouPoints.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="KLinkPoint.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrGlobals.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrCodeList.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaCodeHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeConverter.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="JusyoHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="JusyoRecordSet.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="YomiConverter.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrRec.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrRecHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrSchema.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddrLib.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_def.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Initializer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrBasePoint.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseAdmin.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseRepPoint.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Building.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CityAdmin.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CSAddrPoint.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GouPoint.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GouPoints.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="KLinkPoint.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WinLib\ADOBase.h">
+      <Filter>WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrGlobals.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrCodeList.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaCodeHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeConverter.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="JusyoHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="JusyoRecordSet.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="YomiConverter.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipcodeArea.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrRec.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrRecHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrSchema.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

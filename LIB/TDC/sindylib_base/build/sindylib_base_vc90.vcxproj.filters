@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ライブラリソース">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ライブラリヘッダ">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arcobjects.h">
+      <Filter>ライブラリソース</Filter>
+    </ClInclude>
+    <ClInclude Include="memdbg.h">
+      <Filter>ライブラリソース</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ライブラリソース</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ライブラリソース</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClassFactory.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ContainerBase.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrorObject2.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GeometryBase.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IndexedContainer.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libsindybase.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RowBase.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RowContainer.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SchemaSupport.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sindylib_base_classconstructorimpl.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sindylib_base_global.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableBase.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableContainer.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableFinder.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableFinderSupport.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RuleWrapper.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CacheAttribute.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClassUtil.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumSegment.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumSplitPoint.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumVertex.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GeometryIterator.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GlobalRules.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Point.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PointIterator.h">
+      <Filter>ライブラリヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClassFactory.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainerBase.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorObject2.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBase.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBaseCheck.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBaseConvert.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBasePointCollection.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBaseRelationalOpeartor.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBaseSegmentCollection.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexedContainer.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="RowBase.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="RowContainer.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="SchemaSupport.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="sindylib_base_global.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TableBase.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TableContainer.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TableFinder.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TableFinderSupport.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="RuleWrapper.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheAttribute.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumSegment.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumSplitPoint.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumVertex.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalArgument.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicRule.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+    <ClCompile Include="PointIterator.cpp">
+      <Filter>ライブラリソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

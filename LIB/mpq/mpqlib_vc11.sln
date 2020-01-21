@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpqlib_vc11", "mpqlib_vc11.vcxproj", "{A4EDB07D-515A-4B12-98E6-3F6878B97CFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4EDB07D-515A-4B12-98E6-3F6878B97CFB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4EDB07D-515A-4B12-98E6-3F6878B97CFB}.Debug|Win32.Build.0 = Debug|Win32
+		{A4EDB07D-515A-4B12-98E6-3F6878B97CFB}.Release|Win32.ActiveCfg = Release|Win32
+		{A4EDB07D-515A-4B12-98E6-3F6878B97CFB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

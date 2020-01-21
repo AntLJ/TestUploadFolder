@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SRC\AheBugEvasion.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGlobals.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGlobalsX.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGlobalsX2.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheLayerFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheLicenseFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheDraw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheDrawFunctions.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Feedback.cpp">
+      <Filter>Feedback</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SketchFeedback.cpp">
+      <Filter>Feedback</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheNetwork.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGeometryConvert.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGeometryOp.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\RuleModel.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\TargetFeature.cpp">
+      <Filter>TargetFeature</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ActiveView.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Application.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EnumBSTR.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EnumRow.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Map.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ArcHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EditHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\InifileHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\LQHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\MapHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\MenuHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheGlobalFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheMeshUtil.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheWKSFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheSymbolFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheZooMoveFunctions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ErrObj.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\LinkSnapTrace.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\LoadQueueInfo.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Mesh.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\sde_ondemand.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SiNDYeSettings.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\StdAfx.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\StringConvert.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AheGlobalsCoord.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AheGlobalsMisc.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ErrorMsg.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheMeshUtilArcObjects.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\AheBuddyGlobals.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AheDraw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DrawFunctions.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Feedback.h">
+      <Filter>Feedback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SketchFeedback.h">
+      <Filter>Feedback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheBugEvasion.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGlobals.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGlobalsX.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGlobalsX2.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheLayerFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheLicenseFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheNetwork.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\define.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\define_enum.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGeometryConvert.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGeometryOp.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RuleModel.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TargetFeature.h">
+      <Filter>TargetFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TargetFeatures.h">
+      <Filter>TargetFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActiveView.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumBSTR.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumRow.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Map.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArcHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InifileHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LQHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MapHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MenuHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheMeshUtil.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheSymbolFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheWKSFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheZooMoveFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArcHelperEx.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrObj.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GlobalFunctions.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graph.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libarchelper.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LinkSnapTrace.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LoadQueueInfo.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mesh.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sde_ondemand.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SiNDYeSettings.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\StdAfx.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StringConvert.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGlobalsMisc.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheGlobalsCoord.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrorMsg.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheMeshUtilArcObjects.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AheBuddyGlobals.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\TargetFeature.inl">
+      <Filter>TargetFeature</Filter>
+    </None>
+    <None Include="..\InifileHelper.inl">
+      <Filter>Helper</Filter>
+    </None>
+    <None Include="..\maphelper.inl">
+      <Filter>Helper</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{3c0c684b-f828-4a6f-a3a5-faef80a940c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{397e5596-8734-437e-884e-7ae6a03bb443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feedback">
+      <UniqueIdentifier>{687e59e9-bd5a-4423-8b8a-d1d71a4af83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{03e45ca7-e8c5-4da3-a6b7-1604990cdd11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{585625f7-9496-4c11-ab5d-7cf5403fa9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{621743dc-41ed-4977-a406-9d2dd18dc961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rule">
+      <UniqueIdentifier>{0bb1b714-dabe-4a7b-91aa-c61993f01447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TargetFeature">
+      <UniqueIdentifier>{7a560a2a-84c3-4a02-9c7a-fd1a25a0898b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper">
+      <UniqueIdentifier>{53fea589-0cb2-4d59-97f9-f5e83c3e4e01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

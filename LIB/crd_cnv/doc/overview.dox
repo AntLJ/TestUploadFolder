@@ -1,0 +1,119 @@
+/**
+@page overview 機能概要
+○当ライブラリでは、下記の変換に対応。
+
+○座標系の相互変換関連
+<Hr>
+<Ul>
+<Li>緯度経度⇔平面直角19座標値</Li>
+<br>	: crd_cnv::LLtoXY19()
+<br>	: crd_cnv::XY19toLL()
+<Li>メッシュコード+(X,Y)⇔平面直角19座標値</Li>
+<br>	: crd_cnv::MeshtoXY19()
+<br>	: crd_cnv::XY19toMesh()
+<Li>東ヨーロッパ用メッシュコード+(X,Y)⇔緯度経度(10進小数)</Li>
+<br>	: crd_cnv::MeshtoLL_EU()
+<br>	: crd_cnv::LLtoMesh_EU()
+<br>	: crd_cnv::LLtoMesh_EU2()
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>北アメリカ用メッシュコード+(X,Y)⇔緯度経度(10進小数)</Li>
+<br>	: crd_cnv::MeshtoLL_NA()
+<br>	: crd_cnv::LLtoMesh_NA()
+<br>	: crd_cnv::LLtoMesh_NA2()
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>アラスカ・ハワイ用メッシュコード+(X,Y)⇔緯度経度(10進小数)</Li>
+<br>	: crd_cnv::MeshtoLL_AH()
+<br>	: crd_cnv::LLtoMesh_AH()
+<br>	: crd_cnv::LLtoMesh_AH2()
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>東南アジア・オーストラリア用メッシュコード+(X,Y)⇔緯度経度(10進小数)</Li>
+<br>	: crd_cnv::MeshtoLL_AH()
+<br>	: crd_cnv::LLtoMesh_AH()
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>南アメリカ用メッシュコード+(X,Y)⇔緯度経度(10進小数)</Li>
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>東京測地系緯度経度(10進小数)⇔世界測地系緯度経度(10進小数)</Li>
+<br>	: crd_cnv::TOKYOtoJGD2000()
+<br>	: crd_cnv::TOKYOtoJGD2000_RP()
+<br>	: crd_cnv::JGD2000toTOKYO()
+<br>	: crd_cnv::JGD2000toTOKYO_RP()
+<Li>緯度経度(Bessel:10進小数)⇔UTM座標系のゾーン番号+(X,Y)</Li>
+<br>	: crd_cnv::UTMtoLL()
+<br>	: crd_cnv::LLtoUTM()
+<br><b>注：Visual Studio 2012では、上記2関数についてVC11とVC9の変換結果に1mm未満の誤差が発生することを確認している。</b>
+<Li>メッシュコード+(X,Y)⇔緯度経度(10進小数、1/256秒単位)</Li>
+<br>	: crd_cnv::MeshtoLL()
+<br>	: crd_cnv::MeshtoLL2()
+<br>	: crd_cnv::LLtoMesh()
+<br>	: crd_cnv::LLtoMesh2()
+<br>	: crd_cnv::MeshtoLL_World()
+<br>	: crd_cnv::LLtoMesh_World()
+<Li>緯度経度(10進小数)⇔ガウス・クリューゲル座標+(X,Y)</Li>
+<br>	: crd_cnv::LLtoXYGs()
+<br>	: crd_cnv::XYGstoLL()
+<Li>緯度経度(10進小数)⇔緯度経度(1/256秒単位)</Li>
+<br>	: crd_cnv::LLtoLL256()
+<br>	: crd_cnv::LL256toLL()
+<Li>緯度経度(10進小数)⇔緯度経度(度分秒)</Li>
+<br>	: crd_cnv::DECtoDMS()
+<br>	: crd_cnv::DMStoDEC()
+</Ul>
+<Hr>
+
+○19座標系の系番号・UTM座標系のゾーン番号の取得
+<Hr>
+<Ul>
+<Li>緯度経度⇒平面直角19座標系の系番号</Li>
+<br>	: crd_cnv::Sys_Number(int)
+<Li>緯度経度+市区町村コード(5桁)⇒平面直角19座標系の系番号</Li>
+<br>	: crd_cnv::Sys_Number_Init()
+<br>	: crd_cnv::Sys_Number(double, double, char*)
+<Li>メッシュコード⇒平面直角19座標系の系番号</Li>
+<br>	: crd_cnv::MeshtoXY19()
+<br>	: crd_cnv::XY19toMesh()
+<Li>経度(10進小数)⇒UTM座標系のゾーン番号・ゾーンの原点緯度経度(10進小数)</Li>
+<br>	: crd_cnv::GetUTMZone()
+<Li>UTM座標系のゾーン番号⇒UTM座標系のゾーンの原点緯度経度(10進小数)</Li>
+<br>	: crd_cnv::GetUTMOrigLL()
+</Ul>
+<Hr>
+
+○距離
+<Hr>
+<Ul>
+<Li>2地点の緯度経度⇒距離(m)(日本測地系版)</Li>
+<br>	: crd_cnv::GetDist()
+<br>	: crd_cnv::GetDistXY()
+<Li>2地点の緯度経度⇒距離(m)(世界測地系版)</Li>
+<br>	: crd_cnv::GetDistXY_JGD2000()
+<Li>2地点のメッシュコード+(X,Y)⇒距離(正規化座標値でのポイント数)</Li>
+<br>	: crd_cnv::GetNrmDiff()
+<br>	: crd_cnv::GetNrmDiff2()
+<Li>メッシュコード⇒メッシュの4辺の距離(m)</Li>
+<br>	: crd_cnv::CtoCDist()
+</Ul>
+<Hr>
+
+○その他
+<Hr>
+<Ul>
+<Li>原点メッシュから隣に(x,y)メッシュはなれたメッシュを求める</Li>
+<br>	: crd_cnv::GetMeshCode()
+<br>	: crd_cnv::GetMeshCode_SJ()
+<Li>メッシュコード＋(X,Y)⇒別レベルのメッシュコード＋(X,Y)</Li>
+<br>	: crd_cnv::MeshtoMesh()
+<br>	: crd_cnv::MeshtoMesh2()
+<Li>原点緯度経度(10進小数)+(経度・緯度方向距離)⇒原点から経度・緯度方向距離離れた地点の緯度経度(日本測地系版)</Li>
+<br>	: crd_cnv::GetLLPt()
+<Li>原点緯度経度(10進小数)+(経度・緯度方向距離)⇒原点から経度・緯度方向距離離れた地点の緯度経度(世界測地系版)</Li>
+<br>	: crd_cnv::GetLLPt_JGD2000()
+<Li>メッシュコード⇒メッシュ桁数</Li>
+<br>	: crd_cnv::GetMeshDigit()
+</Ul>
+<Hr>
+*/

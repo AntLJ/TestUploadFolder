@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crd_cnv_vc14", "crd_cnv_vc14.vcxproj", "{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Unicode Debug DLL|x86 = Unicode Debug DLL|x86
+		Unicode Debug|x86 = Unicode Debug|x86
+		Unicode Release DLL|x86 = Unicode Release DLL|x86
+		Unicode Release|x86 = Unicode Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Debug|x86.ActiveCfg = Debug|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Debug|x86.Build.0 = Debug|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Release|x86.ActiveCfg = Release|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Release|x86.Build.0 = Release|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Debug DLL|x86.ActiveCfg = Unicode Debug DLL|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Debug DLL|x86.Build.0 = Unicode Debug DLL|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Debug|x86.ActiveCfg = Unicode Debug|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Debug|x86.Build.0 = Unicode Debug|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Release DLL|x86.ActiveCfg = Unicode Release DLL|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Release DLL|x86.Build.0 = Unicode Release DLL|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Release|x86.ActiveCfg = Unicode Release|Win32
+		{E526D13B-2BFD-4B40-9F4C-0B0131310E3D}.Unicode Release|x86.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

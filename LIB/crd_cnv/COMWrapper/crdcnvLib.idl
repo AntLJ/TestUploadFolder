@@ -1,0 +1,66 @@
+// crdcnvLib.idl : crdcnvLib の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (crdcnvLib.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(BB3E7099-7F46-4DC2-A2BE-B3870E27E067),
+	nonextensible,
+	helpstring("ICoordConverter インターフェイス"),
+	pointer_default(unique)
+]
+interface ICoordConverter : IUnknown{
+	HRESULT MeshtoLL([in] LONG mesh, [in] LONG x, [in] LONG y, [out] DOUBLE* lon, [out] DOUBLE* lat);
+	HRESULT LLtoMesh([in] DOUBLE lon, [in] DOUBLE lat, [in] LONG level,  [out] LONG* mesh, [out] LONG* x, [out] LONG* y);
+	HRESULT GetMeshCode([in] LONG code, [in] LONG xdist, LONG ydist, [out] LONG* mesh);
+	HRESULT GetMeshDist([in] LONG mesh1, [in] LONG x1, LONG y1, [in] LONG mesh2, [in] LONG x2, LONG y2, [out] DOUBLE* dist);
+	HRESULT TOKYOtoJGD2000([in] DOUBLE before_lon, [in] DOUBLE before_lat, [in] DOUBLE before_he, [out] DOUBLE* after_lon, [out] DOUBLE* after_lat, [out] DOUBLE* after_he);
+	HRESULT JGD2000toTOKYO([in] DOUBLE before_lon, [in] DOUBLE before_lat, [in] DOUBLE before_he, [out] DOUBLE* after_lon, [out] DOUBLE* after_lat, [out] DOUBLE* after_he);
+};
+[
+	object,
+	uuid(B3C81508-2185-438C-9013-E313E9FD6388),
+	nonextensible,
+	helpstring("ICoordConverter2 インターフェイス"),
+	pointer_default(unique)
+]
+interface ICoordConverter2 : ICoordConverter{
+	HRESULT JGD2000_RP_Init([in] BSTR bstrFile, [out]VARIANT_BOOL* bRet);
+	HRESULT TOKYOtoJGD2000_RP([in] DOUBLE before_lon, [in] DOUBLE before_lat, [out] DOUBLE* after_lon, [out] DOUBLE* after_lat, [in] VARIANT_BOOL biPCFlag, [out]VARIANT_BOOL* bRet);
+	HRESULT JGD2000toTOKYO_RP([in] DOUBLE before_lon, [in] DOUBLE before_lat, [out] DOUBLE* after_lon, [out] DOUBLE* after_lat, [in] VARIANT_BOOL biPCFlag, [out]VARIANT_BOOL* bRet);
+};
+[
+	object,
+	uuid(8168F31F-C382-4BF1-85F8-E44B6702DAC7),
+	nonextensible,
+	helpstring("ICoordConverter3 インターフェイス"),
+	pointer_default(unique)
+]
+interface ICoordConverter3 : ICoordConverter2{
+	HRESULT XY19toLL([in] INT axis, [in] DOUBLE before_x, [in] DOUBLE before_y, [out] DOUBLE* after_lon, [out] DOUBLE* after_lat);
+	HRESULT LLtoXY19([in] INT axis, [in] DOUBLE before_lon, [in] DOUBLE before_lat, [out] DOUBLE* after_x, [out] DOUBLE* after_y);
+};
+[
+	uuid(E84B6C51-F7F0-455B-BBA4-91ABC3892536),
+	version(1.0),
+	helpstring("crdcnvLib 1.0 タイプ ライブラリ")
+]
+library crdcnvLibLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(14DFCCFE-26CC-4BF6-98F7-CBDBE2F37690),
+		helpstring("CrdConvert Class")
+	]
+	coclass CrdConvert
+	{
+		interface ICoordConverter;
+		interface ICoordConverter2;
+		[default] interface ICoordConverter3;
+	};
+};

@@ -1,0 +1,71 @@
+/**
+@page history 更新履歴
+
+- <b>2017/02/22 FILEVERSION 17.1.0.9 PRODUCTVERSION 17.1.0.9</b>
+<ul>
+<li>GetDistXY,GetLLPtの世界測地系版を追加<br>
+	→crd_cnv::GetDistXY_JGD2000<br>
+	→crd_cnv::GetLLPt_JGD2000</li>
+
+- <b>2016/07/22 FILEVERSION 16.2.0.8 PRODUCTVERSION 16.2.0.8</b>
+<ul>
+<li>3次メッシュ（TERTIARYMESH）の仕様変更（原点コード：SJ_ORIGIN指定時）を反映<br>
+    →「2次メッシュの2×2分割」から「2次メッシュの4×4分割」への変更対応</li>
+
+- <b>2013/03/01 FILEVERSION 1.0.5.7 PRODUCTVERSION 1.0.5.0</b>
+<ul>
+<li>VC11対応</li>
+<li>crd_cnv::GetLLPt()で、M_PI→PIとなってしまっていた部分をPIに修正。（Linuxビルドでエラーがでる件）</li>
+<li>ヘルプにcrd_cnv::UTMtoLL(),crd_cnv::LLtoUTM()の2関数についてVC11とVC9の変換結果で1mm未満の誤差が発生することを追記</li>
+
+- <b>2011/02/21 FILEVERSION 1.0.5.6 PRODUCTVERSION 1.0.5.0</b>
+<ul>
+<li>crd_cnv::JGD2000toTOKYO(),crd_cnv::TOKYOtoJGD2000() の東経90度から西での値が不正な件を修正。([bug 8576]対応)</li>
+<li>crd_cnv::Sys_Number_Init() の北海道の19座標系の対応の一部(洞爺湖町)が不正な件を修正。([bug 8575]対応)</li>
+<li>crd_cnv::TOKYOtoJGD2000_RP(), crd_cnv::JGD2000toTOKYO_RP()のIPCモードの離島ずれ対応。([bug 8574]対応)（北大東島、南大東島、青ヶ島、硫黄島）</li>
+
+- <b>2010/10/22 FILEVERSION 1.0.4.5 PRODUCTVERSION 1.0.4.0</b>
+<ul>
+<li>crd_cnv::GetLLPt() の収束しない問題を修正</li>
+<li>crd_cnv::LLtoXY19_JGD2000(),crd_cnv::XY19toLL_JGD2000()を追加。([bug 8279]対応)</li>
+<li>世界測地系用の距離算出メソッド、 crd_cnv::GetDist_JGD2000()を追加。</li>
+
+- <b>2010/07/29 FILEVERSION 1.0.3.4 PRODUCTVERSION 1.0.3.0</b>
+<ul>
+<li>コンストラクタで crd_cnv::Sys_Number_Init() を毎回呼ばないように修正。</li>
+<li>crd_cnv::MeshtoMesh2() に、桁の繰上げにバグがあったので修正。</li>
+<li>ソース全体で、緯度、経度の記述が反対になっていた箇所を修正。</li>
+<li>VC8,VC9用のデフォルトのDebug,Releaseのランタイムライブラリの設定を下記に変更。<br>
+    Debug  : マルチスレッド デバッグ → マルチスレッド デバッグ DLL<br>
+    Release: マルチスレッド → マルチスレッド デバッグ DLL</li>
+
+- <b>2010/05/14 FILEVERSION 1.0.2.3 PRODUCTVERSION 1.0.2.0</b>
+<ul>
+<li>地域パラメータを使用した世界測地系変換手法を修正。</li>
+    <ul>
+    <li>crd_cnv::TOKYOtoJGD2000_RP()</li>
+    <li>crd_cnv::JGD2000toTOKYO_RP()</li>
+	</ul>
+<li>19座標系の系番号取得メソッドを追加</li>
+    <ul>
+    <li>crd_cnv::Sys_Number_Init()</li>
+    <li>crd_cnv::Sys_Number(double, double, char*)</li>
+	</ul>
+
+- <b>2009/06/30 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.1.0</b>
+<ul>
+<li>DLL生成用の修正（crd_cnv.h、crd_cnv.vcproj）</li>
+<li>coord_converter.hをVC9ライブラリ対応等で修正。</li>
+
+- <b>2009/06/09 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+<ul>
+<li>世界測地系変換で地域パラメータ使用の変換に対応</li>
+<li>TKY2JGD.par追加</li>
+<li>GetUTMZoneを修正(返却する原点緯度経度の値がおかしくなっていたため)</li>
+<li>GetLLPtを修正(反復上限を設定し、上限に達しても収束しない場合は-1を返却値にし、<br>
+    最近傍の緯度経度値を格納するように変更)</li>
+<li>ソースコードをdoxygen対応に修正</li>
+<li>ヘルプファイル追加</li>
+<li>VC9対応</li>    
+</ul>
+*/

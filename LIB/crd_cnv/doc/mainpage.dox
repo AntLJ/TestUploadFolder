@@ -1,0 +1,46 @@
+/**
+@mainpage @projectname
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 動作保証OS:
+- Windows XP SP2, SP3
+- Windows 7 SP1
+
+@par 動作環境:
+
+@if Develop
+@version
+- @fileversion
+- @productversion
+@endif
+
+@date @lastupdate
+
+@section toc_outline 概略
+
+- @subpage introduction
+- @subpage overview
+- @subpage history
+- @subpage reference
+- @subpage restriction
+
+@section toc_design 操作説明
+
+
+<pre>
+<hr>
+このプログラムは、国土地理院長の承認を得て、同院の技術資料H・1-No.2「測地成果2000のための座標変換
+ソフトウェアTKY2JGD」を利用し作成したものである。                                                 
+                                            　　　　　 (承認番号 国地企調第17号　平成21年4月20日)
+<hr>
+※【注意事項】
+　「測地成果2000のための座標変換ソフトウェアTKY2JGD」の機能を使って測地系変換を行った成果は、地震
+　等の地殻変動が生じた地域等で、必要としている精度を確保できない場合があります。
+</pre>
+
+*/

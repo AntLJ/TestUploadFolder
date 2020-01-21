@@ -1,0 +1,26 @@
+HKCR
+{
+	crdcnvLib.CrdConvert.1 = s 'CrdConvert Class'
+	{
+		CLSID = s '{14DFCCFE-26CC-4BF6-98F7-CBDBE2F37690}'
+	}
+	crdcnvLib.CrdConvert = s 'CrdConvert Class'
+	{
+		CLSID = s '{14DFCCFE-26CC-4BF6-98F7-CBDBE2F37690}'
+		CurVer = s 'crdcnvLib.CrdConvert.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {14DFCCFE-26CC-4BF6-98F7-CBDBE2F37690} = s 'CrdConvert Class'
+		{
+			ProgID = s 'crdcnvLib.CrdConvert.1'
+			VersionIndependentProgID = s 'crdcnvLib.CrdConvert'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E84B6C51-F7F0-455B-BBA4-91ABC3892536}'
+		}
+	}
+}

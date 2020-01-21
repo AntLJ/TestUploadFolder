@@ -1,0 +1,148 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{54BB6780-1215-444D-B607-0071E225E813}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arctl", "arctl", "{C6650CF3-CE3F-4A31-AFAE-513799F57749}"
+	ProjectSection(SolutionItems) = preProject
+		..\algorithm.h = ..\algorithm.h
+		..\catalog.h = ..\catalog.h
+		..\class.h = ..\class.h
+		..\coinitializer.h = ..\coinitializer.h
+		..\cursor.h = ..\cursor.h
+		..\field.h = ..\field.h
+		..\geometry.h = ..\geometry.h
+		..\iterator.h = ..\iterator.h
+		..\object_massacrer.h = ..\object_massacrer.h
+		..\pgdb.h = ..\pgdb.h
+		..\tables.h = ..\tables.h
+		..\topological.h = ..\topological.h
+		..\utility.h = ..\utility.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{5A70DD13-CA3C-4D30-8108-BE735540910E}"
+	ProjectSection(SolutionItems) = preProject
+		..\ui\workspace_dialog.h = ..\ui\workspace_dialog.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{F236F5CC-DF4D-40D7-9E94-3435205536CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C6AB11E-F4BF-4F7B-BBE0-48E9751AFB45}"
+	ProjectSection(SolutionItems) = preProject
+		arctl.vsmdi = arctl.vsmdi
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UITest", "UITest\UITest.vcproj", "{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "document", "document\document.vcproj", "{A4C40254-3549-432A-A8FE-C50A9A69215A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "algorithm", "algorithm", "{772E6AFA-4EA2-47D8-A4E0-40F3477AAF7D}"
+	ProjectSection(SolutionItems) = preProject
+		..\algorithm\table_name.h = ..\algorithm\table_name.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "detail", "detail", "{86DC4804-CB7A-4DF4-B7CB-5B15E0CDDA79}"
+	ProjectSection(SolutionItems) = preProject
+		..\detail\multi_inherit.h = ..\detail\multi_inherit.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "field", "field", "{B88E5D94-68F8-452B-9848-A85D8C54E8D1}"
+	ProjectSection(SolutionItems) = preProject
+		..\field\dmodifier.h = ..\field\dmodifier.h
+		..\field\index.h = ..\field\index.h
+		..\field\modifier.h = ..\field\modifier.h
+		..\field\oid.h = ..\field\oid.h
+		..\field\shape.h = ..\field\shape.h
+		..\field\value.h = ..\field\value.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iterator", "iterator", "{2F7F18BF-663E-4F79-A1E6-3BCF7C96AFB3}"
+	ProjectSection(SolutionItems) = preProject
+		..\iterator\add_iterator.h = ..\iterator\add_iterator.h
+		..\iterator\delete_iterator.h = ..\iterator\delete_iterator.h
+		..\iterator\iterator_cc.h = ..\iterator\iterator_cc.h
+		..\iterator\iterators.h = ..\iterator\iterators.h
+		..\iterator\recursive_layer_iterator.h = ..\iterator\recursive_layer_iterator.h
+		..\iterator\selected_layer_iterator.h = ..\iterator\selected_layer_iterator.h
+		..\iterator\single_pass_iterators.h = ..\iterator\single_pass_iterators.h
+		..\iterator\sub_fields_reset_iterator.h = ..\iterator\sub_fields_reset_iterator.h
+		..\iterator\zero_based_random_access_iterators.h = ..\iterator\zero_based_random_access_iterators.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specif", "specif", "{12DA8203-484F-4380-86CD-367D499F483C}"
+	ProjectSection(SolutionItems) = preProject
+		..\specif\field.h = ..\specif\field.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{4DC15CD3-95D4-49D7-8C4B-88F2B685F093}"
+	ProjectSection(SolutionItems) = preProject
+		..\sql\expression.h = ..\sql\expression.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "atl2", "atl2", "{631D53FC-54AE-4FA1-92F8-361B3B822AC8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\atl2\algorithm.h = ..\..\atl2\algorithm.h
+		..\..\atl2\exception.h = ..\..\atl2\exception.h
+		..\..\atl2\named_interface_pointers.h = ..\..\atl2\named_interface_pointers.h
+		..\..\atl2\range.h = ..\..\atl2\range.h
+		..\..\atl2\seal.h = ..\..\atl2\seal.h
+		..\..\atl2\type_traits.h = ..\..\atl2\type_traits.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iterator", "iterator", "{C2823973-F17F-4184-834C-313FEC2DC2BB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\atl2\iterator\element_wrapper.h = ..\..\atl2\iterator\element_wrapper.h
+		..\..\atl2\iterator\iterator_base.h = ..\..\atl2\iterator\iterator_base.h
+		..\..\atl2\iterator\single_pass_iterator.h = ..\..\atl2\iterator\single_pass_iterator.h
+		..\..\atl2\iterator\zero_based_random_access_iterator.h = ..\..\atl2\iterator\zero_based_random_access_iterator.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Coverage|Win32 = Coverage|Win32
+		Debug|Win32 = Debug|Win32
+		html|Win32 = html|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54BB6780-1215-444D-B607-0071E225E813}.Coverage|Win32.ActiveCfg = Coverage|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.Coverage|Win32.Build.0 = Coverage|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.Debug|Win32.Build.0 = Debug|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.html|Win32.ActiveCfg = Coverage|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.html|Win32.Build.0 = Coverage|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.Release|Win32.ActiveCfg = Release|Win32
+		{54BB6780-1215-444D-B607-0071E225E813}.Release|Win32.Build.0 = Release|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Coverage|Win32.ActiveCfg = Coverage|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Coverage|Win32.Build.0 = Coverage|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Debug|Win32.Build.0 = Debug|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.html|Win32.ActiveCfg = Coverage|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.html|Win32.Build.0 = Coverage|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Release|Win32.ActiveCfg = Release|Win32
+		{B7C3EDEF-6163-4977-ABCE-4B6B66DC727F}.Release|Win32.Build.0 = Release|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Coverage|Win32.ActiveCfg = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Coverage|Win32.Build.0 = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Debug|Win32.ActiveCfg = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Debug|Win32.Build.0 = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.html|Win32.ActiveCfg = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.html|Win32.Build.0 = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Release|Win32.ActiveCfg = html|Win32
+		{A4C40254-3549-432A-A8FE-C50A9A69215A}.Release|Win32.Build.0 = html|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54BB6780-1215-444D-B607-0071E225E813} = {F236F5CC-DF4D-40D7-9E94-3435205536CB}
+		{5A70DD13-CA3C-4D30-8108-BE735540910E} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{772E6AFA-4EA2-47D8-A4E0-40F3477AAF7D} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{86DC4804-CB7A-4DF4-B7CB-5B15E0CDDA79} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{B88E5D94-68F8-452B-9848-A85D8C54E8D1} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{2F7F18BF-663E-4F79-A1E6-3BCF7C96AFB3} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{12DA8203-484F-4380-86CD-367D499F483C} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{4DC15CD3-95D4-49D7-8C4B-88F2B685F093} = {C6650CF3-CE3F-4A31-AFAE-513799F57749}
+		{C2823973-F17F-4184-834C-313FEC2DC2BB} = {631D53FC-54AE-4FA1-92F8-361B3B822AC8}
+	EndGlobalSection
+EndGlobal

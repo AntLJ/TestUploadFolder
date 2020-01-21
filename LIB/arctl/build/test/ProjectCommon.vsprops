@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Project Common"
+	OutputDirectory="$(ConfigurationName)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;../../../&quot;;&quot;../../../boost-vault&quot;"
+		PreprocessorDefinitions="WIN32;_CONSOLE"
+		UsePrecompiledHeader="1"
+		WarningLevel="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="odbc32.lib odbccp32.lib"
+		SubSystem="1"
+		TargetMachine="1"
+	/>
+</VisualStudioPropertySheet>

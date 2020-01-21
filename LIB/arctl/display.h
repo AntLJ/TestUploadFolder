@@ -1,0 +1,30 @@
+/*
+ * Copyright (C) INCREMENT P CORP. All Rights Reserved.
+ *
+ * THIS SOFTWARE IS PROVIDED BY INCREMENT P CORP., WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ * AND NONINFRINGEMENT.
+ *
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+ * CLAIM, DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+ * OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+*/
+
+#ifndef ARCTL_DISPLAY_H_
+#define ARCTL_DISPLAY_H_
+
+#include <atl2/exception.h>
+
+namespace arctl {
+
+inline IRgbColorPtr create_rgb_color(COLORREF rgb)
+{
+	IRgbColorPtr result(__uuidof(RgbColor));
+	atl2::valid(result->put_RGB(rgb));
+	return result;
+}
+
+} // namespace arctl
+
+#endif // ARCTL_DISPLAY_H_

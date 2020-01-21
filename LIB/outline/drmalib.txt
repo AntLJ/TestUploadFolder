@@ -1,0 +1,41 @@
+=================== 概要 ==============================================
+DRMAデータを読込むためのライブラリ。
+生データを直接読込むため全ての情報が取得できる。
+
+
+=================== 詳細 ==============================================
+DRMAデータの詳細については下記を参照。
+\\seginus-l12600\Common\org\DRMA\2009-03\リリースノート2103A版\
+　全国デジタル道路地図データベース標準第3.8版（標準・解説書）.pdf
+
+このライブラリは上記解説書のp8[5.2.2 次メッシュ単位ファイル内のデータ構成]
+にあるデータ単位で読込むことが可能。
+また、データ毎の属性情報については同解説書のp13[別紙1 ﾃﾞｰﾀ別内容項目(2次ﾒｯｼｭ単位ﾌｧｲﾙ)ﾘｽﾄ]を参照。
+
+※SiNDY-DB上のDRMA（onyxやjadeのデータ）は生データから整備に必要な属性のみを抽出したものなので注意すること。
+
+
+===================== サンプル=========================================
+#include "../../LIB/drmalib/DRMALoad2.h"
+#pragma comment(lib, "../../LIB/drmalib/lib/libdrma_vc80.lib")
+
+// DRMAデータ統合読み込みクラス
+DRMALoad2 cDrmaLoad;
+// DRMAのA版のディレクトリと2次メッシュを指定
+cDRMALoad.load( strDRMAPath, lMesh );
+
+// 基本道リンク取得
+const DRMABaseRoadLinkLayer2& cBaseLinkLayer = cDrmaLoad.baseRoadLinkLayer();
+// 全道路リンク取得
+const DRMAAllRoadLinkLayer2& cAllLinkLayer = cDrmaLoad.allRoadLinkLayer();
+
+// 全道路リンクのレコード取得
+for( long l = 0; l < cAllLinkLayer.size(); ++l )
+{
+	const DRMAAllRoadLink2& cAllLink = cAllLinkLayer[l];
+	// 全道路リンクの属性取得
+	int nLane = cAllLink.eLane;        // 車線数コード
+	int nLength = cAllLink.eLength;   // リンク長(m)
+			：
+			：
+}

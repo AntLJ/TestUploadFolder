@@ -1,0 +1,72 @@
+=================== 概要 ==============================================
+概要作成：工藤
+
+SDE接続関係のハンドリングが目的
+
+prog_init　　		: SDE接続関係のハンドリング
+
+を扱う。
+
+=================== 詳細 ==============================================
+
+prog_init　クラスのメンバは下記のようになっている。
+
+・get_UserName* ()		// ユーザ名を取得
+・get_Password* ()		// パスワードを取得
+・get_Instance* ()		// インスタンスを取得
+・get_Server* ()		// サーバ名を取得
+・get_Version* ()		// バージョンを取得
+・get_DataFile_Path* ()	// データファイル(PGDB等)のパスを取得
+・get_<レイヤ名> ()		// 各レイヤ名を取得
+
+・read_init_file ()		// プログラム初期化ファイルの読み込み
+・read_init_env ()		// プログラム初期化環境変数の読み込み
+・get_Connect_Info ()	// 接続情報の取得
+・read_init_str ()		// 初期化文字列の読み込み
+
+	※get_<レイヤ名> は、一部レイヤ名と異なるので詳細はヘッダを確認のこと
+
+
+※設定ファイルは下記の書式であることを前提としている。
+-----------------------------------------------------------
+DB_ANY		ronly/ronly/SDE.DEFAULT/5151/ruby2
+
+FC_CityMesh	REFERENCE.CityMesh
+FC_BaseMesh	REFERENCE.BaseMesh
+FC_MiddleMesh	REFERENCE.MiddleMesh
+-----------------------------------------------------------
+
+※環境変数は下記のように設定することを前提としている。
+set DB_ANY=ronly/ronly/SDE.DEFAULT/5151/ruby2
+
+set FC_CityMesh=REFERENCE.CityMesh
+set FC_BaseMesh=REFERENCE.BaseMesh
+set FC_MiddleMesh=REFERENCE.MiddleMesh
+
+===================== サンプル=========================================
+
+
+void	Test (	void )
+{
+	prog_init				a_pTool_Init;
+
+	// 環境変数から取得
+	a_pTool_Init.read_init_env ( 0 );
+
+	/// 接続用プロパティ設定
+	CComVariant		vaUser		(_T(a_pTool_Init.get_UserName()) );
+	CComVariant		vaPass		(_T(a_pTool_Init.get_Password()) );
+	CComVariant		vaInstance	(_T(a_pTool_Init.get_Instance()) );
+	CComVariant		vaServer	(_T(a_pTool_Init.get_Server()) );
+	CComVariant		vaVersion	(_T(a_pTool_Init.get_Version()) );
+
+	printf(_T(	"接続プロパティ：%s/%s/%s/%s/%s\n"),
+				OLE2T( vaUser.bstrVal ), 
+				OLE2T( vaPass.bstrVal ),
+				OLE2T( vaVersion.bstrVal ),
+				OLE2T( vaInstance.bstrVal ),
+				OLE2T( vaServer.bstrVal ) );
+	printf("都市地図メッシュレイヤ:<%s>\n", a_pTool_Init.get_City_Mesh ()
+	printf("ベースメッシュレイヤ:<%s>\n", a_pTool_Init.get_Base_Mesh ()
+}
+

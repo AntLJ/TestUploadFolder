@@ -1,0 +1,13 @@
+.top {
+	display: block;
+	height: 40px;
+	width: 700px;
+	background: #AACCFF;
+	padding: 0 10px 0 20px;
+	line-height: 40px;
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+	font-size: 25px;
+	font-weight: bold;
+}

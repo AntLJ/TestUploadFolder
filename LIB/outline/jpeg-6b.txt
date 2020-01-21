@@ -1,0 +1,47 @@
+=================== 概要 ==============================================
+JPEGファイルのI/Oライブラリ
+JPEGの取り扱いに関しては標準的なライブラリ
+
+
+
+=================== 詳細 ==============================================
+関連HP
+	http://www.jpeg.org/jpeg/
+	http://www.ijg.org/
+
+LICENSE
+	Other/Unknown Open Source Licence 
+
+JPEGの展開/圧縮を行うC言語で記述されたライブラリである。
+
+===================== サンプル=========================================
+
+extern "C" {
+#include <jpeglib.h>
+}
+
+// jpegファイルのロード
+bool load_jpg(const char *filepath)	// filepathはjpegファイル
+{
+	struct jpeg_decompress_struct image;
+	struct jpeg_error_mgr jerr;
+	FILE *fp = fopen(filepath, "rb");
+	jpeg_create_decompress(&image); // 初期化
+	jpeg_stdio_src(&image, fp); // ファイル入力設定
+	jpeg_read_header(&image, TRUE); // ヘッダの読み込み
+	jpeg_start_decompress(&image); // 画像本体の読み込み
+	LONG bufsize = image.output_width *image.output_components;
+	JSAMPARRAY buf = (*image.mem->alloc_sarray)((j_common_ptr)&image, JPOOL_IMAGE, buff_size, 1);
+	:
+	:
+	while(image.output_scanline < image.output_height)
+	{
+		jpeg_read_scanlines(&image, buf, 1);
+		:
+		:
+	}
+	jpeg_finish_decompress(&image);
+	jpeg_destroy_decompress(&image);
+	fclose(fp);
+	return true;
+}

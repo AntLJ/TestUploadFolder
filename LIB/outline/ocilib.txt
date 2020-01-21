@@ -1,0 +1,43 @@
+=================== 概要 ==============================================
+Oracle Call Interface（OCI）を簡単に使えるようにしたラッパーライブラリです。
+
+=================== 詳細 ==============================================
+
+===================== サンプル=========================================
+
+#include "ocilib.h"
+
+// 接続
+ocilibConnection ociCon;
+
+ociCon.Connect( _T("サーバ"), _T("ユーザ"), _T("パスワード") );
+
+// SQL準備
+ocilibStatement* ociStat = ociCon.Prepare( _T("SQL") );
+
+// SQL発行
+ocilibRecordset* ociRs = ociStat->Select();
+
+// データ取得
+while ( !ociRs->IsEOF() )
+{
+	map<long, LPTSTR> vecColumn;	// フィールドインデックス&データ
+
+	ociRs->GetColumns( &vecColumn );
+
+	for ( map<long, LPTSTR>::const_iterator it = vecColumn.begin(); it != vecColumn.end(); ++it )
+	{
+		it->first	// フィールドインデックス
+		it->second	// データ
+
+		delete [] it->second;
+	}
+
+	if ( !ociRs->Next() )
+		break;
+}
+ociRs->Release();
+
+// 切断
+ociStat->Release();
+ociCon.Disconnect();

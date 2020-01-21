@@ -1,0 +1,79 @@
+=================== 概要 ==============================================
+Boost.Spiritで使用する「JIS X 0208」「JIS X 0410」用プリミティブ定義ライブラリ
+
+・「JIS X 0208」 ... ７ビット及び８ビットの２バイト情報交換用符号化漢字集合
+http://www.jisc.go.jp/app/pager?id=14468
+
+・「JIS X 0402」 ... 地域メッシュコード
+http://www.jisc.go.jp/app/pager?id=14199
+
+
+=================== 詳細 ==============================================
+以下の文字列等をBoost.Spiritで構文解析するためのプリミティブが定義されている。
+
+・「JIS X 0208」で規程された文字(JIS漢字・平仮名・カタカナ等々)
+
+・地域メッシュコード
+
+解析自体は、Boost.Spiritを使用する。
+
+===================== サンプル=========================================
+
+※テストコードがそのままサンプルとなるので、以下を参照してください。
+
+http://orias.mr.ipc.pioneer.co.jp/viewvc/svn-src/trunk/LIB/jis/build/test/
+
+ここでは、一部抜粋して掲載しておきます。
+
+#include <string>
+#include <boost/assign/std/vector.hpp>
+#include <jis/x0208/spirit.h>
+
+using namespace boost::spirit;
+using namespace jis::x0208::spirit;
+
+/**
+ * @brief 1バイト文字1文字の検査。
+ */
+void test1B()
+{
+	std::string strAcutal;
+	parse("1", sjis_p[assign(strAcutal)]);
+	CPPUNIT_ASSERT_EQUAL(std::string("1"), strAcutal);
+}
+
+/**
+ * @brief 2バイト文字1文字の検査。
+ */
+void test2B()
+{
+	std::string strAcutal;
+	parse("あ", sjis_p[assign(strAcutal)]);
+	CPPUNIT_ASSERT_EQUAL(std::string("あ"), strAcutal);
+}
+
+/**
+ * @brief 混合検査。
+ */
+void testComposite()
+{
+	std::string strAcutal;
+	parse("2バイト文字を含め13文字", (repeat_p(13)[sjis_p])[assign(strAcutal)]);
+	CPPUNIT_ASSERT_EQUAL(std::string("2バイト文字を含め13文字"), strAcutal);
+}
+
+/**
+ * @brief 2バイト目がエスケープ文字となる2バイト文字を含む文字列の検査。
+ */
+void testEscape()
+{
+	// anychar_p を使うと「能」の2バイト目で解析が止まる。
+	parse_info<> aInfo = parse("機能概要", *(anychar_p - '\\'));
+	CPPUNIT_ASSERT(! aInfo.full);
+	CPPUNIT_ASSERT_EQUAL(std::string("\\概要"), std::string(aInfo.stop));
+
+	// sjis_p なら問題なく解析可能。
+	std::string strAcutal;
+	CPPUNIT_ASSERT(parse("機能概要", (*(sjis_p - '\\'))[assign(strAcutal)]).full);
+	CPPUNIT_ASSERT_EQUAL(std::string("機能概要"), strAcutal);
+}

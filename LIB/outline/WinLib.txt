@@ -1,0 +1,71 @@
+=================== 概要 ==============================================
+概要作成：古川
+
+VC++で使用する便利な関数・マクロ・クラスが雑多に入っている。
+libファイルなどはないため、正確にはライブラリではない。
+そのため、.cppがある場合はそのファイルを自分のプロジェクトに取り込んで
+コンパイルする必要があることに注意。
+
+=================== 詳細 ==============================================
+あまりにも数が多く、また自分で把握していないものもあるので主だったもの
+を上げておく。
+
+●データベース関連
+CADOBase
+  ADOを使用してデータベースへ接続・検索し、結果をイテレータで取得するこ
+  とができるクラス
+  SiNDY-iプロジェクトで多用
+           
+SDEBase
+  SDE C APIを使用してデータベースへ接続・検索し、結果をイテレータで取得
+  することができるクラス
+  使用方法はCADOBaseとほぼ一緒。
+  SiNDY-iプロジェクトで多用
+
+●COMイベント接続関連
+AdviseAdapter.h
+AdviseAdapterImpl.h
+  前者はCOMイベントへの接続管理を簡単にする。
+  後者は継承用のテンプレートクラス。
+  ArcMapUIBaseでのArcObjectsのイベント接続部分のベースになっている
+
+●メモリダンプ
+crashdump.[cpp|h]
+  アプリケーションクラッシュ時にメモリダンプを固定場所に吐き出す。
+  SiNDY-eアプリケーションではこれを利用して落ちる原因を特定するのに使用。
+
+●変換系
+time_convert.[h|cpp]
+  各種時間の変換関数（FILETIME、SYSTEMTIME、time_t、DATE）
+type_convert.h
+  BOOL、bool、VARIANT_BOOLの相互変換マクロ
+PixTwip.h
+  pixel値とtwip値の変換関数
+
+●その他
+charutil.h
+  SJISコードでの文字列の識別マクロがぎっしり
+chkMemoryLeak.h
+  メモリリーク検出時にソース行をデバッグトレースに出力するためのおまじない。
+  ちなみにVC9では特に難しいことをしなくてもちゃんとでるっぽい
+  （trunk/SiNDY-k/sindyklib/build/memdbg.h参照）
+ComWrapper.h
+  CComPtrから&演算子を潰したようなもの（SiNDYLibで多用）
+CStringTokenizer.h
+  CStringにセパレータで分割する機能を持たせたクラス
+  VC9ではCString::Tokenizeができたのでそちらを使うこと
+MouseCursor.h
+WaitCursor.h
+  マウスカーソル定義クラス
+  オブジェクトが破棄されるとカーソルが戻る
+  WaitCursorは砂時計限定。
+WKSHelper.[cpp|h]
+  ArcObjectsのWKS...を扱うためのユーティリティ
+  現在は工藤さんがメインメンテナ？
+winutil.h
+  GetWindowText、GetTime、GetMachineName、GetOperatingSystemなど
+  よく使うけど置き場所に困る関数の詰め合わせ
+macro_util.h
+  よく使うマクロの詰め合わせ
+==================== サンプル=========================================
+リクエストがあれば書きます :-)

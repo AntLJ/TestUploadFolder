@@ -1,0 +1,55 @@
+=================== 概要 ==============================================
+概要作成：工藤
+
+IFeatureの情報を取り出すクラス。
+
+Feature_All_Attrs	: 1フィーチャの全属性
+Feature_Attr		: 1フィーチャの1属性
+
+を扱う。
+
+=================== 詳細 ==============================================
+Feature_All_Attrsから、Feature_Attrに属性を取得する構造になっている。
+
+Feature_All_Attrs　クラスのメンバは、
+
+・Init ()		// 初期化
+・Get_Num ()	// 属性の個数を返す
+・Get_Attr ();	// 指定番号の属性を返す
+・Get_Attr ();	// 指定フィールド名の属性を返す
+・Get_Obj_ID ();// オブジェクトIDを返す
+・Ret_Geo ();	// ジオメトリを返却
+
+===================== サンプル=========================================
+
+void	Test (	IFeatureCursorPtr&	c_ipFCursor )	///< フィーチャカーソル[IN]
+{
+	int	a_iCount	= 0;
+	if( c_ipFCursor != NULL ) {
+
+		IFeaturePtr	a_ipCurFeature;
+		while( c_ipFCursor->NextFeature ( &a_ipCurFeature ) == S_OK )
+		{
+			Feature_All_Attrs	a_fCurAttrs;
+			if( a_fCurAttrs.Init	( a_ipCurFeature ) ) {				// 初期化
+				printf	( "属性数:%d\n", a_fCurAttrs.Get_Num() );		// 属性の個数を返す
+			
+				Feature_Attr	a_fTmpAttr1;
+				a_fTmpAttr1		= a_fCurAttrs.Get_Attr( 1 );			// 指定番号の属性を返す
+				printf	( "属性1:%d\n", a_fTmpAttr1.e_ccvAttr.intVal );
+				
+				Feature_Attr	a_fTmpAttr2;
+				std::string		a_sFieldStr	= "ATTRCODE";				// フィールド名
+				a_fTmpAttr2		= a_fCurAttrs.Get_Attr( a_sFieldStr );	// 指定フィールドの属性を返す
+				printf	( "属性2:%d\n", a_fTmpAttr1.e_ccvAttr.intVal );
+
+				printf	( "ID：%d\n", a_fCurAttrs.Get_Obj_ID() );		// オブジェクトIDを返す
+
+				IGeometryPtr	a_ipCurGeo;
+				a_ipCurGeo	= a_fCurAttrs.Ret_Geo();					// ジオメトリを返す
+			}
+			a_iCount++;
+		}
+	}
+}
+

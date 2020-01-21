@@ -1,0 +1,59 @@
+=================== 概要 ==============================================
+Oracle Objects for OLE（OO4O）は、Microsoft COMオートメーションおよび
+ActiveXテクノロジをサポートするプログラミングまたはスクリプト言語を使用して、
+Oracleデータベースのデータを簡単にアクセスできるように設計された製品です。
+
+これらを使用するためには、Oracle Client の当該製品をインストールする必要がある。
+ヘッダー・ライブラリは、下記ディレクトリにある。
+<Oracle Clientインストールディレクトリ>\ora92\E:\oracle\ora92\oo4o\CPP\INCLUDE
+<Oracle Clientインストールディレクトリ>\ora92\E:\oracle\ora92\oo4o\CPP\LIB
+
+subversionに登録しているのは、ビルド環境を統一したい為。
+各マシンごとにインストール先が異なることもあるので。
+
+=================== 詳細 ==============================================
+
+OTNより
+
+http://www.oracle.com/technology/global/jp/tech/windows/ole/index.html
+
+http://www.oracle.com/technology/tech/windows/ole/index.html
+
+
+===================== サンプル=========================================
+インストール済みであれば、以下のヘルプを参照下さい。
+
+[スタート]-[すべてのプログラム]-[Oralce-OraHome92]-[Application Development]-[Oracle Objects for OLE Class Library Help]
+
+// ここでは、areacode_master の都道府県コード, 名称を出力する
+
+#include <oo4o/include/ORACL.H>
+
+// ライブラリの初期化
+OStartup();
+
+// DBへ接続 (接続識別子が release/release@delltcpなら)
+ODatabase  odb( "delltcp", "release", "release" );
+
+
+// レコードを作成、管理およびアクセスクラス初期化。これは、スクロール可能なカーソルに相当。
+ODynaset odyn( odb, "select distinct ken_code, ken_kanji from areacode_master" );
+
+OValue oVal[2]:	// 検索結果格納用
+
+// 件数取得( 検索結果によるループ )
+while ( !odyn.IsEOF() )
+{
+    // カレントレコード (取得方法はいろいろオーバーロードされてる)
+    odyn.GetFieldValue( 0, &oVal[0] );	// ken_code
+    odyn.GetFieldValue( 1, &oVal[1] );	// ken_kanji
+
+	// 出力
+	cout << "都道府県コード : " << (const char*)oVal[0] << ", 都道府県名称 : " << (const char*)oVal[1] << endl;
+
+    // 次のレコードへ
+    odyn.MoveNext();
+}
+
+// ライブラリのクリーンアップ
+OShutdown();

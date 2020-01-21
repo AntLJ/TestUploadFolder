@@ -1,0 +1,67 @@
+=================== 概要 ==============================================
+概要作成：工藤
+
+エラー等の情報出力用クラス(基本的にSiNDY用として作成）
+（バッファしないでメッセージを出力する。）
+
+smp_prn_info　		: SiNDYエラーログ以外のログ用
+smp_sindy_err_info	: SiNDYエラーログ用(smp_prn_infoの派生クラス)
+
+=================== 詳細 ==============================================
+
+smp_prn_info　クラスのメンバは下記のとおり。
+
+・Init ()			// 初期化（ファイル名で）
+・Init ()			// 初期化（ファイルポインタで）
+・Prn_Info()		// 情報の出力
+・Prn_Info_Std()	// 情報の出力をstderr、stdout等任意に指定した先にのみ行う。
+・Get_OutFp()		// ログ出力ファイルポインタの取得
+
+
+smp_prn_info　クラスのメンバは下記のとおり。
+
+・Clear_Info()		// 既存設定情報のクリア
+・Set_Taiou()		// 対応状況フラグの設定
+・Set_Mesh()		// メッシュコードの設定
+・Set_Layer_Name()	// レイヤ名称の設定
+・Set_OID()			// オブジェクトIDの設定
+・Set_Object()		// エラーオブジェクトのジオメトリを設定（位置出力用）
+・Set_XY()			// XYの設定（位置出力用）
+・Set_Err_Level()	// エラーレベルの設定
+・Set_Err_Code()	// エラーコードの設定
+・Set_Err_Msg()		// エラー情報文字列の出力
+・Make_SiNDY_Err()	// SiNDY用エラーの出力メッセージを作成
+・Prn_SiNDY_Err()	// SiNDY用エラーの追加出力メッセージ
+・Prn_Light_Msg()	// 必要最低限な情報（メッシュコード、現レイヤ、エラーメッセージ）を出力する
+・Set_Print()		// Set_MeshからSet_Err_Msgまでの設定をまとめてやる
+// 設定されている情報を取得
+・Get_Taiou()		// 対応状況取得
+・Get_Mesh()		// メッシュコード取得
+・Get_Layer_Name()	// レイヤ名称取得
+・Get_OID()			// オブジェクトID取得
+・Get_XY）			// XY座標取得
+・Get_Err_Level()	// エラーレベル取得
+・Get_Err_Code()	// エラーコード取得
+・Get_Err_Msg()		// エラーメッセージ取得
+
+===================== サンプル=========================================
+
+void	Test ( void )
+{
+	smp_sindy_err_info		a_sPrnInfo;				// エラー等出力用
+
+
+	if( !a_sPrnInfo.Init(e_fErr_Fp) ) {	// e_fErr_Fp は外部でオープン、クローズするものとしている
+		return;
+	}
+
+	e_sPrnInfo.Set_OID 			( 1000 );			// OBJECTID設定
+	e_sPrnInfo.Set_Layer_Name	( "City_Site" );	// レイヤ名設定
+	e_sPrnInfo.Set_Err_Level	( smp_sindy_err_info::EC_CRITICAL );	// エラーレベルの変更
+
+	char	a_cpMsg[1024];
+	sprintf	( a_cpMsg, "市区町村区分と種別が一致していません" );
+	e_sPrnInfo.Set_Err_Msg		( a_cpMsg );		// エラーメッセージ設定
+	e_sPrnInfo.Prn_SiNDY_Err	( 0, NULL, NULL );	// 出力
+}
+

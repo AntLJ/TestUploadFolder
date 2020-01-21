@@ -1,0 +1,41 @@
+=================== 概要 ==============================================
+
+SiNDY向けライブラリ
+
+現在は、下記2つの機能を有している。
+
+・sindy_schema
+
+SiNDYのテーブル名や属性フィールド名などをまとめた静的ライブラリ。
+SiNDYLib の SiNDYAttrCommunity.h に相当する。
+メンテナンスの容易性などを考え、 SiNDYLib から分離した。
+
+スキーマ定義は、以下の規則に従ってさえいれば自由に行って構わない。
+規則自体が気に入らない場合は……早いうちなら変えるチャンスはある。
+
+・sindy_workspace
+
+SDE,PGDB,Shape等へ接続を容易にするAPIを提供している。
+
+=================== 詳細 ==============================================
+
+下記sindy_wikiを見ていただければ、全て解決！！
+
+http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?SiNDY%E5%90%91%E3%81%91%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA
+
+・sindy_schema
+http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_schema
+
+・sindy_workspace
+http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_workspace
+
+===================== サンプル=========================================
+
+下記sindy_wikiを見ていただければ、全て解決！！
+
+・sindy_schema
+http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_schema
+
+・sindy_workspace
+http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_workspace
+

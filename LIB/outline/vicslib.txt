@@ -1,0 +1,39 @@
+=================== 概要 ==============================================
+VICSデータを読込むためのライブラリ。
+生データを直接読込むため全ての情報が取得できる。
+
+
+=================== 詳細 ==============================================
+\\seginus-l12600\Common\org\VICS\20081007
+
+上記に格納されている形式のVICSデータの読み込みが可能
+
+※SiNDY-DB上のVICS（onyxやjadeのデータ）は生データから整備に必要な属性のみを抽出したものなので注意すること。
+
+===================== サンプル=========================================
+1.データのy読み込み
+//VICSデータ統合読み込みクラス
+VICSLoad	aVics;
+//データの読み込み(ディレクトリと2次メッシュを指定)
+//aStrVersionはVicsのバージョン(VICSデータの拡張子)　例) V412815.V14 →　V14
+aVics.load(aStrPath, aStrVersion, aMeshCode);
+
+2.リンク情報の取得
+//全VICSデータの取得
+VICSAllData	aData = aVics.getVICSdata();
+//リンク情報の取得
+for(int i=0; i<aData.eBaselink_header.eLink_num; ++i){
+	//「ＶＩＣＳリンク」ＤＲＭＡ基本道路対応データレコードの取得
+	BaseLinkData aBaseLink = aData.eBaselink[i];
+	//リンク区分
+	int aLinkClass = aBaseLink.eLink_kind;
+	//VICSリンク番号
+	int aLinkID = aBaseLink.eLink_id;
+	//表示
+	std::cout << "Vics区分=" << aLinkClass <<"\tVicsリンク番号=" << aLinkID << std::endl;
+}
+
+
+
+
+

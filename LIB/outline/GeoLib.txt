@@ -1,0 +1,48 @@
+=================== 概要 ==============================================
+平面ハッシュライブラリ
+
+=================== 詳細 ==============================================
+2次元のキーを持つハッシュデータを扱える。
+
+使用方法
+　緯度経度をキーとしてフィーチャをデータとして扱うとか
+
+===================== サンプル=========================================
+#include "../../LIB/GeoLib/SquareHash.h"
+
+typedef SquareHashT<long> PrimHash;
+
+SquareHashI::HashPoint hash(double dX, double dY)
+{
+	return PrimHash::HashPoint(static_cast<long>(dX*100), static_cast<int>(dY*100));
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	IFeaturePtr ipPoint;
+	while( ipFeatureCursor->NextFeature( &ipPoint ) )
+	{
+		// オブジェクトIDをキーとする
+		// 緯度経度をハッシュ値とする
+		long lOID = 0;
+		ipPoint->get_OID( &lOID );
+		double dX = 0.0, dY = 0.0;
+		ipPoint->QueryCoords( &dX, &dY )
+		// 指定したオブジェクトのコピーを、指定した１点に属する要素として登録する
+		pPrimHash.insert( lOID, dX, dY );
+	}
+
+	// クリックした位置
+	// double dClickX, dClickY;
+	// 指定した座標を含むハッシュ平面に登録された要素一覧を取得する
+	const std::set<long> setItems = pPrimHash.searchMemberSet( dClickX, dClickY );
+
+
+	// 矩形選択したEnvelope
+	// IEnvelopePtr ipClickEnv;
+	// double dMinX, dMinY, dMaxX, dMaxY;
+	// ipClicEnv->QueryCoords( &dMinX, &dMinY, &dMaxX, &dMaxY );
+	// 指定した矩形と重なるハッシュ平面に登録された要素一覧を取得する
+	std::set<long> setItems2;
+	pPrimHash.getMemberSet( dMinX, dMinY, dMaxX, dMaxY, setItems2 );
+}

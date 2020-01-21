@@ -1,0 +1,72 @@
+/*
+	Vertical Accordions
+*/
+.accordion_toggle {
+	display: block;
+	height: 30px;
+	width: 700px;
+	background: #AADD66;
+	padding: 0 10px 0 20px;
+	line-height: 30px;
+	text-decoration: none;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	border-bottom: 1px solid #CCEE66;
+	cursor: pointer;
+	margin: 0 0 0 0;
+}
+
+.accordion_toggle_active {
+	background: #EE5533;
+	color: #FFFFFF;
+	border-bottom: 1px solid #FF9966;
+}
+
+.accordion_content {
+	background-color: #FFFFFF;
+	color: #444444;
+	overflow: hidden;
+	border: 1px solid #EE5533;
+	width: 728px;
+}
+
+.vertical_accordion_toggle {
+	display: block;
+	height: 30px;
+	width: 600px;
+	background: #CCEEFF;
+	padding: 0 10px 0 20px;
+	line-height: 30px;
+	text-decoration: none;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	border-bottom: 1px solid #CCEE99;
+	cursor: pointer;
+	margin: 0 0 0 0;
+}
+
+.vertical_accordion_toggle_active {
+	background: #FF6633;
+	color: #ffffff;
+	border-bottom: 1px solid #FF6666;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.vertical_accordion_content {
+	background-color: #FFFFFF;
+	color: #444444;
+	overflow: hidden;
+	border: 1px solid #FF6633;
+	padding: 5px 10px 15px 10px;
+}
+
+/* Container styling*/
+#vertical_nested_container {
+	margin: 10px auto 10px 10px;
+	width: 630px;
+}

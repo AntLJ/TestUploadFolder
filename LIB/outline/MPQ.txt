@@ -1,0 +1,52 @@
+=================== 概要 ==============================================
+MPQファイルライブラリ
+
+=================== 詳細 ==============================================
+MPQファイルのファイル管理レイヤ、形状レイヤ、MapCube属性レイヤの
+読み込み・書き込みを行うライブラリ。
+
+===================== サンプル=========================================
+
+#include "MPQVer3.h"
+#include "MPQViwe.h"
+
+//MPQファイルを扱うクラス作成
+MPQVer3 aMPQIO;			//Ver3以外のMPQファイルは扱えない
+MPQViwe aMPQ(&aMPQIO);
+
+//MPQファイルの読み込み(MPQファイルが格納されているディレクトリ(aMPQDir←char*)とメッシュ(aMeshCode←int)を指定)
+if( aMPQ.read( aMPQDir, aMeshCode ) )
+{
+	//ファイル管理レイヤの取得
+	//バージョンの取得(この場合は必ず3)
+	int aMPQ_Ver = aMPQ.getVer();	
+	//ファイル作成日の取得
+	int aDate = aMPQ.Create();
+ 		      :
+                      :
+    
+	//先頭のポリライン取り出す
+	MPQ::Iter Litr = aMPQ.begin();
+	//各ポリラインの情報取得
+	for( Litr; Litr != aMPQ.end(); ++Litr){
+		//構成点数の取得
+		int aPoinNum = (*Litr)->eShape.size();
+		//表示種別の取得
+		int aClass = (*Litr)->eClass;
+                      :
+                      :
+
+		//始点を取り出す
+		std::vector<MPQ::Point>::iterator Pitr = (*Litr)->eShape.begin();
+		//座標の取得
+		int X = Pitr->eX;
+		int Y = Pitr->eY;
+		//属性情報の取得
+		MPQVer3::Info aInfo;
+		aInfo = aMPQIO.GetInfo(*(Pitr->eAttr));
+		//マッチング用高さフラグ取得
+		unsingned aHeight_MFlag = aInfo.eHeight_MFlag;
+		      :
+ 		      :
+	}
+}

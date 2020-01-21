@@ -1,0 +1,92 @@
+=================== 概要 ==============================================
+ArcObjectsを使用した各種ライブラリ。
+シンボル系、描画系、ジオメトリ系、ラッパー、ネットワーク系など多種多様
+のライブラリが雑多に存在する。
+また、もともとSiNDYLibに存在した外部関数とArcHelperExに存在した外部関数
+がかぶっていたため、外部関数をArcHelperExに移動してある。
+主にSiNDY-e系のツールで使用されているが、一部古いコードやe系ツールに特
+化した使用の関数等が存在しており、使用方法には注意する必要がある。
+
+
+=================== 詳細 ==============================================
+ものすごく沢山のコードが存在するため、ここでは使用する際のポイントのみ
+記載する。
+
+○使用推奨のもの
+Ahe...Functions.h
+AheGeometryConvert.h（一部古いものあり）
+AheGeometryOp.h（一部古いものあり）
+GlobalFunctions.h
+AcriveView.h
+Application.h
+sde_ondemand.h
+AheNetwork.h
+RuleModel.h
+
+○使用非推奨のもの
+AheDraw.h
+AheGlobals.h
+AheGlobalsX.h
+AheGlobalsX2.h
+ArcHelper.h
+ArcHelperEx.h
+define.h
+EditHelper.h
+...Helper.h
+Target....h
+
+なお、非推奨のものでも使用せざるを得ないものもあるので使用禁止というわけ
+ではないが、その場合は必ずコードを精査し、目的にあったものかどうかをよく
+吟味して欲しい。
+
+○よく使用する関数・クラス
+AheGetOID
+AheGetShape
+AheGetShapeCopy
+AheGetSpatialReference
+AheGetFeatureClass
+AheGetWorkspace
+AheGetOwnerDotClassName
+AheGetFeatureClassName
+AheGetFeatureClassOwnerName
+AheCreateColor
+AheCreate...Symbol（AheSymbolFunctions.hにあるもの）
+AheDraw*（DrawFunctions.hにあるもの）
+AheIs(Touch|Overlap*|Cross|Within*|Contain*|AheIsDisjoint|Equal|ExactEqual)
+AheFindLayers
+AheInit*Filter
+AheCreateClone
+AheSepStr2listString
+
+CApplication
+CActiveView
+CMap
+
+○使いたいコードが一つだけあるが、ヘッダをインクルードしたくない場合
+関数をコピペするのではなく、使用する*.cppで使用したい関数の宣言を書いて
+ください。
+
+○使いたいコードがあるが、微妙に違う場合
+似たような関数を書くのではなく、担当者と相談してコードを取り入れてもらう
+か、関数を拡張してもらうかして下さい。似たような関数があちこちに散乱する
+のは避けるべきです。
+
+○使いたいコードがあるが、バグがある
+担当者に連絡して直してもらってください。
+
+===================== サンプル=========================================
+
+1. ジオメトリを描画する
+AheDrawPolygon( ipDisp, AheCreatePolygonSymbol( AheCreateColor(RGB(255,0,0)) ) );
+
+2. 編集可能で且つ表示されているフィーチャレイヤ一覧を取得する
+CMap cMap( ipMap );
+for( CMap::iterator it = cMap.begin( LayerTypeFeatureLayer, true, true ); it != cMap.end(); ++it )
+{
+  ILayerPtr ipLayer( *it );
+  ...
+}
+
+3. ピクセル -> ユニット変換する
+CApplication cApp( ipApp );
+double d = cApp.ToMapUnits( cApp.GetFocusMapScreenDisplay(), nPixels ) );

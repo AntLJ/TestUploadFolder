@@ -1,0 +1,54 @@
+=================== 概要 ==============================================
+shapelibラップクラス
+
+shapelib wrapper class
+@author Takashi Togawa
+@date   2002/01/18
+
+=================== 詳細 ==============================================
+・shapeファイルについて
+http://www.esrij.com/support/arcview3/material/shape/shapefile.pdf
+
+・shapelibについて
+http://shapelib.maptools.org/
+シェープファイルの読み込み、書き込みなどを行うライブラリ
+
+・SHPWrapについて
+http://bruenhild.ipc.pioneer.co.jp/SiNDY/ShapeLibtuto/tutorial.html
+
+===================== サンプル=========================================
+・使い方については以下を参照
+http://bruenhild.ipc.pioneer.co.jp/SiNDY/ShapeLibtuto/tutorial.html
+
+以下、一例を記載。
+
+1.ファイルの作成(test.shp, test.shx, test.dbf)
+
+CString aShpFile;
+	aShpFile=".\\test";
+
+//シェープファイルの作成(*.shp, *.shx)
+CSHPHdl aShpHdl;
+if(! aShpHdl.create(aShpFile.GetBuffer(256),SHPT_POINT))
+	return false;
+aShpFile.ReleaseBuffer();
+
+//DBFファイルの作成(*.dbf)
+CDBFHdl aDbfHdl;
+if(! aDbfHdl.create(aShpFile.GetBuffer(256)))
+	return false;
+aShpFile.ReleaseBuffer();
+
+2.ノードオブジェクトの追加
+//形状の追加(X=1, Y=1のノード(ポイント)オブジェクトを追加する)
+//ポイントオブジェクトの作成
+CSHPPoint aShpPoint(1,1);
+CSHPObj cShpObj(SHPT_POINT, aShpPoint);
+//形状の書き込み(戻り値は追加したオブジェクトのインデックス)
+int aShpe = aShpHdl.writeObject(cShpObj, -1);
+
+//属性の書き込み
+//testというフィールドを作成し、先ほど作成したノードObjectにtest=10という属性を付与
+int aFieldIndex = aDbfHdl.addField("test", FTInteger, 10, 0);
+if(! aDbfHdl.addField("test", FTInteger, 10, 0))
+	return false;

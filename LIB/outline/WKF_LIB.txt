@@ -1,0 +1,58 @@
+=================== 概要 ==============================================
+漢字コード変換フィルタと C プログラム用漢字コード変換ライブラリ
+
+=================== 詳細 ==============================================
+
+下記URLを参照下さい。
+http://www.mysticwall.com/software/wkf/
+
+作者 : 阿部康一
+
+※ TDCで使用している(subversionに登録されている)Versionは、1.3.0
+	→ 最新Verに挙げても良い？ (最新は、1.3.11)
+
+===================== サンプル=========================================
+
+C++ で、EUC漢字をSJIS漢字に変換・SJIS/LFファイルをEUC/LFファイルに変換
+
+#include <iostream>
+#inclue <fstream>
+
+extern "C"
+{
+#include <wkf.h>
+}
+
+int main()
+{
+
+	// SJISファイル→EUCファイル
+	FILE* fin = fopen( "sjis.txt", "r" );
+	FILE* fout = fopen( "euc.txt, "w+b" );
+
+	if( CONV_ERR != wkfConvertKanjiCodeOfFile(KC_SJIS, fin, KC_EUC, fout) )
+	{
+		cout << "(ファイル)漢字コード変換成功" << endl;
+	}
+
+	fclose(fin);
+	fclose(fout);
+
+	// 漢字「鈴」をEUC(0xCE 0xEB) → SJIS(0x97 0xE9) に変換
+
+	// EUCコードの「鈴」
+	unsigned char szData[3] = "";
+	szData[0] = 0xCE;
+	szData[1] = 0xEB;
+	szData[2] = '\0';
+
+	char szOutData[3] = "";	// SJISコード格納用
+
+	if( CONV_ERR != wkfConvertKanjiCodeOfString(KC_EUC, (char*)szData, KC_SJIS, szOutData, 3) )
+	{
+		cout << "(ファイル)漢字コード変換成功 : " << szOutData << endl;
+	}
+
+	return 0;
+
+}

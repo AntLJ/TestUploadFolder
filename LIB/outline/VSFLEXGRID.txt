@@ -1,0 +1,98 @@
+=================== 概要 ==============================================
+GrapeCity社製のActiveX拡張グリッドコンポーネント。
+高機能なグリッドのUIを容易に実装できる。
+
+※ 開発ライセンスが必要なため、使用する場合は必ず担当者に確認すること。
+
+=================== 詳細 ==============================================
+http://www.grapecity.com/japan/support/database/p1_223.htm
+
+SiNDY-e系のツールで標準的に使われているグリッドコントロール。
+テキストや数値だけでなく、コンボリストやチェックボックスなどのコントロールもセル中に表示させることができる。
+
+具体的な使用法については、以下のツールで多用されているので参考にすると良い。
+
+・SiNDY-iTools		（SiNDY-i）
+・AttrDefaultDlg	（子ダイアログ）
+
+===================== サンプル=========================================
+◆ リソースの準備
+１．コントロールの配置
+    （VS2005）[リソースエディタ]-（挿入対象のダイアログ右クリック）-[ActiveXコントロールの挿入]-[ComponentOne FlexGrid 8.0 (UNICODE Light)]
+
+    （VS2008）[リソースエディタ]-（ツールボックスウィンドウ内右クリック）-[アイテムの選択]-[COMコンポーネント]-[ComponentOne FlexGrid 8.0 (UNICODE Light)]
+              でツールボックスにコントロールが追加されるので、対象ダイアログにドラッグ。
+
+    （参考）http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?VS2008%A4%C7FlexGrid%BB%C8%A4%AA%A4%A6%A4%C8%BB%D7%A4%C3%A4%BF%A4%E9%A1%D6ActiveX%A4%CE%C1%DE%C6%FE%A1%D7%A4%AC%CC%B5%A4%AB%A4%C3%A4%BF%A4%C7%A4%B4%A4%B6%A4%EB%A4%CE%B4%AC%A1%A2%A1%A2%A1%A2orz
+
+２．初期パラメータ設定
+    [（１．で挿入したコントロール右クリック）]-[プロパティ]
+    初期の行数、固定行数などを設定可。
+
+    ※ ソースコード中で設定することも可能なので必ずしも必須ではない
+
+
+◆ ソース中での呼び方
+#import "VSFLEXGRID/VSFLEX8N.OCX" no_namespace, named_guids
+
+// グリッド操作用スマートポインタ
+IVSFlexGridPtr		spGrid;
+
+// コントロールを紐付ける
+CAxWindow wndGrid = GetDlgItem( IDC_ATTRGRID );		// IDC_ATTRGRID は挿入したコントロール名
+wndGrid.QueryControl( &spGrid );
+
+// グリッド操作
+spGrid ->put_TextMatrix( 0, 0, CComBSTR(_T("hoge") );	// 0行0列目のセルにテキストデータを入力
+spGrid ->put_TextMatrix( 0, 1, CComBSTR(_T("fuga") );	// 0行1列目のセルにテキストデータを入力
+     ：
+     ：
+
+
+◆ グリッドからのイベントを処理する場合
+// セルがクリックされた、値が変更されたなどのタイミングで処理をしたい場合はイベントを処理しなければならない
+
+#import "VSFLEXGRID/VSFLEX8N.OCX" no_namespace, named_guids
+
+[ CHogeDlg.h ]
+class CHogeDlg : 
+	public IDispEventImpl< IDC_ATTRGRID, CHogeDlgObj >			// 対象のダイアログのクラスでIDispEventImplを継承する
+{
+
+	--(略)--
+
+	BEGIN_SINK_MAP(CAttributeSelectDlgObj)					// シンクマップに必要なイベントを追加する
+		SINK_ENTRY(IDC_ATTRGRID, 21, BeforeEditAttrgrid)
+		SINK_ENTRY(IDC_ATTRGRID, 24, AfterEditAttrgrid)
+	END_SINK_MAP()
+
+	void __stdcall BeforeEditAttrgrid(long Row, long Col, BOOL* Cancel);	// シンクハンドラを定義
+	void __stdcall AfterEditAttrgrid(long Row, long Col);
+
+	--(略)--
+
+	IVSFlexGridPtr		m_spGrid;					// グリッド操作用スマートポインタを定義
+}
+
+[ CHogeDlg.cpp ]
+LRESULT CHogeDlg::OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
+{
+	CAxWindow wndGrid = GetDlgItem( IDC_ATTRGRID );				// IDC_ATTRGRID は挿入したコントロール名
+	wndGrid.QueryControl( &m_spGrid );
+
+	AtlAdviseSinkMap( this, true );						// イベントを処理するため必ず呼ぶ
+}
+
+LRESULT CHogeDlg::OnDestroy(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
+{
+	AtlAdviseSinkMap( this, false );					// AtlAdviseSinkMap( this, true )と対になるように呼ぶ
+}
+
+// セルが編集される直前に呼ばれる
+void __stdcall CHogeDlg::BeforeEditAttrgrid(long Row, long Col, BOOL* Cancel)
+{
+	CComBSTR bstrValue;
+	m_spGrid->get_TextMatrix( Row, Col, &bstrValue );			// 編集前のセルの値を取得する
+              ：
+              ：
+}

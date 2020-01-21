@@ -1,0 +1,33 @@
+=================== 概要 ==============================================
+KKDデータを読込むためのライブラリ。
+生データを直接読込むため全ての情報が取得できる。
+
+
+=================== 詳細 ==============================================
+\\seginus-l12600\Common\org\KKD\KKD_ver1.2.pdf
+
+上記解説書のp2[5 データベースの構成]にあるデータを読込むことが可能。
+
+※SiNDY-DB上のKKD（onyxやjadeのデータ）は生データから整備に必要な属性のみを抽出したものなので注意すること。
+
+
+===================== サンプル=========================================
+
+1.データの読み込み
+//KKDデータ統合読み込みクラス
+KKDLoad2 aKKDLoad;
+//データの読み込み(ディレクトリと2次メッシュを指定)
+aKKDLoad.load(rKKDDir, aMeshCode)
+
+2.ノード情報の取得(正規化X,Yを取得する)
+//KKDノードの取得
+const KKDRegulationRoadNodeLayer& rKkdNodeLayer = aKKDLoad.regulationRoadNodeLayer();
+//ノードの正規化XY座標の取得
+for(int i=0; i<(int)rKkdNodeLayer.size(); ++i) 
+{
+	const KKDRegulationRoadNode& rNode = rKkdNodeLayer[i];
+	int x = rNode.ePoint.eX;
+	int y = rNode.ePoint.eY;
+	std::cout << "x=" << x << "\ty=" << y << std::endl;
+}
+

@@ -1,0 +1,30 @@
+=================== 概要 ==============================================
+ShapeのI/Oライブラリ
+shapelibのC++ラッパである。
+
+shpwrapと同じような感じ。
+
+
+=================== 詳細 ==============================================
+・shapeファイルについて
+http://www.esrij.com/support/arcview3/material/shape/shapefile.pdf
+
+・shapelibについて
+http://shapelib.maptools.org/
+シェープファイルの読み込み、書き込みなどを行うライブラリ
+
+
+===================== サンプル=========================================
+
+// Shapeファイルのオープン
+CSHPHandle handle;
+if (! handle.open("D:\\Temp\\shapefile.shp", "r"))
+	// オープン失敗
+// オープン成功
+
+// DBFファイルのオープン
+CDBFHandle handle;
+if (! handle.open("D:\\Temp\\shapefile.dbf", "r"))
+	// オープン失敗
+// オープン成功
+

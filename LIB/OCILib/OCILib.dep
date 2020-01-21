@@ -1,0 +1,144 @@
+# Microsoft Developer Studio Generated Dependency File, included by OCILib.mak
+
+.\ocilibColumn.cpp : \
+	".\ocilibColumn.h"\
+	".\ocilibConnection.h"\
+	".\ocilibDate.h"\
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	".\ocilibParameter.h"\
+	".\ocilibRecordset.h"\
+	".\ocilibStatement.h"\
+	
+
+.\ocilibConnection.cpp : \
+	".\ocilibColumn.h"\
+	".\ocilibConnection.h"\
+	".\ocilibDate.h"\
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	".\ocilibParameter.h"\
+	".\ocilibRecordset.h"\
+	".\ocilibStatement.h"\
+	
+
+.\ocilibError.cpp : \
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	
+
+.\ocilibGlobal.cpp : \
+	".\ocilibGlobal.h"\
+	
+
+.\ocilibParameter.cpp : \
+	".\ocilibColumn.h"\
+	".\ocilibConnection.h"\
+	".\ocilibDate.h"\
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	".\ocilibParameter.h"\
+	".\ocilibRecordset.h"\
+	".\ocilibStatement.h"\
+	
+
+.\ocilibRecordset.cpp : \
+	".\ocilibColumn.h"\
+	".\ocilibConnection.h"\
+	".\ocilibDate.h"\
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	".\ocilibParameter.h"\
+	".\ocilibRecordset.h"\
+	".\ocilibStatement.h"\
+	
+
+.\ocilibStatement.cpp : \
+	".\ocilibColumn.h"\
+	".\ocilibConnection.h"\
+	".\ocilibDate.h"\
+	".\ocilibError.h"\
+	".\ocilibGlobal.h"\
+	".\ocilibParameter.h"\
+	".\ocilibRecordset.h"\
+	".\ocilibStatement.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\stlport-4.6.1\stlport\config\_epilog.h"\
+	"..\stlport-4.6.1\stlport\config\_msvc_warnings_off.h"\
+	"..\stlport-4.6.1\stlport\config\_prolog.h"\
+	"..\stlport-4.6.1\stlport\config\stl_confix.h"\
+	"..\stlport-4.6.1\stlport\config\stl_msvc.h"\
+	"..\stlport-4.6.1\stlport\config\stlcomp.h"\
+	"..\stlport-4.6.1\stlport\config\vc_select_lib.h"\
+	"..\stlport-4.6.1\stlport\hash_map"\
+	"..\stlport-4.6.1\stlport\stl\_algobase.c"\
+	"..\stlport-4.6.1\stlport\stl\_algobase.h"\
+	"..\stlport-4.6.1\stlport\stl\_alloc.c"\
+	"..\stlport-4.6.1\stlport\stl\_alloc.h"\
+	"..\stlport-4.6.1\stlport\stl\_auto_ptr.h"\
+	"..\stlport-4.6.1\stlport\stl\_bvector.h"\
+	"..\stlport-4.6.1\stlport\stl\_config.h"\
+	"..\stlport-4.6.1\stlport\stl\_config_compat.h"\
+	"..\stlport-4.6.1\stlport\stl\_config_compat_post.h"\
+	"..\stlport-4.6.1\stlport\stl\_construct.h"\
+	"..\stlport-4.6.1\stlport\stl\_ctraits_fns.h"\
+	"..\stlport-4.6.1\stlport\stl\_ctype.h"\
+	"..\stlport-4.6.1\stlport\stl\_cwchar.h"\
+	"..\stlport-4.6.1\stlport\stl\_epilog.h"\
+	"..\stlport-4.6.1\stlport\stl\_function.h"\
+	"..\stlport-4.6.1\stlport\stl\_function_adaptors.h"\
+	"..\stlport-4.6.1\stlport\stl\_function_base.h"\
+	"..\stlport-4.6.1\stlport\stl\_hash_fun.h"\
+	"..\stlport-4.6.1\stlport\stl\_hash_map.h"\
+	"..\stlport-4.6.1\stlport\stl\_hashtable.c"\
+	"..\stlport-4.6.1\stlport\stl\_hashtable.h"\
+	"..\stlport-4.6.1\stlport\stl\_iterator.h"\
+	"..\stlport-4.6.1\stlport\stl\_iterator_base.h"\
+	"..\stlport-4.6.1\stlport\stl\_iterator_old.h"\
+	"..\stlport-4.6.1\stlport\stl\_locale.h"\
+	"..\stlport-4.6.1\stlport\stl\_new.h"\
+	"..\stlport-4.6.1\stlport\stl\_pair.h"\
+	"..\stlport-4.6.1\stlport\stl\_prolog.h"\
+	"..\stlport-4.6.1\stlport\stl\_range_errors.h"\
+	"..\stlport-4.6.1\stlport\stl\_raw_storage_iter.h"\
+	"..\stlport-4.6.1\stlport\stl\_relops_cont.h"\
+	"..\stlport-4.6.1\stlport\stl\_relops_hash_cont.h"\
+	"..\stlport-4.6.1\stlport\stl\_site_config.h"\
+	"..\stlport-4.6.1\stlport\stl\_string.c"\
+	"..\stlport-4.6.1\stlport\stl\_string.h"\
+	"..\stlport-4.6.1\stlport\stl\_string_fwd.c"\
+	"..\stlport-4.6.1\stlport\stl\_string_fwd.h"\
+	"..\stlport-4.6.1\stlport\stl\_string_hash.h"\
+	"..\stlport-4.6.1\stlport\stl\_string_io.c"\
+	"..\stlport-4.6.1\stlport\stl\_string_io.h"\
+	"..\stlport-4.6.1\stlport\stl\_tempbuf.c"\
+	"..\stlport-4.6.1\stlport\stl\_tempbuf.h"\
+	"..\stlport-4.6.1\stlport\stl\_threads.c"\
+	"..\stlport-4.6.1\stlport\stl\_threads.h"\
+	"..\stlport-4.6.1\stlport\stl\_uninitialized.h"\
+	"..\stlport-4.6.1\stlport\stl\_vector.c"\
+	"..\stlport-4.6.1\stlport\stl\_vector.h"\
+	"..\stlport-4.6.1\stlport\stl\c_locale.h"\
+	"..\stlport-4.6.1\stlport\stl\type_traits.h"\
+	"..\stlport-4.6.1\stlport\stl_user_config.h"\
+	"..\winlib\str.h"\
+	".\StdAfx.h"\
+	"c:\oracle\ora92\oci\include\nzerror.h"\
+	"c:\oracle\ora92\oci\include\nzt.h"\
+	"c:\oracle\ora92\oci\include\oci.h"\
+	"c:\oracle\ora92\oci\include\oci1.h"\
+	"c:\oracle\ora92\oci\include\oci8dp.h"\
+	"c:\oracle\ora92\oci\include\ociap.h"\
+	"c:\oracle\ora92\oci\include\ociapr.h"\
+	"c:\oracle\ora92\oci\include\ocidfn.h"\
+	"c:\oracle\ora92\oci\include\ociextp.h"\
+	"c:\oracle\ora92\oci\include\ocixad.h"\
+	"c:\oracle\ora92\oci\include\oratypes.h"\
+	"c:\oracle\ora92\oci\include\ori.h"\
+	"c:\oracle\ora92\oci\include\orl.h"\
+	"c:\oracle\ora92\oci\include\oro.h"\
+	"c:\oracle\ora92\oci\include\ort.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	

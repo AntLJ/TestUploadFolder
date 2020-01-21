@@ -1,0 +1,34 @@
+=================== 概要 ==============================================
+EXIFの情報の読み書き用のライブラリである。
+
+
+=================== 詳細 ==============================================
+・Exifとは
+	TIFF形式で画像についての情報や撮影日時などの不可情報を記録できる
+	ほか、縮小画像(サムネイル)を記録することができる。
+	画像形式はRGB無圧縮方式やJPEG方式など複数の形式をサポートしている。
+
+・ソースコード
+	http://libexif.sourceforge.net/
+
+・ライセンス
+	GNU LESSER GENERAL PUBLIC LICENSE Version 2.1 (LGPL)
+
+===================== サンプル=========================================
+
+#include <libexif/exif-ifd.h>
+#include <libexif/exif-data.h>
+void getJpegExif(char* filename)
+{
+  ExifData *data;
+  ExifEntry *entry;
+  data = exif_data_new_from_file(filename);
+  for (int i=0; i<EXIF_IFD_COUNT; i++)
+    {
+      printf("wahahahahahaha \n");
+      if ((entry=exif_content_get_entry(data->ifd[i], EXIF_TAG_EXPOSURE_TIME)))
+      printf("EXIF_TAG_EXPOSURE_TIME found L %i\n", *entry->data);
+    }
+  
+};
+

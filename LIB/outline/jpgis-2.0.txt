@@ -1,0 +1,46 @@
+=================== 概要 ==============================================
+作成者：阿部聡智
+国土地理院の基盤地図情報の読み込み用ライブラリである
+書き込みは行うことができないので注意
+
+
+=================== 詳細 ==============================================
+関連HP
+	http://www.gsi.go.jp/kiban/etsuran.html
+
+
+基盤地図情報のJPGIS 2.0形式に対応
+(GML形式は非対応)
+基盤地図情報に関しては、2009年5月時点にリリースされているものに関しては
+全てのデータに対応している。
+
+基盤地図情報を取り扱う以下のプログラムにて使用している。
+	jpgis_import_to_pg
+	jpgis_update
+
+基盤地図情報のデータがXMLでの記述であるため、本ライブラリは、xerces-3.0.0に
+依存している。
+
+
+===================== サンプル=========================================
+
+// フィーチャの取得
+
+XMLPlatformUtils::Initialize();
+XercesDOMParser *parser = new XercesDOMParser();
+parser->parse(filepath);	// filepathはXMLファイルのパス
+xercesc_3_0::DOMDocument *doc = parser->getDocument();
+DOMNode *node = (DOMNode *)doc->getDocumentElement();
+jpgis::Dataset dataset(jpgis::tag::DATASET);
+for (DOMNode *child = node->getFirstChild(); child != NULL; child = child->getNextSibling())
+{
+	if (jpgis::checkNodeName(child, dataset.getTagString()))
+	{
+		dataset.set(child);
+		const jpgis::Feature *feature = dataset.next();	// フィーチャの取得
+		:
+		:
+		:
+	}
+}
+XMLPlatformUtils::Terminate();

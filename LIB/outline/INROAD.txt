@@ -1,0 +1,87 @@
+=================== 概要 ==============================================
+IN道路データライブラリ
+
+=================== 詳細 ==============================================
+IN道路データを取得するライブラリ。
+　INデータのディレクトリとメッシュコードを指定してデータ群をGETする。
+　取得するレイヤデータはIN仕様書に記述されている通り。
+　　仕様書はNOTEへ登録してあります。（Noteパスは変わるのでここでは載せません）
+
+===================== サンプル=========================================
+
+#include "INROADINFO.h"
+
+// IN道路クラスのインスタンス作成
+INROADINFO cAdjCheck;
+
+// IN道路データ読込み（IN道路データが格納されているディレクトリとメッシュを指定）
+if( cAdjCheck.Load( strINDir, strMesh ) )
+{
+	// リンクレイヤ読取り（リンク数でループ）
+	for( int i = 0; i < cAdjCheck.eLink.getCount(); ++i )
+	{
+		// リンクレイヤのデータを取得
+		// これは「ZIN」で定義されているクラスなので詳細は「ZIN」参照
+		IN2Link *inLink = cAdjCheck.eLink[i];
+
+		// 一応、例として
+		int lFrom = inLink->eID1;		// 始点ノードID
+		int lTo = inLink->eID2;			// 終点ノードID
+		int lRoadNo = inLink->eRoadNo;	// 道路番号
+			:
+			:
+	}
+
+	// ノードレイヤ読取り
+	for( int i = 0; i < eNode.getCount(); ++i )
+	{
+		// ノードレイヤのデータを取得
+		// これは「ZIN」で定義されているクラスなので詳細は「ZIN」参照
+		IN2Node *inNode = eNode[i];
+
+		// 一応、例として
+		int lOID = inNode->eID;			// ノードID
+		int lClass = inNode->eClass;	// ノード種別
+		int lX = inNode->eX;			// ノードX座標
+		int lY = inNode->eY;			// ノードY座標
+			:
+			:
+	}
+
+	// 新交通規制レイヤ読取り
+	for( int i = 0; i < eReg.getCount(); ++i )
+	{
+		// ノードレイヤのデータを取得
+		// これは「ZIN」で定義されているクラスなので詳細は「ZIN」参照
+		IN2Reg *inReg = eNode[i];
+
+		// 一応、例として
+		unsigned eWeek = inReg->eCond.eWeek;	// 曜日指定
+		unsigned eLinks = inReg->eCond.eLink;	// リンク通行規制
+		unsigned eCond = inReg->eCond.eCond;	// 規制条件
+		unsigned eClass = inReg->eCond.eClass;	// 規制種別
+			:
+			:
+	}
+
+	// 方面案内情報
+	for( int i = 0; i < eNInfo.getCount(); ++i )
+	{
+		:
+		:
+	}
+
+	// レーン情報
+	for( int i = 0; i < eLane.getCount(); ++i )
+	{
+		:
+		:
+	}
+
+	// リンク拡張データ
+	for( int i = 0; i < eLext.getCount(); ++i )
+	{
+		:
+		:
+	}
+}

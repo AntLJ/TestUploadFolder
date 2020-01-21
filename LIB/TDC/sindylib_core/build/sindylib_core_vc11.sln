@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sindylib_core_vc11", "sindylib_core_vc11.vcxproj", "{E7351738-6401-40CA-B87F-74A670E7CB8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_English|Win32 = Debug_English|Win32
+		Debug|Win32 = Debug|Win32
+		Release_English|Win32 = Release_English|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Debug_English|Win32.ActiveCfg = Debug_English|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Debug_English|Win32.Build.0 = Debug_English|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Debug|Win32.Build.0 = Debug|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Release_English|Win32.ActiveCfg = Release_English|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Release_English|Win32.Build.0 = Release_English|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Release|Win32.ActiveCfg = Release|Win32
+		{E7351738-6401-40CA-B87F-74A670E7CB8C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

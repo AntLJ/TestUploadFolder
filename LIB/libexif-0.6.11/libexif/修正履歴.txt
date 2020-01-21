@@ -1,0 +1,17 @@
+1) ../config.h.inをconfig.hにリネーム
+
+2) コンパイル時に"GETTEXT_PACKAGE"が定義されていないというエラーが生じるため、
+   config.hに
+		#define	GETTEXT_PACKAGE		"GETTEXT_PACKAGE"
+   を追加。(同ヘッダで #undef GETTEXT_PACKAGE とされているが…)
+
+3) snprintfがWIN32では_snprintfで定義されているため、
+	#ifdef	WIN32
+	#define	snprintf	_snprintf
+	#endif
+   を追加。
+
+
+4) stdint.hの内容を_stdint.hにコピー。_stdint.hでインクルードされているstdint.hはコメントアウト。
+   long long がtypedefされている箇所は全てコメントアウト。
+

@@ -1,0 +1,11 @@
+/**
+@page history 更新履歴
+- <b>2007/10/01 FILEVERSION 2.0.2.3 PRODUCTVERSION 2.0.2.0</b>
+  - 駐禁取締データ(MDX)の駐禁取締路線データ読み込みに対応。
+- <b>2007/06/13 FILEVERSION 2.0.2.2 PRODUCTVERSION 2.0.2.0</b>
+  - 駐禁取締データ(MDX)の駐禁取締地域データ読み込みに対応。
+- <b>2006/06/13 FILEVERSION 2.0.0.1 PRODUCTVERSION 2.0.0.1</b>
+  - Arc9.0対応
+- <b>2004/05/18 FILEVERSION 1.0.0.0 PRODUCTVERSION 1.0.0.1</b>
+  - 初期バージョン
+*/

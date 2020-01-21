@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{063764d2-81d5-4e15-9d79-cf8a755e9e57}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76333966-39f7-4fed-af1f-0602dc159e48}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\x0208">
+      <UniqueIdentifier>{32e5c9bd-d1de-43fa-922d-2e86a093c3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\x0208\spirit">
+      <UniqueIdentifier>{2b700528-5cd3-4e05-81d8-a27db3bb1b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\x0410">
+      <UniqueIdentifier>{f429de1a-c358-45d8-9104-14cc71bee3e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{894fc7d0-65dc-483f-8a25-cd2aa0b3dde7}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X0208SpiritTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X0410SpiritTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x0208\spirit.h">
+      <Filter>Header Files\x0208</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x0208\spirit\shift_jis.h">
+      <Filter>Header Files\x0208\spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x0208\spirit\utf-16.h">
+      <Filter>Header Files\x0208\spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x0410\spirit.h">
+      <Filter>Header Files\x0410</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

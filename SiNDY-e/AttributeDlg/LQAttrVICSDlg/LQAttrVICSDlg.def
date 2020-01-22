@@ -1,0 +1,4 @@
+LIBRARY "INF_VICS.DLL"
+
+EXPORTS
+	CreateDlg

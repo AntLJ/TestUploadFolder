@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRVICSDLG DIALOG 0, 0, 274, 287
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "VICSメッシュコード",IDC_STATIC_VICSMESHCODE,5,11,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_VICSMESHCODE,79,9,91,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "VICSリンク区分",IDC_STATIC_VICSCLASS,5,34,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VICSCLASS,79,34,91,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "VICSリンク番号",IDC_STATIC_VICSID,5,57,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_VICSID,79,58,91,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE2,15,96,58,11,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE2,76,95,91,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_SOURCESEP,6,87,166,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRVICSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,20
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "VICS用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "INF_VICS PlugIn"
+            VALUE "FileVersion", "11.1.0.20"
+            VALUE "InternalName", "LQAttrVICSDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_VICS.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "安達史生（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrVICSDlg"
+    IDS_CAPTION             "VICSリンク列ダイアログ"
+    IDS_NAME                "SiNDYe_LQAttrRouteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "VICSリンク列ダイアログ"
+    IDS_MESSAGE             "VICSリンク列情報を表示・編集するダイアログ"
+    IDS_SAMEVICS            "%s OBJECTID:%ld メッシュコード、リンク番号、種別が同じVICS( OBJECTID:%ld )が存在します"
+    IDS_NOMESHCODE          "%s OBJECTID:%d メッシュコードが入っていません。"
+    IDS_NOTMESHCODE6        "%s OBJECTID:%d メッシュコードが6桁ではありません。"
+    IDS_NOVICSCLASS         "%s OBJECTID:%d VICSリンク区分が入っていません。"
+    IDS_NOLINKCODE          "%s OBJECTID:%d VICSリンクコードが入っていません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRVICSDLG DIALOGEX 0, 0, 274, 287
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "VICS mesh code",IDC_STATIC_VICSMESHCODE,5,11,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_VICSMESHCODE,79,9,91,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "VICS link class",IDC_STATIC_VICSCLASS,5,34,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VICSCLASS,79,34,91,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "VICS link number",IDC_STATIC_VICSID,5,57,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_VICSID,79,58,91,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Source",IDC_STATIC_SOURCE2,15,96,58,11,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE2,76,95,91,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_SOURCESEP,6,87,166,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRVICSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,20
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+            VALUE "Comments", "LQAttrVICSDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "INF_VICS PlugIn"
+            VALUE "FileVersion", "11.1.0.20"
+            VALUE "InternalName", "LQAttrVICSDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_VICS.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "FUMIO ADACHI (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrVICSDlg"
+    IDS_CAPTION             "LQAttrVICSDlg"
+    IDS_NAME                "SiNDYe_LQAttrRouteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "LQAttrVICSDlg"
+    IDS_MESSAGE             "Dialog for display/editing VICS link information"
+    IDS_SAMEVICS            "%s OBJECTID:%ld,  There is a VICS ( OBJECT"
+    IDS_NOMESHCODE          "%s OBJECTID:%d, Mesh code is not entered"
+    IDS_NOTMESHCODE6        "%s OBJECTID:%d, Mesh code is not 6 digits"
+    IDS_NOVICSCLASS         "%s OBJECTID:%d, VICS link classification is not entered"
+    IDS_NOLINKCODE          "%s OBJECTID:%d, VICS link code is not entered"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

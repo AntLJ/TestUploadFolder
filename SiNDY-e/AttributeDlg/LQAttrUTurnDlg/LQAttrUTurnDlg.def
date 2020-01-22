@@ -1,0 +1,4 @@
+LIBRARY "INF_UTURN.DLL"
+
+EXPORTS
+	CreateDlg

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SurveyCSV.cpp">
+      <Filter>ソースファイル\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamSchema.cpp">
+      <Filter>ソースファイル\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="LogUtil.cpp">
+      <Filter>ソースファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeUtil.cpp">
+      <Filter>ソースファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="SurveyCSVReader.cpp">
+      <Filter>ソースファイル\Accessor\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="ADAMSchemaWriter.cpp">
+      <Filter>ソースファイル\Accessor\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include="DataAccessor.cpp">
+      <Filter>ソースファイル\Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="SchemaWriter.cpp">
+      <Filter>ソースファイル\Accessor\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include="ADAMSurveyImporter.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Arguments.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ADAMSurveyImporter.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SurveyCSV.h">
+      <Filter>ヘッダファイル\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamSchema.h">
+      <Filter>ヘッダファイル\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="LogUtil.h">
+      <Filter>ヘッダファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeUtil.h">
+      <Filter>ヘッダファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="SchemaFiled.h">
+      <Filter>ヘッダファイル\Format\Field\Schema</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldType.h">
+      <Filter>ヘッダファイル\Format\Field\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="SurveyCSVReader.h">
+      <Filter>ヘッダファイル\Accessor\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="ADAMSchemaWriter.h">
+      <Filter>ヘッダファイル\Accessor\Writer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataAccessor.h">
+      <Filter>ヘッダファイル\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="SchemaWriter.h">
+      <Filter>ヘッダファイル\Accessor\Writer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{1f144a58-b7cf-45af-8b99-ed7a0c468716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル">
+      <UniqueIdentifier>{4e8663f0-b13b-41f3-912b-68dff37d494a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{e590eb2f-5f1c-4643-852e-fe4b46c7ff36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Format">
+      <UniqueIdentifier>{3fafe905-93c8-4f79-bf56-f6c2999e6409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Format\Field">
+      <UniqueIdentifier>{23edd4e9-7671-4bef-aa7a-05c84d49da2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Util">
+      <UniqueIdentifier>{7297b042-4c47-4c2f-aecc-199dd82ff1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Format\Field\Schema">
+      <UniqueIdentifier>{501be816-5f08-49d6-bb36-8f1149b29cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Format\Field\Text">
+      <UniqueIdentifier>{f0af95d0-4b42-4870-9599-71187257859e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Accessor">
+      <UniqueIdentifier>{825dcdb2-44ae-4a74-a84a-66014237f079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Accessor\Reader">
+      <UniqueIdentifier>{94e98693-ddf3-435d-b9da-5f665bfb375b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル\Accessor\Writer">
+      <UniqueIdentifier>{6a9ce8f8-5899-4628-9d81-613ed668c9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Format">
+      <UniqueIdentifier>{bfcae6ee-5faa-44ec-99a3-4e6f67c4af41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Accessor">
+      <UniqueIdentifier>{2553f735-6c06-4544-b6ba-c03d17088216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Accessor\Reader">
+      <UniqueIdentifier>{b6918e62-e7f1-4710-9fcb-16e6425d06b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Accessor\Writer">
+      <UniqueIdentifier>{30a674c4-08b6-4f10-a1bb-7f3d17ce2049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Util">
+      <UniqueIdentifier>{042ef891-88ac-4a88-bea7-b948060d11fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ADAMSurveyImporter.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdamMaxSpeedUpdater", "AdamMaxSpeedUpdater.vcxproj", "{ACC27277-9673-48A3-AFE7-0497727F8428}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9E59652-3DED-4FEA-97FD-57C196A454EB} = {C9E59652-3DED-4FEA-97FD-57C196A454EB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adamlib_vc11", "..\..\LIB\TDC\adamlib\build\adamlib_vc11.vcxproj", "{C9E59652-3DED-4FEA-97FD-57C196A454EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC27277-9673-48A3-AFE7-0497727F8428}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACC27277-9673-48A3-AFE7-0497727F8428}.Debug|Win32.Build.0 = Debug|Win32
+		{ACC27277-9673-48A3-AFE7-0497727F8428}.Release|Win32.ActiveCfg = Release|Win32
+		{ACC27277-9673-48A3-AFE7-0497727F8428}.Release|Win32.Build.0 = Release|Win32
+		{C9E59652-3DED-4FEA-97FD-57C196A454EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9E59652-3DED-4FEA-97FD-57C196A454EB}.Debug|Win32.Build.0 = Debug|Win32
+		{C9E59652-3DED-4FEA-97FD-57C196A454EB}.Release|Win32.ActiveCfg = Release|Win32
+		{C9E59652-3DED-4FEA-97FD-57C196A454EB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

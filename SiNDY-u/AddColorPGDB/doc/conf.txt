@@ -1,0 +1,3 @@
+DB_ADDRESS	C:\SVN\SiNDY-u\ExportPgdb\Release\test\
+#FC_CITY_ADMIN	City_Admin
+COLOR_TABLE	.\ColorTable.txt

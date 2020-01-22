@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADAMSurveyImporter", "ADAMSurveyImporter.vcxproj", "{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.Debug|Win32.Build.0 = Debug|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.MBCS Release|Win32.Build.0 = Release|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.Release|Win32.ActiveCfg = Release|Win32
+		{7FC37A8C-BA68-4F0A-975C-770A98F39E0C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

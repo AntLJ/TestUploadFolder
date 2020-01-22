@@ -1,0 +1,18 @@
+// AnalyzeSiNDYData.idl : AnalyzeSiNDYData の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (AnalyzeSiNDYData.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(93CDF401-9787-4F28-BF1A-3ED3EB93029B),
+	version(1.0),
+	helpstring("AnalyzeSiNDYData 1.0 タイプ ライブラリ")
+]
+library AnalyzeSiNDYDataLib
+{
+	importlib("stdole2.tlb");
+};

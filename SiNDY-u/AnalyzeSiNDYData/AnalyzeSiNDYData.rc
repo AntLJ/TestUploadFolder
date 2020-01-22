@@ -1,0 +1,258 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""AnalyzeSiNDYData.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,4
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "インクリメントＰ株式会社"
+            VALUE "FileDescription", "AnalyzeSiNDYData"
+            VALUE "FileVersion", "2.0.0.4"
+            VALUE "InternalName", "AnalyzeSiNDYData.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2012-2013 INCREMENT P., All rights reserved."
+            VALUE "OriginalFilename", "AnalyzeSiNDYData.exe"
+            VALUE "ProductName", "SJプロジェクト"
+            VALUE "ProductVersion", "2.0.0.0"
+			VALUE "主担当", "森好司（技術開発部 第二技術部 第四技術グループ）"
+			VALUE "副担当", "松本翔平（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ANALYZESINDYDATA    REGISTRY                "AnalyzeSiNDYData.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 647, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "AnalyzeSiNDYData"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "分析対象データ",IDC_STATIC_ANALYZE,6,7,265,99
+    LTEXT           "接続先",IDC_STATIC_ANALYZECONNECTION,14,23,46,8
+    EDITTEXT        IDC_EDIT_ANALYZECONNECTION,75,20,188,14,ES_AUTOHSCROLL
+    CONTROL         "サーバ情報 or 対象ファイル名指定",IDC_RADIO_SERVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,6,41,131,10
+    CONTROL         "フォルダ指定",IDC_RADIO_FOLDER,"Button",BS_AUTORADIOBUTTON,143,41,66,10
+    PUSHBUTTON      "接続",IDC_BUTTON_ANALYZECONNECT,211,38,50,14
+    LTEXT           "対象クラス",IDC_STATIC_FEATURECLASS,14,60,46,8
+    COMBOBOX        IDC_COMBO_FEATURECLASS,75,56,188,201,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "対象フィールド",IDC_STATIC_FIELD,14,75,46,8
+    COMBOBOX        IDC_COMBO_FIELD,75,73,188,204,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "クエリ",IDC_STATIC_QUERY,14,92,46,8
+    EDITTEXT        IDC_EDIT_QUERY,76,89,188,14,ES_AUTOHSCROLL
+    GROUPBOX        "分析エリア元データ",IDC_STATIC_AREA,275,8,265,97
+    LTEXT           "接続先",IDC_STATIC_AREACONNECTION,291,21,46,8
+    EDITTEXT        IDC_EDIT_AREACONNECTION,348,17,188,14,ES_AUTOHSCROLL
+    LTEXT           "サーバ情報　or　対象ファイル名",IDC_STATIC_DUMMY2,291,40,186,8
+    PUSHBUTTON      "接続",IDC_BUTTON_AREACONNECT,485,36,50,14
+    LTEXT           "分類クラス",IDC_STATIC_AREAFEATURECLASS,291,56,46,8
+    COMBOBOX        IDC_COMBO_AREAFEATURECLASS,348,56,188,208,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "リスト",IDC_STATIC_LIST,291,73,46,8
+    EDITTEXT        IDC_EDIT_LIST,348,72,189,14,ES_AUTOHSCROLL
+    CONTROL         "面積(m2)",IDC_RADIO_AREA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,6,110,47,10
+    CONTROL         "長さ(m)",IDC_RADIO_LENGTH,"Button",BS_AUTORADIOBUTTON,57,110,40,10
+    CONTROL         "個数",IDC_RADIO_NUM,"Button",BS_AUTORADIOBUTTON,105,111,32,10
+    CONTROL         "",IDC_GRID_ANALYZE,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,6,124,353,161
+    LTEXT           "",IDC_MSCHART,372,127,172,134,SS_NOTIFY
+    LTEXT           "",IDC_LEGEND,559,114,67,155
+    PUSHBUTTON      "エクスポート",IDC_BUTTON_EXPORT,6,288,50,14
+    DEFPUSHBUTTON   "分析",IDOK,451,288,50,14
+    PUSHBUTTON      "閉じる",IDCANCEL,583,288,50,14
+    LTEXT           "",IDC_STATIC_CHARTTITLE,367,110,224,8
+    LTEXT           "",IDC_STATIC_LOG,54,294,113,8
+END
+
+IDD_PROGRESSDLG DIALOGEX 0, 0, 395, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SiNDY Data分析中"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,37,33,323,14
+    CONTROL         "",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,37,78,323,14
+    LTEXT           "SiNDY Data 分析",IDC_STATIC_PROGRESS1,37,17,323,14
+    LTEXT           "SiNDY Data 分析",IDC_STATIC_PROGRESS2,37,57,323,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 633
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_PROGRESSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG DLGINIT
+BEGIN
+    IDC_GRID_ANALYZE, 0x376, 604, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x36c7, 0x0000, 0x1b14, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0x820f, 0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 
+0x6283, 0x4e83, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 
+0x0008, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 
+0x000d, 0x8000, 0x0003, 0x000e, 0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 
+0x0005, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 
+0x0010, 0x8000, 0x0003, 0x00c0, 0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0002, 0x0000, 0x0002, 0x0001, 0x0003, 0x0032, 0x0000, 0x0003, 
+0x000a, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0x0000, 0x0008, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0004, 0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0002, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AnalyzeSiNDYData"
+    IDS_OHTER               "Other"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AnalyzeSiNDYData.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

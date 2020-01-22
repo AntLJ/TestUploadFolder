@@ -1,0 +1,4 @@
+LIBRARY "WALK_LINK.DLL"
+
+EXPORTS
+	CreateDlg

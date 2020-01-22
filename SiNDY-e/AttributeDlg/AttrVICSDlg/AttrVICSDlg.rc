@@ -1,0 +1,229 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRVICSDLG DIALOG 0, 0, 232, 262
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "2次メッシュコード",IDC_STATIC_MESH,18,35,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MESH,92,35,122,13,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "VICS区分",IDC_STATIC_VICSCLASS,18,55,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_VICSCLASS,92,55,122,214,CBS_DROPDOWNLIST | WS_VSCROLL
+    LTEXT           "VICSID",IDC_STATIC_VICSID,18,75,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VICSID,92,75,122,13,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,18,119,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,92,119,122,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,12,107,170,1,SS_SUNKEN
+    PUSHBUTTON      "同一属性VICS表示",IDC_BUTTON_DRAW,18,92,72,12
+    LTEXT           "Static",IDC_STATIC_SAMEVICS,92,92,123,11,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRVICSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,15
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "VICS用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "VICS用属性編集ダイアログプラグイン"
+            VALUE "FileVersion", "11.1.0.15"
+            VALUE "InternalName", "VICS.dll"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "VICS.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "菅原拓矢（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrVICSDlg"
+    IDS_CAPTION             "VICSダイアログ"
+    IDS_NAME                "SiNDYe_AttrVICSDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "VICSダイアログ"
+    IDS_MESSAGE             "VICS情報を表示・編集するダイアログ"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,15
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "VICS PlugIn"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "VICS PlugIn"
+            VALUE "FileVersion", "11.1.0.15"
+            VALUE "InternalName", "VICS.dll"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "VICS.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "TAKUYA SUGAWARA (Section IV Engineering Department II Division)"
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrVICSDlg"
+    IDS_CAPTION             "VICSDialog"
+    IDS_NAME                "SiNDYe_AttrVICSDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "VICSDialog"
+    IDS_MESSAGE             "The dialog which displays and edits VICS information"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

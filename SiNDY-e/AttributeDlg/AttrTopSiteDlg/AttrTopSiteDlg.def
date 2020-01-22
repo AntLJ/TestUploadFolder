@@ -1,0 +1,4 @@
+LIBRARY "TOP_SITE.DLL"
+
+EXPORTS
+	CreateDlg

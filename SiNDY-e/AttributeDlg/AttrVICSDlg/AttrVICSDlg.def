@@ -1,0 +1,4 @@
+LIBRARY "VICS.DLL"
+
+EXPORTS
+	CreateDlg

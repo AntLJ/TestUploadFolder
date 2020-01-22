@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UPDOWNLINKDLG DIALOGEX 0, 0, 594, 545
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_ATTR_GROUP,10,9,294,285
+    LTEXT           "上下線グループOID",IDC_STATIC_UPDOWN_GROUP_ID,25,17,72,12
+    EDITTEXT        IDC_EDIT_UPDOWN_GROUP_ID,111,17,155,12,ES_AUTOHSCROLL
+    LTEXT           "上下線グループ属性",IDC_STATIC_GROUP_C,25,40,72,12
+    EDITTEXT        IDC_EDIT_GROUP_C,111,40,155,12,ES_AUTOHSCROLL
+    LTEXT           "車線数",IDC_STATIC_LANE_COUNT,25,63,72,12
+    EDITTEXT        IDC_EDIT_LANE_COUNT,111,63,155,12,ES_AUTOHSCROLL
+    LTEXT           "右側増減車線数",IDC_STATIC_RIGHT_CHANGE,25,86,72,12
+    EDITTEXT        IDC_EDIT_RIGHT_CHANGE,111,86,155,12,ES_AUTOHSCROLL
+    LTEXT           "左側増減車線数",IDC_STATIC_LEFT_CHANGE,25,109,72,12
+    EDITTEXT        IDC_EDIT_LEFT_CHANGE,111,109,155,12,ES_AUTOHSCROLL
+    LTEXT           "制限速度コード(最大)",IDC_STATIC_MAX_LEGAL_SPEED_C,25,131,72,12
+    COMBOBOX        IDC_COMBO_MAX_LEGAL_SPEED_C,111,132,155,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "制限速度コード(最小)",IDC_STATIC_MIN_LEGAL_SPEED_C,25,155,72,12
+    COMBOBOX        IDC_COMBO_MIN_LEGAL_SPEED_C,111,155,155,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "進行方向種別コード",IDC_STATIC_TRAVEL_DIRECTION_C,25,179,72,12
+    COMBOBOX        IDC_COMBO_TRAVEL_DIRECTION_C,111,178,155,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "道路構造種別コード",IDC_STATIC_ROAD_STRUCTURE_C,25,201,72,12
+    COMBOBOX        IDC_COMBO_ROAD_STRUCTURE_C,111,201,155,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "一方通行種別コード",IDC_STATIC_ONEWAY_C,25,224,72,12
+    COMBOBOX        IDC_COMBO_ONEWAY_C,111,224,155,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "擦り付けフラグ",IDC_CHECK_RUBBING_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,250,61,10
+    CONTROL         "トンネルフラグ",IDC_CHECK_TUNNEL_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,274,57,10
+    GROUPBOX        "",IDC_STATIC_PECULATION_C_GROUP,10,438,294,43
+    LTEXT           "推測コード",IDC_STATIC_SPECULATION_C,25,451,77,12
+    COMBOBOX        IDC_COMBO_SPECULATION_C,110,449,157,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "提供元ID",IDC_STATIC_SOURCE_ID,25,472,78,9
+    EDITTEXT        IDC_EDIT_SOURCE_ID,115,472,148,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_VAR,10,493,578,8,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,25,504,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,110,504,155,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TAB_UPDOWNATTR,"SysTabControl32",0x0,363,72,149,125
+    LTEXT           "ノード列情報",IDC_STATIC_NODELIST_INFO,354,226,63,9
+    CONTROL         "",IDC_GRID_NODELIST,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,351,244,221,88
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_UPDOWNLINKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 588
+        VERTGUIDE, 10
+        VERTGUIDE, 25
+        VERTGUIDE, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 540
+        HORZGUIDE, 10
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,7
+ PRODUCTVERSION 18,1,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "上下線リンク属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "UPDOWN_LINK PlugIn"
+            VALUE "FileVersion", "18.1.0.7"
+            VALUE "InternalName", "UPDOWN_LINK"
+            VALUE "LegalCopyright", "Copyright (C) 2016-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "UPDOWN_LINK.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_UPDOWNLINKDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_UPDOWNLINKDLG DLGINIT
+BEGIN
+    IDC_GRID_NODELIST, 0x376, 604, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x2250, 0x0000, 0x0ec8, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0x820f, 0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 
+0x6283, 0x4e83, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 
+0x0008, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 
+0x000d, 0x8000, 0x0003, 0x000e, 0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 
+0x0005, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 
+0x0010, 0x8000, 0x0003, 0x00c0, 0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 
+0x0003, 0x0003, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0002, 0x0000, 0x0002, 0x0001, 0x0003, 0x0001, 0x0000, 0x0003, 
+0x000a, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x0008, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0004, 0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0005, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "popMenu"
+    BEGIN
+        MENUITEM "新規追加",                      ID_ADD
+        MENUITEM "削除",                          ID_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrUpdownLinkDlg"
+    IDS_CAPTION             "上下線リンクダイアログ"
+    IDS_NAME                "SiNDYe_AttrUpdownLinkDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "上下線リンクダイアログ"
+    IDS_MESSAGE             "上下線リンク情報を表示・編集するダイアログ"
+    IDS_ERRORYOMI           "上下線リンクOBJECTID:%ld 読みが入っていません。"
+    IDS_ERRORNAME           "上下線リンクOBJECTID:%ld 名称が入っていません。"
+    IDS_FONT                "ＭＳＰゴシック"
+    IDS_UNCREATIVE_LAYER    "作成禁止レイヤです"
+    IDS_UNDELETABLE_LAYER   "削除禁止レイヤです"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NOT_USE_RELATION    "GIDがNULLの場合は紐付け機能は使用できません。"
+    IDS_BASE                "基本"
+    IDS_NODE                "ノード列"
+    IDS_ERROR_INVALID_INPUT "入力値が不正です。"
+    IDS_ERROR               "エラー"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

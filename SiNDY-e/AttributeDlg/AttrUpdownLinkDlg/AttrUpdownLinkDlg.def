@@ -1,0 +1,6 @@
+; [SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "UPDOWN_LINK.DLL"
+
+EXPORTS
+	CreateDlg
+

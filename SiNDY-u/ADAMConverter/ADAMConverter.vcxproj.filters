@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ADAMConverter.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseRow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckString.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertTable.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldDef.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputFormat.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputString.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>リソース</Filter>
+    </ClInclude>
+    <ClInclude Include="ADAMConverter.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Arguments.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseRow.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckString.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertTable.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldDef.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputFormat.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputString.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{999a612a-e0c8-4989-8214-6bff47509c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー">
+      <UniqueIdentifier>{96b054ec-e71b-4509-bd7b-9b91fae11ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース">
+      <UniqueIdentifier>{d9193333-bd3e-4ef1-9f1d-0fb9434ebd9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ADAMConverter.rc">
+      <Filter>リソース</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--db_info ADAM201703TMSAMPLE@coral2(SDE.REL_SD-170626S-000A) --conv_table_path H:\iroiro\adam\SD-170626S-000\A\ADAM\work\common\ADAMConverter\cnv_table\conv_table_info_2.txt --conv_field_path H:\iroiro\adam\SD-170626S-000\A\ADAM\work\common\ADAMConverter\cnv_field\conv_field_info_2.txt --cnv_param_path \\win\tdc\Tools\Common\TKY2JGD\TKY2JGD.par --output_dir H:\iroiro\adam\SD-170626S-000\A\ADAM\data_normal --output_delimiter tab --output_encode UTF-8 --output_newline CRLF --output_georef 4612 --output_shapetype WKT --runlog_path H:\iroiro\adam\SD-170626S-000\A\ADAM\run.txt --errlog_path H:\iroiro\adam\SD-170626S-000\A\ADAM\err.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

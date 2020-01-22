@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="adam2">
+      <UniqueIdentifier>{1cb33fcf-88f8-44ed-89ce-d78e8d9bb850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{e452e5a4-6158-4ae4-a534-17501478e51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="adam2\logical_check">
+      <UniqueIdentifier>{8f3800da-04a6-46e2-afe0-aaada712ce33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CsvCheckerDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckLog.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="LogSystem.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="StlAux.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="data_aux.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamLinkPointChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamSimpleChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamLinkShapeChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamNwChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamNearNodeChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+    <ClCompile Include="AdamRelationChecker.cpp">
+      <Filter>adam2\logical_check</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CsvCheckerDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="adam2_index.h">
+      <Filter>adam2</Filter>
+    </ClInclude>
+    <ClInclude Include="adam2_format.h">
+      <Filter>adam2</Filter>
+    </ClInclude>
+    <ClInclude Include="adam2_format_checker.h">
+      <Filter>adam2</Filter>
+    </ClInclude>
+    <ClInclude Include="checker.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckLog.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="data_aux.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="data_checker.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="LogSystem.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="stlaux.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="adam2_filelist.h">
+      <Filter>adam2</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressCallback.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="RunSettingsDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamLinkPointChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamSimpleChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamLinkShapeChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamNwChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamNearNodeChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+    <ClInclude Include="AdamRelationChecker.h">
+      <Filter>adam2\logical_check</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CsvChecker.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CsvChecker.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Project\LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

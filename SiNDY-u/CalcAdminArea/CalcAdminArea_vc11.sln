@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalcAdminArea", "CalcAdminArea.vcxproj", "{AD2C0918-3B05-433A-9D6B-2F71F187A976}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2C0918-3B05-433A-9D6B-2F71F187A976}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD2C0918-3B05-433A-9D6B-2F71F187A976}.Debug|Win32.Build.0 = Debug|Win32
+		{AD2C0918-3B05-433A-9D6B-2F71F187A976}.Release|Win32.ActiveCfg = Release|Win32
+		{AD2C0918-3B05-433A-9D6B-2F71F187A976}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

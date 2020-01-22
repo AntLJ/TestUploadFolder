@@ -1,0 +1,117 @@
+/**
+@page usage 使用方法
+
+@verbatim
+BusPoint.exe [引数]
+@endverbatim
+
+@section about_arg 各引数説明
+
+- 最低1つ指定が必要
+ - [--import] ... インポートモード指定（指定した場合、インポート実行）
+ - [--auto_rpoint] ... ルート探索用ポイントモード（指定した場合、ルート探索用ポイント作成実行）
+ - [--db_check] ... DBの論理チェックモード指定（指定した場合、DBチェック実行）
+ - [--export] ... エクスポートモード指定（指定した場合、エクスポート実行）
+ - ※【インポート】と【ルート探索用P】は同時指定可、【DBチェック】と【エクスポート】は単独指定のみ
+- 上記指定したオプションによって、それぞれ必須オプションが変化する
+ - [--in_list] [<ファイルパス>] ... [インポート][必須]調査結果ファイルリスト
+ - [--import_log] [<ファイルパス>] ... [インポート][必須]インポートログファイル
+ - [--auto_rpoint_log] [<ファイルパス>] ... [ルート探索用P][必須]ルート探索用Pログファイル
+ - [--db_check_log] [<ファイルパス>] ... [DBチェック][必須]DBチェックログファイル
+ - [--export_log] [<ファイルパス>] ... [エクスポート][必須]エクスポートログファイル
+ - [--bus_db] [<user/pass/version/service/server>] ... [インポート/ルート探索用P/DBチェック/エクスポート][必須]バス接続用DB
+ - [--road_db] [<user/pass/version/service/server>] ... [ルート探索用P/DBチェック][必須]道路NW用DB
+ - [--export_dir] [<フォルダパス>] ... [エクスポート][必須]エクスポートディレクトリ
+ - [--company_list] [<ファイルパス>] ... [エクスポート]エクスポート対象事業者リスト(指定無し：全事業者)
+
+@section about_log ログフォーマットについて
+- インポートログファイル
+ - 「#DB_BUS：<user/pass/version/service/server>」
+ - 「#ERROR <エラーメッセージ>」
+  - インポート時のエラーがあった場合のみ出力される
+ - 「#インポート処理<成功 or 失敗>」
+
+
+- ルート探索用ポイントログファイル
+ - ログハンドルツールのFREESTYLELOG形式
+ - 「#DB_BUS：<user/pass/version/service/server>」
+ - 「#DB_ROAD：<user/pass/version/service/server>」
+ - 「#FREESTYLELOG」
+  - LAYER：「BUS_STOP_POINT」
+  - OBJECTID：ルート探索用ポイントを作成したBUS_STOP_POINTのObjectID
+  - STOP_ID：ルート探索用ポイントを作成したBUS_STOP_POINTの停留所コード
+  - POLE_NO：ルート探索用ポイントを作成したBUS_STOP_POINTの標柱番号
+  - STOP_NAME_KANJI：ルート探索用ポイントを作成したBUS_STOP_POINTの漢字名称
+  - STOP_NAME_YOMI：ルート探索用ポイントを作成したBUS_STOP_POINTのヨミ名称
+  - COMMENT：作成成功 or 失敗
+
+- DBチェックログファイル
+ - ログハンドルツールのFREESTYLELOG形式
+ - 「#DB_BUS：<user/pass/version/service/server>」
+ - 「#DB_ROAD：<user/pass/version/service/server>」
+ - 「#FREESTYLELOG」
+  - LAYER：「BUS_STOP_POINT」or「BUS_ROUTE_POINT」or「BUS_LINE_MASTER」or「BUS_STOP_SEQ」
+  - OBJECTID：上記に対応するObjectID
+  - ERR_LEVEL：「ERROR」or「WARNING」
+  - ERR_MESSAGE：エラーメッセージ
+  - COMPANY：
+   - 「BUS_STOP_POINT」or「BUS_ROUTE_POINT」の場合：NULL
+   - 「BUS_LINE_MASTER」or「BUS_STOP_SEQ」の場合：事業者名
+  - ROUTE_NAME：
+   - 「BUS_STOP_POINT」or「BUS_ROUTE_POINT」の場合：NULL
+   - 「BUS_LINE_MASTER」or「BUS_STOP_SEQ」の場合：系統名
+  - ROUTE_DETAIL：
+   - 「BUS_STOP_POINT」or「BUS_ROUTE_POINT」の場合：NULL
+   - 「BUS_LINE_MASTER」or「BUS_STOP_SEQ」の場合：経路
+  - STOP_SEQ：
+   - 「BUS_STOP_POINT」or「BUS_ROUTE_POINT」or「BUS_LINE_MASTER」の場合：NULL
+   - 「BUS_STOP_SEQ」の場合：順序番号
+  - FLAG：チェックボックス
+   - 0：未チェック
+   - 1：チェック済み
+  - COMMENT：NULL
+
+- エクスポートログファイル
+ - 「#DB_BUS：<user/pass/version/service/server>」
+ - 「#開始時間：<YYYY/MM/DD hh:mm:ss>」
+ - 「#出力事業者名：<事業者名>」
+  - 出力対象事業者数分出力
+ - 「#ERROR <エラーメッセージ>」
+  - エクスポート時のエラーがあった場合のみ出力される
+ - 「#終了時間：<YYYY/MM/DD hh:mm:ss>」
+
+@verbatim
+
+@endverbatim
+
+@section example_exec 実行例(バッチファイル)
+@verbatim
+
+set WORK_DIR=\\hogehoge\hoge
+set BIN_DIR=\\win\tdc\Tools\SiNDY-u\road\BusPoint
+
+set IN_LIST=%WORK_DIR%\input.txt
+set IMP_LOG=%WORK_DIR%\output_import.txt
+set ARP_LOG=%WORK_DIR%\output_auto_rpoint.txt
+set DB_BUS=BUS/BUS/BUS.ETC_IMPORT_130522/5151/coral2
+set DB_NW=SINDY2013/SINDY2013/SDE.DEFAULT/5151/onyx
+
+rem インポート＆ルート探索用P 実行
+%BIN_DIR%\BusPoint.exe --import --auto_rpoint --in_list %IN_LIST% --import_log %IMP_LOG% --auto_rpoint_log %ARP_LOG% --bus_db %DB_BUS% --road_db %DB_NW%
+
+
+set DB_LOG=%WORK_DIR%\output_DBcheck.txt
+
+rem DBチェック 実行
+%BIN_DIR%\BusPoint.exe --db_check --db_check_log %DB_LOG% --bus_db %DB_BUS% --road_db %DB_NW%
+
+
+set EXP_LOG=%WORK_DIR%\output_export.txt
+set EXP_DIR=%WORK_DIR%\出力
+set COMPANY_L=%WORK_DIR%\company_list.txt
+
+rem エクスポート 実行
+%BIN_DIR%\BusPoint.exe --export --export_log %EXP_LOG% --bus_db %DB_BUS% --export_dir %EXP_DIR% --company_list %COMPANY_L%
+
+@endverbatim
+*/

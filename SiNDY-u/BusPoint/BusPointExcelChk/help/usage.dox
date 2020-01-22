@@ -1,0 +1,44 @@
+/**
+@page usage 使用方法
+
+@verbatim
+BusPoint.exe [引数]
+@endverbatim
+
+@section about_arg 各引数説明
+
+- 下記2点が必須オプション
+ - [--in_list] [<ファイルパス>] ... [必須]調査結果ファイルリスト
+ - [--check_log] [<ファイルパス>] ... [必須]チェックログファイル
+
+@section about_log ログフォーマットについて
+- チェックログファイル
+ - 「#ファイル：<ファイル名>」
+ - 「 #シート[<シート名>]」
+ - 「  #単一レコードチェック」
+  - 単一レコードチェックエラーがここに出力
+  - 何も出ていない場合は、エラーなし
+ - 「  #シート内チェック」
+  - シート内チェックエラーがここに出力
+  - 何も出ていない場合は、エラーなし
+ - 以下読み込んだシート分繰り返し
+ - 「 #ファイル内チェック」
+  - ファイル内チェックエラーがここに出力
+  - 何も出ていない場合は、エラーなし
+ - 以下読み込んだファイル分繰り返し
+
+
+
+@section example_exec 実行例(バッチファイル)
+@verbatim
+
+set WORK_DIR=\\hogehoge\hoge
+
+set IN_LIST=%WORK_DIR%\input.txt
+set CHK_LOG=%WORK_DIR%\output_check.txt
+
+rem 実行
+BusPoint.exe --in_list %IN_LIST% --check_log %CHK_LOG% 
+
+@endverbatim
+*/

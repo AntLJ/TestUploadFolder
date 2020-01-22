@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--import --in_list E:\15spr_branche\SiNDY-u\BusPoint\test_141204\input.txt --import_log E:\15spr_branche\SiNDY-u\BusPoint\test_141204\import_test_log.txt --bus_db BUSTEST/BUSTEST/BUSTEST.ETC_BUSTEST_DEV_141216/5151/coral2 --auto_rpoint --auto_rpoint_log E:\15spr_branche\SiNDY-u\BusPoint\test_141204\arp_test_log.txt --road_db TRIAL/TRIAL/SDE.DEFAULT/5151/coral2</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

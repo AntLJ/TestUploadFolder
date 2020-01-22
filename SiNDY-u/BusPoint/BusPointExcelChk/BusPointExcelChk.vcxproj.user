@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--in_list E:\svn\SiNDY-u\BusPoint\BusPointExcelChk\テスト_130806\input.txt --check_log E:\svn\SiNDY-u\BusPoint\BusPointExcelChk\テスト_130806\output.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Building_Diff_option", "Building_Diff_option.vcxproj", "{A9EB5E8C-B25E-4A2A-94CA-CD90A6D96B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9EB5E8C-B25E-4A2A-94CA-CD90A6D96B7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9EB5E8C-B25E-4A2A-94CA-CD90A6D96B7F}.Debug|Win32.Build.0 = Debug|Win32
+		{A9EB5E8C-B25E-4A2A-94CA-CD90A6D96B7F}.Release|Win32.ActiveCfg = Release|Win32
+		{A9EB5E8C-B25E-4A2A-94CA-CD90A6D96B7F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

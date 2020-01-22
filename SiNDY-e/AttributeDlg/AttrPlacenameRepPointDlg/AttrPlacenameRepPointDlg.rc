@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PLACENAMEDLG DIALOGEX 0, 0, 302, 225
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 9, "ＭＳ Ｐゴシック", 400, 0, 0x1
+BEGIN
+    LTEXT           "11桁住所コード",IDC_STATIC_ELEVENCODE,11,32,50,8
+    EDITTEXT        IDC_EDIT_ELEVENCODE,83,30,48,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "代表点名称",IDC_STATIC_NAME,11,49,50,8
+    EDITTEXT        IDC_EDIT_NAME,83,47,48,14,ES_AUTOHSCROLL
+    LTEXT           "郵便番号",IDC_STATIC_ZIPCODE,15,79,50,8
+    EDITTEXT        IDC_EDIT_ZIPCODE,83,74,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_VAR,7,115,170,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,7,127,50,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,79,127,48,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PLACENAMEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,1
+ PRODUCTVERSION 18,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "地名代表ポイント属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "PLACENAME_REP_POINT PlugIn"
+            VALUE "FileVersion", "18.1.0.1"
+            VALUE "InternalName", "PLACENAME_REP_POINT"
+            VALUE "LegalCopyright", "Copyright (C) 2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "PLACENAME_REP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.1"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CAPTION             "地名代表ポイントダイアログ"
+    IDS_ERRORCOMMON         "地名代表ポイントのOBJECTID:%ldを修正してください。\n\n"
+    IDS_ELEVENFIGURES       "11桁住所コードが11桁で入力されていません。\n"
+    IDS_EXCEPTNUMBER_ELEVENCODE "11桁住所コードの市区町村コード（先頭5桁）に数字以外の文字が含まれています。\n"
+    IDS_NONEEDSPACE         "11桁住所コードに半角スペースが入っています。\n"
+    IDS_NOTSEVENFIGURES     "郵便番号が7桁で入力されていません。\n"
+    IDS_EXCEPTNUMBER_ZIPCODE "郵便番号に数字以外の文字が含まれています。\n"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PLACENAMEDLG DIALOGEX 0, 0, 302, 225
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 9, "MS UI Gothic", 400, 0, 0x1
+BEGIN
+    LTEXT           "11d Addr Code",IDC_STATIC_ELEVENCODE,11,32,50,8
+    EDITTEXT        IDC_EDIT_ELEVENCODE,83,30,48,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC_NAME,11,49,50,8
+    EDITTEXT        IDC_EDIT_NAME,83,47,48,14,ES_AUTOHSCROLL
+    LTEXT           "Postal Code",IDC_STATIC_ZIPCODE,15,79,50,8
+    EDITTEXT        IDC_EDIT_ZIPCODE,83,74,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_VAR,7,115,170,1,SS_SUNKEN
+    LTEXT           "Source",IDC_STATIC_SOURCE,7,127,50,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,79,127,48,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PLACENAMEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,1
+ PRODUCTVERSION 18,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "AttrPlacenameRepPointDlg PlugIn"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "PLACENAME_REP_POINT PlugIn"
+            VALUE "FileVersion", "18.1.0.1"
+            VALUE "InternalName", "PLACENAME_REP_POINT"
+            VALUE "LegalCopyright", "Copyright (C) 2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "PLACENAME_REP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.1"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CAPTION             "AttrPlacenameRepPointDlg"
+    IDS_ERRORCOMMON         "Place name representative point of OBJECTID:%ld is invalid. Please correct.\n\n"
+    IDS_ELEVENFIGURES       "11 digit address code is not entered as 11 digits.\n"
+    IDS_EXCEPTNUMBER_ELEVENCODE 
+                            "City code (leading 5 digits) of 11 digit address code contains non-numerical character.\n"
+    IDS_NONEEDSPACE         "There is sa space in the 11 digit address code.\n"
+    IDS_NOTSEVENFIGURES     "Not entered as 7 digits. \n"
+    IDS_EXCEPTNUMBER_ZIPCODE "Non-numerical character is included. \n"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

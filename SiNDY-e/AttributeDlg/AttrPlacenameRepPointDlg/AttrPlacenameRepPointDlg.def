@@ -1,0 +1,6 @@
+; モジュール定義ファイル
+LIBRARY "PLACENAME_REP_POINT.DLL"
+
+EXPORTS
+	CreateDlg
+

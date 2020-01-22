@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="make.bat">
+      <Filter>スクリプト ファイル</Filter>
+    </None>
+    <None Include="version.bat">
+      <Filter>設定 ファイル</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>設定 ファイル</Filter>
+    </None>
+    <None Include="doxyfile">
+      <Filter>設定 ファイル</Filter>
+    </None>
+    <None Include="history.dox">
+      <Filter>ドキュメント ファイル</Filter>
+    </None>
+    <None Include="introduction.dox">
+      <Filter>ドキュメント ファイル</Filter>
+    </None>
+    <None Include="mainpage.dox">
+      <Filter>ドキュメント ファイル</Filter>
+    </None>
+    <None Include="overview.dox">
+      <Filter>ドキュメント ファイル</Filter>
+    </None>
+    <None Include="usage.dox">
+      <Filter>ドキュメント ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ドキュメント ファイル">
+      <UniqueIdentifier>{d92c5dc5-1287-40f4-9d22-203121726076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="スクリプト ファイル">
+      <UniqueIdentifier>{9d7bb2b5-3ea5-4e06-9fa5-b3d86993f243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="設定 ファイル">
+      <UniqueIdentifier>{4dc1c163-97e5-48b9-9663-7bb7751931fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

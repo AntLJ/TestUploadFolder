@@ -1,0 +1,5 @@
+LIBRARY "RAILWAY_LINK.DLL"
+
+EXPORTS
+	CreateDlg
+

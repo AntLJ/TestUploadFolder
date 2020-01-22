@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BldNameAddrAnalyzer", "BldNameAddrAnalyzer.vcxproj", "{818F83F1-3CA0-48B8-8DE1-4210F25E476E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_English|Win32 = Debug_English|Win32
+		Debug_MBCS|Win32 = Debug_MBCS|Win32
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release_English|Win32 = Release_English|Win32
+		Release_MBCS|Win32 = Release_MBCS|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug_English|Win32.ActiveCfg = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug_English|Win32.Build.0 = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug_MBCS|Win32.ActiveCfg = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug_MBCS|Win32.Build.0 = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Debug|Win32.Build.0 = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.MBCS Release|Win32.Build.0 = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release_English|Win32.ActiveCfg = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release_English|Win32.Build.0 = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release_MBCS|Win32.ActiveCfg = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release_MBCS|Win32.Build.0 = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release|Win32.ActiveCfg = Release|Win32
+		{818F83F1-3CA0-48B8-8DE1-4210F25E476E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

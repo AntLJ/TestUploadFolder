@@ -1,0 +1,269 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRROUTEDLG DIALOG 0, 0, 301, 345
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ルート種別",IDC_STATIC_ROUTECLASS,14,20,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ROUTECLASS,82,11,91,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "出典",IDC_STATIC_SOURCENAME,9,34,58,11,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCENAME,70,33,91,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_SOURCESEP,7,57,166,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,17,70,58,13,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,74,70,91,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRROUTEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,17
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "アクセス・乗り継ぎ道用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "INF_ROUTE PlugIn"
+            VALUE "FileVersion", "11.1.0.17"
+            VALUE "InternalName", "LQAttrRouteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_ROUTE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "安達史生（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrRouteDlg"
+    IDS_CAPTION             "アクセス・乗り継ぎ道リンク列ダイアログ"
+    IDS_NAME                "SiNDYe_LQAttrRouteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "アクセス・乗り継ぎ道リンク列ダイアログ"
+    IDS_MESSAGE             "アクセス・乗り継ぎ道リンク列情報を表示・編集するダイアログ"
+    IDS_DUPLIROUTE          "同一種別のアクセス/乗り継ぎ道が重複している箇所があります："
+    IDS_CONTINUE            "\n続行しますか？"
+    IDS_NOROUTECLASS        "%s OBJECTID: %d ルート種別コードが未設定です。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRROUTEDLG DIALOGEX 0, 0, 301, 345
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Route class",IDC_STATIC_ROUTECLASS,14,20,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ROUTECLASS,82,11,91,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Reference",IDC_STATIC_SOURCENAME,9,34,58,11,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCENAME,70,33,91,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_SOURCESEP,7,57,166,1,SS_SUNKEN
+    LTEXT           "Source",IDC_STATIC_SOURCE,17,70,58,13,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,74,70,91,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRROUTEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,17
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+            VALUE "Comments", "LQAttrRouteDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "INF_ROUTE PlugIn"
+            VALUE "FileVersion", "11.1.0.17"
+            VALUE "InternalName", "LQAttrRouteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_ROUTE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "FUMIO ADACHI (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrRouteDlg"
+    IDS_CAPTION             "LQAttrRouteDlg"
+    IDS_NAME                "SiNDYe_LQAttrRouteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "LQAttrRouteDlg"
+    IDS_MESSAGE             "Dialog for display/editing of access/connection road link information"
+    IDS_DUPLIROUTE          "There is an overlapping of access/connection road of the same class"
+    IDS_CONTINUE            "\n Continue?"
+    IDS_NOROUTECLASS        "%s OBJECTID: %d Route class code is not set"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

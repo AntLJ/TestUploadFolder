@@ -1,0 +1,438 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRLANEDLG DIALOGEX 0, 0, 297, 321
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    LTEXT           "流入リンク",IDC_STATIC_INLINKID,11,24,45,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INLINKID,57,22,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "流入ノード",IDC_STATIC_INNODEID,139,23,33,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INNODEID,174,20,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_SEP,15,38,227,1,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "レーン方向",IDC_STATIC_LANECLASS,11,48,45,10,SS_CENTERIMAGE
+    PUSHBUTTON      "方向自動入力",IDC_BUTTON_AUTODIR,189,44,46,14
+    LTEXT           "直近車線数",IDC_STATIC_LANEAPP,11,80,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEAPP,69,77,20,13,ES_AUTOHSCROLL | ES_NOHIDESEL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LANEAPP,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,79,7,14
+    CTEXT           "    左",IDC_STATIC_LANELCHANGE,11,94,41,8,SS_CENTERIMAGE
+    LTEXT           "増減",IDC_STATIC_LANECHANGE,15,108,16,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANELCHANGE,31,106,22,13,ES_AUTOHSCROLL | ES_NOHIDESEL
+    CONTROL         "Spin1",IDC_SPIN_LANELCHANGE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,53,105,7,14
+    CTEXT           "右",IDC_STATIC_LANERCHANGE,75,97,15,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANERCHANGE,67,107,23,13,ES_AUTOHSCROLL | ES_NOHIDESEL
+    CONTROL         "Spin1",IDC_SPIN_LANERCHANGE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,106,7,14
+    PUSHBUTTON      "左1右0",IDC_BUTTON_L1R0,100,93,27,14
+    PUSHBUTTON      "左0右1",IDC_BUTTON_L0R1,101,108,27,14
+    PUSHBUTTON      "左0右0",IDC_BUTTON_L0R0,101,121,27,14
+    LTEXT           "流入車線数",IDC_STATIC_LANEFLOW2,11,136,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEFLOW2,70,131,13,13,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "車線通行状態",IDC_STATIC_LANEPASS,11,151,45,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEPASS,75,144,48,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "1・・0",IDC_BUTTON_1xx0,132,145,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "0・・1",IDC_BUTTON_0xx1,155,146,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "0・・0",IDC_BUTTON_0xx0,180,146,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_LANESTATE,"Static",SS_BLACKRECT,171,100,22,29
+    LTEXT           "パターン入力",IDC_STATIC_PATTERN,11,185,45,10,SS_CENTERIMAGE
+    PUSHBUTTON      "A",IDC_BUTTON_PATTERN_A,62,178,23,26,BS_BITMAP
+    PUSHBUTTON      "B",IDC_BUTTON_PATTERN_B,87,178,23,26,BS_BITMAP
+    PUSHBUTTON      "C",IDC_BUTTON_PATTERN_C,112,178,23,26,BS_BITMAP
+    PUSHBUTTON      "D",IDC_BUTTON_PATTERN_D,136,178,23,26,BS_BITMAP
+    PUSHBUTTON      "E",IDC_BUTTON_PATTERN_E,161,178,23,26,BS_BITMAP
+    PUSHBUTTON      "F",IDC_BUTTON_PATTERN_F,186,178,23,26,BS_BITMAP
+    LTEXT           "",IDC_STATIC_SEP2,15,223,227,1,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,30,239,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,91,237,91,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_DIRECTION,"Static",SS_BITMAP,129,84,13,14
+    PUSHBUTTON      "未",IDC_BUTTON_DIR_WORKING,75,60,10,10,BS_BITMAP
+    PUSHBUTTON      "0",IDC_BUTTON_DIR_0,85,60,10,10,BS_BITMAP
+    PUSHBUTTON      "45",IDC_BUTTON_DIR_45,95,60,10,10,BS_BITMAP
+    PUSHBUTTON      "90",IDC_BUTTON_DIR_90,105,60,10,10,BS_BITMAP
+    PUSHBUTTON      "135",IDC_BUTTON_DIR_135,115,60,10,10,BS_BITMAP
+    PUSHBUTTON      "180",IDC_BUTTON_DIR_180,125,60,10,10,BS_BITMAP
+    PUSHBUTTON      "225",IDC_BUTTON_DIR_225,135,60,10,10,BS_BITMAP
+    PUSHBUTTON      "270",IDC_BUTTON_DIR_270,145,60,10,10,BS_BITMAP
+    PUSHBUTTON      "315",IDC_BUTTON_DIR_315,155,60,10,10,BS_BITMAP
+    PUSHBUTTON      "NULL",IDC_BUTTON_DIR_NULL,165,60,10,10,BS_BITMAP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRLANEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ALIASMODE    BITMAP                  "AliasMode.bmp"
+IDB_BITMAP_CMNGO        BITMAP                  "CommonGo.bmp"
+IDB_BITMAP_COMMONMODE   BITMAP                  "CommonMode.bmp"
+IDB_BITMAP_DBNAMEMODE   BITMAP                  "DBNameMode.bmp"
+IDB_BITMAP_DIRECTION    BITMAP                  "direction.bmp"
+IDB_BITMAP_DIRECTIONE   BITMAP                  "directione.bmp"
+IDB_BITMAP_DIRECTIONN   BITMAP                  "directionn.bmp"
+IDB_BITMAP_DIRECTIONNE  BITMAP                  "directionne.bmp"
+IDB_BITMAP_DIRECTIONNW  BITMAP                  "directionnw.bmp"
+IDB_BITMAP_DIRECTIONS   BITMAP                  "directions.bmp"
+IDB_BITMAP_DIRECTIONSE  BITMAP                  "directionse.bmp"
+IDB_BITMAP_DIRECTIONSW  BITMAP                  "directionsw.bmp"
+IDB_BITMAP_DIRECTIONW   BITMAP                  "directionw.bmp"
+IDB_BITMAP_DIRECTIONNULL BITMAP                  "directionnull.bmp"
+IDB_BITMAP_DONTGO       BITMAP                  "DontGo.bmp"
+IDB_BITMAP_GRIDMODE     BITMAP                  "bitmapGridMode.bmp"
+IDB_BITMAP_LANE         BITMAP                  "Lane.bmp"
+IDB_BITMAP_LANERMASK    BITMAP                  "LaneRMask.bmp"
+IDB_BITMAP_LEFTTURN     BITMAP                  "LeftTurn.bmp"
+IDB_BITMAP_LEFTTURNG    BITMAP                  "LeftTurnG.bmp"
+IDB_BITMAP_MINIDONTGO   BITMAP                  "minidontgo.bmp"
+IDB_BITMAP_MINIGRAY1    BITMAP                  "minigray.bmp"
+IDB_BITMAP_MINISHITEIGO BITMAP                  "minishiteigo.bmp"
+IDB_BITMAP_MINISTRAIGHT BITMAP                  "ministraight.bmp"
+IDB_BITMAP_RIGHTTURN    BITMAP                  "RightTurn.bmp"
+IDB_BITMAP_RIGHTTURNG   BITMAP                  "RightTurnG.bmp"
+IDB_BITMAP_SELECTOR     BITMAP                  "Selector.bmp"
+IDB_BITMAP_SHITEIGO     BITMAP                  "ShiteiGo.bmp"
+IDB_BITMAP_STRAIGHT     BITMAP                  "Straight.bmp"
+IDB_BITMAP_STRAIGHTG    BITMAP                  "StraightG.bmp"
+IDB_BITMAP_PATTERN_A    BITMAP                  "LanePatternA.bmp"
+IDB_BITMAP_PATTERN_F    BITMAP                  "LanePatternF.bmp"
+IDB_BITMAP_PATTERN_B    BITMAP                  "LanePatternB.bmp"
+IDB_BITMAP_PATTERN_C    BITMAP                  "LanePatternC.bmp"
+IDB_BITMAP_PATTERN_D    BITMAP                  "LanePatternD.bmp"
+IDB_BITMAP_PATTERN_E    BITMAP                  "LanePatternE.bmp"
+IDB_BITMAP_PATTERN_A_DISABLED BITMAP                  "LanePatternA_Disabled.bmp"
+IDB_BITMAP_PATTERN_F_DISABLED BITMAP                  "LanePatternF_Disabled.bmp"
+IDB_BITMAP_PATTERN_B_DISABLED BITMAP                  "LanePatternB_Disabled.bmp"
+IDB_BITMAP_PATTERN_C_DISABLED BITMAP                  "LanePatternC_Disabled.bmp"
+IDB_BITMAP_PATTERN_D_DISABLED BITMAP                  "LanePatternD_Disabled.bmp"
+IDB_BITMAP_PATTERN_E_DISABLED BITMAP                  "LanePatternE_Disabled.bmp"
+IDB_BITMAP_DIR_0        BITMAP                  "dir_0.bmp"
+IDB_BITMAP_DIR_45       BITMAP                  "dir_45.bmp"
+IDB_BITMAP_DIR_90       BITMAP                  "dir_90.bmp"
+IDB_BITMAP_DIR_135      BITMAP                  "dir_135.bmp"
+IDB_BITMAP_DIR_180      BITMAP                  "dir_180.bmp"
+IDB_BITMAP_DIR_225      BITMAP                  "dir_225.bmp"
+IDB_BITMAP_DIR_270      BITMAP                  "dir_270.bmp"
+IDB_BITMAP_DIR_315      BITMAP                  "dir_315.bmp"
+IDB_BITMAP_DIR_NULL     BITMAP                  "dir_null.bmp"
+IDB_BITMAP_DIR_WORKING  BITMAP                  "dir_working.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,1,0,31
+ PRODUCTVERSION 16,1,0,31
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "レーン用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "INF_LANE PlugIn"
+            VALUE "FileVersion", "16.1.0.31"
+            VALUE "InternalName", "LQAttrLaneDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_LANE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.1.0.31"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrLaneDlg"
+    IDS_CAPTION             "レーン情報リンク列ダイアログ"
+    IDS_NAME                "SiNDYe_LQAttrLaneDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "レーン情報リンク列ダイアログ"
+    IDS_MESSAGE             "レーン情報リンク列情報を表示・編集するダイアログ"
+    IDS_LANE                "レーン情報"
+    IDS_INCONSISTENTDATA    "レーン情報に不整合があります。"
+    IDS_NOCHECK             "レーンの整合性のチェックをしないように設定されているため、\n不正なレーンを作成する事ができてしまいますがよろしいですか？"
+    IDS_EXCEPTNUMBEROFLANEAPP "直近車線数に数値以外の値が入っているため処理を継続することができませんでした。"
+    IDS_EXCEPTNUMBEROFRIGHTLANE "右側増減数に数値以外の値が入っているため処理を継続することができませんでした。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXCEPTNUMBEROFLEFTLANE "左側増減数に数値以外の値が入っているため処理を継続することができませんでした。"
+    IDS_RETURNVALUE         "増減前の車線数は0以下に設定することはできません。\n前の値に戻します。"
+    IDS_CORRECTVALUE        "増減前の車線数は0以下に設定することはできません。\n適切な値に修正してください。"
+    IDS_FONT                "ＭＳＰゴシック"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRLANEDLG DIALOGEX 0, 0, 297, 321
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Inflow link",IDC_STATIC_INLINKID,11,24,51,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INLINKID,63,22,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Inflow node",IDC_STATIC_INNODEID,145,23,33,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INNODEID,180,20,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_SEP,15,38,227,1,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "Lane direction",IDC_STATIC_LANECLASS,11,48,51,10,SS_CENTERIMAGE
+    PUSHBUTTON      "Auto input",IDC_BUTTON_AUTODIR,189,44,77,14
+    LTEXT           "Prox. lane count",IDC_STATIC_LANEAPP,11,80,51,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEAPP,69,77,20,13,ES_AUTOHSCROLL | ES_NOHIDESEL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LANEAPP,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,79,7,14
+    CTEXT           "    Left",IDC_STATIC_LANELCHANGE,11,94,41,8,SS_CENTERIMAGE
+    LTEXT           "inc/dec",IDC_STATIC_LANECHANGE,7,107,22,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANELCHANGE,31,106,22,13,ES_AUTOHSCROLL | ES_NOHIDESEL
+    CONTROL         "Spin1",IDC_SPIN_LANELCHANGE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,53,105,7,14
+    CTEXT           "Right",IDC_STATIC_LANERCHANGE,75,97,15,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANERCHANGE,67,107,23,13,ES_AUTOHSCROLL | ES_NOHIDESEL
+    CONTROL         "Spin1",IDC_SPIN_LANERCHANGE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,106,7,14
+    PUSHBUTTON      "L 1 R 0",IDC_BUTTON_L1R0,100,93,27,14
+    PUSHBUTTON      "L 0 R 1",IDC_BUTTON_L0R1,101,108,27,14
+    PUSHBUTTON      "L 0 R 0",IDC_BUTTON_L0R0,101,121,27,14
+    LTEXT           "Inflow lane count",IDC_STATIC_LANEFLOW2,11,136,51,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEFLOW2,75,131,13,13,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Lane condition",IDC_STATIC_LANEPASS,11,151,51,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LANEPASS,75,144,48,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "1...0",IDC_BUTTON_1xx0,132,145,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "0...1",IDC_BUTTON_0xx1,155,146,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "0...0",IDC_BUTTON_0xx0,180,146,18,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC_LANESTATE,"Static",SS_BLACKRECT,171,100,22,29
+    LTEXT           "Pattern entry",IDC_STATIC_PATTERN,11,185,51,10,SS_CENTERIMAGE
+    PUSHBUTTON      "A",IDC_BUTTON_PATTERN_A,62,178,23,26,BS_BITMAP
+    PUSHBUTTON      "B",IDC_BUTTON_PATTERN_B,87,178,23,26,BS_BITMAP
+    PUSHBUTTON      "C",IDC_BUTTON_PATTERN_C,112,178,23,26,BS_BITMAP
+    PUSHBUTTON      "D",IDC_BUTTON_PATTERN_D,136,178,23,26,BS_BITMAP
+    PUSHBUTTON      "E",IDC_BUTTON_PATTERN_E,161,178,23,26,BS_BITMAP
+    PUSHBUTTON      "F",IDC_BUTTON_PATTERN_F,186,178,23,26,BS_BITMAP
+    LTEXT           "",IDC_STATIC_SEP2,15,223,227,1,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "Source",IDC_STATIC_SOURCE,30,239,58,10,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,91,237,91,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_DIRECTION,"Static",SS_BITMAP,129,84,13,14
+    PUSHBUTTON      "Not yet",IDC_BUTTON_DIR_WORKING,75,60,10,10,BS_BITMAP
+    PUSHBUTTON      "0",IDC_BUTTON_DIR_0,85,60,10,10,BS_BITMAP
+    PUSHBUTTON      "45",IDC_BUTTON_DIR_45,95,60,10,10,BS_BITMAP
+    PUSHBUTTON      "90",IDC_BUTTON_DIR_90,105,60,10,10,BS_BITMAP
+    PUSHBUTTON      "135",IDC_BUTTON_DIR_135,115,60,10,10,BS_BITMAP
+    PUSHBUTTON      "180",IDC_BUTTON_DIR_180,125,60,10,10,BS_BITMAP
+    PUSHBUTTON      "225",IDC_BUTTON_DIR_225,135,60,10,10,BS_BITMAP
+    PUSHBUTTON      "270",IDC_BUTTON_DIR_270,145,60,10,10,BS_BITMAP
+    PUSHBUTTON      "315",IDC_BUTTON_DIR_315,155,60,10,10,BS_BITMAP
+    PUSHBUTTON      "NULL",IDC_BUTTON_DIR_NULL,165,60,10,10,BS_BITMAP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRLANEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_CMNGO        BITMAP                  "CommonGo_Eng.bmp"
+IDB_BITMAP_SHITEIGO     BITMAP                  "ShiteiGo_Eng.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,1,0,31
+ PRODUCTVERSION 16,1,0,31
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "LQAttrLaneDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "INF_LANE PlugIn"
+            VALUE "FileVersion", "16.1.0.31"
+            VALUE "InternalName", "LQAttrLaneDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_LANE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.1.0.31"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrLaneDlg"
+    IDS_CAPTION             "LQAttrLaneDlg"
+    IDS_NAME                "SiNDYe_LQAttrLaneDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "LQAttrLaneDlg"
+    IDS_MESSAGE             "Dialog for display/editing of lane information link"
+    IDS_LANE                "Lane"
+    IDS_INCONSISTENTDATA    "There is a mismatch in the lane information"
+    IDS_NOCHECK             "Invalid lane can be created because the setting does not check the consistency of lane. \n Is this OK?"
+    IDS_EXCEPTNUMBEROFLANEAPP 
+                            "The processing cannot be continued because non numerical value is in the proximity lane count"
+    IDS_EXCEPTNUMBEROFRIGHTLANE 
+                            "The processing cannot be continued because non numerical value is in the right lane increase/decrease count"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXCEPTNUMBEROFLEFTLANE 
+                            "The processing cannot be continued because non numerical value is in the left lane increase/decrease count"
+    IDS_RETURNVALUE         "Lane count before increase/decrease cannot be 0. \n Value is reset to its original value"
+    IDS_CORRECTVALUE        "Lane count before increase/decrease cannot be 0. \n Correct to an appropriate value"
+    IDS_FONT                "MS UI Gothic"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

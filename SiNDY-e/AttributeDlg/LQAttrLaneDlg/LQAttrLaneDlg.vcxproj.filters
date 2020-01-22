@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c803c07c-e205-45bd-b79a-4f8aa141efff}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a88af823-ef72-43f1-86b9-f9f44d42e431}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{686858ef-9a52-46ec-ba9f-7d66d549299b}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LQAttrLaneDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LQAttrLaneDlg.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AttrDlgLib\LevelOID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LQAttrLaneDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="AliasMode.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmapGridMode.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CommonGo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CommonMode.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dbNameMode.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_135.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_135.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_180.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_180.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_225.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_225.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_270.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_270.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_315.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_315.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_45.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_45.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_90.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_90.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_null.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_null.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\dir_working.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dir_working.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="direction.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directione.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionne.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionnull.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionnw.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directions.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionse.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionsw.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directionw.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="DontGo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Lane.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternA.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternA_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternB.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternB_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternC_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternD.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternD_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternE_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternF.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LanePatternF_Disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LaneRMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LeftTurn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LeftTurnG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="minidontgo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="minigray.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="minishiteigo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ministraight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="work\nullinfo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RightTurn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RightTurnG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Selector.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ShiteiGo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Straight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="StraightG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CommonGo_Eng.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ShiteiGo_Eng.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LQAttrLaneDlg.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

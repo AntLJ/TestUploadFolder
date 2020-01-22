@@ -1,0 +1,193 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CDS_COMMON_DLG DIALOGEX 0, 0, 309, 339
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 9, "ＭＳ Ｐゴシック", 400, 0, 0x80
+BEGIN
+    LTEXT           "背景種別",IDC_STATIC_CLASS,17,16,50,8
+    COMBOBOX        IDC_COMBO_CLASS,69,15,69,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "原稿番号入力",IDC_STATIC_MSNO,17,34,50,8
+    EDITTEXT        IDC_EDIT_MSNO,69,31,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "背景種別検索",IDC_BUTTON_SEARCH_MSNO,139,30,76,14
+    CONTROL         "地下フラグ",IDC_CHECK_UNDERGROUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,51,49,10
+    CONTROL         "道路重複許可フラグ",IDC_CHECK_CORRIDOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,65,69,10
+    CONTROL         "無壁フラグ",IDC_CHECK_NOWALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,80,47,10
+    LTEXT           "建物名称",IDC_STATIC_BLDNAME,17,95,50,8
+    EDITTEXT        IDC_EDIT_BLDNAME,69,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "建物住所",IDC_STATIC_BLDADDR,17,111,50,8
+    EDITTEXT        IDC_EDIT_BLDADDR,69,111,40,14,ES_AUTOHSCROLL
+    LTEXT           "GEOSPACE_ID",IDC_STATIC_GEOID,17,127,50,8
+    EDITTEXT        IDC_EDIT_GEOID,69,129,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "注記文字列１",IDC_STATIC_NAMESTRING1,17,153,50,8
+    EDITTEXT        IDC_EDIT_NAMESTRING1,70,151,40,14,ES_AUTOHSCROLL
+    LTEXT           "注記文字列２",IDC_STATIC_NAMESTRING2,17,169,50,8
+    EDITTEXT        IDC_EDIT_NAMESTRING2,71,167,40,14,ES_AUTOHSCROLL
+    LTEXT           "注記記号",IDC_STATIC_DISPTYPE,17,190,50,8
+    COMBOBOX        IDC_COMBO_DISPTYPE,70,187,69,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ひまわりフラグ",IDC_CHECK_HIMAWARI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,209,59,10
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,14,303,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,66,303,68,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,14,289,199,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CDS_COMMON_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,2,0,4
+ PRODUCTVERSION 17,2,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "CDS関連レイヤ属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "CDS_COMMON PlugIn"
+            VALUE "FileVersion", "17.2.0.4"
+            VALUE "InternalName", "CDS_COMMON"
+            VALUE "LegalCopyright", "Copyright (C) 2016-2017 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CDS_COMMON.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "17.2.0.4"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCdsCommonDlg"
+    IDS_CAPTION             "CDS関連レイヤ属性編集ダイアログ"
+    IDS_NAME                "SiNDYe_AttrCdsCommonDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "CDS関連レイヤ属性編集ダイアログ"
+    IDS_MESSAGE             "CDS関連レイヤの属性を表示・編集するダイアログ"
+    IDS_FAILTOGETRULE       "SiNDYRuleを取得できませんでした"
+    IDS_NOMANUSCRIPT        "入力した原稿番号は有りません"
+    IDS_MSG_INVALID_NAMESTRING "[注記文字列1]入力された文字列が不正です,"
+    IDS_ERR_INVALID_ATTR    "%s (OID=%d)\n属性の整合が取れていません："
+    IDS_ERRCHK              "属性整合チェック"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_EXCEED_FIELD_SIZE "[%s]入力された文字列がフィールドサイズを超えています,"
+    IDS_CAPTION_BG          "背景種別"
+    IDS_CAPTION_SEARCH_BG   "背景種別検索"
+    IDS_CAPTION_LINE_BG     "背景ライン種別"
+    IDS_CAPTION_SEARCH_LINE_BG "背景ライン種別検索"
+    IDS_CAPTION_RAILWAY_CLASS "鉄道種別"
+    IDS_CAPTION_BLDG_CLASS  "建物種別"
+    IDS_CAPTION_SEARCH_BLDG_CLASS "建物種別検索"
+    IDS_CAPTION_ANNO_CLASS  "注記種別"
+    IDS_CAPTION_SEARCH_ANNO_CLASS "注記種別検索"
+    IDS_CAPTION_STATION_CLASS "鉄道駅種別"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

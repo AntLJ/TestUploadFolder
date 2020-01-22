@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "CDS_COMMON.DLL"
+
+EXPORTS
+	CreateDlg
+

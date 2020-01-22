@@ -1,0 +1,4 @@
+LIBRARY "CITYMESH.DLL"
+
+EXPORTS
+	CreateDlg

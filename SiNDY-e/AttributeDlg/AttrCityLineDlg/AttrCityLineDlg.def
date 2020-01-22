@@ -1,0 +1,4 @@
+LIBRARY "CITY_LINE.DLL"
+
+EXPORTS
+	CreateDlg

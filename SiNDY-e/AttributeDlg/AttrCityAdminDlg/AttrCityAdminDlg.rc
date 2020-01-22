@@ -1,0 +1,349 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYADMINDLG DIALOGEX 0, 0, 295, 375
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    LTEXT           "市区町村コード",IDC_CITY_ADMIN_STATIC2,19,19,64,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT2,86,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "住所コード",IDC_CITY_ADMIN_STATIC3,18,36,64,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT3,86,34,48,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "仮住所コードフラグ",IDC_CITY_ADMIN_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,50,71,10
+    LTEXT           "住所整備種別",IDC_CITY_ADMIN_STATIC6,17,70,64,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO1,87,66,48,208,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "街区符号",IDC_CITY_ADMIN_STATIC4,18,88,64,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT4,86,84,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "拡張街区符号",IDC_CITY_ADMIN_STATIC5,18,108,64,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT5,85,106,48,12,ES_AUTOHSCROLL
+    LTEXT           "エリア判別種別",IDC_CITY_ADMIN_STATIC7,18,130,64,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO2,86,126,48,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "管理フラグ",IDC_CITY_ADMIN_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,151,47,10
+    CONTROL         "飛地フラグ",IDC_CITY_ADMIN_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,150,47,10
+    LTEXT           "街区色作業用",IDC_CITY_ADMIN_STATIC8,18,168,64,8
+    CONTROL         "",IDC_COMBOBOXEX_CITY_ADMIN,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,88,166,48,113,WS_EX_TRANSPARENT
+    LTEXT           "住所変換コードモード",IDC_CITY_ADMIN_STATIC9,19,190,64,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO3,87,186,48,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,18,220,56,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,86,220,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,6,208,170,1,SS_SUNKEN
+    LTEXT           "住所コード２",IDC_STATIC_ADDRCODE2,138,35,64,8
+    EDITTEXT        IDC_EDIT_ADDRCODE2,206,33,48,12,ES_UPPERCASE | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYADMINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 368
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,28
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "都市地図行政界ポリゴン用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "CITY_ADMIN PlugIn"
+            VALUE "FileVersion", "11.1.0.28"
+            VALUE "InternalName", "AttrCityAdminDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_ADMIN.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "川辺航（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "向井義久（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_COLOR_CITY   BITMAP                  "Color_CityAdmin.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCityAdminDlg"
+    IDS_CAPTION             "都市地図行政界ポリゴンダイアログ"
+    IDS_NAME                "SiNDYe_AttrCityAdminDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "都市地図行政界ポリゴンダイアログ"
+    IDS_MESSAGE             "都市地図行政界ポリゴンを表示・編集するダイアログ"
+    IDS_UNNECCESARYSPACE    "拡張街区符号にスペースが入っています。"
+    IDS_ONLYHALFWIDTHNUMBER "拡張街区符号に半角数字だけで入力されています。"
+    IDS_CITYCODE5FIGURES    "市区町村コードは5桁での入力です。"
+    IDS_ADDRCODE6FIGURES    "住所コードは6桁での入力です。"
+    IDS_ADDRCODE26FIGURES   "住所コード２は6桁の入力です。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CITYCODE00000       "都市地図行政界ID:%ld エリア判別種別が海の時に、市区町村コードは00000です。"
+    IDS_ADDRCODE000000      "都市地図行政界ID:%ld エリア判別種別が海の時に、住所コードは000000です。"
+    IDS_ADDRCLASSUNSPECIFY  "都市地図行政界ID:%ld エリア判別種別が海の時に、住所整備種別は町丁目界未整備です。"
+    IDS_TOWNBLOCKNULL       "都市地図行政界ID:%ld エリア判別種別が海の時に、街区符号はNULLです。"
+    IDS_EXTOWNBLOCKNULL     "都市地図行政界ID:%ld エリア判別種別が海の時に、街区符号拡張はNULLです。"
+    IDS_NOTCITYCODE00000    "都市地図行政界ID:%ld エリア判別種別が海でない時に、市区町村コード00000はエラーです。"
+    IDS_CITYCODERANGE       "都市地図行政界ID:%ld 市区町村コードの範囲は00000～47999です。"
+    IDS_NOTADDRCODE000000   "都市地図行政界ID:%ld エリア判別種別が海以外の時に、住所コードが000000はエラーです。"
+    IDS_NOTADDRCLASSUNSPECIFY 
+                            "都市地図行政界ID:%ld エリア判別種別が海以外の時に、住所整備種別が町丁目界未整備はエラーです。"
+    IDS_TOWNBLOCKNULL2      "都市地図行政界ID:%ld 住所整備種別が未整備の時に、街区符号はNULLです。"
+    IDS_INPUTTOWNBLOCKOREXTOWNBLOCK 
+                            "都市地図行政界ID:%ld 住所整備種別が整備済みの時、街区符号、拡張街区符号のどちらか一方に値を入れてください。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYADMINDLG DIALOGEX 0, 0, 295, 375
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "City code",IDC_CITY_ADMIN_STATIC2,19,19,96,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT2,116,17,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address code",IDC_CITY_ADMIN_STATIC3,18,36,96,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT3,116,34,48,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Temporary address code flag",IDC_CITY_ADMIN_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,50,101,10
+    LTEXT           "Address class",IDC_CITY_ADMIN_STATIC6,17,70,96,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO1,117,66,48,208,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Small town block code",IDC_CITY_ADMIN_STATIC4,18,88,96,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT4,116,84,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Extended small town block code",IDC_CITY_ADMIN_STATIC5,18,108,96,8
+    EDITTEXT        IDC_CITY_ADMIN_EDIT5,115,106,48,12,ES_AUTOHSCROLL
+    LTEXT           "Area determination class",IDC_CITY_ADMIN_STATIC7,18,130,96,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO2,116,126,48,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Management flag",IDC_CITY_ADMIN_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,151,66,10
+    CONTROL         "Enclave flag",IDC_CITY_ADMIN_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,152,52,10
+    LTEXT           "For town block color work",IDC_CITY_ADMIN_STATIC8,18,168,96,8
+    CONTROL         "",IDC_COMBOBOXEX_CITY_ADMIN,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,117,167,48,113,WS_EX_TRANSPARENT
+    LTEXT           "Address conversion code mode",IDC_CITY_ADMIN_STATIC9,19,190,96,8
+    COMBOBOX        IDC_CITY_ADMIN_COMBO3,117,186,48,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source",IDC_STATIC_SOURCE,18,220,96,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,118,219,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,6,208,170,1,SS_SUNKEN
+    LTEXT           "Address code 2",IDC_STATIC_ADDRCODE2,165,35,96,8
+    EDITTEXT        IDC_EDIT_ADDRCODE2,233,33,48,12,ES_UPPERCASE | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYADMINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 368
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,28
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrCityAdminDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "CITY_ADMIN PlugIn"
+            VALUE "FileVersion", "11.1.0.28"
+            VALUE "InternalName", "AttrCityAdminDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_ADMIN.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCityAdminDlg"
+    IDS_CAPTION             "AttrCityAdminDlg"
+    IDS_NAME                "SiNDYe_AttrCityAdminDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrCityAdminDlg"
+    IDS_MESSAGE             "Dialog for display/editing of city map administrative polygon"
+    IDS_UNNECCESARYSPACE    "A blank space is included in the extended city block code"
+    IDS_ONLYHALFWIDTHNUMBER "Extended city block code is entered only with one-byte numbers"
+    IDS_CITYCODE5FIGURES    "City code must be entered as 5 digits"
+    IDS_ADDRCODE6FIGURES    "Address code must be entered as 6 digits"
+    IDS_ADDRCODE26FIGURES   "Address code 2 must be entered as 6 digits"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CITYCODE00000       "City map administrative boundary of ID:%ld, When area determination code is ocean, city code is 00000"
+    IDS_ADDRCODE000000      "City map administrative boundary of ID:%ld, When area determination code is ocean, address code is 000000"
+    IDS_ADDRCLASSUNSPECIFY  "City map administrative boundary of ID:%ld, When area determination code is ocean, address class is 'district block boundary is unavailable'"
+    IDS_TOWNBLOCKNULL       "City map administrative boundary of ID:%ld, When area determination code is ocean, small town block code is NULL"
+    IDS_EXTOWNBLOCKNULL     "City map administrative boundary of ID:%ld, When area determination code is ocean, extended small town block code is NULL"
+    IDS_NOTCITYCODE00000    "City map administrative boundary of ID:%ld, When area determination code is not ocean, city code 00000 is an error"
+    IDS_CITYCODERANGE       "City map administrative boundary of ID:%ld, City code range must be between 00000-47999"
+    IDS_NOTADDRCODE000000   "City map administrative boundary of ID:%ld, When area determination code is not ocean, address code 000000 is an error"
+    IDS_NOTADDRCLASSUNSPECIFY 
+                            "City map administrative boundary of ID:%ld, When area determination code is not ocean, address class of  'district block boundary is unavailable' is an error"
+    IDS_TOWNBLOCKNULL2      "City map administrative boundary of ID:%ld, When adress class is unavailable, small town block code is NULL"
+    IDS_INPUTTOWNBLOCKOREXTOWNBLOCK 
+                            "City map administrative boundary of ID:%ld, When adress class is available, a value must be entered into either small town block code or extended small town code"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

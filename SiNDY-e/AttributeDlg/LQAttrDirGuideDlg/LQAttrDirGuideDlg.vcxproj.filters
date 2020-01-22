@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4cb9c17c-d004-4a80-8605-f8abac46c4d8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6115a768-e53f-4041-bc98-25b9e0a5eb95}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{465e01a5-2006-4e22-a153-e1d4a1992d60}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirGuideSignDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LQAttrDirGuideDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LQAttrDirGuideDlg.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirGuideSignDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AttrDlgLib\LevelOID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LQAttrDirGuideDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap_l.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenCrossroads.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenCrossRoads0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenCrossRoads1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenCrossRoads2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenLeftForkedRoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenLeftForkedRoad0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenLeftForkedRoad1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenNoPattern.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenNothingGuidePattern_C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenNull.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenRightForkedRoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenRightForkedRoad0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenRightForkedRoad1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTForkedRoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTForkedRoad0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTForkedRoad1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverA.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverA0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverA1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverA2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverB.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverB0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverB1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenTwoLevelCrossoverB2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenYForkedRoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenYForkedRoad0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HoumenYForkedRoad1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LeftTurn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="LeftTurnG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RightTurn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RightTurnG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Straight.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="StraightG.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="global_board_img\HoumenBlue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenGreen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenOrange.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenWhite.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenBlue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenNoPattern.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenNull.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenNothingGuidePattern_C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="asean_board_img\HoumenOtherColor.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LQAttrDirGuideDlg.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

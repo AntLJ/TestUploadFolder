@@ -1,0 +1,467 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRDIRGUIDEDLG DIALOGEX 0, 0, 488, 408
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC_GROUPBOX,8,9,431,320
+    LTEXT           "流入リンクID",IDC_STATIC_INLINKID,35,21,41,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INLINKID,77,19,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "流入ノードID",IDC_STATIC_INNODEID,160,23,41,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INNODEID2,209,23,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "シーケンス番号",IDC_STATIC_SEQENCE,150,46,48,10
+    COMBOBOX        IDC_COMBO_SEQUENCE,217,45,58,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "方面案内種別",IDC_STATIC_HOUMENSHUBETU,76,110,58,10,SS_CENTERIMAGE
+    LTEXT           "方面案内（漢字）",IDC_STATIC_HOUMENKANJI,146,110,58,10,SS_CENTERIMAGE
+    LTEXT           "方面案内（ヨミ）",IDC_STATIC_HOUMENYOMI,216,110,58,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU1,76,126,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI1,146,126,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI1,216,126,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,284,128,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU2,76,146,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI2,146,146,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI2,216,146,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,284,150,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU3,76,164,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI3,146,164,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI3,216,164,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,284,168,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU4,76,184,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI4,146,184,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI4,216,184,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,284,188,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU5,76,202,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI5,146,202,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI5,216,202,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,284,206,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU6,76,222,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI6,146,222,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI6,216,222,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,284,226,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU7,76,240,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI7,146,240,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI7,216,240,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,284,244,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU8,76,260,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI8,146,260,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI8,216,260,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,284,264,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU9,76,278,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI9,146,278,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI9,216,278,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,284,282,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU10,76,300,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI10,146,300,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI10,216,300,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,284,302,8,8
+    GROUPBOX        "",IDC_STATIC_GROUPBOX_BTN,198,72,78,24
+    PUSHBUTTON      "←",IDC_BUTTON_INS,201,82,16,11
+    PUSHBUTTON      "X",IDC_BUTTON_DEL,219,82,16,12
+    PUSHBUTTON      "▲",IDC_BUTTON_UP,237,82,14,12
+    PUSHBUTTON      "▼",IDC_BUTTON_DN,255,82,14,12
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,71,357,58,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,137,351,91,13,ES_AUTOHSCROLL
+END
+
+IDD_DIRGUIDESIGNDLG DIALOG 0, 0, 275, 223
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "方面看板選択ダイアログ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,110,203,58,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRDIRGUIDEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 401
+    END
+
+    IDD_DIRGUIDESIGNDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LEFTTURNG    BITMAP                  "LeftTurnG.bmp"
+IDB_BITMAP_LEFTTURN     BITMAP                  "LeftTurn.bmp"
+IDB_BITMAP_RIGHTTURNG   BITMAP                  "RightTurnG.bmp"
+IDB_BITMAP_RIGHTTURN    BITMAP                  "RightTurn.bmp"
+IDB_BITMAP_STRAIGHTG    BITMAP                  "StraightG.bmp"
+IDB_BITMAP_STRAIGHT     BITMAP                  "Straight.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERA BITMAP                  "HoumenTwoLevelCrossoverA.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERB BITMAP                  "HoumenTwoLevelCrossoverB.bmp"
+IDB_BITMAP_CROSSROADS   BITMAP                  "HoumenCrossroads.bmp"
+IDB_BITMAP_LEFTFORKEDROAD BITMAP                  "HoumenLeftForkedRoad.bmp"
+IDB_BITMAP_RIGHTFORKEDROAD BITMAP                  "HoumenRightForkedRoad.bmp"
+IDB_BITMAP_YFORKEDROAD  BITMAP                  "HoumenYForkedRoad.bmp"
+IDB_BITMAP_TFORKEDROAD  BITMAP                  "HoumenTForkedRoad.bmp"
+IDB_BITMAP_CROSSROADS0  BITMAP                  "HoumenCrossRoads0.bmp"
+IDB_BITMAP_CROSSROADS1  BITMAP                  "HoumenCrossRoads1.bmp"
+IDB_BITMAP_CROSSROADS2  BITMAP                  "HoumenCrossRoads2.bmp"
+IDB_BITMAP_LEFTFORKEDROAD0 BITMAP                  "HoumenLeftForkedRoad0.bmp"
+IDB_BITMAP_LEFTFORKEDROAD1 BITMAP                  "HoumenLeftForkedRoad1.bmp"
+IDB_BITMAP_RIGHTFORKEDROAD0 BITMAP                  "HoumenRightForkedRoad0.bmp"
+IDB_BITMAP_RIGHTFORKEDROAD1 BITMAP                  "HoumenRightForkedRoad1.bmp"
+IDB_BITMAP_TFORKEDROAD0 BITMAP                  "HoumenTForkedRoad0.bmp"
+IDB_BITMAP_TFORKEDROAD1 BITMAP                  "HoumenTForkedRoad1.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERA0 BITMAP                  "HoumenTwoLevelCrossoverA0.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERA1 BITMAP                  "HoumenTwoLevelCrossoverA1.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERA2 BITMAP                  "HoumenTwoLevelCrossoverA2.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERB0 BITMAP                  "HoumenTwoLevelCrossoverB0.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERB1 BITMAP                  "HoumenTwoLevelCrossoverB1.bmp"
+IDB_BITMAP_TWOLEVELCROSSOVERB2 BITMAP                  "HoumenTwoLevelCrossoverB2.bmp"
+IDB_BITMAP_YFORKEDROAD0 BITMAP                  "HoumenYForkedRoad0.bmp"
+IDB_BITMAP_YFORKEDROAD1 BITMAP                  "HoumenYForkedRoad1.bmp"
+IDB_BITMAP_NOTHINGGUIDEPATTERN_C BITMAP                  "HoumenNothingGuidePattern_C.bmp"
+IDB_BITMAP_ASEAN_BLUE   BITMAP                  "asean_board_img\\HoumenBlue.bmp"
+IDB_BITMAP_ASEAN_GREEN  BITMAP                  "asean_board_img\\HoumenGreen.bmp"
+IDB_BITMAP_ASEAN_ORANGE BITMAP                  "asean_board_img\\HoumenOrange.bmp"
+IDB_BITMAP_ASEAN_WHITE  BITMAP                  "asean_board_img\\HoumenWhite.bmp"
+IDB_BITMAP_NULL         BITMAP                  "HoumenNull.bmp"
+IDB_BITMAP_NOPATTERN    BITMAP                  "HoumenNoPattern.bmp"
+IDB_BITMAP_ASEAN_OTHERCOLOR BITMAP                  "asean_board_img\\HoumenOtherColor.bmp"
+IDB_BITMAP_ASEAN_NOTHINGGUIDEPATTERN_C BITMAP                  "asean_board_img\\HoumenNothingGuidePattern_C.bmp"
+IDB_BITMAP_ASEAN_NULL   BITMAP                  "asean_board_img\\HoumenNull.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,1,0,42
+ PRODUCTVERSION 16,1,0,42
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "方面案内用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "INF_DIRGUIDE PlugIn"
+            VALUE "FileVersion", "16.1.0.42"
+            VALUE "InternalName", "LQAttrDirGuideDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_DIRGUIDE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.1.0.42"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrDirGuideDlg"
+    IDS_CAPTION             "方面案内リンク列ダイアログ"
+    IDS_NAME                "SiNDYe_LQAttrDirGuideDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "方面案内リンク列ダイアログ"
+    IDS_MESSAGE             "方面案内リンク列情報を表示・編集するダイアログ"
+    IDS_DIRGUIDE            "方面案内"
+    IDS_RULEERROR           "同じ流入リンクの方面案内 OBJECTID: %ld 以下のルールにより看板パターン変更できません。\n\n%s"
+    IDS_RULEWORNING         "同じ流入リンクの方面案内 OBJECTID: %ld 以下のワーニングルールが設定されています。\n\n%s\n看板パターン変更しますか？"
+    IDS_BLANKROW            "%s OBJECTID:%ld 空の行があります。間を空けずに方面を入力してください。"
+    IDS_BLANKCELL           "%s OBJECTID:%ld %d行目は漢字名称とカナ名称の両方が入っていません。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BLANKFIRSTROW       "%s OBJECTID:%ld 先頭行が空です。"
+    IDS_DIFFERENTDIRGUIDE   "%s OBJECTID:%ld 同じ流入リンク%ldと方面看板パターンコードが異なります。"
+    IDS_SAMESEQUENCE        "%s OBJECTID:%ld 同じ流入リンク%ldと同じシーケンスを持っています。"
+    IDS_MISTAKESEQUENCE     "%s OBJECTID:%ld シーケンスの入力が間違っている可能性がありますが、このまま保存しますか？"
+    IDS_FONT                "ＭＳＰゴシック"
+    IDS_BLANKKANJI          "%s OBJECTID:%ld %d行目に漢字名称が入っていません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIRGUIDESIGNDLG DIALOGEX 0, 0, 275, 223
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Signpost selection dialog"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,110,203,58,13
+END
+
+IDD_LQATTRDIRGUIDEDLG DIALOGEX 0, 0, 488, 408
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "",IDC_STATIC_GROUPBOX,8,9,431,320
+    LTEXT           "Inflow link ID",IDC_STATIC_INLINKID,29,21,44,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INLINKID,77,19,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Inflow node ID",IDC_STATIC_INNODEID,158,23,44,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_INNODEID2,218,23,79,202,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sequence",IDC_STATIC_SEQENCE,150,46,52,10
+    COMBOBOX        IDC_COMBO_SEQUENCE,229,45,46,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Guide class",IDC_STATIC_HOUMENSHUBETU,76,110,58,10,SS_CENTERIMAGE
+    LTEXT           "Name(Primary)",IDC_STATIC_HOUMENKANJI,146,110,58,10,SS_CENTERIMAGE
+    LTEXT           "Name(Secondary)",IDC_STATIC_HOUMENYOMI,216,110,58,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU1,76,126,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI1,146,126,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI1,216,126,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,284,128,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU2,76,146,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI2,146,146,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI2,216,146,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,284,150,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU3,76,164,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI3,146,164,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI3,216,164,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,284,168,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU4,76,184,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI4,146,184,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI4,216,184,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,284,188,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU5,76,202,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI5,146,202,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI5,216,202,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,284,206,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU6,76,222,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI6,146,222,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI6,216,222,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,284,226,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU7,76,240,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI7,146,240,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI7,216,240,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,284,244,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU8,76,260,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI8,146,260,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI8,216,260,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,284,264,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU9,76,278,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI9,146,278,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI9,216,278,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,284,282,8,8
+    COMBOBOX        IDC_COMBO_HOUMENSHUBETU10,76,300,58,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUMENKANJI10,146,300,58,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUMENYOMI10,216,300,58,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,284,302,8,8
+    GROUPBOX        "",IDC_STATIC_GROUPBOX_BTN,198,72,78,24
+    PUSHBUTTON      "<-",IDC_BUTTON_INS,201,82,16,11
+    PUSHBUTTON      "DEL",IDC_BUTTON_DEL,219,82,16,12
+    PUSHBUTTON      "UP",IDC_BUTTON_UP,237,82,14,12
+    PUSHBUTTON      "DWN",IDC_BUTTON_DN,255,82,18,12
+    LTEXT           "Source",IDC_STATIC_SOURCE,71,357,58,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,137,351,91,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIRGUIDESIGNDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_LQATTRDIRGUIDEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 401
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,1,0,42
+ PRODUCTVERSION 16,1,0,42
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "LQAttrDirGuideDlg"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "INF_DIRGUIDE PlugIn"
+            VALUE "FileVersion", "16.1.0.42"
+            VALUE "InternalName", "LQAttrDirGuideDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_DIRGUIDE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.1.0.42"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrDirGuideDlg"
+    IDS_CAPTION             "LQAttrDirGuideDlg"
+    IDS_NAME                "SiNDYe_LQAttrDirGuideDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "LQAttrDirGuideDlg"
+    IDS_MESSAGE             "Dialog for display/editing of signpost link information"
+    IDS_DIRGUIDE            "Signpost"
+    IDS_RULEERROR           "Signpost of the same inflow link OBJECTID: %ld, Signpost pattern cannot be changed due to the following rules \n\n%s"
+    IDS_RULEWORNING         "Signpost of the same inflow link OBJECTID: %ld, Following warning rule is set. Do you want to change \n\n%s\n signpost pattern?"
+    IDS_BLANKROW            "%s OBJECTID:%ld There is an empty row. Enter the direction without any space in between"
+    IDS_BLANKCELL           "%s OBJECTID:%ld Row %d does not have Kanji name and Kana name"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BLANKFIRSTROW       "%s OBJECTID:%ld, First row is empty"
+    IDS_DIFFERENTDIRGUIDE   "%s OBJECTID:%ld, Signpost pattern code differ from same inflow link %ld"
+    IDS_SAMESEQUENCE        "%s OBJECTID:%ld, Having the same sequence as same inflow link %ld"
+    IDS_MISTAKESEQUENCE     "%s OBJECTID:%ld, Entered sequence may be wrong. Do you want to save this as it is?"
+    IDS_FONT                "MS UI Gothic"
+    IDS_BLANKKANJI          "%s OBJECTID:%ld Row %d does not have Primary Name"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

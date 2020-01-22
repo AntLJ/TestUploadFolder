@@ -1,0 +1,4 @@
+LIBRARY "INF_GUIDE.DLL"
+
+EXPORTS
+	CreateDlg

@@ -1,0 +1,281 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRINTERSECTIONDLG DIALOGEX 0, 0, 307, 339
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "進入方向別交差点",IDC_STATIC_INTERSECTION,7,7,183,55
+    LTEXT           "漢字名称",IDC_STATIC_KANJI,17,20,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_KANJI,84,21,91,13,ES_AUTOHSCROLL
+    LTEXT           "カナ名称",IDC_STATIC_YOMI,17,41,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_YOMI,84,38,91,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "↑ コピー",IDC_BUTTON_BASE_COPY,153,65,43,14
+    GROUPBOX        "代表交差点",IDC_STATIC_BASE_INTERSECTION,7,77,183,55
+    LTEXT           "漢字名称",IDC_STATIC_BASE_KANJI,10,88,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BASE_KANJI,81,89,91,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "カナ名称",IDC_STATIC_BASE_YOMI,11,109,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BASE_YOMI,81,106,91,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_SOURCESEP,7,137,166,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,13,150,58,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,80,149,91,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRINTERSECTIONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,5
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "進入方向別交差点用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "INF_INTERSECTION PlugIn"
+            VALUE "FileVersion", "11.1.0.5"
+            VALUE "InternalName", "LQAttrIntersectionDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2010-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_INTERSECTION.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "安達史生（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrIntersectionDlg"
+    IDS_CAPTION             "進入方向別交差点リンク列ダイアログ"
+    IDS_NAME                "SiNDYe_LQAttrIntersectionDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "進入方向別交差点リンク列ダイアログ"
+    IDS_MESSAGE             "進入方向別交差点リンク列情報を表示・編集するダイアログ"
+    IDS_KANAERROR           "進入方向別交差点名称OBJECTID:%ld 交差点カナ名称が入っていません。"
+    IDS_KANJIERROR          "進入方向別交差点名称OBJECTID:%ld 交差点漢字名称が入っていません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LQATTRINTERSECTIONDLG DIALOGEX 0, 0, 307, 339
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "Direction dependent intersection",IDC_STATIC_INTERSECTION,7,7,183,55
+    LTEXT           "Kanji name",IDC_STATIC_KANJI,17,20,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_KANJI,84,21,91,13,ES_AUTOHSCROLL
+    LTEXT           "Kana name",IDC_STATIC_YOMI,17,41,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_YOMI,84,38,91,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Copy above",IDC_BUTTON_BASE_COPY,153,65,43,14
+    GROUPBOX        "Representative intersection",IDC_STATIC_BASE_INTERSECTION,7,77,183,55
+    LTEXT           "Kanji name",IDC_STATIC_BASE_KANJI,16,89,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BASE_KANJI,85,89,91,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Kana name",IDC_STATIC_BASE_YOMI,16,110,64,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_BASE_YOMI,85,106,91,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_SOURCESEP,7,137,166,1,SS_SUNKEN
+    LTEXT           "Source",IDC_STATIC_SOURCE,13,150,58,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,80,149,91,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LQATTRINTERSECTIONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,5
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+            VALUE "Comments", "LQAttrIntersectionDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "INF_INTERSECTION PlugIn"
+            VALUE "FileVersion", "11.1.0.5"
+            VALUE "InternalName", "LQAttrIntersectionDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2010-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "INF_INTERSECTION.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "FUMIO ADACHI (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "LQAttrIntersectionDlg"
+    IDS_CAPTION             "LQAttrIntersectionDlg"
+    IDS_NAME                "SiNDYe_LQAttrIntersectionDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "LQAttrIntersectionDlg"
+    IDS_MESSAGE             "Dialog for display/editing of the link queue information of direction dependent intersection"
+    IDS_KANAERROR           "Direction dependent intersection name OBJECTID:%ld, Kana intersection name is not entered"
+    IDS_KANJIERROR          "Direction dependent intersection name OBJECTID:%ld, Kanji intersection name is not entered"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

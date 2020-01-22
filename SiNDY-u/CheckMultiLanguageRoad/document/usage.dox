@@ -1,0 +1,24 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CheckMultiLanguageRoad.exe [引数] 
+@endverbatim
+
+設定項目は全て引数で与えます。
+
+- l [LAYER_NAME]
+ - 処理対象レイヤ名
+ - 現状は MLD or MLN のみ
+
+- m [Meshlist]
+ - メッシュリスト
+
+- i [InputDir]
+ - 処理対象データ基点パス
+ - Roadフォルダの1つ上まで指定
+ 
+- x [Logfile]
+ - ログファイル
+ 
+*/

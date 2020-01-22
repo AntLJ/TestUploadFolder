@@ -1,0 +1,8 @@
+/**
+@page history 更新履歴
+
+- <b>2011/07/26 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+- <b>2014/03/17 FILEVERSION 1.0.0.2 PRODUCTVERSION 1.0.0.1</b>
+  - [bug 10286] [u]ツールの戻り値を統一して欲しい(CheckMultiLanguageRoad)
+*/

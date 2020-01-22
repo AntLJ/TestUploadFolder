@@ -1,0 +1,26 @@
+@echo off
+
+set BIN_DIR=\\morioka\dfs\Tools\SiNDY-u\map\CheckJusyoDist
+
+set DB_ADDRESS=SiNDYTEST/SiNDYTEST/SiNDYTEST.CheckJusyoDist/5151/galatea
+set JDB_CONNECT=y0805e/y0805e@delltcp
+set FC_GOU_POINT=Gou_Point
+set FC_CITY_ADMIN=City_Admin
+set FC_CS_ADDR_POINT=CS_Addr_Point
+set FC_KLINK_POINT=Klink_Point
+set PGDB_OUT=\test.mdb
+set FC_OUT=test_fc
+
+rem 実行(全件指定)
+%BIN_DIR%\\CheckJusyoDist.exe -ca -o test.log
+
+rem 実行(市区町村コード指定)
+%BIN_DIR%\\CheckJusyoDist.exe -cs 01101 -o test.log
+
+rem 実行(市区町村コードリスト指定)
+%BIN_DIR%\\CheckJusyoDist.exe -cl citycode_list.txt -o test.log
+
+rem 実行(市区町村コード範囲指定)
+%BIN_DIR%\\CheckJusyoDist.exe -cr 01000-48000 -o test.log
+
+pause

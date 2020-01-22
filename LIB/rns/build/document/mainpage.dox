@@ -1,0 +1,40 @@
+/**
+ * @file mainpage.dox
+ * @brief for Doxygen
+ */
+/**
+@mainpage rnsテンプレートライブラリ
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社
+</center>
+
+@version 1.0.2.0
+@date 2006/04/21
+
+@section intro_prelibs 使用する外部ライブラリ
+- <a href="http://www.boost.org/"><b>Boost</b></a>
+
+@section intro_libs アルファベット順ライブラリリスト
+
+- file_sharing_reader.h - 他のプロセスと読み込み位置を共用するファイル操作ライブラリ。
+- virtual_output_iterator.h - コンテナの型に依存しない出力反復子。
+- virtual_iterator.h - 特性さえ満たしていれば、コンテナの型に依存しない反復子。
+
+@section intro_lastupdate 更新履歴
+
+- <b>2006/04/21 VERSION 1.0.2.0</b>
+  - rns::virtual_output_iterator を追加。
+  - rns::virtual_iterator を追加。
+- <b>2006/03/10 VERSION 1.0.1.0</b>
+  - @ref file_sharing_info_fileの<b>共用ファイルパス</b>を絶対パスから相対パスに変更。<br>
+    相対パスを使えない場合は、これまで通り絶対パスを使用する。
+- <b>2006/03/06 VERSION 1.0.0.0</b>
+  - 公開バージョン。
+*/
+
+/**
+ * @defgroup unit_test ユニットテスト
+ */

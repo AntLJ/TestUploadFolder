@@ -1,0 +1,19 @@
+/**
+@defgroup file_sharing_info_file ファイル共用情報ファイル
+@brief ファイルの読み込み位置を保存するファイル。
+
+エンディアンは実行環境依存。
+
+@par フォーマット:
+<table>
+<tr><th>オフセット（Bytes）</th><th>サイズ（Bytes）</th><th>内容</th></tr>
+<tr><td>0</td><td>8</td><td>ファイル先頭からのオフセット。（Bytes）</td></tr>
+<tr><td>8</td><td>4</td><td>共用プロセス数。</td></tr>
+<tr><td>12</td><td>1～_MAX_PATH</td><td>共用ファイルパス。@ref file_sharing_info_fileからの相対パスか、絶対パス。</td></tr>
+</table>
+*/
+
+/**
+@example  file_sharing_reader_sample.cpp
+rns::file_reader を介して rns::simple_file_reader と rns::file_sharing_reader を使い分ける。
+*/

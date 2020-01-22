@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="document"
+	ProjectGUID="{753DD8DF-0959-4CB1-B9F5-7F15F369102E}"
+	Keyword="MakeFileProj"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="html|Win32"
+			OutputDirectory=".\html"
+			IntermediateDirectory=".\html"
+			ConfigurationType="0"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="doxygen"
+				ReBuildCommandLine="doxygen "
+				CleanCommandLine=""
+				Output="html/rns.chm"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Document Files"
+			>
+			<File
+				RelativePath="file_sharing_reader.dox"
+				>
+			</File>
+			<File
+				RelativePath="example\file_sharing_reader_sample.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mainpage.dox"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Example Files"
+			Filter="cpp"
+			>
+		</Filter>
+		<File
+			RelativePath="Doxyfile"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

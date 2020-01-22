@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRSEGMENTATTRDLG DIALOGEX 0, 0, 244, 260
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    CONTROL         "現地調査フラグ",IDC_SEGMENT_ATTR_CHECK1,"Button",BS_AUTOCHECKBOX,7,6,72,8
+    LTEXT           "現調反映作業年度",IDC_SEGMENT_ATTR_STATIC2,7,19,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT2,81,19,123,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "対応リンクID",IDC_SEGMENT_ATTR_STATIC3,7,36,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT3,81,36,123,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "リンク内属性種別コード",IDC_SEGMENT_ATTR_STATIC4,7,54,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SEGMENT_ATTR_COMBO1,81,54,123,214,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "上下関係値",IDC_SEGMENT_ATTR_STATIC5,7,75,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT4,81,75,123,12,ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_SEGMENT_ATTR_STATIC6,7,90,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT5,81,90,123,12,ES_AUTOHSCROLL
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,7,113,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,81,114,123,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,107,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRSEGMENTATTRDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,23
+ PRODUCTVERSION 16,2,0,23
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "リンク内属性用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "SEGMENT_ATTR PlugIn"
+            VALUE "FileVersion", "16.2.0.23"
+            VALUE "InternalName", "AttrSegmentAttrDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2016 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "SEGMENT_ATTR.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.2.0.23"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrSegmentAttrDlg"
+    IDS_CAPTION             "リンク内属性ダイアログ"
+    IDS_NAME                "SiNDYe_AttrSegmentAttrDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "リンク内属性ダイアログ"
+    IDS_MESSAGE             "リンク内属性情報を表示・編集するダイアログ"
+    IDS_FAILTOGETTABLE      "リンク内属性フィーチャクラスを取得できませんでした。"
+    IDS_NAMENOTNULL         "リンク内属性種別コードが「%s」のとき、\n名称はNULLです。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRSEGMENTATTRDLG DIALOGEX 0, 0, 244, 260
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    CONTROL         "Field survey flag",IDC_SEGMENT_ATTR_CHECK1,"Button",BS_AUTOCHECKBOX,7,6,72,8
+    LTEXT           "Field survey year",IDC_SEGMENT_ATTR_STATIC2,7,19,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT2,81,19,123,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Corresponding link ID",IDC_SEGMENT_ATTR_STATIC3,7,36,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT3,81,36,123,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Road structure code",IDC_SEGMENT_ATTR_STATIC4,7,54,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SEGMENT_ATTR_COMBO1,81,54,123,214,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hierarchical rel value",IDC_SEGMENT_ATTR_STATIC5,7,75,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT4,81,75,123,12,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_SEGMENT_ATTR_STATIC6,7,88,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SEGMENT_ATTR_EDIT5,81,88,123,12,ES_AUTOHSCROLL
+    LTEXT           "Source",IDC_STATIC_SOURCE,7,110,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,81,111,123,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,105,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRSEGMENTATTRDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,23
+ PRODUCTVERSION 16,2,0,23
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "AttrSegmentAttrDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "SEGMENT_ATTR PlugIn"
+            VALUE "FileVersion", "16.2.0.23"
+            VALUE "InternalName", "AttrSegmentAttrDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2016 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "SEGMENT_ATTR.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "16.2.0.23"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrSegmentAttrDlg"
+    IDS_CAPTION             "AttrSegmentAttrDlg"
+    IDS_NAME                "SiNDYe_AttrSegmentAttrDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrSegmentAttrDlg"
+    IDS_MESSAGE             "Dialog for display/editing of road structure attribute"
+    IDS_FAILTOGETTABLE      "Road strutcure attribute feature class was not obtained"
+    IDS_NAMENOTNULL         "When Road structure code is ""%s"",\nName is NULL"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

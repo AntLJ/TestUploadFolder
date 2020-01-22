@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AttrSpotSurveyPointDlg.cpp">
+      <Filter>Source file</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source file</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source file</Filter>
+    </ClCompile>
+    <ClCompile Include="genericFunction.cpp">
+      <Filter>Source file</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AttrSpotSurveyPointDlg.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+    <ClInclude Include="genericFunction.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source file">
+      <UniqueIdentifier>{4127e9d1-6aa8-4e73-b549-2efd220fc04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource file">
+      <UniqueIdentifier>{9696a992-419a-4d48-9c00-7b4b61543be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header file">
+      <UniqueIdentifier>{378650bd-3f6a-442a-a949-a64f725e690b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AttrSpotSurveyPointDlg.rc">
+      <Filter>Resource file</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AttrSpotSurveyPointDlg.def">
+      <Filter>Source file</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

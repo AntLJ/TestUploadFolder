@@ -1,0 +1,248 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,10
+ PRODUCTVERSION 18,1,0,10
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "INCREMENT P CORPRATION."
+            VALUE "FileDescription", "信号機ポイント属性ダイアログプラグイン"
+            VALUE "FileVersion", "18.1.0.10"
+            VALUE "InternalName", "SIGNAL_POINT.dll"
+            VALUE "LegalCopyright", "(C) 2015-2017 IncrementP Corp. All rights reserved."
+            VALUE "OriginalFilename", "SIGNAL_POINT.dll"
+            VALUE "ProductName", "ADAM"
+            VALUE "ProductVersion", "18.1.0.10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTR_SIGNALPOINT_DIALOG DIALOGEX 0, 0, 300, 308
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ ゴシック", 400, 0, 0x80
+BEGIN
+    LTEXT           "水平角",IDC_STATIC_HORIZONTAL_ANGLE,10,12,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_HORIZONTAL_ANGLE,85,12,100,14,ES_AUTOHSCROLL
+    LTEXT           "信号機形状コード",IDC_STATIC_SIGNAL_MOLD_C,10,32,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SIGNAL_MOLD_C,85,31,105,202,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "信号灯数",IDC_STATIC_LAMP_COUNT,8,52,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_LAMP_COUNT,86,52,100,14,ES_AUTOHSCROLL
+    LTEXT           "信号フラグ",IDC_STATIC_SIGNAL_F,10,73,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    CONTROL         "矢印信号",IDC_CHECK_ARROW_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,73,45,14
+    CONTROL         "予告信号",IDC_CHECK_WARNING_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,73,45,14
+    CONTROL         "独立信号",IDC_CHECK_INDEPENDENT_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,193,74,47,14
+    LTEXT           "絶対高",IDC_STATIC_ALTITUDE,7,97,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_ALTITUDE,83,95,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "関連ノードのZ値を転写",IDC_BUTTON_TRANSFER_ALTITUDE,193,95,100,14
+    LTEXT           "地上高",IDC_STATIC_GROUND_HEIGHT,7,117,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_GROUND_HEIGHT,82,114,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Z値から地上高を転写",IDC_BUTTON_TRANSFER_GR_HEIGHT,193,115,100,14
+    LTEXT           "縦幅",IDC_STATIC_HEIGHT,7,130,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_HEIGHT,83,133,70,14,ES_AUTOHSCROLL
+    LTEXT           "横幅",IDC_STATIC_WIDTH,7,146,70,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_WIDTH,82,149,70,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_VSFLEXGRID_NODE,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,7,166,150,65
+    LTEXT           "提供元ID",IDC_STATIC_SOURCE_ID,7,240,62,10
+    EDITTEXT        IDC_EDIT_SOURCE_ID,85,238,148,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "推測コード",IDC_STATIC_SPECULATION_C,7,256,48,14,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SPECULATION_C,83,255,105,202,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_BAR,10,277,150,8,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,10,287,40,14,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,55,287,100,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTR_SIGNALPOINT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ATTR_SIGNALPOINT_DIALOG DLGINIT
+BEGIN
+    IDC_VSFLEXGRID_NODE, 0x376, 636, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x1741, 0x0000, 0x0a21, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0x820f, 0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 
+0x6283, 0x4e83, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 
+0x0008, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 
+0x000d, 0x8000, 0x0003, 0x000e, 0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 
+0x0005, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 
+0x0010, 0x8000, 0x0003, 0x00c0, 0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 
+0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0001, 0x0000, 0x0002, 0x0001, 0x0003, 0x0001, 0x0000, 0x0003, 
+0x0002, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0x0000, 0x0008, 0x0020, 0x0000, 0x95a2, 0x9023, 
+0x30ec, 0x30a4, 0x30e4, 0x540d, 0x007c, 0x95a2, 0x9023, 0x30ce, 0x30fc, 
+0x30c9, 0x004f, 0x0049, 0x0044, 0x0000, 0x000b, 0x0000, 0x0003, 0x0003, 
+0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0004, 
+0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0002, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ATTR_SIGNALPOINT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrSignalPointDlg"
+    IDS_CAPTION             "信号機ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrSignalPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "信号機ポイントダイアログ"
+    IDS_MESSAGE             "信号機ポイント情報を表示・編集するツール"
+    IDS_MSG_FAIL_INVALID_NODE "指定されたウェイポイントが存在しません"
+    IDS_MSG_FAIL_OUT_OF_RANGE "指定範囲外の値が入力されています"
+    IDS_ERR_STORE           "編集確定エラー"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TRANSFER        "転写エラー"
+    IDS_ERR_GROUND_HEIGHT_INVALID "地上高に記載されている値が適正ではありません。"
+    IDS_ERR_CANNOT_SPECIFY_ONENODE "対応するノードが特定できません。"
+    IDS_ERR_NOT_EXIST_NODE  "関連ノードが存在しません。(ノードID: %ld)"
+    IDS_ERR_CANNOT_GET_NODE_FC "関連ノードフィーチャクラスが取得できません。"
+    IDS_ERR_ALTITUDE_INVALID 
+                            "絶対高に記載されている値が適正ではありません。\n絶対高が0mの場合は転写機能が使えませんので手動で入力してください。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

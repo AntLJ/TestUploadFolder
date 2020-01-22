@@ -1,0 +1,35 @@
+@echo off
+
+rem SiNDY-cモード 環境変数[PGDB_MODE]に何か値セット ------
+set PGDB_MODE=On
+set DB_ANY=\\titan\Map\PGDB
+set FC_CITYMESH=CityMesh
+rem ------------------------------------------------------
+
+rem 注記文字列１に「ミリ」が含まれるもの(ＰＧＤＢモードはワイルドカードは[*]と[?])
+set FC_TARGET=City_Annotation
+AttriSearchInMesh.exe -l mesh.txt -w "NAME_STRING1 like '*ミリ*'" -o test.log -i sample.ini > cout.log
+
+rem 号ポイントの件数
+
+set FC_TARGET=Gou_Point
+AttriSearchInMesh.exe -l mesh.txt -w "OBJECTID is not null" -o test.log -c > cout.log
+
+rem SDEモード 環境変数[PGDB_MODE]に何も値がセットされていないとき
+set DB_ANY=trial/trial/TRIAL.TRIAL_TEST/5151/coral2
+set FC_CITYMESH=REFERENCE.CityMesh
+set FC_BASEMESH=REFERENCE.BaseMesh
+set FC_MIDDLEMESH=REFERENCE.MiddleMesh
+rem ------------------------------------------------------
+
+rem 注記文字列１に「ミリ」が含まれるもの(SDEモードはワイルドカードは[%]と[_])
+set FC_TARGET=City_Annotation
+AttriSearchInMesh.exe -l check.txt -w "NAME_STRING1 like '%%ミリ%%'" -o test.log -i sample.ini > cout.log
+
+rem 号ポイントの件数
+
+set FC_TARGET=Gou_Point
+AttriSearchInMesh.exe -l check.txt -w "OBJECTID is not null" -o test.log -c > cout.log
+
+pause
+

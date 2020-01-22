@@ -1,0 +1,29 @@
+/**
+@mainpage @projectname
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 运行环境OS:
+- Windows 7 SP1
+
+@par 运行环境:
+- vc2012 运行库
+- ArcMap ArcEngine
+
+@version
+- @fileversion
+- @productversion
+
+@date @lastupdate
+
+@section se_intro 概要
+- @ref introduction
+- @ref overview
+- @ref history
+
+@section se_usage 使用说明
+- @ref usage
+*/

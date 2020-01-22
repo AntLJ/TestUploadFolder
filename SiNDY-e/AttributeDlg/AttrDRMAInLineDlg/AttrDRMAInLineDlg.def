@@ -1,0 +1,4 @@
+LIBRARY "DRMA_INLINE.DLL"
+
+EXPORTS
+	CreateDlg

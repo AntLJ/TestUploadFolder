@@ -1,0 +1,4 @@
+LIBRARY "DEFAULT.DLL"
+
+EXPORTS
+	CreateDlg

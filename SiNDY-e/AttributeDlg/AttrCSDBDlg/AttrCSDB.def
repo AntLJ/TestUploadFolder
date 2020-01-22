@@ -1,0 +1,5 @@
+LIBRARY "CSDB.DLL"
+
+EXPORTS
+	CreateDlg
+

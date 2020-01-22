@@ -1,0 +1,4 @@
+LIBRARY "BASE_SITE.DLL"
+
+EXPORTS
+	CreateDlg

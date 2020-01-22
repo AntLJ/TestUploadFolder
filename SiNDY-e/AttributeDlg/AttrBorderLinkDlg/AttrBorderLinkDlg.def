@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "BORDER_LINK.DLL"
+
+EXPORTS
+	CreateDlg
+

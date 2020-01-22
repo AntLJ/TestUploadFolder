@@ -1,0 +1,4 @@
+LIBRARY "BASEMESH.DLL"
+
+EXPORTS
+	CreateDlg

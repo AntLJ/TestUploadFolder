@@ -1,0 +1,287 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASEREPPOINTDLG DIALOGEX 0, 0, 302, 225
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    LTEXT           "11桁住所コード",IDC_STATIC_ADDRCODE,11,32,50,8
+    EDITTEXT        IDC_EDIT_ADDRCODE,83,30,48,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_STATIC_ADMINNAME,11,49,50,8
+    EDITTEXT        IDC_EDIT_ADMINNAME,83,47,48,14,ES_AUTOHSCROLL
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,7,127,50,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,79,127,48,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,7,115,170,1,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_ZIPCODE,83,74,48,14,ES_AUTOHSCROLL
+    LTEXT           "郵便番号",IDC_STATIC_ZIPCODE,15,79,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASEREPPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,23
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "中縮ADDR用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "BASE_REP_POINT PlugIn"
+            VALUE "FileVersion", "11.1.0.23"
+            VALUE "InternalName", "AttrBaseRepPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BASE_REP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "川辺航（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "向井義久（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrBaseRepPointDlg"
+    IDS_CAPTION             "中縮代表点ダイアログ"
+    IDS_NAME                "SiNDYe_AttrBaseRepPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "中縮代表点ダイアログ"
+    IDS_MESSAGE             "中縮代表点情報を表示・編集するダイアログ"
+    IDS_NOT11FIGURES        "中縮代表点のOBJECTID:%ldの11桁住所コードに11桁で入力されていません。修正してください。"
+    IDS_NONEEDSPACE         "中縮代表点のOBJECTID:%ldの11桁住所コードにスペースが入っています。修正してください。"
+    IDS_NOPOINTNAME         "中縮代表点のOBJECTID:%ldの代表点名称がありません。入力してください。"
+    IDS_NOT7FIGURES         "・7桁で入力されていません。\n"
+    IDS_EXCEPTNUMBER        "・数字以外の文字が含まれています。\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERRPOSTCODE         "中縮代表点のOBJECTID:%ldの郵便番号が不正です。修正してください。\n\n"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASEREPPOINTDLG DIALOGEX 0, 0, 302, 225
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "11d addr code",IDC_STATIC_ADDRCODE,15,34,45,8
+    EDITTEXT        IDC_EDIT_ADDRCODE,83,30,48,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC_ADMINNAME,15,51,45,8
+    EDITTEXT        IDC_EDIT_ADMINNAME,83,47,48,14,ES_AUTOHSCROLL
+    LTEXT           "Source",IDC_STATIC_SOURCE,15,130,45,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,79,127,48,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,7,115,170,1,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_ZIPCODE,83,74,48,14,ES_AUTOHSCROLL
+    LTEXT           "Postal code",IDC_STATIC_ZIPCODE,15,79,45,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASEREPPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,23
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrBaseRepPointDlg Plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "BASE_REP_POINT PlugIn"
+            VALUE "FileVersion", "11.1.0.23"
+            VALUE "InternalName", "AttrBaseRepPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BASE_REP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrBaseRepPointDlg"
+    IDS_CAPTION             "AttrBaseRepPointDlg"
+    IDS_NAME                "SiNDYe_AttrBaseRepPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrBaseRepPointDlg"
+    IDS_MESSAGE             "Dialog for display/editing of base representative point information"
+    IDS_NOT11FIGURES        "Basemap representative point of OBJECTID:%ld, 11 digit address code is not entered as 11 digits. Please correct."
+    IDS_NONEEDSPACE         "Basemap representative point of OBJECTID:%ld, There is sa space in the 11 digit address code. Please correct."
+    IDS_NOPOINTNAME         "Basemap representative point of OBJECTID:%ld, There is no representative name. Please enter.."
+    IDS_NOT7FIGURES         "Not entered as 7 digits \n"
+    IDS_EXCEPTNUMBER        "Non-numerical character is included \n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERRPOSTCODE         "Postal code of the OBJECTID:%ld of the base representative point is invalid. Please correct \n\n"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

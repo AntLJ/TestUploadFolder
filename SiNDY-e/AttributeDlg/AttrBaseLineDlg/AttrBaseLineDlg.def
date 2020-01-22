@@ -1,0 +1,4 @@
+LIBRARY "BASE_LINE.DLL"
+
+EXPORTS
+	CreateDlg

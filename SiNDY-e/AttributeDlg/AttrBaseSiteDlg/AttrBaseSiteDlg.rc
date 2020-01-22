@@ -1,0 +1,305 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ (ì˙ñ{) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASESITEDLG DIALOG 0, 0, 305, 332
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    LTEXT           "ÉXÉPÅ[Éã4îwåiéÌï ",IDC_STATIC_SC4BGCLASS_C,16,47,58,8
+    COMBOBOX        IDC_COMBO_SC4BGCLASS_C,83,47,58,232,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "å¥çeî‘çÜì¸óÕ",IDC_STATIC_GENKOU4,16,68,58,8
+    EDITTEXT        IDC_EDIT_GENKOU4,83,68,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "å¥çeî‘çÜåüçı",IDC_BUTTON_SEARCH4,157,68,48,13
+    LTEXT           "ÉXÉPÅ[Éã3îwåiéÌï ",IDC_STATIC_SC3BGCLASS_C,16,89,58,8
+    COMBOBOX        IDC_COMBO_SC3BGCLASS_C,83,89,58,187,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "à»è„ìØÇ∂Ç…",IDC_BUTTON_SAME3,157,89,48,13
+    LTEXT           "å¥çeî‘çÜì¸óÕ",IDC_STATIC_GENKOU3,16,110,58,8
+    EDITTEXT        IDC_EDIT_GENKOU3,83,110,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "å¥çeî‘çÜåüçı",IDC_BUTTON_SEARCH3,157,110,48,13
+    LTEXT           "ÉXÉPÅ[Éã2îwåiéÌï ",IDC_STATIC_SC2BGCLASS_C,16,131,58,8
+    COMBOBOX        IDC_COMBO_SC2BGCLASS_C,83,131,58,179,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "à»è„ìØÇ∂Ç…",IDC_BUTTON_SAME2,157,131,48,13
+    LTEXT           "å¥çeî‘çÜì¸óÕ",IDC_STATIC_GENKOU2,16,152,58,8
+    EDITTEXT        IDC_EDIT_GENKOU2,83,152,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "å¥çeî‘çÜåüçı",IDC_BUTTON_SEARCH2,157,152,48,13
+    LTEXT           "ÉXÉPÅ[Éã1îwåiéÌï ",IDC_STATIC_SC1BGCLASS_C,16,173,58,8
+    COMBOBOX        IDC_COMBO_SC1BGCLASS_C,83,173,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "à»è„ìØÇ∂Ç…",IDC_BUTTON_SAME1,157,173,48,13
+    LTEXT           "å¥çeî‘çÜì¸óÕ",IDC_STATIC_GENKOU1,16,194,58,8
+    EDITTEXT        IDC_EDIT_GENKOU1,83,194,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "å¥çeî‘çÜåüçı",IDC_BUTTON_SEARCH1,157,194,48,13
+    LTEXT           "èÓïÒÉ\Å[ÉX",IDC_STATIC_SOURCE,16,227,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,83,227,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,21,215,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASESITEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,22
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "íÜèkîwåiÉ|ÉäÉSÉìópëÆê´ï“èWÉ_ÉCÉAÉçÉOÉvÉâÉOÉCÉì"
+            VALUE "CompanyName", "ÉCÉìÉNÉäÉÅÉìÉgPäîéÆâÔé–"
+            VALUE "FileDescription", "BASE_SITE PlugIn"
+            VALUE "FileVersion", "11.1.0.22"
+            VALUE "InternalName", "AttrBaseSiteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BASE_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "éÂíSìñ", "êÏï”çqÅiãZèpäJî≠ïî ëÊìÒãZèpïî ëÊélãZèpÉOÉãÅ[ÉvÅj"
+            VALUE "ïõíSìñ", "å¸à‰ã`ãvÅiãZèpäJî≠ïî ëÊìÒãZèpïî ëÊélãZèpÉOÉãÅ[ÉvÅj"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrBaseSiteDlg"
+    IDS_CAPTION             "íÜèkîwåiÉ|ÉäÉSÉìÉ_ÉCÉAÉçÉO"
+    IDS_NAME                "SiNDYe_AttrBaseSiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "íÜèkîwåiÉ|ÉäÉSÉìÉ_ÉCÉAÉçÉO"
+    IDS_MESSAGE             "íÜèkîwåiÉ|ÉäÉSÉìèÓïÒÇï\é¶ÅEï“èWÇ∑ÇÈÉ_ÉCÉAÉçÉO"
+    IDS_FAILTOGETRULE       "SiNDYRuleÇéÊìæÇ≈Ç´Ç‹ÇπÇÒÇ≈ÇµÇΩÅB"
+    IDS_NOMANUSCRIPT        "ì¸óÕÇµÇΩå¥çeî‘çÜÇÕóLÇËÇ‹ÇπÇÒÅB"
+END
+
+#endif    // ì˙ñ{åÍ (ì˙ñ{) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// âpåÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASESITEDLG DIALOGEX 0, 0, 305, 332
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Background class of scale 4",IDC_STATIC_SC4BGCLASS_C,16,47,84,8
+    COMBOBOX        IDC_COMBO_SC4BGCLASS_C,117,45,58,232,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MS No",IDC_STATIC_GENKOU4,16,68,58,8
+    EDITTEXT        IDC_EDIT_GENKOU4,117,66,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH4,191,66,48,13
+    LTEXT           "Background class of scale 3",IDC_STATIC_SC3BGCLASS_C,16,89,84,8
+    COMBOBOX        IDC_COMBO_SC3BGCLASS_C,117,87,58,187,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME3,191,87,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU3,16,110,58,8
+    EDITTEXT        IDC_EDIT_GENKOU3,117,108,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH3,191,108,48,13
+    LTEXT           "Background class of scale 2",IDC_STATIC_SC2BGCLASS_C,16,131,84,8
+    COMBOBOX        IDC_COMBO_SC2BGCLASS_C,117,129,58,179,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME2,191,129,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU2,16,152,58,8
+    EDITTEXT        IDC_EDIT_GENKOU2,117,150,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH2,191,150,48,13
+    LTEXT           "Background class of scale 1",IDC_STATIC_SC1BGCLASS_C,16,173,84,8
+    COMBOBOX        IDC_COMBO_SC1BGCLASS_C,117,171,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME1,191,171,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU1,16,194,58,8
+    EDITTEXT        IDC_EDIT_GENKOU1,117,192,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH1,191,192,48,13
+    LTEXT           "Source",IDC_STATIC_SOURCE,16,227,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,117,225,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,21,215,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASESITEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,22
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrBaseSiteDlg Plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "BASE_SITE PlugIn"
+            VALUE "FileVersion", "11.1.0.22"
+            VALUE "InternalName", "AttrBaseSiteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BASE_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrBaseSiteDlg"
+    IDS_CAPTION             "AttrBaseSiteDlg"
+    IDS_NAME                "SiNDYe_AttrBaseSiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrBaseSiteDlg"
+    IDS_MESSAGE             "Dialog for display/editing of base background polygon"
+    IDS_FAILTOGETRULE       "SiNDYRule was not found"
+    IDS_NOMANUSCRIPT        "Entered MS_No does not exist"
+END
+
+#endif    // âpåÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

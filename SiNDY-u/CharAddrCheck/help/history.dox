@@ -1,0 +1,21 @@
+/**
+@page history 更新履歴
+- <b>2013/06/04 FILEVERSION 1.0.4.21 PRODUCTVERSION 1.0.4.0</b>
+  - [bug 9795][u]Arc10.1対応依頼（CharAddrCheck）
+- <b>2011/08/06 FILEVERSION 1.0.4.20 PRODUCTVERSION 1.0.4.0</b>
+  - [bug 9249]「[u][要望]禁則文字がYOMI頭に登録された場合にエラーとしてほしい」に対応
+- <b>2011/07/14 FILEVERSION 1.0.3.19 PRODUCTVERSION 1.0.0.0</b>
+  - [bug8800]NGがない場合でも出力モードが実行されてしまう問題修正
+- <b>2011/04/27 FILEVERSION 1.0.3.18 PRODUCTVERSION 1.0.0.0</b>
+  - [bug8675]自動で単語リスト出力モードを実施してほしいに対応
+- <b>2010/07/02 FILEVERSION 1.0.2.17 PRODUCTVERSION 1.0.0.0</b>
+  - Arc9.3.1対応
+- <b>2009/10/28 FILEVERSION 1.0.1.16 PRODUCTVERSION 1.0.0.0</b>
+  - [bug7333]オブジェクトID漢字読みテーブルの漢字と読みの整合性チェック追加
+- <b>2008/11/20 FILEVERSION 1.0.1.15 PRODUCTVERSION 1.0.0.0</b>
+  - 住所テーブルも設定ファイルに記述するように修正
+- <b>2008/11/12 FILEVERSION 1.0.1.14 PRODUCTVERSION 1.0.0.0</b>
+  - [bug6542]「ゐ」「ゑ」の読みは、「イ」「エ」にして欲しい
+- <b>2008/10/30 FILEVERSION 1.0.1.13 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+*/

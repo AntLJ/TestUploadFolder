@@ -1,0 +1,121 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CharAddrCheck.exe <設定ファイル> [-オプション]
+@endverbatim
+
+@section usage_config 設定ファイルについて
+接続DB、使用する変換テーブル、ログの出力先の指定は設定ファイル上で行います。
+以下にサンプルを示します。
+
+@verbatim
+##################################################
+#
+# CharAddrCheck.exe 設定ファイル(サンプル)
+#
+# コメントは、[#以降がコメントになります]
+##################################################
+
+# 接続DB（チェックする号ポイント、都市地図行政界のSDEサーバ）
+SDESERVER = sindytest@galatea(sindytest.CharAddrCheck)
+
+# 使用する読み変換テーブル
+CONVERTTABLE = C:\CharAddrCheck\ConvertTable.mdb
+
+# 住所マスタテーブル
+ADDRTABLE = y0811/y0811@delltcp
+
+# ログ出力先
+OUTPUT = C:\CharAddrCheck\Log
+
+@endverbatim
+
+@section usage_option オプション設定
+<table>
+<tr>
+	<th colspan="3" bgcolor="#AFEEEE">オプション設定</th>
+</tr>
+<tr>
+	<th>オプション無し</td>
+	<td>読み変換モード<br>変換テーブルと号ポイント、都市地図行政界の文字付き住所を付き合わせを行う。<br>
+	作成されてたリストにNGがあれば自動的に[-i][-g][-c]を指定した処理を再実行する</td>
+</tr>
+<tr>
+	<th>-i<br>(--infoaddr)</td>
+	<td>単語リスト出力モード<br>（このオプションがなければ読み変換モード）</td>
+</tr>
+<tr>
+	<th>-g<br>(--goupoint.txt))</td>
+	<td>[-i]オプションを指定した場合に有効。<br>読み変換正誤リストから単語リストを作成する。<br>converGouPointList_NG.txtへのフルパスを指定。</td>
+</tr>
+<tr>
+	<th>-c<br>(--cityadmin.txt))</td>
+	<td>[-i]オプションを指定した場合に有効。<br>読み変換正誤リストから単語リストを作成する。<br>convertCityAdminList_NG.txtへのフルパスを指定。</td>
+</tr>
+
+
+@section usage_example 実行例
+初めて使用するとき変換リストを作成する場合（読み変換テーブルになにもデータが無いとき）
+@verbatim
+CharAddrCheck.exe config.txt -i
+@endverbatim
+
+読み変換テーブルを元に読み変換チェックを行う場合
+@verbatim
+CharAddrCheck.exe config.txt
+@endverbatim
+
+読み変換チェック結果のNGログを元に変換リストを作成する場合
+@verbatim
+CharAddrCheck.exe config.txt - i -g C:\temp\converGouPointList_NG.txt -c C:\temp\convertCityAdminList_NG.txt
+@endverbatim
+
+実行時のログ（エラーログと実行ログ）が欲しいとき
+@verbatim
+CharAddrCheck.exe config.txt -i > C:\temp\error.txt 2> C:\temp\run.txt
+@endverbatim
+
+
+@section usage_log 出力ログ
+<h3>「-i」オプションを指定した場合のログ</h3>
+都市地図行政界と号ポイントのOIDと文字付き住所リスト一覧です。<br>
+ファイルは都市地図行政界と号ポイントの２つが出力されます。<br>
+（ファイル名は基本cityadminlist.txtとgoulist.txt<br>
+処理を繰り返せばファイル名はcityadminlist001.txt,cityadminlist002.txt...となります。）
+<table border="0">
+<tr><td>@image html mojicharlist01.png</td></tr>
+</table><br><br>
+
+<h3>オプション無しの場合のログ</h3>
+変換テーブルにマッチしたかどうかのログです。<br>
+（ファイル名は基本convertCityAdmin_OK.txtとconvertCityAdmin_NG.txt、convertGouPoint_OK.txtとconvertGouPoint_NG.txt<br>
+処理を繰り返せばファイル名はconvertCityAdmin_OK_001.txt,convertCityAdmin_OK_002.txt...となります。）
+<table border="0">
+<tr><td>@image html converted01.png</td></tr>
+</table><br><br>
+
+また、どの地域にどんな文字付き住所があるかのリストも出力されます。<br>
+（ファイル名は基本checkcharList.txt<br>
+処理を繰り返せばファイル名はcheckcharList001.txt,checkcharList002.txt...となります。）
+<table border="0">
+<tr><td>@image html checkcharList01.png</td></tr>
+</table><br><br>
+
+
+<h3>オプション無しの場合のログ</h3>
+変換テーブルにマッチしたかどうかのログです。<br>
+（ファイル名は基本convertCityAdmin.txtとconvertGouPoint.txt<br>
+処理を繰り返せばファイル名はconvertCityAdmin001.txt,convertCityAdmin002.txt...となります。）
+<table border="0">
+<tr><td>@image html converted01.png</td></tr>
+</table><br><br>
+
+<h3>エラーログ</h3>
+基本的に変換テーブルにエラーがある場合に出力されます。<br>
+このログは標準出力に出力されるので、ツール実行時にリダイレクトすればログファイルとして保存できます。（@ref usage_example 参照）<br>
+<table border="0">
+<tr><td>@image html error_log01.png</td></tr>
+</table><br><br>
+
+*/

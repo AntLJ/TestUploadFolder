@@ -1,0 +1,42 @@
+/**
+@mainpage @projectname
+
+<center><b>Ver 1.0.3.18</b></center>
+
+<center>
+@image html ipc_logo.png
+<br>
+ƒCƒ“ƒNƒŠƒƒ“ƒgPŠ”®‰ïĞ<br>
+</center>
+
+@par “®ì•ÛØOS:
+- Windows XP SP3
+
+@if Develop
+@version
+- @fileversion
+- @productversion
+@endif
+
+@date @lastupdate
+
+@section toc_outline ŠT—ª
+
+- @subpage introduction
+- @subpage overview
+- @subpage usage
+  - @ref usage_config
+  - @ref usage_option
+  - @ref usage_example
+  - @ref usage_log
+- @subpage flow
+  - @ref flow_images
+  - @ref detail
+    - @ref detail_converttable
+    - @ref detail_objecttoyomi
+    - @ref detail_kanjitoyomi
+- @subpage history
+
+@section toc_design ‘€ìà–¾
+
+*/

@@ -1,0 +1,14 @@
+#------------------------------------------------------------------------------#
+# CharAddrCheck.exe 設定ファイル
+#                                    2008/09/22 新規作成：相澤
+# SDESERVER		SDE住所データDB
+# CONVERTTABLE	読み変換テーブル
+# ADDRTABLE		住所マスタテーブル
+# OUTPUT		出力先ディレクトリ
+#
+#------------------------------------------------------------------------------#
+
+SDESERVER		= sindytest@galatea(sindytest.CharAddrCheck)
+CONVERTTABLE	= C:\works\SiNDY-u\CharAddrCheck\CharAddrCheck20081030.mdb
+ADDRTABLE		= y0811e/y0811e@delltcp
+OUTPUT			= C:\temps\moji

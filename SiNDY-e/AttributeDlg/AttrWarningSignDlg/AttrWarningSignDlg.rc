@@ -1,0 +1,239 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WARNING_SIGN_DLG DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "警戒標識種別",IDC_STATIC_WARNING_SIGN,17,17,56,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_WARNING_SIGN,77,15,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "対応リンクID",IDC_STATIC_LINK_ID,15,36,56,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LINK_ID,78,32,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "走行画像ファイル",IDC_STATIC_PICTURE_PATH,16,54,56,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PICTURE_PATH,78,50,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "コピー",IDC_BUTTON_COPY_PICTURE_PATH,127,49,50,14,NOT WS_TABSTOP
+    LTEXT           "距離",IDC_STATIC_DISTANCE,16,72,17,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SEARCH_METER,37,70,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "m",IDC_STATIC_METER,64,73,9,9,SS_CENTERIMAGE
+    PUSHBUTTON      "道路リンク検索",IDC_BUTTON_SEARCH_ROAD_LINK,81,68,59,14,NOT WS_TABSTOP
+    PUSHBUTTON      "リンクID適用",IDC_BUTTON_UPDATE_LINK_ID,143,68,50,14,NOT WS_TABSTOP
+    CONTROL         "",IDC_GRID_ROAD_LINK,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",0x0,16,89,173,49
+    LTEXT           "",IDC_STATIC_VAR,15,146,199,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,15,153,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,59,152,68,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WARNING_SIGN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,2,0,2
+ PRODUCTVERSION 17,2,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "警戒標識レイヤ属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "WARNING_SIGN PlugIn"
+            VALUE "FileVersion", "17.2.0.2"
+            VALUE "InternalName", "WARNING_SIGN"
+            VALUE "LegalCopyright", "Copyright (C) 2017 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "WARNING_SIGN.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "17.2.0.2"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_WARNING_SIGN_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WARNING_SIGN_DLG DLGINIT
+BEGIN
+    IDC_GRID_ROAD_LINK, 0x376, 604, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x1adf, 0x0000, 0x0845, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0x820f, 0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 
+0x6283, 0x4e83, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 
+0x0008, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 
+0x000d, 0x8000, 0x0003, 0x000e, 0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 
+0x0005, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 
+0x0010, 0x8000, 0x0003, 0x00c0, 0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0002, 0x0000, 0x0002, 0x0001, 0x0003, 0x0002, 0x0000, 0x0003, 
+0x0002, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0x0000, 0x0008, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0004, 0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrWarningSignDlg"
+    IDS_CAPTION             "警戒標識レイヤ属性編集ダイアログ"
+    IDS_NAME                "SiNDYe_AttrWarningSignDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "警戒標識レイヤ属性編集ダイアログ"
+    IDS_MESSAGE             "警戒標識レイヤの属性を表示・編集するダイアログ"
+    IDS_ERR_NO_EXIST_ROAD_LINK "道路リンクレイヤがTOCに存在しない、または非表示になっています"
+    IDS_ERR_FAILED_READ_LAYER "レイヤの読み込みに失敗"
+    IDS_ERR_SEARCH_METER_EMPTY "距離が指定されていません"
+    IDS_ERR_SEARCH_METER_MINUS "距離は0以上を指定してください"
+    IDS_ERR_SEARCH_METER_OVER_LIMIT "指定した距離が%d(m)を超えています"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_SEARCH_METER_INVALID "検索距離が不正"
+    IDS_ERR_WARNING_SIGN_VALUE_NOT_EXIST "%sに格納されている値(%d)は警戒標識種別コードに存在しません"
+    IDS_ERR_INVALID_ATTR    "%s (OID=%d)\n属性の整合が取れていません："
+    IDS_ERRCHK              "属性整合チェック"
+    IDS_COMBO_ITEM_FOR_UNDEFINED_VALUE "x : 未定義"
+    IDS_FAILED_TO_CREATE_BUFFER "バッファの作成に失敗しました"
+    IDS_ERROR               "エラー"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

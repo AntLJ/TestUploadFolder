@@ -1,0 +1,4 @@
+LIBRARY "WALK_NODE.DLL"
+
+EXPORTS
+	CreateDlg

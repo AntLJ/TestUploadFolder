@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,28
+ PRODUCTVERSION 18,1,0,28
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "Comments", "歩行者NWノード用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントＰ株式会社"
+            VALUE "FileDescription", "WALK_NODE PlugIn"
+            VALUE "FileVersion", "18.1.0.28"
+            VALUE "InternalName", "AttrWalkNodeDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2007-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "WALK_NODE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.28"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRWALKNODEDLG DIALOGEX 0, 0, 322, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "ノード種別",IDC_STATIC_WALKNODECLASS,56,16,60,8
+    COMBOBOX        IDC_COMBO_WALKNODECLASS,133,16,112,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "道路ノードID",IDC_STATIC_ROADNODEID,21,39,60,8,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_ROADNODEID,81,39,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_CROSSINGNAME,137,40,5,8
+    LTEXT           "NULL",IDC_STATIC_CROSSINGNAME2,150,40,59,8
+    PUSHBUTTON      "検索",IDC_BUTTON_SEARCHROADNODE,234,39,23,10
+    PUSHBUTTON      "削除",IDC_DELETE_ROADNODEID,264,39,23,10
+    LTEXT           "駅出入口ID",IDC_STATIC_REFID,21,61,60,8
+    EDITTEXT        IDC_EDIT_STATIONGATE,81,61,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_GATESTATION,137,62,5,10
+    LTEXT           "NULL",IDC_STATIC_STATIONGATE_NAME,150,62,59,8
+    PUSHBUTTON      "検索",IDC_BUTTON_SEARCHSTATIONGATE,234,61,23,10
+    PUSHBUTTON      "削除",IDC_DELETE_STATIONGATEID,264,61,23,10
+    LTEXT           "地下街出入口ID",IDC_STATIC_UNDERGROUNDGATENODEID,21,81,60,8
+    EDITTEXT        IDC_EDIT_UNDERGROUNDGATE,80,81,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_UNDERGROUNDGATE,137,82,5,8
+    LTEXT           "NULL",IDC_STATIC_UNDERGROUNDGATE_NAME,150,82,59,8
+    PUSHBUTTON      "検索",IDC_BUTTON_SEARCHUNDERGROUNDGATE,234,81,23,10
+    PUSHBUTTON      "削除",IDC_DELETE_UNDERGROUNDGATEID,264,81,23,10
+    PUSHBUTTON      "＜＜",IDC_BUTTON_INSERT,34,164,26,19
+    LTEXT           "周辺検索結果",IDC_SEARCH_RESULT_LABEL,85,148,134,8
+    LTEXT           "周囲",IDC_STATIC_SEARCH,224,148,18,8
+    EDITTEXT        IDC_EDIT_SEARCH,244,148,46,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "m",IDC_STATIC_SEARCH2,291,148,18,8
+    CONTROL         "",IDC_LIST_RESULT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER,84,163,223,65
+    LTEXT           "",IDC_STATIC_VAR,7,251,199,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,7,262,71,8
+    EDITTEXT        IDC_EDIT_SOURCE,85,259,110,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRWALKNODEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrWalkNodeDlg"
+    IDS_CAPTION             "歩行者ノードダイアログ"
+    IDS_NAME                "SiNDYe_AttrWalkNodeDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "歩行者ノードダイアログ"
+    IDS_MESSAGE             "歩行者ノード情報を表示・編集するダイアログ"
+    IDS_NOSTATIONGATEPOINT  "TOCに「Station_Gate_Point」がないため検索できません。"
+    IDS_SELECTRECORD        "検索結果リストから該当レコードを選択してください。"
+    IDS_ERRORID             "歩行者ノード[%s:%ld]に下記のエラーがあります。"
+    IDS_NOROADNODECLASS     "TOCに%sがないため関連付けができません。"
+    IDS_FINDPLURALINSAMEGROUP 
+                            "グループ内に複数(%d個)の%sが見つかったため、一番初めに見つかった下記を関連付けの対象とします。"
+    IDS_FINDPLURALTOC       "複数(%d個)の%sが見つかったため、一番初めに見つかった下記を関連付けの対象とします。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NONEXISTID          "存在しないOID"
+    IDS_INVISIBLEGROUP      "グループ内の%sが全て非表示です。\n非表示レイヤとIDの関連付けを行いますか？"
+    IDS_INVISIBLETOC        "TOC上の%sが全て非表示です。\n非表示レイヤとIDの関連付けを行いますか？"
+    IDS_CROSSNODECOLUMN     "交差点名称"
+    IDS_CROSSRESULT         "交差点周辺検索結果"
+    IDS_STATIONGATECOLUMN   "駅出入口名称"
+    IDS_STATIONGATERESULT   "駅出入口周辺検索結果"
+    IDS_ONEMORESEARCH       "TOCの構成が変更されています。検索をやり直してください。"
+    IDS_ROADNODE_INPUT_ERROR "道路ノードIDに値が入っています。"
+    IDS_STATIONGATE_INPUT_ERROR "駅出入口IDに値が入っています。"
+    IDS_STATIONGATE_NONE_INPUT_ERROR "駅出入口IDに値が入っていません。"
+    IDS_UNDERGROUNDGATECOLUMN "地下街出入口名称"
+    IDS_UNDERGROUNDGATERESULT "地下街出入口周辺検索結果"
+    IDS_UNDERGROUNDGATE_INPUT_ERROR "地下街出入口IDに値が入っています。"
+    IDS_UNDERGROUNDGATE_NONE_INPUT_ERROR "地下街出入口IDに値が入っていません。"
+    IDS_NO_UNDERGROUNDGATE_CONTENTS "対象外コンテンツのOID"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

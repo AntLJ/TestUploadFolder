@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "WARNING_SIGN.DLL"
+
+EXPORTS
+	CreateDlg
+

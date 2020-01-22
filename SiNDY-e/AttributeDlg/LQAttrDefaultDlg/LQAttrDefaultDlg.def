@@ -1,0 +1,4 @@
+LIBRARY "LQDEFAULT.DLL"
+
+EXPORTS
+	CreateDlg

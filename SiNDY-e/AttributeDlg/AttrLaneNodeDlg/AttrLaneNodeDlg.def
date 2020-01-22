@@ -1,0 +1,6 @@
+; [SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "LANE_NODE.DLL"
+
+EXPORTS
+	CreateDlg
+

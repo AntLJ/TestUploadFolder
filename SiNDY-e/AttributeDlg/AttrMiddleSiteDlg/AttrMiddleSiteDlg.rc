@@ -1,0 +1,282 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRMIDDLESITEDLG DIALOG 0, 0, 243, 275
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "スケール4背景種別",IDC_STATIC_SC4BGCLASS_C,6,47,58,8
+    COMBOBOX        IDC_COMBO_SC4BGCLASS_C,73,47,58,232,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "原稿番号入力",IDC_STATIC_GENKOU4,6,68,58,8
+    EDITTEXT        IDC_EDIT_GENKOU4,73,68,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "原稿番号検索",IDC_BUTTON_SEARCH4,147,68,48,13
+    LTEXT           "スケール3背景種別",IDC_STATIC_SC3BGCLASS_C,6,89,58,8
+    COMBOBOX        IDC_COMBO_SC3BGCLASS_C,73,89,58,187,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "以上同じに",IDC_BUTTON_SAME3,147,89,48,13
+    LTEXT           "原稿番号入力",IDC_STATIC_GENKOU3,6,110,58,8
+    EDITTEXT        IDC_EDIT_GENKOU3,73,110,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "原稿番号検索",IDC_BUTTON_SEARCH3,147,110,48,13
+    LTEXT           "スケール2背景種別",IDC_STATIC_SC2BGCLASS_C,6,131,58,8
+    COMBOBOX        IDC_COMBO_SC2BGCLASS_C,73,131,58,179,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "以上同じに",IDC_BUTTON_SAME2,147,131,48,13
+    LTEXT           "原稿番号入力",IDC_STATIC_GENKOU2,6,152,58,8
+    EDITTEXT        IDC_EDIT_GENKOU2,73,152,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "原稿番号検索",IDC_BUTTON_SEARCH2,147,152,48,13
+    LTEXT           "スケール1背景種別",IDC_STATIC_SC1BGCLASS_C,6,173,58,8
+    COMBOBOX        IDC_COMBO_SC1BGCLASS_C,73,173,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "以上同じに",IDC_BUTTON_SAME1,147,173,48,13
+    LTEXT           "原稿番号入力",IDC_STATIC_GENKOU1,6,194,58,8
+    EDITTEXT        IDC_EDIT_GENKOU1,73,194,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "原稿番号検索",IDC_BUTTON_SEARCH1,147,194,48,13
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,6,227,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,73,227,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,215,170,1,SS_SUNKEN
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,20
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ミドル背景ポリゴン用属性編集ダイアログ"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "MIDDLE_SITE PlugIn"
+            VALUE "FileVersion", "11.1.0.20"
+            VALUE "InternalName", "AttrMiddleSiteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "MIDDLE_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "川辺航（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "向井義久（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrMiddleSiteDlg"
+    IDS_CAPTION             "ミドル背景ポリゴンダイアログ"
+    IDS_NAME                "SiNDYe_AttrMiddleSiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "ミドル背景ポリゴンダイアログ"
+    IDS_MESSAGE             "ミドル背景ポリゴン情報を表示・編集するダイアログ"
+    IDS_FAILTOGETRULE       "SiNDYRuleを取得できませんでした"
+    IDS_NOMANUSCRIPT        "入力した原稿番号は有りません"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRMIDDLESITEDLG DIALOGEX 0, 0, 243, 275
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Background class of scale 4",IDC_STATIC_SC4BGCLASS_C,6,47,84,8
+    COMBOBOX        IDC_COMBO_SC4BGCLASS_C,95,48,58,232,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MS No",IDC_STATIC_GENKOU4,6,68,58,8
+    EDITTEXT        IDC_EDIT_GENKOU4,95,69,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH4,169,69,48,13
+    LTEXT           "Background class of scale 3",IDC_STATIC_SC3BGCLASS_C,6,89,84,8
+    COMBOBOX        IDC_COMBO_SC3BGCLASS_C,95,90,58,187,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME3,169,90,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU3,6,110,58,8
+    EDITTEXT        IDC_EDIT_GENKOU3,95,111,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH3,169,111,48,13
+    LTEXT           "Background class of scale 2",IDC_STATIC_SC2BGCLASS_C,6,131,84,8
+    COMBOBOX        IDC_COMBO_SC2BGCLASS_C,95,132,58,179,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME2,169,132,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU2,6,152,58,8
+    EDITTEXT        IDC_EDIT_GENKOU2,95,153,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH2,169,153,48,13
+    LTEXT           "Background class of scale 1",IDC_STATIC_SC1BGCLASS_C,6,173,84,8
+    COMBOBOX        IDC_COMBO_SC1BGCLASS_C,95,174,58,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Same as above",IDC_BUTTON_SAME1,169,174,48,13
+    LTEXT           "MS No",IDC_STATIC_GENKOU1,6,194,58,8
+    EDITTEXT        IDC_EDIT_GENKOU1,95,195,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search MS No",IDC_BUTTON_SEARCH1,169,195,48,13
+    LTEXT           "Source",IDC_STATIC_SOURCE,6,227,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,95,228,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,215,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,20
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrMiddleSiteDlg"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "MIDDLE_SITE PlugIn"
+            VALUE "FileVersion", "11.1.0.20"
+            VALUE "InternalName", "AttrMiddleSiteDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "MIDDLE_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRMIDDLESITEDLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrMiddleSiteDlg"
+    IDS_CAPTION             "AttrMiddleSiteDlg"
+    IDS_NAME                "SiNDYe_AttrMiddleSiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrMiddleSiteDlg"
+    IDS_MESSAGE             "Dialog for display/editing of middle background polygon"
+    IDS_FAILTOGETRULE       "SiNDYRule was not found"
+    IDS_NOMANUSCRIPT        "Entered MS_No does not exist"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

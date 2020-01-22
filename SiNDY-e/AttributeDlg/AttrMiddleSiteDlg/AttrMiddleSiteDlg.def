@@ -1,0 +1,4 @@
+LIBRARY "MIDDLE_SITE.DLL"
+
+EXPORTS
+	CreateDlg

@@ -1,0 +1,269 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRMIDDLELINEDLG DIALOGEX 0, 0, 233, 212
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    CONTROL         "スケール１表示フラグ",IDC_CHECK_SC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,33,78,10
+    CONTROL         "スケール２表示フラグ",IDC_CHECK_SC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,33,78,10
+    CONTROL         "スケール３表示フラグ",IDC_CHECK_SC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,48,78,10
+    CONTROL         "スケール４表示フラグ",IDC_CHECK_SC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,48,78,10
+    CONTROL         "地下フラグ",IDC_CHECK_UG_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,63,47,10
+    LTEXT           "背景ライン種別",IDC_STATIC_LINETYPE,11,84,54,8
+    COMBOBOX        IDC_COMBO_LINETYPE,85,79,48,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,11,115,54,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,85,115,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,103,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRMIDDLELINEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,16
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ミドル背景ライン用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "ミドル背景ライン用属性編集ダイアログプラグイン"
+            VALUE "FileVersion", "11.1.0.16"
+            VALUE "InternalName", "AttrMiddleLineDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "MIDDLE_LINE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "川辺航（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "向井義久（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrMiddleLineDlg"
+    IDS_CAPTION             "ミドル背景ラインダイアログ"
+    IDS_NAME                "SiNDYe_AttrMiddleLineDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "ミドル背景ラインダイアログ"
+    IDS_MESSAGE             "ミドル背景ライン情報を表示・編集するダイアログ"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRMIDDLELINEDLG DIALOGEX 0, 0, 233, 212
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    CONTROL         "Scale 1 display flag",IDC_CHECK_SC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,33,74,10
+    CONTROL         "Scale 2 display flag",IDC_CHECK_SC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,33,74,10
+    CONTROL         "Scale 3 display flag",IDC_CHECK_SC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,48,74,10
+    CONTROL         "Scale 4 display flag",IDC_CHECK_SC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,48,74,10
+    CONTROL         "Underground flag",IDC_CHECK_UG_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,63,66,10
+    LTEXT           "Background Line Class",IDC_STATIC_LINETYPE,11,84,70,8
+    COMBOBOX        IDC_COMBO_LINETYPE,85,79,48,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source",IDC_STATIC_SOURCE,11,115,70,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,85,115,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,11,103,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRMIDDLELINEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,16
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrMiddleLineDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "MIDDLE_LINE PlugIn"
+            VALUE "FileVersion", "11.1.0.16"
+            VALUE "InternalName", "AttrMiddleLineDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "MIDDLE_LINE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrMiddleLineDlg"
+    IDS_CAPTION             "AttrMiddleLineDlg"
+    IDS_NAME                "SiNDYe_AttrMiddleLineDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrMiddleLineDlg"
+    IDS_MESSAGE             "Dialog for display/editing of middle background line"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

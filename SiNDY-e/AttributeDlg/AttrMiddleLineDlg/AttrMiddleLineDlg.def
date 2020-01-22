@@ -1,0 +1,4 @@
+LIBRARY "MIDDLE_LINE.DLL"
+
+EXPORTS
+	CreateDlg

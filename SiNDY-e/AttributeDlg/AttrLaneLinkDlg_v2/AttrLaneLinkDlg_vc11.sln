@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrLaneLinkDlg", "AttrLaneLinkDlg.vcxproj", "{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrLaneNodeDlg", "..\AttrLaneNodeDlg\AttrLaneNodeDlg.vcxproj", "{8D9FCF52-277F-460A-9714-47142C3BE1F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug for LQ|Win32 = Debug for LQ|Win32
+		Debug_English|Win32 = Debug_English|Win32
+		Debug_MBCS|Win32 = Debug_MBCS|Win32
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release for LQ|Win32 = Release for LQ|Win32
+		Release_English for LQ|Win32 = Release_English for LQ|Win32
+		Release_English|Win32 = Release_English|Win32
+		Release_MBCS|Win32 = Release_MBCS|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug for LQ|Win32.ActiveCfg = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug for LQ|Win32.Build.0 = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug_English|Win32.ActiveCfg = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug_English|Win32.Build.0 = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug_MBCS|Win32.ActiveCfg = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug_MBCS|Win32.Build.0 = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Debug|Win32.Build.0 = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.MBCS Release|Win32.Build.0 = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release for LQ|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release for LQ|Win32.Build.0 = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_English for LQ|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_English for LQ|Win32.Build.0 = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_English|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_English|Win32.Build.0 = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_MBCS|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release_MBCS|Win32.Build.0 = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release|Win32.ActiveCfg = Release|Win32
+		{75FA0216-176F-4BEC-86E1-1A37B97E6DD5}.Release|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug for LQ|Win32.ActiveCfg = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug for LQ|Win32.Build.0 = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug_English|Win32.ActiveCfg = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug_English|Win32.Build.0 = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug_MBCS|Win32.ActiveCfg = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug_MBCS|Win32.Build.0 = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Debug|Win32.Build.0 = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.MBCS Release|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release for LQ|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release for LQ|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_English for LQ|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_English for LQ|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_English|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_English|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_MBCS|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release_MBCS|Win32.Build.0 = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release|Win32.ActiveCfg = Release|Win32
+		{8D9FCF52-277F-460A-9714-47142C3BE1F5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

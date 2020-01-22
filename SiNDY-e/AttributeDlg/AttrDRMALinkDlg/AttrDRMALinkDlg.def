@@ -1,0 +1,4 @@
+LIBRARY "DRMA_LINK.DLL"
+
+EXPORTS
+	CreateDlg

@@ -1,0 +1,4 @@
+LIBRARY "GOU_POINT.DLL"
+
+EXPORTS
+	CreateDlg

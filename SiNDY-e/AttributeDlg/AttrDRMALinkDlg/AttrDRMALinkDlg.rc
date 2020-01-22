@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRDRMALINKDLG DIALOG  0, 0, 471, 475
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "道路種別",IDC_STATIC_DISPCLASS,13,69,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_DISPCLASS,70,69,147,296,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "道路管理者",IDC_STATIC_MANAGER,13,103,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_MANAGER,70,103,147,320,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "道路幅員区分",IDC_STATIC_ROADWIDTH,13,121,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ROADWIDTH,70,121,147,287,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "リンク種別",IDC_STATIC_LINKCLASS,13,141,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_LINKCLASS1,70,139,147,246,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "バイパス",IDC_CHECK_BYPASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,294,9,41,12
+    CONTROL         "自動車専用道",IDC_CHECK_CARONLYF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,342,9,64,12
+    LTEXT           "車線数",IDC_STATIC_LANE,245,60,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_LANE,301,61,140,17,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "交通規制種別",IDC_STATIC_REGULER,16,199,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_REGULER,73,197,147,319,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "リンク通行可不可",IDC_STATIC_LINKOK,16,224,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_LINKOK,73,222,147,246,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "路線番号",IDC_STATIC_ROADNUMBER,277,245,38,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ROADNUMBER,331,243,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "号線",IDC_STATIC_ROADNUMBER2,367,245,19,9,SS_CENTERIMAGE
+    LTEXT           "主従区分コード",IDC_STATIC_KUBUNCODE,13,361,63,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_KUBUNCODE,79,361,138,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "規制速度コード",IDC_STATIC_LIMITSPEED,13,377,63,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_LIMITSPEED,79,377,138,177,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "旅行速度",IDC_STATIC_TRIPSPEED,13,393,63,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TRIPSPEED,79,393,138,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Tab1",IDC_TAB_DRMAATTR,"SysTabControl32",0x0,11,9,205,49
+    CONTROL         "",IDC_GRID_DUPLILINK,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,253,281,198,37
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ATTRDRMALINKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 464
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 468
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ATTRDRMALINKDLG DLGINIT
+BEGIN
+    IDC_GRID_DUPLILINK, 0x376, 840, 0
+0x0005, 0x0000, 0x006d, 0x0073, 0x0068, 0x0072, 0x0044, 0x0300, 0x0000, 
+0x23dd, 0x0000, 0x05ca, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0001, 
+0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 0x0190, 0x5f90, 0x0001, 0x820f, 
+0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 0x6283, 0x4e83, 0x0003, 0x0000, 
+0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 0x0008, 0x8000, 0x0003, 0x000f, 
+0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 0x000d, 0x8000, 0x0003, 0x000e, 
+0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 0x0005, 0x8000, 0x0003, 0x000f, 
+0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 0x00c0, 
+0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0001, 
+0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0002, 0x0000, 0x0002, 
+0x0001, 0x0003, 0x0001, 0x0000, 0x0003, 0x0004, 0x0000, 0x0003, 0x0001, 
+0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0008, 0x00f4, 0x0000, 0x0028, 0x0046, 0x006f, 0x0072, 0x006d, 0x0061, 
+0x0074, 0x0029, 0x000b, 0x0034, 0x000b, 0x0033, 0x0031, 0x0035, 0x0009, 
+0x0039, 0x0009, 0x0039, 0x0009, 0x0009, 0x0009, 0x0009, 0x0030, 0x0009, 
+0x0030, 0x0009, 0x0009, 0x0030, 0x0009, 0x000b, 0x0031, 0x0038, 0x0034, 
+0x0035, 0x0009, 0x0039, 0x0009, 0x0034, 0x0009, 0x0009, 0x0009, 0x0009, 
+0x0030, 0x0009, 0x0030, 0x0009, 0x0009, 0x0030, 0x0009, 0x000b, 0x0039, 
+0x0030, 0x0030, 0x0009, 0x0039, 0x0009, 0x0034, 0x0009, 0x0009, 0x0009, 
+0x0009, 0x0030, 0x0009, 0x0030, 0x0009, 0x0009, 0x0030, 0x0009, 0x000b, 
+0x0031, 0x0034, 0x0037, 0x0030, 0x0009, 0x0039, 0x0009, 0x0034, 0x0009, 
+0x0009, 0x0009, 0x0009, 0x0030, 0x0009, 0x0030, 0x0009, 0x0009, 0x0030, 
+0x0009, 0x000b, 0x0028, 0x0054, 0x0065, 0x0078, 0x0074, 0x0029, 0x000b, 
+0x0009, 0x91cd, 0x7528, 0x8def, 0x7dda, 0x7a2e, 0x5225, 0x30b3, 0x30fc, 
+0x30c9, 0x0009, 0x9053, 0x8def, 0x756a, 0x53f7, 0x0009, 0x8def, 0x7dda, 
+0x756a, 0x53f7, 0x30b3, 0x30fc, 0x30c9, 0x0009, 0x000b, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0004, 0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 
+0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,0,0,15
+ PRODUCTVERSION 8,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "DRMA道路リンク用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "DRMA_LINK PlugIn"
+            VALUE "FileVersion", "6, 0, 0, 15"
+            VALUE "InternalName", "AttrDRMALinkDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2010"
+            VALUE "OriginalFilename", "DRMA_LINK.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "8, 0, 0, 0"
+            VALUE "主担当", "宿澤秀和（コンテンツ事業本部技術開発部システム開発グループ）"
+            VALUE "副担当", "古川貴宏（コンテンツ事業本部技術開発部システム開発グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "AttrDRMALinkDlg"
+    IDS_CAPTION         "DRMAリンクダイアログ"
+    IDS_NAME            "SiNDYe_AttrDRMALinkDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "DRMAリンクダイアログ"
+    IDS_MESSAGE             "DRMAリンクを表示・編集するダイアログ"
+    IDS_BASE                "基本"
+    IDS_EXTENTION           "拡張"
+    IDS_REGULATION          "規制"
+    IDS_NUMBER              "番号"
+    IDS_DRMA                "DRMA"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

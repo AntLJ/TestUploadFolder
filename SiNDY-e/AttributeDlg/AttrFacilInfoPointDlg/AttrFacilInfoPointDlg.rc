@@ -1,0 +1,304 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRFACILINFOPOINTDLG DIALOG 0, 0, 265, 331
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "路線種別参照用",IDC_STATIC_ROADCLASS_REF,9,13,65,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROADCLASS_REF,79,13,125,279,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "路線名称参照用",IDC_STATIC_ROADNAME_REF,9,30,65,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROADNAME_REF,79,30,125,274,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "路線コード",IDC_STATIC_ROSENCODE,9,46,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ROSENCODE,79,46,125,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "路線内シーケンス",IDC_STATIC_SEQUENCE,9,61,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SEQUENCE,79,61,125,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "施設漢字名称",IDC_STATIC_FACILKANJI,9,77,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FACILKANJI,79,77,125,15,ES_AUTOHSCROLL
+    LTEXT           "施設カナ名称",IDC_STATIC_FACILKANA,9,93,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FACILKANA,79,93,125,12,ES_AUTOHSCROLL
+    CONTROL         "仮称フラグ",IDC_CHECK_DUMMYFLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,113,186,12
+    COMBOBOX        IDC_COMBO_FACILCLASS,79,132,125,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "施設代表ポイント自動計算フラグ",IDC_CHECK_AUTOPOSITION_F,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,171,186,14
+    LTEXT           "施設種別",IDC_STATIC_FACILCLASS,9,132,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_VAR,14,211,170,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,9,219,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,66,218,138,13,ES_AUTOHSCROLL
+    CONTROL         "ダミー施設フラグ",IDC_CHECK_DUMMY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,190,186,12
+    COMBOBOX        IDC_COMBO_SEARCHFACIL,79,148,125,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "検索用施設種別",IDC_STATIC_SEARCHFACIL,9,148,65,12,SS_CENTERIMAGE
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,22
+ PRODUCTVERSION 18,1,0,22
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "施設情報ポイント用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "施設情報ポイント用属性編集ダイアログ"
+            VALUE "FileVersion", "18.1.0.22"
+            VALUE "InternalName", "FACIL_INFO_POINT.dll"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "FACIL_INFO_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.22"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRFACILINFOPOINTDLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrFacilInfoPointDlg"
+    IDS_CAPTION             "施設情報ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrFacilInfoPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "施設情報ポイントダイアログ"
+    IDS_MESSAGE             "施設情報ポイントを表示・編集するダイアログ"
+    IDS_FAILTOSETROUTECLASS "路線種別コードのコンボボックス設定失敗"
+    IDS_FAILTOGETROUTECODE  "路線コード情報の取得失敗"
+    IDS_FAILTOSETROUTENAME  "路線名コンボボックスの設定失敗"
+    IDS_INVALIDFACILKANA    "施設情報ポイントOBJECTID:%ld 施設カナ名称が入っていません。"
+    IDS_INVALIDFACILKANJI   "施設情報ポイントOBJECTID:%ld 施設漢字名称が入っていません。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILTOGETROW        "行の取得に失敗"
+    IDS_FONT                "ＭＳＰゴシック"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRFACILINFOPOINTDLG DIALOGEX 0, 0, 265, 331
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Route type reference",IDC_STATIC_ROADCLASS_REF,9,13,65,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROADCLASS_REF,79,13,125,279,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Route name reference",IDC_STATIC_ROADNAME_REF,9,30,65,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROADNAME_REF,79,30,125,274,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Route code",IDC_STATIC_ROSENCODE,9,46,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ROSENCODE,79,46,125,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Route sequence",IDC_STATIC_SEQUENCE,9,61,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SEQUENCE,79,61,125,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Kanji name of facility",IDC_STATIC_FACILKANJI,9,77,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FACILKANJI,79,77,125,15,ES_AUTOHSCROLL
+    LTEXT           "Kana name of facility",IDC_STATIC_FACILKANA,9,93,65,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_FACILKANA,79,93,125,12,ES_AUTOHSCROLL
+    CONTROL         "Tentative name flag",IDC_CHECK_DUMMYFLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,113,186,12
+    COMBOBOX        IDC_COMBO_FACILCLASS,79,132,125,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatic calculation flag of facility's representative point ",IDC_CHECK_AUTOPOSITION_F,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,171,186,14
+    LTEXT           "Facility class",IDC_STATIC_FACILCLASS,9,132,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_VAR,14,211,170,1,SS_SUNKEN
+    LTEXT           "InformationSource",IDC_STATIC_SOURCE,9,219,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SOURCE,66,218,138,13,ES_AUTOHSCROLL
+    CONTROL         "Dummy facility flag",IDC_CHECK_DUMMY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,190,186,12
+    COMBOBOX        IDC_COMBO_SEARCHFACIL,79,148,125,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Facility class for search",IDC_STATIC_SEARCHFACIL,9,148,65,12,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,22
+ PRODUCTVERSION 18,1,0,22
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "FACIL_INFO_POINT PlugIn"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "AttrFacilInfoPointDlg"
+            VALUE "FileVersion", "18.1.0.22"
+            VALUE "InternalName", "FACIL_INFO_POINT.dll"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "FACIL_INFO_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.22"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRFACILINFOPOINTDLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrFacilInfoPointDlg"
+    IDS_CAPTION             "Facility information point dialog"
+    IDS_NAME                "SiNDYe_AttrFacilInfoPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "Facility information point dialog"
+    IDS_MESSAGE             "Dialog for display/edit of facility information point"
+    IDS_FAILTOSETROUTECLASS "Failed to set the combo box of route class code"
+    IDS_FAILTOGETROUTECODE  "Acquisition failure of route class code"
+    IDS_FAILTOSETROUTENAME  "Failed to set the combo box of route name"
+    IDS_INVALIDFACILKANA    "Access point OBJECTID:%ld No signpost Kana name has been entered."
+    IDS_INVALIDFACILKANJI   "Access point OBJECTID:%ld No signpost Kanji name has been entered."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILTOGETROW        "Failed to get the line"
+    IDS_FONT                "MS UI Gothic"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

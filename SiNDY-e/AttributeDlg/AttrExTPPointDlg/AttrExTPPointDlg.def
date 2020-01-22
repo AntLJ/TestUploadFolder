@@ -1,0 +1,4 @@
+LIBRARY "EXTP_POINT.DLL"
+
+EXPORTS
+	CreateDlgByName

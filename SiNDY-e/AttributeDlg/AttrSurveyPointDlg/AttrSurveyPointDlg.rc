@@ -1,0 +1,291 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRSURVEYPOINTDLG DIALOG 0, 0, 229, 283
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "対応ノードID",IDC_STATIC_NODEID,19,29,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NODEID,93,29,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "交差原票ID",IDC_STATIC_MASTERID,19,49,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MASTERID,93,49,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "メッシュコード",IDC_STATIC_MESHCODE,19,69,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MESHCODE,93,69,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ロット番号",IDC_STATIC_LOTNO,19,89,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LOTNO,93,89,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "現地調査作業年度",IDC_STATIC_WORKYEAR,19,109,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_WORKYEAR,93,109,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "現地調査作業時期",IDC_STATIC_WORKSEASON,19,129,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_WORKSEASON,93,129,123,122,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "調査レベル",IDC_STATIC_SURVEYLV,19,149,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SURVEYLV,93,149,123,153,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "プリミティブID",IDC_STATIC_PRIMID,19,169,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PRIMID,93,169,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "現調画像表示",IDC_BUTTON_DISPLAYPICTURE,93,185,118,13
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,19,214,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,93,214,123,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,23,202,170,1,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_DUMMY,19,185,72,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRSURVEYPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,1,0,18
+ PRODUCTVERSION 10,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "現地調査ポイント用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "SURVEY_POINT PlugIn"
+            VALUE "FileVersion", "10.1.0.18"
+            VALUE "InternalName", "AttrSurveyPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "SURVEY_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "10.1.0.1"
+            VALUE "主担当", "菅原拓矢（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrSurveyPointDlg"
+    IDS_CAPTION             "現地調査ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrSurveyPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "現地調査ポイントダイアログ"
+    IDS_MESSAGE             "現地調査ポイント情報を表示・編集するダイアログ"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRSURVEYPOINTDLG DIALOGEX 0, 0, 229, 283
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Corresponding node ID",IDC_STATIC_NODEID,19,29,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NODEID,93,29,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Crossing master ID",IDC_STATIC_MASTERID,19,49,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MASTERID,93,49,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Mesh code",IDC_STATIC_MESHCODE,19,69,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MESHCODE,93,69,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Lot number",IDC_STATIC_LOTNO,19,89,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LOTNO,93,89,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Field survey year",IDC_STATIC_WORKYEAR,19,109,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_WORKYEAR,93,109,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Field survey season",IDC_STATIC_WORKSEASON,19,129,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_WORKSEASON,93,129,123,122,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Level of survey",IDC_STATIC_SURVEYLV,19,149,72,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SURVEYLV,93,149,123,153,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Primitive ID",IDC_STATIC_PRIMID,19,169,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PRIMID,93,169,123,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Display field survey image",IDC_BUTTON_DISPLAYPICTURE,93,185,118,13
+    LTEXT           "Source",IDC_STATIC_SOURCE,19,214,72,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,93,214,123,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,23,202,170,1,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_DUMMY,19,185,72,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRSURVEYPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,1,0,18
+ PRODUCTVERSION 10,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "AttrSurveyPointDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "SURVEY_POINT PlugIn"
+            VALUE "FileVersion", "10.1.0.18"
+            VALUE "InternalName", "AttrSurveyPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "SURVEY_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "10.1.0.1"
+            VALUE "Project Manager", "TAKUYA SUGAWARA (Section IV Engineering Department II Division)"
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrSurveyPointDlg"
+    IDS_CAPTION             "AttrSurveyPointDlg"
+    IDS_NAME                "SiNDYe_AttrSurveyPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrSurveyPointDlg"
+    IDS_MESSAGE             "Dialog for display/editing of field survey point"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

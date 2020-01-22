@@ -1,0 +1,4 @@
+LIBRARY "TOP_CONTOUR.DLL"
+
+EXPORTS
+	CreateDlg

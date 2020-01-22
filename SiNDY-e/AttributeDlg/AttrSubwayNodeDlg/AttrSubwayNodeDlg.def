@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "SUBWAY_NODE.DLL"
+
+EXPORTS
+	CreateDlg
+

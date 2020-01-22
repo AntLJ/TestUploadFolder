@@ -1,0 +1,166 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SUBWAYNODEDLG DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "ノード種別",IDC_STATIC_NODECLASS,7,10,50,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CODECLASS,55,9,226,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "駅名",IDC_STATIC_STATIONNAME,7,30,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_STATIONNAME,56,29,225,14,ES_AUTOHSCROLL
+    LTEXT           "路線名",IDC_STATIC_LINENAME,7,48,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LINENAME,56,46,225,14,ES_AUTOHSCROLL
+    LTEXT           "駅番号",IDC_STATIC_STATIONNUM,7,67,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_STATIONNUM,56,65,225,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_STATION,57,97,84,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_LINE,157,97,84,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "適用",IDC_BUTTON_APPLY,245,134,50,14
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,15,157,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,68,157,68,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,14,151,199,1,SS_SUNKEN
+    LTEXT           "駅",IDC_STATIC_STATIONLIST,61,86,50,9,SS_CENTERIMAGE
+    LTEXT           "路線",IDC_STATIC_LINELIST,159,86,50,9,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_DUMMY,9,86,50,9,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_DUMMY2,7,132,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LINENAME2,64,113,225,14,ES_AUTOHSCROLL
+    LTEXT           "路線名",IDC_STATIC_LINENAME2,7,116,50,9,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SUBWAYNODEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,3
+ PRODUCTVERSION 12,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "地下鉄ノード属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "SUBWAY_NODE PlugIn"
+            VALUE "FileVersion", "12.0.0.3"
+            VALUE "InternalName", "AttrSubwayNodeDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2013 - 2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "SUBWAY_NODE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "12.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DIALOG_NAME         "地下鉄ノード編集ダイアログ"
+    IDS_CONNECT_DIFFERENT_LINE "接続するリンクと異なる路線です。"
+    IDS_UNKNOWN_LINE        "路線が不明です。"
+    IDS_DIFFERENT_LINE_ID   "両端駅ノードの路線IDが異なります。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

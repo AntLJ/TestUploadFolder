@@ -1,0 +1,4 @@
+LIBRARY "TELTP_POINT.DLL"
+
+EXPORTS
+	CreateDlg

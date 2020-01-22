@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,1,0,6
+ PRODUCTVERSION 10,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "Comments", "電話番号住所ポイント属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "TELTP_POINT PlugIn"
+            VALUE "FileVersion", "10.1.0.6"
+            VALUE "InternalName", "AttrTelTpPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "TELTP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "10.1.0.1"
+            VALUE "主担当", "菅原拓矢（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "宿澤秀和（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRTELTPPOINTDLG DIALOGEX 0, 0, 276, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "11桁住所コード",IDC_STATIC_ADDRCODE,25,14,71,8
+    LTEXT           "住所名",IDC_STATIC_ADDRNAME,25,34,71,8
+    LTEXT           "方書名称",IDC_STATIC_KATAGAKI,25,54,71,8
+    LTEXT           "掲載名称",IDC_STATIC_KEISAINAME,25,74,71,8
+    LTEXT           "調査結果コード",IDC_STATIC_POINTSTAT,25,94,71,8
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,21,152,71,8
+    EDITTEXT        IDC_EDIT_ADDRCODE,133,12,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ADDRNAME,133,33,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_KATAGAKI,133,52,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_KEISAINAME,133,71,110,16,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_POINTSTAT,133,90,110,107,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SOURCE,129,145,110,14,ES_AUTOHSCROLL
+    LTEXT           "座標付与種別",IDC_STATIC_ADDXY,26,115,71,8
+    COMBOBOX        IDC_COMBO_ADDXY,134,111,110,107,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_VAR,26,138,199,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRTELTPPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrTelTpPointDlg"
+    IDS_CAPTION             "電話番号住所ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrTelTpPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "電話番号住所ポイントダイアログ"
+    IDS_MESSAGE             "電話番号住所ポイント情報を表示・編集するダイアログ"
+    IDS_CANTEDIT            "複数の緯度経度ポイントを選択しています。この状態で編集はできません"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,1,0,6
+ PRODUCTVERSION 10,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000903a4"
+        BEGIN
+            VALUE "Comments", "AttrTelTpPointDlg plugin"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "TELTP_POINT PlugIn"
+            VALUE "FileVersion", "10.1.0.6"
+            VALUE "InternalName", "AttrTelTpPointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "TELTP_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "10.1.0.1"
+            VALUE "Project Manager", "TAKUYA SUGAWARA (Section IV Engineering Department II Division)"
+            VALUE "Assistant Project Manager", "HIDEKAZU SHUKUZAWA (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRTELTPPOINTDLG DIALOGEX 0, 0, 276, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "11 digit address code",IDC_STATIC_ADDRCODE,25,14,71,8
+    LTEXT           "Address name",IDC_STATIC_ADDRNAME,25,34,71,8
+    LTEXT           "Katagaki name",IDC_STATIC_KATAGAKI,25,54,71,8
+    LTEXT           "Display name",IDC_STATIC_KEISAINAME,25,74,71,8
+    LTEXT           "Search result code",IDC_STATIC_POINTSTAT,25,94,71,8
+    LTEXT           "Source",IDC_STATIC_SOURCE,21,152,71,8
+    EDITTEXT        IDC_EDIT_ADDRCODE,133,12,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ADDRNAME,133,33,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_KATAGAKI,133,52,110,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_KEISAINAME,133,71,110,16,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_POINTSTAT,133,90,110,107,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SOURCE,129,145,110,14,ES_AUTOHSCROLL
+    LTEXT           "Add coordinate class",IDC_STATIC_ADDXY,26,115,71,8
+    COMBOBOX        IDC_COMBO_ADDXY,134,111,110,107,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_VAR,26,138,199,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRTELTPPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrTelTpPointDlg"
+    IDS_CAPTION             "AttrTelTpPointDlg"
+    IDS_NAME                "SiNDYe_AttrTelTpPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrTelTpPointDlg"
+    IDS_MESSAGE             "Dialog for display/editing of telephone number address point"
+    IDS_CANTEDIT            "Multiple latitude longitude points are selected and thus cannot be edited"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

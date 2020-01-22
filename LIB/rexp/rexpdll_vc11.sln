@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rexp_vc11", "rexpdll_vc11.vcxproj", "{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Static Debug|Win32 = Static Debug|Win32
+		Static Release|Win32 = Static Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Debug|Win32.Build.0 = Debug|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Release|Win32.ActiveCfg = Release|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Release|Win32.Build.0 = Release|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Static Debug|Win32.ActiveCfg = Static Debug|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Static Debug|Win32.Build.0 = Static Debug|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Static Release|Win32.ActiveCfg = Static Release|Win32
+		{6C6FDEE9-070A-40C2-B1D2-2188C13D07B7}.Static Release|Win32.Build.0 = Static Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

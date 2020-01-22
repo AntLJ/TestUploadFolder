@@ -1,0 +1,25 @@
+rem 《SiNDY住所サーバ指定》
+set CONNECT_ADR=sindy2014a/sindy2014a/SDE.REL_DB-140522M-020A/5151/plum
+
+rem 《SiNDY地図サーバ指定》
+set CONNECT_BLD=fix201405/fix201405/SDE.DEFAULT/5151/eris
+
+rem 《住所マスタ格納ユーザ指定》
+set CONNECT_JDB=y1405/y1405@delltcp
+
+rem 《加除→国地協対応テーブル格納ユーザ指定》
+set CONNECT_JGDC=y1401/y1401@delltcp
+
+rem 《GEOSPACEデータ格納FGDB指定》
+set CONNECT_GEO=C:\data\geospace\original\fgdb\03_岩手県.gdb
+
+rem 《入力ファイル（住所移動ツール出力ログファイル）指定》
+set LOG_INPUT=confirm_59414131.log
+
+rem 《ログファイル（出力）指定》
+set LOG_OUTPUT=test_59414131.log
+
+rem 処理実行
+CheckAddrUsingGS.exe --connect_adr %CONNECT_ADR% --connect_bld %CONNECT_BLD% --connect_geo %CONNECT_GEO% --connect_jdb %CONNECT_JDB% --connect_jgdc %CONNECT_JGDC% --log_input %LOG_INPUT% --log_output %LOG_OUTPUT%
+
+pause

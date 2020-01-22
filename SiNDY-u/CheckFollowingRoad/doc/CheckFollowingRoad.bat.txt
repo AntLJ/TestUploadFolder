@@ -1,0 +1,66 @@
+@echo off
+setlocal
+
+rem *****************************************************
+rem 日時取得(YYYYMMDD_HHMMSS)
+set DATE_TMP=%date:~-10,4%%date:~-5,2%%date:~-2,2%
+set TIME_TMP=%time: =0%
+set TIME_TMP=%time_tmp:~0,2%%time_tmp:~3,2%%time_tmp:~6,2%
+set DATETIME=%DATE_TMP%_%TIME_TMP%
+rem *****************************************************
+
+rem 変数定義
+
+rem --必要に応じて以下を修正----------------------
+
+set ROOT=%~dp0
+
+set BIN=%ROOT%bin\CheckFollowingRoad.exe
+
+rem 比較元のDB
+set BASE=%ROOT%data\533930+周囲8MESH_OLD.mdb
+
+rem 比較先のDB
+set COMP=%ROOT%data\533930+周囲8MESH_NEW.mdb
+
+rem メッシュリスト
+set MESH=%ROOT%mesh\mesh.txt
+
+rem 指定更新日
+set DATE=2016/4/6
+
+rem ログパス
+set RUNLOG=%ROOT%log\run.log
+set ERRLOG=%ROOT%log\err.log
+
+
+rem ----------------------------------------------
+
+rem 変数確認
+
+echo ------------------------------------------------
+echo 道なり角度差分抽出ツール　CheckFollowingRoad.exe
+echo ------------------------------------------------
+echo.
+echo 実行しても良いですか？
+echo.
+echo ツール                  : %BIN%
+echo 比較元のDB              : %BASE%
+echo 比較先のDB              : %COMP%
+echo メッシュリスト          : %MESH%
+echo 指定更新日              : %DATE%
+echo 実行ログファイル名　    : %RUNLOG%
+echo エラーログファイル名    : %ERRLOG%
+
+pause
+rem 処理実行
+
+echo ---------------------------------------------
+echo 処理を実行します
+echo ---------------------------------------------
+
+%BIN% --base %BASE% --comp %COMP% --mesh %MESH% --date %DATE% --runlog %RUNLOG% --errlog %ERRLOG%
+
+pause
+
+endlocal

@@ -1,0 +1,41 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CheckExTPPoint.exe [オプション] [ログファイル]
+@endverbatim
+
+- オプション
+  - チェックモードオプション(指定なしのときは、通常チェック)
+    - [-e] [normal/alps/acc4/ips/hlp] normal : 通常, alps : アルプスのみ, acc4 : iPC(精度4)のみ, ips : ipsチェックモード, hlp : hlpチェックモード
+  - チェック範囲オプション(指定なしのときは、全件チェック)
+    - [-m] [meshcode]  メッシュコード指定
+	- [-l] [meshlist]  メッシュリスト指定
+
+- 環境変数
+  - DB_TP         TP系DB接続プロパティ
+  - DB_ADDRESS    住所系DB接続プロパティ
+  - DB_MAP        都市地図系DB接続プロパティ
+  - DB_BASE       中縮系DB接続プロパティ
+  - DB_MESH       メッシュ系DB接続プロパティ
+  - FC_EXTP_POINT 拡張電話番号検索ポイントフィーチャクラス
+  - FC_CITY_ADMIN 都市地図行政界フィーチャクラス
+  - FC_CITY_SITE  都市地図背景フィーチャクラス
+  - FC_BASE_SITE  中縮背景フィーチャクラス
+  - FC_CITYMESH   都市地図メッシュフィーチャクラス
+
+- ログファイル
+  - ファイルのフルパスを指定
+  - ログハンドルツール標準形式
+    - 情報1  住所名
+    - 情報2  20桁住所コード
+    - 情報3  方書名称
+    - 情報4  掲載名称
+    - 情報5  調査結果
+    - 情報6  情報ソース
+    - 情報7  住所検索ポイント化フラグ
+    - 情報8  同一20桁コード保持相手のオブジェクトID
+    
+- チェック内容詳細
+  - \\\\morioka\\dfs\\Tools\\SiNDY-u\\map\\CheckExTPPoint\\TP調査作業ポイントエラーチェック内容.xls
+*/

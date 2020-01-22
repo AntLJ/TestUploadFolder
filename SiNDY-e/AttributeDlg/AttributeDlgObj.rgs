@@ -1,0 +1,26 @@
+HKCR
+{
+	AttributeDlg.AttributeDlgObj.1 = s 'AttributeDlgObj Class'
+	{
+		CLSID = s '{449732FF-4171-4F3C-A819-BC017230C64D}'
+	}
+	AttributeDlg.AttributeDlgObj = s 'AttributeDlgObj Class'
+	{
+		CLSID = s '{449732FF-4171-4F3C-A819-BC017230C64D}'
+		CurVer = s 'AttributeDlg.AttributeDlgObj.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {449732FF-4171-4F3C-A819-BC017230C64D} = s 'AttributeDlgObj Class'
+		{
+			ProgID = s 'AttributeDlg.AttributeDlgObj.1'
+			VersionIndependentProgID = s 'AttributeDlg.AttributeDlgObj'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{2FD3DDF7-4E12-4C60-AB24-6DE70973DF74}'
+		}
+	}
+}

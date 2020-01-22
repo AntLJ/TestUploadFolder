@@ -1,0 +1,351 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""AttributeDlg.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,27
+ PRODUCTVERSION 18,1,0,27
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "インクリメントＰ株式会社"
+            VALUE "FileDescription", "属性ダイアログ"
+            VALUE "FileVersion", "18.1.0.27"
+            VALUE "InternalName", "AttributeDlg"
+            VALUE "LegalCopyright", "Copyright(C) 2005-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "AttributeDlg.DLL"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.27"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASEDLG DIALOGEX 0, 0, 294, 225
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "属性編集ダイアログ"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC_BASE,"Static",SS_ENHMETAFILE | SS_RIGHTJUST | NOT WS_VISIBLE,116,27,20,20
+    PUSHBUTTON      "内容確認",IDC_BUTTON_CONFIRMATION,115,187,50,14
+    DEFPUSHBUTTON   "OK",IDOK,177,187,50,14
+    PUSHBUTTON      "キャンセル",IDC_BUTTON_CLOSE,237,187,50,14
+    CONTROL         "Tree1",IDC_FEATTREE,"SysTreeView32",WS_BORDER | WS_TABSTOP,19,21,72,140
+    PUSHBUTTON      "",IDC_BUTTON_GRIDMODE,19,167,12,14,BS_BITMAP | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_ALIASMODE,37,167,12,14,BS_BITMAP | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "編",IDC_BUTTON_DELETEWARN,19,187,14,14
+    LTEXT           "",IDC_STATIC_MESSAGE,37,184,66,17,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_OFFICIALNAME,110,163,66,14,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_ALTERNATIVENAME,190,161,66,14,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ATTRIBUTEDLGOBJ     REGISTRY                "AttributeDlgObj.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_GRIDMODE     BITMAP                  "bitmap1.bmp"
+IDB_BITMAP_ALIASMODE    BITMAP                  "alias.bmp"
+IDB_BITMAP_DBNAMEMODE   BITMAP                  "bmp00001.bmp"
+IDB_BITMAP_COMMONMODE   BITMAP                  "bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Copy"
+    BEGIN
+        MENUITEM "コピー",                         ID_OBJECTID_COPY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASEDLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttributeDlg"
+    IDS_CAPTION             "属性ダイアログ"
+    IDS_NAME                "SiNDYe_AttributeDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "属性ダイアログ"
+    IDS_MESSAGE             "属性を表示・編集するダイアログ"
+    IDS_FAILTOWRITECHECKED  "内容確認ログの書き込みに失敗"
+    IDS_CANEDITFEATURE      "編集可能なフィーチャーです"
+    IDS_DONTSTARTEDITING    "編集開始されていません"
+    IDS_CANTEDITFEATURE     "編集できないフィーチャです"
+    IDS_CANTSPECIFY         "表示対象オブジェクトを特定できません"
+    IDS_CHECKSAVE           "編集を保存して、選択したフィーチャを表示しますか？\n「いいえ」を選んだときは、編集を破棄して選択したフィーチャを表示します。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CLOSEANDNOTSAVE     "属性ダイアログを閉じます。編集の保存はされません。"
+    IDS_CONFLICTNODE        "隣接する道路ノードでコンフリクトを起こしています。属性ダイアログを閉じます。編集の保存はされません。"
+    IDS_FAILTOUNDO          "Undoに失敗しました。"
+    IDS_NOTPERMITNULLVALUE  "%s (OID=%ld)  %s はNULL不許可フィールドです。修正してください。"
+    IDS_OUTSIDEOFRANGEDOMAIN 
+                            "%s (OID=%ld)  %s にレンジドメインの範囲外の値が入力されています。修正してください。"
+    IDS_OUTSIDEOFRANGE      "%s (OID=%ld)  %s に範囲外の値が入力されています。修正してください。"
+    IDS_DECIMALPOINT        "%s (OID=%ld)  %s は少数点以下第%d位までしか入力できません。修正してください。"
+    IDS_TOOMENYITEM         "属性ダイアログへ渡すフィーチャが多すぎます。構成点を表示しないフィーチャがあります。"
+    IDS_VERTEX              "構成点"
+    IDS_CHECKDISPMENYVERTEX "%s (OID=%ld)  構成点が %d点あります。\n構成点表示制限数 %d をオーバーしました。\nダイアログに構成点を表示しますか？"
+    IDS_SAMEITEM            "前回確認済アイテムと同一です。\nログへの書き込みは行いません。"
+    IDS_UPDATE_FAILED       "データの更新に失敗しました。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,27
+ PRODUCTVERSION 18,1,0,27
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "Attribute Dialog Box"
+            VALUE "FileVersion", "18.1.0.27"
+            VALUE "InternalName", "AttributeDlg"
+            VALUE "LegalCopyright", "Copyright(C) 2005-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "AttributeDlg.DLL"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.27"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBASEDLG DIALOGEX 0, 0, 294, 225
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Attribute Dialog"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    CONTROL         "",IDC_STATIC_BASE,"Static",SS_ENHMETAFILE | SS_RIGHTJUST | NOT WS_VISIBLE,116,27,20,20
+    PUSHBUTTON      "Checked",IDC_BUTTON_CONFIRMATION,115,187,50,14
+    DEFPUSHBUTTON   "OK",IDOK,177,187,50,14
+    PUSHBUTTON      "CANCEL",IDC_BUTTON_CLOSE,237,187,50,14
+    CONTROL         "Tree1",IDC_FEATTREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,19,21,72,140
+    PUSHBUTTON      "",IDC_BUTTON_GRIDMODE,19,167,12,14,BS_BITMAP | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_ALIASMODE,37,167,12,14,BS_BITMAP | BS_FLAT | NOT WS_TABSTOP
+    PUSHBUTTON      "Edit",IDC_BUTTON_DELETEWARN,19,187,14,14
+    LTEXT           "",IDC_STATIC_MESSAGE,37,184,66,17,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_OFFICIALNAME,110,163,66,14,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_ALTERNATIVENAME,190,161,66,14,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Copy"
+    BEGIN
+        MENUITEM "Copy",                        ID_OBJECTID_COPY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBASEDLG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttributeDlg"
+    IDS_CAPTION             "Attribute Dialog Box"
+    IDS_NAME                "SiNDYe_AttributeDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTOP             "Attribute Dialog Box"
+    IDS_MESSAGE             "Dialog box for displaying and editing attributes."
+    IDS_FAILTOWRITECHECKED  "Failed to write to the confirmation log file."
+    IDS_CANEDITFEATURE      "This feature can be edited."
+    IDS_DONTSTARTEDITING    "Editing has not been started"
+    IDS_CANTEDITFEATURE     "This feature cannot be edited."
+    IDS_CANTSPECIFY         "The object to be displayed could not be identified."
+    IDS_CHECKSAVE           "Do you save the changes and then display the selected feature?\nIf you select ""No,"" the changes will be discarded and then the selected feature will be displayed."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CLOSEANDNOTSAVE     "Close the Attribute dialog box. The changes will not be saved."
+    IDS_CONFLICTNODE        "There is a conflict with adjacent road nodes. Close the Attribute dialog box. The changes will not be saved."
+    IDS_FAILTOUNDO          "Failed to undo the action."
+    IDS_NOTPERMITNULLVALUE  "%s (OID=%ld)  %s is a field that NULL value is not permitted. Correct the problem."
+    IDS_OUTSIDEOFRANGEDOMAIN 
+                            "%s (OID=%ld)  %s has been entered a value of outside the range of the range domain. Correct the problem."
+    IDS_OUTSIDEOFRANGE      "%s (OID=%ld)  %s has been entered a value of outside the range. Correct the problem."
+    IDS_DECIMALPOINT        "%s (OID=%ld)  %s can be entered only up to %d decimal places. Correct the problem."
+    IDS_TOOMENYITEM         "There are too many items to be passed to the Attribute dialog box. There is a feature without vertex displayed"
+    IDS_VERTEX              "Vertex"
+    IDS_CHECKDISPMENYVERTEX "%s (OID=%ld)  There are %d vertexes.\nThe limit of %d has been exceeded. \nDo you want to display the vertexes in the Attribute dialog box?"
+    IDS_SAMEITEM            "Same as the items confirmed last time. \nWriting to the log will not be performed."
+    IDS_UPDATE_FAILED       "Failed to update."
+    IDS_FONT                "MS UI Gothic"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AttributeDlg.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

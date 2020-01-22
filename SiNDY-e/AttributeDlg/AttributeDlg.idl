@@ -1,0 +1,30 @@
+// AttributeDlg.idl : AttributeDlg.dll 用の IDL ソース ファイル
+//
+
+// このファイルはタイプ ライブラリ (AttributeDlg.tlb) を作成するために
+// タイプ ライブラリ作成ツール MIDL によって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(2FD3DDF7-4E12-4C60-AB24-6DE70973DF74),
+	version(1.0),
+	helpstring("AttributeDlg 1.0 ﾀｲﾌﾟ ﾗｲﾌﾞﾗﾘ")
+]
+library ATTRIBUTEDLGLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("../../LIB/tlb/sindyeCore.tlb");
+
+	[
+		uuid(449732FF-4171-4F3C-A819-BC017230C64D),
+		helpstring("AttributeDlgObj Class")
+	]
+	coclass AttributeDlgObj
+	{
+		[default] interface IAttributeDialog;
+	};
+};
+

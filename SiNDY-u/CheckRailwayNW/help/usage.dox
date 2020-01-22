@@ -1,0 +1,31 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CheckRailwayNW.exe [引数] ... 
+@endverbatim
+
+- オプション情報
+
+  - --rail_nw_db [DB] ... 【必須】鉄道NW DB接続先を指定（SDE or FGDB）
+
+  - --rail_poi_db [DB] ... 【必須】鉄道POI DB接続先を指定（SDE or FGDB）
+
+  - --station_db [DB] ... 【必須】中縮駅舎 DB接続先を指定（SDE or FGDB）
+
+  - --mesh_db [DB] ... 【必須】メッシュ DB接続先を指定（SDE or FGDB）
+
+  - --output [file] ... 【必須】ログファイル
+
+  - --meshlist [file] ... 【必須】中縮メッシュリスト
+
+  - --dist_threshold [数値] ... 【必須】微小距離閾値(m)
+
+  - --neighbor_threshold [数値] ... 【必須】近傍距離閾値(m)
+
+※ 各種詳細は、下記資料参照
+
+http://preon.mr.ipc.pioneer.co.jp/svn/source/trunk/SiNDY-u/CheckRailwayNW/doc/ソフトウェア開発文書(CheckRailwayNW).xlsx
+
+
+*/

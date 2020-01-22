@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheckRailwayNW", "CheckRailwayNW.vcxproj", "{489D6F8D-1060-4461-8E4F-8C5AB9200F16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{489D6F8D-1060-4461-8E4F-8C5AB9200F16}.Debug|Win32.ActiveCfg = Debug|Win32
+		{489D6F8D-1060-4461-8E4F-8C5AB9200F16}.Debug|Win32.Build.0 = Debug|Win32
+		{489D6F8D-1060-4461-8E4F-8C5AB9200F16}.Release|Win32.ActiveCfg = Release|Win32
+		{489D6F8D-1060-4461-8E4F-8C5AB9200F16}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

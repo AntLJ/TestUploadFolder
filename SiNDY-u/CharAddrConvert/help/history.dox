@@ -1,0 +1,28 @@
+/**
+@page history 更新履歴
+
+- <b>2014/03/26 FILEVERSION 1.3.0.9 PRODUCTVERSION 1.3.0.9</b>
+  - GS対応
+- <b>2014/01/29 FILEVERSION 1.2.3.8 PRODUCTVERSION 1.2.3.0</b>
+  - 地番フラグの修正対応
+- <b>2011/12/20 FILEVERSION 1.2.2.7 PRODUCTVERSION 1.2.2.0</b>
+  - [bug 9057][u]文字付き住所データに文字付きでない地番データが混在する に対応
+- <b>2011/11/09 FILEVERSION 1.2.1.6 PRODUCTVERSION 1.2.1.0</b>
+  - [bug 8967][u][要望]IPCODE統合への対応（文字付き住所データ） に対応
+- <b>2010/09/02 FILEVERSION 1.2.0.5 PRODUCTVERSION 1.2.0.0</b>
+  - [bug 8177]加除コード移行に伴うCITY_ADMIN仕様変更に対応して欲しいに対応
+  - VC9対応
+- <b>2010/03/10 FILEVERSION 1.1.0.4 PRODUCTVERSION 1.1.0.0</b>
+  - [bug 7599]外部提供用の文字付き住所データを出力できるようにして欲しいに対応
+- <b>2009/12/26 FILEVERSION 1.0.2.3 PRODUCTVERSION 1.0.2.0</b>
+  - [bug 7471]EUC-LFで出力して欲しいに対応
+- <b>2009/10/29 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.1.0</b>
+  - [bug 7287]文字付き住所判定が一部できていない問題修正
+- <b>2009/06/08 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - [bug 7068]大字も生成による文字付き住所の地番・号コードを新規に割り当てていない問題修正
+  - [bug 7069]同一20桁住所が複数時、大字も生成による住所は優先度一番低く設定されていない問題修正
+- <b>2008/11/52 FILEVERSION 0.9.5.6 PRODUCTVERSION 0.9.5.0</b>
+  - ヨミ付与チェック(CharAddrCheck)の仕様変更への対応
+- <b>2008/10/28 FILEVERSION 0.9.4.5 PRODUCTVERSION 0.9.4.0</b>
+  - 初期バージョン
+*/

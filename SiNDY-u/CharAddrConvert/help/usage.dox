@@ -1,0 +1,119 @@
+/**
+@page usage 使用法
+
+@verbatim
+CharAddrConvert.exe [各種オプション]
+実行例) CharAddrConvert.exe -i sample.ini -cs 01101 > error.log
+@endverbatim
+※ログは、標準エラー出力から取得して下さい
+
+@section about_option オプションについて
+<table>
+	<tr bgcolor="#FFEBCD">
+		<th>オプション</th>
+		<th>説明</th>
+		<th>例</th>
+	</tr>
+	<tr bgcolor="#ADD8E6">
+		<th colspan="3">必須指定オプション</th>
+	</tr>
+	<tr>
+		<td>-i</td>
+		<td>設定ファイル指定</td>
+		<td>
+			-i [設定ファイル]<br>
+			Ex)<b><i>-i sample.ini</i></b>
+		</td>
+	</tr>
+	<tr bgcolor="#ADD8E6">
+		<th colspan="3">実行エリア指定オプション</th>
+	</tr>
+	<tr>
+		<td>-ca</td>
+		<td>全件指定(City_Adminから市区町村コードリスト生成します)</td>
+		<td>-ca</td>
+	</tr>
+	<tr>
+		<td>-cr</td>
+		<td>エリア指定</td>
+		<td>
+			-cr [開始市区町村コード-終了市区町村コード]<br>
+			Ex)<b><i>-cr 13000-15000</i></b>
+		</td>
+	</tr>
+	<tr>
+		<td>-cl</td>
+		<td>リスト指定</td>
+		<td>
+			-cl [市区町村コードリスト]<br>
+			Ex)<b><i>-cl citycodelist.txt</i></b>
+		</td>
+	</tr>
+	<tr>
+		<td>-cs</td>
+		<td>コード指定</td>
+		<td>
+			-cs [市区町村コード]<br>
+			Ex)<b><i>-cs 03201</i></b>
+		</td>
+	</tr>
+</table>
+
+@section about_ini 設定ファイルについて
+
+@verbatim
+################################################
+# CharAddrConvert.exe 設定ファイル(サンプル)
+# ※[#]以降がコメントになります
+################################################
+
+#変換モード(1:ナビ向け 2:外部提供向け)
+CONV_MODE=1
+
+# 住所系SDE接続先プロパティ
+#DB_ADDRESS=SiNDYTEST/SiNDYTEST/SiNDYTEST.CharAddrConvert/5151/galatea
+#DB_ADDRESS=SiNDY2008B/SiNDY2008B/SDE.Current08B/5151/topaz2
+DB_ADDRESS=SiNDY2008b/SiNDY2008b/SDE.081023_0810m_FIX/5151/topaz2
+
+# 地図系SDE接続先プロパティ
+#DB_MAP=SiNDYTEST/SiNDYTEST/SiNDYTEST.CharAddrConvert/5151/galatea
+DB_MAP=SiNDY2008B/SiNDY2008B/SDE.Current08B/5151/ruby2
+
+#フィーチャクラス名
+FC_CITY_ADMIN=City_Admin	# 都市地図行政界
+FC_GOU_POINT=Gou_Point		# 号ポイント
+FC_CITY_SITE=City_Site		# 都市地図背景
+FC_BUILDING=Building		# 都市地図建物
+FC_BUILDINGROOF=Building_Roof		# 都市地図建物
+FC_CITYMESH=REFERENCE.CityMesh	# 都市地図メッシュ
+
+# 住所コード変換DB
+DB_CODECONV=CodeConvTable.mdb
+
+# 名称-ヨミ変換テーブル(PGDB)
+#DB_YOMICONV=CharAddrChangeTable.mdb
+DB_YOMICONV=10月サンプルデータ_PEC用_修正2.mdb
+
+# 住所DB接続プロパティ
+JDB_CONNECT=y0811e/y0811e@delltcp
+
+# pntexデータ出力先
+PNT_DATA_DIR=data\pntex
+
+# gouexデータ出力先
+GOU_DATA_DIR=data\gouex
+@endverbatim
+
+@section about_log エラーログについて
+標準出力に出力されます。
+- フォーマット(tab区切り)
+@verbatim
+LAYER	OBJECTID	CITYCODE	MSG
+@endverbatim
+
+- エラー一覧(以下のエラーが検出されたオブジェクトからは、データ化をしない)
+ -# ヨミ取得に失敗
+ -# 拡張街区符号があるが、ヨミの取得に失敗したのでデータ化できない
+ -# 拡張街区符号があって、住所整備種別が[町丁目界未整備|地番整備済み]はNGです
+ -# 同一20桁で優先号が複数
+*/

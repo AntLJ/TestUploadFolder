@@ -1,0 +1,5 @@
+LIBRARY "BUILDING_ROOF.DLL"
+
+EXPORTS
+	CreateDlg
+

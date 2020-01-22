@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrBuildingRoofDlg", "AttrBuildingRoofDlg.vcxproj", "{E95CAA41-DADA-4D91-9CED-99F8677CB708}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrCityLineDlg", "..\AttrCityLineDlg\AttrCityLineDlg.vcxproj", "{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "schema_vc11", "..\..\..\LIB\sindy\build\schema\schema_vc11.vcxproj", "{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrDlgLib_vc11", "..\AttrDlgLib\build\AttrDlgLib_vc11.vcxproj", "{836499CD-72DF-4722-8FA9-DA3F79D50698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug for LQ|Win32 = Debug for LQ|Win32
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release for LQ|Win32 = Release for LQ|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug for LQ|Win32.ActiveCfg = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug for LQ|Win32.Build.0 = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug|Win32.Build.0 = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.MBCS Release|Win32.Build.0 = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release for LQ|Win32.ActiveCfg = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release for LQ|Win32.Build.0 = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release|Win32.ActiveCfg = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release|Win32.Build.0 = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Debug for LQ|Win32.ActiveCfg = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Debug for LQ|Win32.Build.0 = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Debug|Win32.Build.0 = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.MBCS Release|Win32.Build.0 = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Release for LQ|Win32.ActiveCfg = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Release for LQ|Win32.Build.0 = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Release|Win32.ActiveCfg = Release|Win32
+		{8DA8B71F-A5F9-48EA-BF74-5F5629CE693F}.Release|Win32.Build.0 = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug for LQ|Win32.ActiveCfg = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug for LQ|Win32.Build.0 = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug|Win32.Build.0 = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Debug|Win32.ActiveCfg = MBCS Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Debug|Win32.Build.0 = MBCS Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Release|Win32.ActiveCfg = MBCS Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Release|Win32.Build.0 = MBCS Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release for LQ|Win32.ActiveCfg = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release for LQ|Win32.Build.0 = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release|Win32.ActiveCfg = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release|Win32.Build.0 = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug for LQ|Win32.ActiveCfg = Debug for LQ|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug for LQ|Win32.Build.0 = Debug for LQ|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug|Win32.ActiveCfg = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug|Win32.Build.0 = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.MBCS Release|Win32.Build.0 = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release for LQ|Win32.ActiveCfg = Release for LQ|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release for LQ|Win32.Build.0 = Release for LQ|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release|Win32.ActiveCfg = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

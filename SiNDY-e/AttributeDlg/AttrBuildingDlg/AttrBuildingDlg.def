@@ -1,0 +1,4 @@
+LIBRARY "BUILDING.DLL"
+
+EXPORTS
+	CreateDlg

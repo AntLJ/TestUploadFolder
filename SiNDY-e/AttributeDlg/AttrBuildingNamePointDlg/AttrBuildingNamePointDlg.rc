@@ -1,0 +1,186 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRBUILDINGNAMEPOINTDLG DIALOGEX 0, 0, 475, 282
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 9, "ＭＳ Ｐゴシック", 400, 0, 0x80
+BEGIN
+    LTEXT           "建物ポリゴンOID",IDC_STATIC_BUILDINGOID,7,21,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_BUILDINGOID,66,20,84,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "建物ポリゴンOID取得",IDC_BUTTON_SEARCHOID,125,19,75,13
+    LTEXT           "名称",IDC_STATIC_NAME,15,39,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NAME,66,38,84,12,ES_AUTOHSCROLL
+    LTEXT           "名称（分割）",IDC_STATIC_NAMESEPARATED,15,58,51,8
+    EDITTEXT        IDC_EDIT_NAMESEPARATED,66,55,84,12,ES_AUTOHSCROLL
+    LTEXT           "ヨミ（分割）",IDC_STATIC_YOMISEPARATED,15,74,51,8
+    EDITTEXT        IDC_EDIT_YOMISEPARATED,66,72,84,12,ES_AUTOHSCROLL
+    LTEXT           "建物種別コード1",IDC_STATIC_BLDGCLASS1C,15,90,51,8
+    COMBOBOX        IDC_COMBO_BLDGCLASS1C,66,88,84,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "建物種別コード2",IDC_STATIC_BLDGCLASS2C,15,106,50,8
+    COMBOBOX        IDC_COMBO_BLDGCLASS2C,66,104,84,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "建物種別コード3",IDC_STATIC_BLDGCLASS3C,15,122,52,8
+    COMBOBOX        IDC_COMBO_BLDGCLASS3C,66,120,84,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "階数",IDC_STATIC_FLOORS,15,139,52,8
+    EDITTEXT        IDC_EDIT_FLOORS,66,137,84,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "出典コード",IDC_STATIC_SOURCETYPEC,15,156,52,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SOURCETYPEC,66,155,84,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "参照素材OID",IDC_STATIC_SRCOID,15,171,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SRCOID,66,169,84,12,ES_AUTOHSCROLL
+    LTEXT           "調査日",IDC_STATIC_SURVEYDATE,15,184,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SURVEYDATE,66,183,84,12,ES_AUTOHSCROLL
+    LTEXT           "AnyPlace ID",IDC_STATIC_ANYPLACEID,15,196,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ANYPLACEID,66,196,84,12,ES_AUTOHSCROLL
+    LTEXT           "信頼度コード",IDC_STATIC_PRIORITYC,15,210,50,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_PRIORITYC,66,210,84,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "調査結果(1)入力",IDC_BUTTON_PRIORITYC,159,211,69,11
+    LTEXT           "マッチング率",IDC_STATIC_MATCHPER,15,223,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MATCHPER,66,223,84,12,ES_AUTOHSCROLL
+    LTEXT           "素材ポイント関連情報",IDC_STATIC_SRCPOINTLIST,206,18,75,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_LIST_SRCPOINT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,208,28,249,75
+    LTEXT           "",IDC_STATIC_VAR,14,246,199,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,15,260,50,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,66,259,84,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRBUILDINGNAMEPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,4
+ PRODUCTVERSION 18,1,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "建物ビル名称ポイント用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "BUILDINGNAME_POINT PlugIn"
+            VALUE "FileVersion", "18.1.0.4"
+            VALUE "InternalName", "AttrBuildingNamePointDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2013-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BUILDINGNAME_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrBuildingNamePointDlg"
+    IDS_CAPTION             "建物ビル名称ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrBuildingNamePointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "建物ビル名称ポイントダイアログ"
+    IDS_MESSAGE             "建物ビル名称ポイント情報を表示・編集するダイアログ"
+    IDS_FONT                "MSPゴシック"
+    IDS_ERRORGETBUILDOID    "建物ポリゴンのOID取得失敗"
+    IDS_ERRORNOBUILDOID     "建物ポリゴンOIDが未取得の状態(0)では作成できません"
+    IDS_ERRORGETBYTOC       "TOCに%sが存在しないため、取得できません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,190 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BORDERNODEDLG DIALOGEX 0, 0, 317, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "ノード種別コード",IDC_STATIC_NODECLASS_C,17,25,60,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_NODECLASS_C,104,23,181,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "推測コード",IDC_STATIC_SPECULATION_C,17,49,60,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SPECULATION_C,101,44,181,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "提供元ID",IDC_STATIC_SOURCE_ID,20,75,60,9
+    EDITTEXT        IDC_EDIT_SOURCE_ID,104,71,148,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ノード列情報",IDC_STATIC_NQ_INFO,15,111,63,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_GRID_NQ,"{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,15,123,237,44
+    LTEXT           "",IDC_STATIC_VAR,15,180,199,8,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,18,197,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,71,194,68,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_BORDERNODEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,1,0,1
+ PRODUCTVERSION 17,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "道路境界線ノード属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "BORDER_NODE PlugIn"
+            VALUE "FileVersion", "17.1.0.1"
+            VALUE "InternalName", "BORDER_NODE"
+            VALUE "LegalCopyright", "Copyright (C) 2017 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "BORDER_NODE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "17.1.0.1"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BORDERNODEDLG DLGINIT
+BEGIN
+    IDC_GRID_NQ, 0x376, 595, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x24cb, 0x0000, 0x0771, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 
+0x0190, 0x4244, 0x0001, 0x5406, 0x6861, 0x6d6f, 0x0361, 0x0000, 0x0000, 
+0x0900, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0300, 0x0500, 0x0000, 0x0380, 0x0800, 0x0000, 0x0380, 0x0f00, 0x0000, 
+0x0380, 0x1200, 0x0000, 0x0380, 0x0d00, 0x0000, 0x0380, 0x0e00, 0x0000, 
+0x0380, 0x0c00, 0x0000, 0x0380, 0x0500, 0x0000, 0x0380, 0x0f00, 0x0000, 
+0x0380, 0x1000, 0x0000, 0x0380, 0x1000, 0x0000, 0x0380, 0xc000, 0x0000, 
+0x0300, 0x0600, 0x0000, 0x0380, 0x0100, 0x0000, 0x0300, 0x0000, 0x0000, 
+0x0b00, 0xff00, 0x0bff, 0xff00, 0x03ff, 0x0300, 0x0000, 0x0300, 0x0000, 
+0x0000, 0x0300, 0x0100, 0x0000, 0x0300, 0x0200, 0x0000, 0x0200, 0x0100, 
+0x0300, 0x0100, 0x0000, 0x0300, 0x0a00, 0x0000, 0x0300, 0x0100, 0x0000, 
+0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 
+0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0b00, 0xff00, 0x08ff, 
+0x0000, 0x0000, 0x0b00, 0x0000, 0x0300, 0x0300, 0x0000, 0x0b00, 0x0000, 
+0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0b00, 0xff00, 0x03ff, 
+0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0400, 0x0000, 0x0000, 0x0b40, 
+0xff00, 0x03ff, 0x0100, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 
+0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0500, 0x0000, 0x0b00, 0x0000, 
+0x0300, 0x0000, 0x0000, 0x0b00, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 
+0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 
+0x0100, 0x0000, 0x0b00, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 
+0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0900, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0300, 0x0300, 
+0x0000, 0x0b00, 0xff00, 0x03ff, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 
+0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0000, 
+0x0900, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0900, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0900, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0300, 0x0900, 0x0000, 0x0800, 0x0200, 0x0000, 0x0000, 0x0800, 0x0200, 
+0x0000, 0x0000, 0x0800, 0x0200, 0x0000, 0x0000, 0x0300, 0x1800, 0x0000, 
+"\000" 
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

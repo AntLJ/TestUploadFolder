@@ -1,0 +1,39 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CheckBuildNamePoint.exe [引数] ... 
+@endverbatim
+
+- オプション情報
+
+  - --bl_name_db [DB] ... 【必須】ビル名称 DB接続先を指定（SDE or FGDB）
+
+  - --building_db [DB] ... 【必須】建物 DB接続先を指定（SDE or FGDB）
+
+  - --anno_db [DB] ... 【必須】注記 DB接続先を指定（SDE or FGDB）
+
+  - --mesh_db [DB] ... 【必須】メッシュ DB接続先を指定（SDE or FGDB）
+
+  - --output [file] ... 【必須】ログファイル
+
+  - --meshlist [file] ... 【必須】都市地図メッシュリスト
+
+  - --ng_build [file] ... 【必須】NG建物種別ファイル
+
+  - --err_word [file] ... 【必須】NGワード（エラー）
+
+  - --warn_word [file] ... 【必須】NGワード（警告）
+
+  - --replace_word [file] ... 【必須】置換文字列リスト
+
+  - --join_anno [file] ... 【必須】注記比較用接続文字列リスト
+
+  - --buffer_range [数値] ... 【必須】探索バッファ範囲（m）（デフォルト50）
+
+※ 各種詳細は、下記資料参照
+
+http://preon.mr.ipc.pioneer.co.jp/svn/source/trunk/SiNDY-u/CheckBuildNamePoint/doc/ソフトウェア開発文書(CheckBuildNamePoint).xlsx
+
+
+*/

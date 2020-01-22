@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>C:\source\trunk\SiNDY-u\CheckCharacterCode\Debug\CheckCharacterCode.exe --filelist C:\CCCTEST\aaa_shapeSJIS.txt --filetype shape --charcodelist C:\CCCTEST\ccc_SJIS.txt --checkmode SJIS --exitmode all --runlog C:\CCCTEST\eee.txt --errlog C:\CCCTEST\fff.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBuildNamePoint.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureObjects.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldMap.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeatureObjects.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBuildNamePoint.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="Arguments.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="lonlat.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputLog.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="NameChk.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldMap.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CheckBuildNamePoint.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{9671f03b-de80-45af-ac68-4d3db0605c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{1abf5e3f-a30c-431d-b784-28c29a66c35f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

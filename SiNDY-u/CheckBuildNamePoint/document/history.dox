@@ -1,0 +1,17 @@
+/**
+@page history 更新履歴
+
+- <b>2015/04/09 FILEVERSION 15.2.0.4 PRODUCTVERSION 15.2.0.4</b>
+  - 軽微なバグ修正
+  - RTreeメモリリーク修正
+
+- <b>2015/03/31 FILEVERSION 15.2.0.3 PRODUCTVERSION 15.2.0.3</b>
+  - 要望対応
+
+- <b>2015/03/27 FILEVERSION 15.2.0.2 PRODUCTVERSION 15.2.0.2</b>
+  - 軽微なバグ修正
+
+- <b>2015/03/26 FILEVERSION 15.2.0.1 PRODUCTVERSION 15.2.0.1</b>
+  - 初期バージョン
+
+*/

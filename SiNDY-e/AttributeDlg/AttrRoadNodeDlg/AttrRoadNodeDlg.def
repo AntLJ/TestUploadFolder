@@ -1,0 +1,4 @@
+LIBRARY "ROAD_NODE.DLL"
+
+EXPORTS
+	CreateDlg

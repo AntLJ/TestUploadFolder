@@ -1,0 +1,6 @@
+; モジュール定義ファイル
+LIBRARY "RAILWAY_NODE.DLL"
+
+EXPORTS
+	CreateDlg
+

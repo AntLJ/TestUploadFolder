@@ -1,0 +1,231 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ROADMARKAREADLG DIALOGEX 0, 0, 340, 248
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "道路標示コード",IDC_STATIC_ROADMARK_C,18,40,62,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROADMARK_C,107,38,110,202,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "標示内容（文字）",IDC_STATIC_DESCRIPTION,18,57,62,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_DESCRIPTION,107,58,108,14,ES_AUTOHSCROLL
+    LTEXT           "関連車線リンク",IDC_STATIC_REL_LANE_LINK,17,100,62,10,SS_CENTERIMAGE | NOT WS_GROUP
+    CONTROL         "",IDC_VSFLEXGRID_LANE_LINK,
+                    "{74233DB3-F72F-44EA-94DC-258A624037E6}",WS_TABSTOP,89,101,96,60
+    LTEXT           "推測コード",IDC_STATIC_SPECULATION_C,19,170,54,13,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SPECULATION_C,82,171,105,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "提供元ID",IDC_STATIC_SOURCE_ID,19,194,54,9
+    EDITTEXT        IDC_EDIT_SOURCE_ID,82,193,148,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_BAR,0,210,199,8,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,0,221,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,68,221,68,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ROADMARKAREADLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,1,0,3
+ PRODUCTVERSION 17,1,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "道路標示エリア属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "ROADMARK_AREA PlugIn"
+            VALUE "FileVersion", "17.1.0.3"
+            VALUE "InternalName", "ROADMARK_AREA"
+            VALUE "LegalCopyright", "Copyright (C) 2016-2017 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "ROADSIGN_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "17.1.0.3"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ROADMARKAREADLG DLGINIT
+BEGIN
+    IDC_VSFLEXGRID_LANE_LINK, 0x376, 622, 0
+0x0009, 0x0000, 0x004f, 0x0030, 0x0045, 0x0054, 0x0054, 0x0043, 0x0037, 
+0x0034, 0x0037, 0x0300, 0x0000, 0x0ee2, 0x0000, 0x0a21, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x0009, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8001, 0x0000, 
+0x0190, 0x5f90, 0x0001, 0x820f, 0x826c, 0x2072, 0x6f82, 0x5383, 0x5683, 
+0x6283, 0x4e83, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0005, 0x8000, 0x0003, 
+0x0008, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0012, 0x8000, 0x0003, 
+0x000d, 0x8000, 0x0003, 0x000e, 0x8000, 0x0003, 0x000c, 0x8000, 0x0003, 
+0x0005, 0x8000, 0x0003, 0x000f, 0x8000, 0x0003, 0x0010, 0x8000, 0x0003, 
+0x0010, 0x8000, 0x0003, 0x00c0, 0x0000, 0x0003, 0x0006, 0x8000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 
+0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0001, 0x0000, 0x0002, 0x0001, 0x0003, 0x0001, 0x0000, 0x0003, 
+0x0001, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0x0000, 0x0008, 0x0012, 0x0000, 0x95a2, 0x9023, 
+0x30ea, 0x30f3, 0x30af, 0x004f, 0x0049, 0x0044, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0003, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0004, 0x0000, 0x4000, 0x000b, 0xffff, 0x0003, 0x0001, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x0002, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0003, 0x0003, 0x0000, 0x000b, 0xffff, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0009, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0003, 0x0009, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0003, 0x0018, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_GRID MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "追加",                          ID_MENUITEM_ADD
+        MENUITEM "削除",                          ID_MENUITEM_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ROADMARKAREADLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_RELATION_LINK   "関連車線リンクエラー"
+    IDS_ERR_INVALID_VALUE_IN_GRID "関連車線リンクに不正な値が入力されています。 (路面標示エリアOID: %ld )"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

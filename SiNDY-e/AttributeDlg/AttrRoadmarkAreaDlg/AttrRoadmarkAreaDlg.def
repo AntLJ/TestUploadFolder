@@ -1,0 +1,5 @@
+LIBRARY "ROADMARK_AREA.DLL"
+
+EXPORTS
+	CreateDlg
+

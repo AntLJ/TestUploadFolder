@@ -1,0 +1,4 @@
+LIBRARY "ROAD_LINK.DLL"
+
+EXPORTS
+	CreateDlg

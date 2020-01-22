@@ -1,0 +1,43 @@
+@echo off
+rem 環境変数設定
+
+rem ---- PGDBモード時 ----------------------------
+set PGDB_MODE=on
+
+set DB_ADDRESS_NEW=.\test\data
+set FC_CITY_ADMIN_NEW=city_admin
+set FC_GOU_POINT_NEW=gou_point
+set DB_ADDRESS_OLD=.\test\data_old
+set FC_CITY_ADMIN_OLD=city_admin
+set FC_GOU_POINT_OLD=gou_point
+set FC_CITYMESH=CityMesh
+rem --------------------------------------------
+
+rem ---- SDEモード時 -----------------------------
+
+rem set DB_ADDRESS_NEW=SiNDY2007A/SiNDY2007A/SDE.Current07A/5151/topaz2
+rem set FC_CITY_ADMIN_NEW=city_admin
+rem set FC_GOU_POINT_NEW=gou_point
+rem set DB_ADDRESS_OLD=FIX200611/FIX200611/SDE.DEFAULT/5151/topaz2
+rem set FC_CITY_ADMIN_OLD=city_admin
+rem set FC_GOU_POINT_OLD=gou_point
+rem set FC_CITYMESH=CityMesh
+rem --------------------------------------------
+
+rem 実行 (単メッシュ指定)
+rem AddrDiffDB.exe -m 59410046 -o test.log > cout.log
+
+echo %TIME%
+
+rem 実行 (メッシュリスト指定)
+AddrDiffDB.exe -l .\test\mesh.txt -o test.log > cout.log
+
+rem 実行 (メッシュリストを１グループとしたモード)
+AddrDiffDB.exe -lg \test\mesh.txt -o test.log > cout.log
+
+rem 実行 (ＯＫ住所コードリスト指定)
+AddrDiffDB.exe -l .\test\mesh.txt -n sample_addrcode.txt -o test.log > cout.log
+
+echo %TIME%
+
+pause

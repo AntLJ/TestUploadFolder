@@ -1,0 +1,14 @@
+
+rem 環境変数設定
+set DB_FROM=ronly/ronly/SDE.Current07A/5151/garnet2
+set FC_FROM=SiNUP2007A.Gou_Point
+set DB_TO=trial/trial/TRIAL.TRIAL_TEST/5151/coral2
+set FC_TO=Gou_Point
+
+rem ＩＤリストから実行
+AddList2Point.exe -i idlist.txt > update.log
+
+rem meshXYリストから実行
+rem AddList2Point.exe -m mxy.txt > update.log
+
+pause

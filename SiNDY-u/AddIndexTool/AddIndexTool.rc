@@ -1,0 +1,242 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,1
+ PRODUCTVERSION 16,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "インデックス付与ツール"
+            VALUE "FileVersion", "16.2.0.1"
+            VALUE "InternalName", "AddIndexTool"
+            VALUE "LegalCopyright", "Copyright (C) 2016 INCREMENT P CORP., All rights reserved."
+            VALUE "OriginalFilename", "AddIndex.exe"
+            VALUE "ProductName", "SiNDY-u"
+            VALUE "ProductVersion", "16.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_REQUIRED_TAG "[必須]"
+    IDS_OPTION_INPUT        "対象DB"
+    IDS_OPTION_RUNLOG       "実行ログの出力先ファイルパス"
+    IDS_OPTION_ERRLOG       "エラーログの出力先ファイルパス"
+    IDS_REQUIRED_PARAMETER  "必須パラメータが足りません"
+    IDS_NONE_NECESSARY_PARAMETER "オプションは必須です"
+    IDS_IS_NOT_FILE         "はファイルではありません"
+    IDS_ATTR_IS_NECESSARY   "必要な属性が指定されていません"
+    IDS_SAME_NAME_TAG       "同じname値をもつタグが複数定義されています"
+    IDS_DETECT_UNKOWN_ATTR_VALUE "定義外の属性値が指定されています"
+    IDS_DETECT_UNKOWN_TAG   "未定義のタグです"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOG_START_TIME      "開始時刻"
+    IDS_LOG_END_TIME        "終了時刻"
+    IDS_LOG_SUCCESS         "正常終了"
+    IDS_LOG_ABEND           "異常終了"
+    IDS_PARAMETER_HAVE_PROBLEM "コマンドライン引数に問題があります"
+    IDS_FAILED_OPEN_LOG     "ログファイルのオープンに失敗"
+    IDS_OPTION_CONFIG       "設定ファイル"
+    IDS_FAILED_CONNECT_INPUT_DB "対象のDBに接続失敗"
+    IDS_FAILED_OPEN_LAYER   "対象のレイヤを開けない"
+    IDS_CANT_ADD_INDEX      "インデックスが付与されているため、処理できません"
+    IDS_CANT_DEL_INDEX      "インデックスを削除できない状態のため、処理できません(インデックスがないか、複数フィールドが関わるインデックス)"
+    IDS_CANT_ADD_INDEX_TO_DB "このフィールドにインデックスは付与できません"
+    IDS_CANT_DEL_INDEX_TO_DB "このフィールドのインデックスは削除できません"
+    IDS_NONE_EXIST_COLUMN   "フィールドが存在しません"
+    IDS_LAYER_IS_LOCKED     "ロックされたレイヤは処理できません"
+    IDS_FAILED_LOCK         "レイヤのロックに失敗"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILED_LOCK_RELEASE "レイヤのロック解除に失敗"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,1
+ PRODUCTVERSION 16,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "CompanyName", "INCREMENT P CORPORATION"
+            VALUE "FileDescription", "AddIndexTool"
+            VALUE "FileVersion", "16.2.0.1"
+            VALUE "InternalName", "AddIndexTool"
+            VALUE "LegalCopyright", "Copyright (C) 2016 INCREMENT P CORP., All rights reserved."
+            VALUE "OriginalFilename", "AddIndex.exe"
+            VALUE "ProductName", "SiNDY-u"
+            VALUE "ProductVersion", "16.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_REQUIRED_TAG "[required]"
+    IDS_OPTION_INPUT        "Target DB"
+    IDS_OPTION_RUNLOG       "Run Log Filepath"
+    IDS_OPTION_ERRLOG       "Error Log Filepath"
+    IDS_REQUIRED_PARAMETER  "Required parameter is insufficient."
+    IDS_NONE_NECESSARY_PARAMETER "is required."
+    IDS_IS_NOT_FILE         "is not file."
+    IDS_ATTR_IS_NECESSARY   "A necessary attribute is not appointed."
+    IDS_SAME_NAME_TAG       "Plural tags of the same name exist."
+    IDS_DETECT_UNKOWN_ATTR_VALUE 
+                            "A value out of the correspondence is appointed."
+    IDS_DETECT_UNKOWN_TAG   "Undefined tag"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOG_START_TIME      "Start time"
+    IDS_LOG_END_TIME        "End time"
+    IDS_LOG_SUCCESS         "Success"
+    IDS_LOG_ABEND           "Abend"
+    IDS_PARAMETER_HAVE_PROBLEM "A command line argument has a problem."
+    IDS_FAILED_OPEN_LOG     "Failed to open log file."
+    IDS_OPTION_CONFIG       "Config Filepath"
+    IDS_FAILED_CONNECT_INPUT_DB "Failed to connect target db."
+    IDS_FAILED_OPEN_LAYER   "Failed to open the layer in input db."
+    IDS_CANT_ADD_INDEX      "I cannot handle it anymore because an index exists."
+    IDS_CANT_DEL_INDEX      "I cannot delete the index.(There is not an index or The index which plural Field is concerned with.)"
+    IDS_CANT_ADD_INDEX_TO_DB "I cannot add the index to this field."
+    IDS_CANT_DEL_INDEX_TO_DB "I cannot delete the index of this field."
+    IDS_NONE_EXIST_COLUMN   "Field does not exist."
+    IDS_LAYER_IS_LOCKED     "The layer is locked."
+    IDS_FAILED_LOCK         "Failed to lock this layer."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILED_LOCK_RELEASE "Failed to cancel lock on this layer."
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "CROSSWALK_LINE.DLL"
+
+EXPORTS
+	CreateDlg
+

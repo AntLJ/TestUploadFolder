@@ -1,0 +1,4 @@
+LIBRARY "CS_ADDR_POINT.DLL"
+
+EXPORTS
+	CreateDlg

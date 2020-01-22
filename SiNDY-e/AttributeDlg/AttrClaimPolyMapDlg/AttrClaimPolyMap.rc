@@ -1,0 +1,142 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCLAIMPOLYMAPDLG DIALOG  0, 0, 238, 295
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "クレームタイプ",IDC_STATIC_CLAIMTYPE,20,17,57,8
+    COMBOBOX        IDC_COMBO_CLAIMTYPE,92,17,48,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "クレーム番号",IDC_STATIC_CLAIMNO,20,48,57,8
+    EDITTEXT        IDC_EDIT_CLAIMNO,92,48,48,12,ES_AUTOHSCROLL
+    CONTROL         "常時確認フラグ",IDC_CHECK_COMFIRM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,79,57,8
+    CONTROL         "不要フラグ",IDC_CHECK_USELESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,110,57,8
+    LTEXT           "コメント",IDC_STATIC_REMARKS,20,141,57,8
+    EDITTEXT        IDC_EDIT_REMARKS,92,138,48,12,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,0,0,16
+ PRODUCTVERSION 8,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ユーザクレームエリアポリゴン（地図）用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "CLAIMPOLY_MAP PlugIn"
+            VALUE "FileVersion", "6, 0, 0, 16"
+            VALUE "InternalName", "AttrClaimPolyMapDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2010"
+            VALUE "OriginalFilename", "CLAIMPOLY_MAP.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "8, 0, 0, 0"
+            VALUE "主担当", "宿澤秀和（コンテンツ事業本部技術開発部システム開発グループ）"
+            VALUE "副担当", "古川貴宏（コンテンツ事業本部技術開発部システム開発グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "AttrClaimPolyMapDlg"
+    IDS_CAPTION         "クレームポリゴンダイアログ"
+    IDS_NAME            "SiNDYe_AttrClaimPolyMapDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "クレームポリゴンダイアログ"
+    IDS_MESSAGE             "クレームポリゴンを表示・編集するダイアログ"
+    IDS_NOTCLAIMTYPE        "クレームポリゴンOBJECTID:%ld クレームタイプが入っていません。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

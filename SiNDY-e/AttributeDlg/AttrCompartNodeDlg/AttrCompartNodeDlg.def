@@ -1,0 +1,6 @@
+; TODO[SiNDYChildDlg] モジュール定義ファイル
+LIBRARY "COMPART_NODE.DLL"
+
+EXPORTS
+	CreateDlg
+

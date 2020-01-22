@@ -1,0 +1,62 @@
+// AttributeTool.idl : AttributeTool.dll 用の IDL ソース ファイル
+//
+
+// このファイルはタイプ ライブラリ (AttributeTool.tlb) を作成するために
+// タイプ ライブラリ作成ツール MIDL によって処理されます。
+
+import "oaidl.idl";
+
+
+import "ocidl.idl";
+	[
+		object,
+		uuid(8480A2C4-859C-4C74-ABC7-B76C81F7B1D0),
+	
+		helpstring("IAttributeToolObj Interface"),
+		pointer_default(unique)
+	]
+	interface IAttributeToolObj : IUnknown
+	{
+		[propget, helpstring("ﾌﾟﾛﾊﾟﾃｨ PerfectSelect")] HRESULT PerfectSelect([out, retval] VARIANT_BOOL *pVal);
+		[propput, helpstring("ﾌﾟﾛﾊﾟﾃｨ PerfectSelect")] HRESULT PerfectSelect([in] VARIANT_BOOL newVal);
+		[propget, helpstring("ﾌﾟﾛﾊﾟﾃｨ SelectLastSequence")] HRESULT SelectLastSequence([out, retval] VARIANT_BOOL *pVal);
+		[propput, helpstring("ﾌﾟﾛﾊﾟﾃｨ SelectLastSequence")] HRESULT SelectLastSequence([in] VARIANT_BOOL newVal);
+	};
+
+[
+	uuid(598EFE18-930B-4EAA-AB5E-12852F9FFBBE),
+	version(1.0),
+	helpstring("AttributeTool 1.0 ﾀｲﾌﾟ ﾗｲﾌﾞﾗﾘ")
+]
+library ATTRIBUTETOOLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(97BA44BF-350D-4E4E-9B8D-4F262B878AC8),
+		helpstring("AttributeToolObj Class")
+	]
+	coclass AttributeToolObj
+	{
+		[default] interface IAttributeToolObj;
+	};
+
+	[
+		uuid(DF536986-FB41-4307-BAD6-6C43684F97F4),
+		helpstring("AttributeToolProp Class")
+	]
+	coclass AttributeToolProp
+	{
+		interface IUnknown;
+	};
+
+	[
+		uuid(FF325184-AAB3-4DC3-884B-49A1F650DD4B),
+		helpstring("AttributeToolPropLQ Class")
+	]
+	coclass AttributeToolPropLQ
+	{
+		interface IUnknown;
+	};
+};

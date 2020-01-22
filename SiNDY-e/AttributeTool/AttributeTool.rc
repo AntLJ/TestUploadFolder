@@ -1,0 +1,357 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""AttributeTool.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 15,2,0,68
+ PRODUCTVERSION 15,2,0,68
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SiNDY-eフィーチャ属性表示・編集ツールコンポーネント"
+            VALUE "CompanyName", "インクリメントＰ株式会社"
+            VALUE "FileDescription", "AttributeTool Module"
+            VALUE "FileVersion", "15.2.0.68"
+            VALUE "InternalName", "AttributeTool"
+            VALUE "LegalCopyright", "Copyright 2001-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "AttributeTool.DLL"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "15.2.0.68"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ATTRIBUTETOOLOBJ    REGISTRY                "AttributeToolObj.rgs"
+IDR_ATTRIBUTETOOLPROP   REGISTRY                "AttributeToolProp.rgs"
+IDR_ATTRIBUTETOOLPROPLQ REGISTRY                "AttributeToolPropLQ.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_IDENTIFY     CURSOR                  "identify.cur"
+IDC_CURSOR_IDENTIFYMOVE CURSOR                  "cursor_i.cur"
+IDC_CURSOR_LQ           CURSOR                  "pointer.cur"
+IDC_CURSOR_LQMOVE       CURSOR                  "track.cur"
+IDC_CURSOR_FREESELECT   CURSOR                  "FreeSelect.cur"
+IDC_CURSOR_LQFREESELECT CURSOR                  "LQFreeSelect.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_IDENTIFY     BITMAP                  "identify.bmp"
+IDB_BITMAP_LQ           BITMAP                  "nodequeue.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRIBUTETOOLPROP DIALOG 0, 0, 270, 172
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "ラインの周りをハイライトしない",IDC_CHECK_LINEHILIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,10,139,11
+    CONTROL         "ラインの構成点をハイライトしない",IDC_CHECK_VERTEXHILIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,29,139,11
+    EDITTEXT        IDC_EDIT_R,103,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_G,140,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_B,177,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "コンボボックス背景色",IDC_STATIC,24,51,63,8
+    LTEXT           "R:",IDC_STATIC,94,51,8,8
+    LTEXT           "G:",IDC_STATIC,131,51,8,8
+    LTEXT           "B:",IDC_STATIC,168,51,8,8
+END
+
+IDD_ATTRIBUTETOOLPROPLQ DIALOGEX 0, 0, 286, 170
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    CONTROL         "矩形選択した範囲のリンク列の流入リンクで再検索する",IDC_RADIO_PERFECTSELECT,
+                    "Button",BS_AUTORADIOBUTTON,22,23,182,15
+    CONTROL         "矩形選択した道路リンクが開始リンクであるものを選択する",IDC_RADIO_SELECTLASTSEQ,
+                    "Button",BS_AUTORADIOBUTTON,22,43,183,15
+    GROUPBOX        "方面案内、レーン情報、右左折禁止",IDC_STATIC,11,12,226,54
+    GROUPBOX        "レーン情報",IDC_STATIC,11,69,226,61
+    CONTROL         "常に整合性をチェックする（リンク列属性ダイアログ再表示で有効）",IDC_CHECK_LANECONSISTENCY,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,22,79,208,16
+    CONTROL         "ビット操作を可能にする",IDC_CHECK_LANEBITEDITABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,111,208,16
+    CONTROL         "整合性をチェックしない場合に警告を出さない",IDC_CHECK_LANECONSISTENCYW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,95,202,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRIBUTETOOLPROPLQ, DIALOG
+    BEGIN
+        RIGHTMARGIN, 271
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttributeTool"
+    IDS_NAME                "SiNDYe_AttributeTool"
+    IDS_LQNAME              "SiNDYe_LQAttributeTool"
+    IDS_TITLEAttributeToolProp "属性"
+    IDS_HELPFILEAttributeToolProp "Help File Name"
+    IDS_DOCSTRINGAttributeToolProp "Your Help String"
+    IDS_TOOLTIP             "属性表示・編集"
+    IDS_LQTOOLTIP           "リンク列属性表示・編集"
+    IDS_TITLEAttributeToolPropLQ "リンク列属性"
+    IDS_HELPFILEAttributeToolPropLQ "Help File Name"
+    IDS_DOCSTRINGAttributeToolPropLQ "Your Help String"
+    IDS_MESSAGE             "属性を表示・編集したいオブジェクトを地図画面内でクリックしてください"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LQMESSAGE           "リンク列の属性を編集します"
+    IDS_SELECTINVALID       "選択ポリゴンの形状が不正です。"
+    IDS_SELECTITEMOVER      "選択したアイテムが1000を超えました。ダイアログを表示しません。1000以下で選択しなおしてください。"
+    IDS_ERRORSEARCHGEOM     "選択形状が不正です。検索ジオメトリがNULL、または空ジオメトリです。選択しなおしてください。"
+    IDS_DISPLAYLINKQUEUE    "属性編集したいリンク列のシンボルを表示してから再度選択して下さい。"
+    IDS_NOTSELECTEDLINKQUEUE "リンク列を選択することが出来ませんでした"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 15,2,0,68
+ PRODUCTVERSION 15,2,0,68
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SiNDY-e Attribute display and edit tool"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "AttributeTool Module"
+            VALUE "FileVersion", "15.2.0.68"
+            VALUE "InternalName", "AttributeTool"
+            VALUE "LegalCopyright", "Copyright 2001-2015 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "AttributeTool.DLL"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "15.2.0.68"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRIBUTETOOLPROP DIALOGEX 0, 0, 270, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Do not highlight around line",IDC_CHECK_LINEHILIGHT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,10,139,11
+    CONTROL         "Do not highlight line composition points",IDC_CHECK_VERTEXHILIGHT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,29,139,11
+    EDITTEXT        IDC_EDIT_R,138,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_G,175,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_B,212,45,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Combo Box Background Color",IDC_STATIC,24,51,102,8
+    LTEXT           "R:",IDC_STATIC,129,51,8,8
+    LTEXT           "G:",IDC_STATIC,166,51,8,8
+    LTEXT           "B:",IDC_STATIC,203,51,8,8
+END
+
+IDD_ATTRIBUTETOOLPROPLQ DIALOGEX 0, 0, 286, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Conduct another search of the links input in the link queue within the range selected by the rectangle",IDC_RADIO_PERFECTSELECT,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE,22,23,230,15
+    CONTROL         "Select the start link from the road links selected by the rectangle",IDC_RADIO_SELECTLASTSEQ,
+                    "Button",BS_AUTORADIOBUTTON,22,43,228,15
+    GROUPBOX        "Route guidance, lane information, turning prohibited",IDC_STATIC,11,12,226,54
+    GROUPBOX        "Lane Information",IDC_STATIC,11,69,226,61
+    CONTROL         "Always check consistency (enable redisplaying of link column attribute dialog box)",IDC_CHECK_LANECONSISTENCY,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,22,79,201,16
+    CONTROL         "Enable bit manipulation",IDC_CHECK_LANEBITEDITABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,111,208,16
+    CONTROL         "Show warning if consistency not checked",IDC_CHECK_LANECONSISTENCYW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,95,202,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRIBUTETOOLPROPLQ, DIALOG
+    BEGIN
+        RIGHTMARGIN, 271
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttributeTool"
+    IDS_NAME                "SiNDYe_AttributeTool"
+    IDS_LQNAME              "SiNDYe_LQAttributeTool"
+    IDS_TITLEAttributeToolProp "Attributes"
+    IDS_HELPFILEAttributeToolProp "Help File Name"
+    IDS_DOCSTRINGAttributeToolProp "Your Help String"
+    IDS_TOOLTIP             "Display and edit attributes"
+    IDS_LQTOOLTIP           "Display and edit link queue attributes"
+    IDS_TITLEAttributeToolPropLQ "Link queue attributes"
+    IDS_HELPFILEAttributeToolPropLQ "Help File Name"
+    IDS_DOCSTRINGAttributeToolPropLQ "Your Help String"
+    IDS_MESSAGE             "Click the object for which you want to display and edit the attributes in the map screen."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LQMESSAGE           "Click the object for which you want to display and edit the link queue attributes in the map screen."
+    IDS_SELECTINVALID       "The selected polygon shape is invalid."
+    IDS_SELECTITEMOVER      "The number of selected items exceeds 1,000. The dialog box will not be displayed. Select no more than 1,000 items."
+    IDS_ERRORSEARCHGEOM     "The selected shape is invalid. The search geometry is NULL, or empty geometry. Make the selection again."
+    IDS_DISPLAYLINKQUEUE    "Make the selection again after displaying the symbol of the link column for which you want to edit the attributes."
+    IDS_NOTSELECTEDLINKQUEUE "The link column could not be selected."
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AttributeTool.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,26 @@
+HKCR
+{
+
+	AttributeTool.AttributeToolObj.1 = s 'AttributeToolObj Class'
+	{
+		CLSID = s '{97BA44BF-350D-4E4E-9B8D-4F262B878AC8}'
+	}
+	AttributeTool.AttributeToolObj = s 'AttributeToolObj Class'
+	{
+		CLSID = s '{97BA44BF-350D-4E4E-9B8D-4F262B878AC8}'
+		CurVer = s 'AttributeTool.AttributeToolObj.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {97BA44BF-350D-4E4E-9B8D-4F262B878AC8} = s 'AttributeToolObj Class'
+		{
+			ProgID = s 'AttributeTool.AttributeToolObj.1'
+			VersionIndependentProgID = s 'AttributeTool.AttributeToolObj'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{598EFE18-930B-4EAA-AB5E-12852F9FFBBE}'
+		}
+	}
+}

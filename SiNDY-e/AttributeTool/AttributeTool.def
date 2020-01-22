@@ -1,0 +1,9 @@
+; AttributeTool.def : モジュール パラメータを宣言します。
+
+LIBRARY      "AttributeTool.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

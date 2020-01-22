@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e4847cc0-20ae-4c6b-ba27-e263ace7eec3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fb312e96-ab8f-4eb9-9625-4bd8c233fac8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d80d35ba-22a7-4d6c-8aec-63291c74de37}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="COMMON">
+      <UniqueIdentifier>{4af714e0-6cb1-424c-93c9-db39b665a385}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AttributeTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeToolObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeToolProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeToolPropLQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AttributeTool.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="AttributeToolObj.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="AttributeToolProp.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="AttributeToolPropLQ.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor_i.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FreeSelect.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="identify.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="LQFreeSelect.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pointer.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="track.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AttributeTool.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AttributeTool.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AttributeToolObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeToolProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeToolPropLQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LIB\ArcHelperEx\Feedback.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="identify.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="nodequeue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

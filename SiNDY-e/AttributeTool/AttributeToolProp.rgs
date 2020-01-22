@@ -1,0 +1,22 @@
+HKCR
+{
+	AttributeTool.AttributeToolProp.1 = s 'AttributeToolProp Class'
+	{
+		CLSID = s '{DF536986-FB41-4307-BAD6-6C43684F97F4}'
+	}
+	AttributeTool.AttributeToolProp = s 'AttributeToolProp Class'
+	{
+		CLSID = s '{DF536986-FB41-4307-BAD6-6C43684F97F4}'
+		CurVer = s 'AttributeTool.AttributeToolProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DF536986-FB41-4307-BAD6-6C43684F97F4} = s 'AttributeToolProp Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

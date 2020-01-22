@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrCityRoadDlg", "AttrCityRoadDlg.vcxproj", "{E95CAA41-DADA-4D91-9CED-99F8677CB708}"
+	ProjectSection(ProjectDependencies) = postProject
+		{836499CD-72DF-4722-8FA9-DA3F79D50698} = {836499CD-72DF-4722-8FA9-DA3F79D50698}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttrDlgLib_vc11", "..\AttrDlgLib\build\AttrDlgLib_vc11.vcxproj", "{836499CD-72DF-4722-8FA9-DA3F79D50698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Debug|Win32.Build.0 = Debug|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release|Win32.ActiveCfg = Release|Win32
+		{E95CAA41-DADA-4D91-9CED-99F8677CB708}.Release|Win32.Build.0 = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug|Win32.ActiveCfg = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Debug|Win32.Build.0 = Debug|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release|Win32.ActiveCfg = Release|Win32
+		{836499CD-72DF-4722-8FA9-DA3F79D50698}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

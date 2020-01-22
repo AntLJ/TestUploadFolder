@@ -1,0 +1,4 @@
+LIBRARY "CITY_SITE.DLL"
+
+EXPORTS
+	CreateDlg

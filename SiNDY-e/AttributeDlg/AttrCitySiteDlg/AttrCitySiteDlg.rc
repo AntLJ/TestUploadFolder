@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ (ì˙ñ{) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYSITEDLG DIALOG 0, 0, 261, 223
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    LTEXT           "îwåiéÌï ",IDC_STATIC_SITE,13,49,43,9
+    COMBOBOX        IDC_COMBO_SITE,58,47,58,241,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "å¥çeî‘çÜì¸óÕ",IDC_STATIC_GENKOU,13,68,43,9
+    EDITTEXT        IDC_EDIT_GENKOU,58,67,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "îwåiéÌï åüçı",IDC_BUTTON_SEARCH,124,67,68,14
+    LTEXT           "èÓïÒÉ\Å[ÉX",IDC_STATIC_SOURCE,13,109,43,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,58,109,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,12,97,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYSITEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,23
+ PRODUCTVERSION 12,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ìsésîwåiÉ|ÉäÉSÉìópëÆê´ï“èWÉ_ÉCÉAÉçÉOÉvÉâÉOÉCÉì"
+            VALUE "CompanyName", "ÉCÉìÉNÉäÉÅÉìÉgPäîéÆâÔé–"
+            VALUE "FileDescription", "CITY_SITE PlugIn"
+            VALUE "FileVersion", "12.0.0.23"
+            VALUE "InternalName", "CITY_SITE"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "12.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCitySiteDlg"
+    IDS_CAPTION             "ìsésínê}îwåiÉ|ÉäÉSÉìÉ_ÉCÉAÉçÉO"
+    IDS_NAME                "SiNDYe_AttrCitySiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "ìsésínê}îwåiÉ|ÉäÉSÉìÉ_ÉCÉAÉçÉO"
+    IDS_MESSAGE             "ìsésínê}îwåiÉ|ÉäÉSÉìÇï\é¶ÅEï“èWÇ∑ÇÈÉ_ÉCÉAÉçÉO"
+    IDS_FAILTOGETRULE       "SiNDYRuleÇéÊìæÇ≈Ç´Ç‹ÇπÇÒÇ≈ÇµÇΩ"
+    IDS_NOMANUSCRIPT        "ì¸óÕÇµÇΩå¥çeî‘çÜÇÕóLÇËÇ‹ÇπÇÒ"
+END
+
+#endif    // ì˙ñ{åÍ (ì˙ñ{) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// âpåÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYSITEDLG DIALOGEX 0, 0, 261, 223
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Background class",IDC_STATIC_SITE,13,49,54,9
+    COMBOBOX        IDC_COMBO_SITE,79,47,58,241,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MS No",IDC_STATIC_GENKOU,13,68,54,9
+    EDITTEXT        IDC_EDIT_GENKOU,79,67,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search Background",IDC_BUTTON_SEARCH,143,67,81,14
+    LTEXT           "Source",IDC_STATIC_SOURCE,13,109,54,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,79,109,58,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,12,97,170,1,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYSITEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,23
+ PRODUCTVERSION 12,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrCitySiteDlg PlugIn"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "CITY_SITE PlugIn"
+            VALUE "FileVersion", "12.0.0.23"
+            VALUE "InternalName", "CITY_SITE"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2014 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_SITE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "12.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCitySiteDlg"
+    IDS_CAPTION             "AttrCitySiteDlg"
+    IDS_NAME                "SiNDYe_AttrCitySiteDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrCitySiteDlg"
+    IDS_MESSAGE             "Dialog for display/editing of city site"
+    IDS_FAILTOGETRULE       "SiNDYRule was not found"
+    IDS_NOMANUSCRIPT        "Entered MS_No does not exist"
+END
+
+#endif    // âpåÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

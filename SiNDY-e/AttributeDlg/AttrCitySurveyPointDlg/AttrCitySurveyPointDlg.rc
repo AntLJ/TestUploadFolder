@@ -1,0 +1,331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYSURVEYPOINTDLG DIALOGEX 0, 0, 313, 277
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    LTEXT           "メッシュ",IDC_STATIC_MESH,15,22,41,8
+    EDITTEXT        IDC_EDIT_MESH,57,22,62,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "調査日",IDC_STATIC_RESEARCHDAY,159,27,41,8
+    EDITTEXT        IDC_EDIT_RESEARCHDAY,221,27,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "メッシュ内ID",IDC_STATIC_IDINMESH,15,41,41,8
+    EDITTEXT        IDC_EDIT_IDINMESH,57,41,62,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "対象データ",IDC_STATIC_TARGETDATA,159,45,41,8
+    EDITTEXT        IDC_EDIT_TARGETDATA,221,45,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "現調前種別",IDC_STATIC_ATTRNAME,15,68,41,8
+    EDITTEXT        IDC_EDIT_ATTRNAME,57,68,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "データ採用元",IDC_STATIC_LAYER,159,68,41,8
+    EDITTEXT        IDC_EDIT_LAYER,221,68,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "現調前名称",IDC_STATIC_PRENAME,15,89,41,8
+    EDITTEXT        IDC_EDIT_PRENAME,57,84,150,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "現調後名称",IDC_STATIC_AFTNAME,15,117,41,8
+    EDITTEXT        IDC_EDIT_AFTNAME,57,114,150,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_SPACE,14,135,41,8
+    LTEXT           "現調前名称と異なる場合のみ",IDC_STATIC_COMMENT,57,138,143,8
+    RTEXT           "位置OK",IDC_STATIC_POS,15,159,41,13
+    CONTROL         "",IDC_CHECK_POS,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,159,9,13
+    RTEXT           "名称OK",IDC_STATIC_NAMEOK,15,177,41,13
+    CONTROL         "",IDC_CHECK_NAMEOK,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,176,9,13
+    RTEXT           "閉鎖",IDC_STATIC_CLOSE,15,195,41,13
+    CONTROL         "",IDC_CHECK_CLOSE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,195,9,13
+    RTEXT           "更地",IDC_STATIC_CLEAR,15,214,41,13
+    CONTROL         "",IDC_CHECK_CLEAR,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,214,9,13
+    RTEXT           "建設中",IDC_STATIC_CONSTRUCT,15,229,41,13
+    CONTROL         "",IDC_CHECK_CONSTRUCT,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,229,9,13
+    RTEXT           "名称確認不可",IDC_STATIC_UNCERTAIN,15,250,41,13
+    CONTROL         "",IDC_CHECK_UNCERTAIN,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,250,9,13
+    PUSHBUTTON      "表示",IDC_BUTTON_DISPLAYPICTURE,270,193,17,13
+    LTEXT           "",IDC_STATIC_VAR,21,60,170,1,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_VAR2,15,105,170,1,SS_SUNKEN
+    CONTROL         "",IDC_STATIC_PIC,"Static",SS_BLACKFRAME,132,151,102,31
+    LTEXT           "",IDC_STATIC_MEMO,176,220,66,17,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "",IDC_SLIDER_PIC,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,124,192,100,13
+    LTEXT           "枚",IDC_STATIC_PICNUM,246,195,18,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CONFIRM,91,210,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "確認",IDC_BUTTON_CONFIRM,99,227,22,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYSURVEYPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,19
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "都市現地調査ポイント用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "CITY_SURVEY_POINT PlugIn"
+            VALUE "FileVersion", "11.1.0.19"
+            VALUE "InternalName", "CITY_SURVEY_POINT"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_SURVEY_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "主担当", "川辺航（技術開発部 第二技術部 第四技術グループ）"
+            VALUE "副担当", "向井義久（技術開発部 第二技術部 第四技術グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCitySurveyPointDlg"
+    IDS_CAPTION             "都市地図調査ポイントダイアログ"
+    IDS_NAME                "SiNDYe_AttrCitySurveyPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "都市地図調査ポイントダイアログ"
+    IDS_MESSAGE             "都市地図調査ポイントを表示・編集するダイアログ"
+    IDS_NOTEXISTPICTURE     "\\ \n上記フォルダにアクセスできないか、フォルダ内に画像が存在しません。"
+    IDS_FONT                "ＭＳＰゴシック"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRCITYSURVEYPOINTDLG DIALOGEX 0, 0, 313, 277
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    LTEXT           "Mesh",IDC_STATIC_MESH,15,22,65,8
+    EDITTEXT        IDC_EDIT_MESH,85,21,62,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Survey date",IDC_STATIC_RESEARCHDAY,159,27,65,8
+    EDITTEXT        IDC_EDIT_RESEARCHDAY,228,25,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ID in mesh",IDC_STATIC_IDINMESH,15,41,65,8
+    EDITTEXT        IDC_EDIT_IDINMESH,85,41,62,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Candidate data",IDC_STATIC_TARGETDATA,159,45,65,8
+    EDITTEXT        IDC_EDIT_TARGETDATA,228,43,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Anno_C before survey",IDC_STATIC_ATTRNAME,15,68,65,8
+    EDITTEXT        IDC_EDIT_ATTRNAME,85,65,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Selected data source",IDC_STATIC_LAYER,159,68,65,8
+    EDITTEXT        IDC_EDIT_LAYER,228,66,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Anno before survey",IDC_STATIC_PRENAME,15,89,65,8
+    EDITTEXT        IDC_EDIT_PRENAME,85,83,150,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Anno after survey",IDC_STATIC_AFTNAME,15,117,72,8
+    EDITTEXT        IDC_EDIT_AFTNAME,91,114,150,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_STATIC_SPACE,14,135,41,8
+    LTEXT           "Only in case of annotation is differ from before survey",IDC_STATIC_COMMENT,57,138,143,8
+    RTEXT           "Position OK",IDC_STATIC_POS,15,159,49,13
+    CONTROL         "",IDC_CHECK_POS,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,159,9,13
+    RTEXT           "Name OK",IDC_STATIC_NAMEOK,15,177,49,13
+    CONTROL         "",IDC_CHECK_NAMEOK,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,176,9,13
+    RTEXT           "Closed",IDC_STATIC_CLOSE,15,195,49,13
+    CONTROL         "",IDC_CHECK_CLOSE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,195,9,13
+    RTEXT           "A vacant site",IDC_STATIC_CLEAR,15,214,49,13
+    CONTROL         "",IDC_CHECK_CLEAR,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,214,9,13
+    RTEXT           "Under Construct",IDC_STATIC_CONSTRUCT,15,229,49,13
+    CONTROL         "",IDC_CHECK_CONSTRUCT,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,229,9,13
+    RTEXT           "NoConfirmName",IDC_STATIC_UNCERTAIN,15,250,49,13
+    CONTROL         "",IDC_CHECK_UNCERTAIN,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,74,250,9,13
+    PUSHBUTTON      "Display",IDC_BUTTON_DISPLAYPICTURE,270,193,28,13
+    LTEXT           "",IDC_STATIC_VAR,21,60,170,1,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_VAR2,15,105,170,1,SS_SUNKEN
+    CONTROL         "",IDC_STATIC_PIC,"Static",SS_BLACKFRAME,132,151,102,31
+    LTEXT           "",IDC_STATIC_MEMO,176,220,66,17,SS_NOTIFY | SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "",IDC_SLIDER_PIC,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,124,192,100,13
+    LTEXT           "Sheet",IDC_STATIC_PICNUM,246,195,18,13,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CONFIRM,91,210,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Confirmation",IDC_BUTTON_CONFIRM,99,227,45,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRCITYSURVEYPOINTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,0,19
+ PRODUCTVERSION 11,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Assistant Project Manager", "YOSHIHISA MUKAI (Section IV Engineering Department II Division)"
+            VALUE "Comments", "AttrCitySurveyPointDlg PlugIn"
+            VALUE "CompanyName", "INCREMENT P CORP."
+            VALUE "FileDescription", "CITY_SURVEY_POINT PlugIn"
+            VALUE "FileVersion", "11.1.0.19"
+            VALUE "InternalName", "CITY_SURVEY_POINT"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2013 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "CITY_SURVEY_POINT.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "11.1.0.1"
+            VALUE "Project Manager", "WATARU KAWABE (Section IV Engineering Department II Division)"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrCitySurveyPointDlg"
+    IDS_CAPTION             "AttrCitySurveyPointDlg"
+    IDS_NAME                "SiNDYe_AttrCitySurveyPointDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "AttrCitySurveyPointDlg"
+    IDS_MESSAGE             "Dialog for display/editing of city survey point"
+    IDS_NOTEXISTPICTURE     "\\ \nCannot access the above-mentioned folder or Not exist image in folder"
+    IDS_FONT                "MS UI Gothic"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

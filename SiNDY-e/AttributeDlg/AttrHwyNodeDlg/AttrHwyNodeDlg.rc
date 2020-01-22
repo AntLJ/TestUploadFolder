@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRHWYNODEDLG DIALOGEX 0, 0, 468, 355
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    LTEXT           "路線種別",IDC_STATIC_ROADCLASS_REF,15,35,28,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_HWYNODE_ROADCLASS_REF,48,33,119,210,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ハイウェイモードフラグ",IDC_CHECK_ISHWMODE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,179,35,81,10
+    LTEXT           "路線名称",IDC_STATIC_ROADNAME_REF,15,51,28,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_HWYNODE_ROADNAME_REF,48,49,119,227,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "施設名称",IDC_STATIC_SEQUENCE,15,67,28,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SEQUENCE,48,65,119,226,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "施設番号",IDC_STATIC_HWYGUIDE_NUM,15,81,28,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_HWYGUIDE_NUM,47,81,102,14,ES_AUTOHSCROLL
+    LTEXT           "方向コード",IDC_STATIC_DIRECTION,15,102,52,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_DIRECTION,72,100,71,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分岐合流コード",IDC_STATIC_JUNCTION,149,102,46,8,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_JUNCTION,196,100,50,219,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "料金所種別コード",IDC_STATIC_TOLLCLASS,15,121,52,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_TOLLCLASS,72,119,71,188,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "案内料金所フラグ",IDC_CHECK_GUIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,120,68,10
+    GROUPBOX        "",IDC_GROUP_NOETC,14,138,273,35
+    CONTROL         "一般車両対応フラグ",IDC_CHECK_NOETC_CAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,137,75,10
+    LTEXT           "料金所機能コード",IDC_STATIC_TOLLFUNC,31,154,52,8,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_TOLLFUNC,108,152,83,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "非誘導料金所フラグ",IDC_CHECK_NOGUIDETOLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,201,153,75,10
+    GROUPBOX        "",IDC_GROUP_ETC,15,190,273,38
+    LTEXT           "ETC施設コード",IDC_STATIC_ETC_FACIL,20,190,44,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ETC_FACIL,65,188,54,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "料金所機能コード",IDC_STATIC_TOLLFUNC_ETC,31,207,52,8,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_TOLLFUNC_ETC,108,204,83,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "非誘導料金所フラグ",IDC_CHECK_NOGUIDETOLL_ETC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,201,207,75,10
+    LTEXT           "流入ノードID",IDC_STATIC_FROMNODE_ID,15,243,40,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FROMNODE_ID,59,241,61,63,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "流出ノードID",IDC_STATIC_TONODE_ID,142,243,40,12,SS_CENTERIMAGE | NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_TONODE_ID,185,241,61,66,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,15,271,52,12,SS_CENTERIMAGE | NOT WS_GROUP
+    CONTROL         "",IDC_TAB_HWYNODE,"SysTabControl32",0x0,282,29,126,66
+    GROUPBOX        "料金所レーン情報",IDC_GROUP_TOLLGATELANE,299,114,126,60
+    CONTROL         "",IDC_PICTURE_LANEIMG,"Static",SS_OWNERDRAW | NOT WS_VISIBLE | WS_DISABLED,306,125,38,17
+    EDITTEXT        IDC_EDIT_TOLLGATELANE,301,149,120,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SOURCE,71,273,138,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_VAR,34,321,170,8,SS_SUNKEN | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ETC_TOLLGATE,367,207,72,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ETC料金所コード",IDC_STATIC_ETC_TOLLGATE,307,207,51,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRHWYNODEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        VERTGUIDE, 43
+        VERTGUIDE, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,39
+ PRODUCTVERSION 18,1,0,39
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ハイウェイノード用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "HIGHWAY_NODE PlugIn"
+            VALUE "FileVersion", "18.1.0.39"
+            VALUE "InternalName", "AttrHwyNodeDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2017 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "HIGHWAY_NODE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.39"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ATTRHWYNODEDLG DLGINIT
+BEGIN
+    IDC_COMBO_HWYNODE_ROADCLASS_REF, 0x403, 5, 0
+0xd982, 0xb082, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_UNKNOWN      BITMAP                  "Resource\\unknown.bmp"
+
+IDB_BITMAP_ETC          BITMAP                  "Resource\\etc.bmp"
+
+IDB_BITMAP_IMPASSABLE   BITMAP                  "Resource\\impassable.bmp"
+
+IDB_BITMAP_INVALID      BITMAP                  "Resource\\invalid.bmp"
+
+IDB_BITMAP_MIXED        BITMAP                  "Resource\\mixed.bmp"
+
+IDB_BITMAP_PUBLIC       BITMAP                  "Resource\\public.bmp"
+
+IDB_BITMAP_SWITCH       BITMAP                  "Resource\\switch.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ATTRHWYNODEDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrHwyNodeDlg"
+    IDS_CAPTION             "ハイウェイノードダイアログ"
+    IDS_NAME                "SiNDYe_AttrHwyNodeDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "ハイウェイノードダイアログ"
+    IDS_MESSAGE             "ハイウェイノード情報を表示・編集するダイアログ"
+    IDS_BASEINFO            "基本情報"
+    IDS_TOLLGATELANEINFO    "料金所レーン情報"
+    IDS_FAILTOSETROUTECLASS "路線種別コードのコンボボックス設定失敗"
+    IDS_USABLENUMBER        "ハイウェイノードOBJECTID:%ld 料金所レーン情報に0～5以外の数字が使用されています。"
+    IDS_SAMEINOUTNODE       "ハイウェイノードOBJECTID:%ld 流入、流出ノードが同じです。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INVALIDNODE         "ハイウェイノードOBJECTID:%ld 流出、流入ノードに不正な値が入っています。"
+    IDS_NOTONNODE           "ハイウェイノードが道路ノードの上にありません。この状態で属性の編集を行うことはできません。\nハイウェイノードをノードの上に置くか、削除してください。"
+    IDS_CANTEDITATTRIBUTE   "道路ノードレイヤが存在しません。この状態でハイウェイノードの属性の編集を行うことはできません。"
+    IDS_NOTEXISTROADLAYER   "道路リンクレイヤがTOCに存在しません。"
+    IDS_NOTDISPLAYROADLAYER "道路レイヤが表示されていません。流出・流入ノードの向きは表示されません。"
+    IDS_NOTEXISTNODELAYER   "道路ノードレイヤがTOCに存在しません。"
+    IDS_NOTDISPLAYNODELAYER "道路ノードレイヤが表示されていません。流出・流入ノードの向きを表示しません。"
+    IDS_SAMEINOUTNODEID     "流入・流出ノードが同じです。"
+    IDS_ETC_TOLLGATEINFO    "ETC料金所コード情報"
+    IDS_NOTEXISTTOLLGATEID  "ハイウェイノードOBJECTID:%ld\nETC_TOLLGATEに存在しないETC料金所コードです。: %s"
+    IDS_FAILED_OPEN_TOLLGATE "ETC_TOLLGATE テーブルを開けませんでした。"
+    IDS_INVALID_ETC_CODE    "ハイウェイノードOBJECTID: %ld\nETC施設コード「ETC非対応」なのにETC料金所コードが入力されています。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

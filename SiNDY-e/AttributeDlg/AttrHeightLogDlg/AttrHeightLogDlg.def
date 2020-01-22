@@ -1,0 +1,6 @@
+; AttrHeightLogDlg.def : モジュール パラメータを宣言します。
+
+LIBRARY      "HEIGHT_LOG.DLL"
+
+EXPORTS
+	CreateDlg

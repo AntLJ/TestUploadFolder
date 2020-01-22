@@ -1,0 +1,4 @@
+LIBRARY "GRAD.DLL"
+
+EXPORTS
+	CreateDlg

@@ -1,0 +1,171 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,5
+ PRODUCTVERSION 18,1,0,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "SiNDY-Q用高さログ属性編集ダイアログプラグイン"
+            VALUE "FileVersion", "18.1.0.5"
+            VALUE "InternalName", "AttrHeightLogDlg.dll"
+            VALUE "LegalCopyright", "Copyright 2009-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "AttrHeightLogDlg.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRHEIGHTLOGDLG DIALOGEX 0, 0, 336, 191
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_Z10,71,19,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZORIG,220,19,78,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_RUNWAY,71,35,78,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROADNAME,71,52,78,12,ES_AUTOHSCROLL
+    LTEXT           "高さ",IDC_STATIC_Z10,20,19,46,8
+    LTEXT           "オリジナル高さ",IDC_STATIC_ZORIG,165,19,45,8
+    LTEXT           "車線種別",IDC_STATIC_RUNWAY,20,35,45,8
+    LTEXT           "路線名称",IDC_STATIC_ROADNAME,20,52,45,8
+    LTEXT           "地点名称",IDC_STATIC_SPOTNAME,165,55,46,8
+    LTEXT           "上下",IDC_STATIC_UPDOWN,20,68,45,8
+    LTEXT           "ON/OFF",IDC_STATIC_ONOFF,165,68,45,8
+    LTEXT           "管理台帳名",IDC_STATIC_MASTERNAME,20,84,46,8
+    LTEXT           "ファイル名",IDC_STATIC_FILENAME,165,85,45,8
+    LTEXT           "他路線に含む",IDC_STATIC_CONTAIN,20,103,46,8
+    LTEXT           "計測種別",IDC_STATIC_MEASURE,20,122,46,8
+    LTEXT           "納品日",IDC_STATIC_DATE,165,125,45,8
+    LTEXT           "備考",IDC_STATIC_REMARKS,20,141,46,8
+    EDITTEXT        IDC_EDIT_SPOTNAME,220,55,78,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_UPDOWN,71,67,78,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ONOFF,221,70,78,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MASTERNAME,71,82,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILENAME,220,85,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTAIN,71,102,206,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATE,220,122,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REMARKS,71,143,204,24,ES_MULTILINE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MEASURE,71,122,78,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ATTRHEIGHTLOGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "AttrHeightLogDlg"
+    IDS_CAPTION             "高さログダイアログ"
+    IDS_NAME                "SiNDYe_AttrHeightLogDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "高さログダイアログ"
+    IDS_MESSAGE             "高さログ情報を表示・編集するダイアログ"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

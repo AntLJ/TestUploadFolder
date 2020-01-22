@@ -1,0 +1,182 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATTRHIMALOGDLG DIALOG  0, 0, 290, 339
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ログ",IDC_STATIC_LOG,23,17,44,8
+    EDITTEXT        IDC_EDIT_LOG,67,17,90,12,ES_AUTOHSCROLL
+    LTEXT           "作業者名",IDC_STATIC_WORKER,175,17,44,8
+    EDITTEXT        IDC_EDIT_WORKER,221,17,48,12,ES_AUTOHSCROLL
+    LTEXT           "シートID",IDC_STATIC_SHEETID,23,38,44,8
+    EDITTEXT        IDC_EDIT_SHEETID,67,38,90,12,ES_AUTOHSCROLL
+    LTEXT           "記号",IDC_STATIC_KIGOU,175,38,44,8
+    EDITTEXT        IDC_EDIT_KIGOU,221,38,48,12,ES_AUTOHSCROLL
+    LTEXT           "現調時種別",IDC_STATIC_GENTYOU_C,23,59,44,8
+    EDITTEXT        IDC_EDIT_GENTYOU_C,67,59,90,12,ES_AUTOHSCROLL
+    LTEXT           "現調名称",IDC_STATIC_GENTYOU_NAME,23,80,44,8
+    EDITTEXT        IDC_EDIT_GENTYOU_NAME,67,80,90,15,ES_AUTOHSCROLL
+    LTEXT           "既存種別",IDC_STATIC_KIZON_C,23,101,44,8
+    EDITTEXT        IDC_EDIT_KIZON_C,67,101,90,12,ES_AUTOHSCROLL
+    LTEXT           "既存名称",IDC_STATIC_KIZON_NAME,23,122,44,8
+    EDITTEXT        IDC_EDIT_KIZON_NAME,67,122,90,15,ES_AUTOHSCROLL
+    LTEXT           "表記修正種別",IDC_STATIC_DISP_C,23,143,44,8
+    EDITTEXT        IDC_EDIT_DISP_C,67,143,90,12,ES_AUTOHSCROLL
+    LTEXT           "表記修正名称",IDC_STATIC_DISP_NAME,23,164,44,8
+    EDITTEXT        IDC_EDIT_DISP_NAME,67,164,90,15,ES_AUTOHSCROLL
+    LTEXT           "TDCステータス",IDC_STATIC_TDCSTATUS,23,185,44,8
+    EDITTEXT        IDC_EDIT_TDCSTATUS,67,185,90,12,ES_AUTOHSCROLL
+    LTEXT           "対応結果",IDC_STATIC_RESULT,23,206,44,8
+    EDITTEXT        IDC_EDIT_RESULT,67,206,90,12,ES_AUTOHSCROLL
+    LTEXT           "一致判定",IDC_STATIC_MATCHING,175,206,44,8
+    EDITTEXT        IDC_EDIT_MATCHING,221,206,48,12,ES_AUTOHSCROLL
+    LTEXT           "平面対応結果",IDC_STATIC_RESULT_SHA,23,227,44,8
+    EDITTEXT        IDC_EDIT_RESULT_SHA,67,227,90,12,ES_AUTOHSCROLL
+    LTEXT           "備考",IDC_STATIC_REMARKS,23,248,44,8
+    EDITTEXT        IDC_EDIT_REMARKS,67,248,90,12,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ATTRHIMALOGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,0,0,15
+ PRODUCTVERSION 8,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "ひまわりログ用属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "HIMA_LOG PlugIn"
+            VALUE "FileVersion", "6, 0, 0, 15"
+            VALUE "InternalName", "AttrHimaLogDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2010"
+            VALUE "OriginalFilename", "HIMA_LOG.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "8, 0, 0, 0"
+            VALUE "主担当", "宿澤秀和（コンテンツ事業本部技術開発部システム開発グループ）"
+            VALUE "副担当", "古川貴宏（コンテンツ事業本部技術開発部システム開発グループ）"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "AttrHimaLogDlg"
+    IDS_CAPTION         "ひまわりログダイアログ"
+    IDS_NAME            "SiNDYe_AttrHimaLogDlg"
+    IDS_CATEGORY            "SiNDY-e Tool"
+    IDS_TOOLTIP             "ひまわりログダイアログ"
+    IDS_MESSAGE             "ひまわりログ情報を表示・編集するダイアログ"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

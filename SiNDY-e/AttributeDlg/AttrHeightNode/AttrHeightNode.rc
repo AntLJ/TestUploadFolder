@@ -1,0 +1,164 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HEIGHT_NODE_DLG DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_LAYER1,11,15,63,30,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ID1,84,15,60,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WALKCLASS1,148,14,61,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    COMBOBOX        IDC_COMBO_HEIGHT1,213,14,41,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LAYER2,10,58,63,30,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ID2,80,57,61,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WALKCLASS2,145,58,61,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    COMBOBOX        IDC_COMBO_HEIGHT2,212,58,41,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_VAR,11,143,199,1,SS_SUNKEN
+    LTEXT           "情報ソース",IDC_STATIC_SOURCE,13,154,50,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SOURCE,65,154,68,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_HEIGHT_NODE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 18,1,0,5
+ PRODUCTVERSION 18,1,0,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "重なりリンクの高さノード属性編集ダイアログプラグイン"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "HEIGHT_NODE PlugIn"
+            VALUE "FileVersion", "18.1.0.5"
+            VALUE "InternalName", "HEIGHT_NODE"
+            VALUE "LegalCopyright", "Copyright (C) 2015-2018 INCREMENT P CORP., All Rights Reserved."
+            VALUE "OriginalFilename", "HEIGHT_NODE.dll"
+            VALUE "ProductName", "SiNDY-e"
+            VALUE "ProductVersion", "18.1.0.5"
+            VALUE "TemplateVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NOEXIST_LINK    "リンクが存在しません。%s： %ld "
+    IDS_ERR_NO_CROSSED_LINK "以下のリンクの交点上にありません。\n %s: %ld\n %s: %ld"
+    IDS_ERR_CHECKROGIC      "論理チェック"
+    IDS_ERR_ALREADY_EXIT    "高さノードが既に存在します。"
+    IDS_ERR_CANNOT_CREATE   "リンクの交点以外に作成することはできません。"
+    IDS_ERR_ON_ROADLINKS    "道路リンク同士の交点に作成することはできません。"
+    IDS_DIALOG_NAME         "重なりリンクの高さ編集ダイアログ"
+    IDS_ERR_LINK_ATTR       "リンクの属性が不正です。\n%s"
+    IDS_ERR_NOT_FOUND_LAYER "以下のレイヤが同じグループレイヤに所属している必要があります。\n - 道路リンク\n - 歩行者リンク"
+    IDS_ERR_NOT_ON_2LINKS   "2本のリンクの交点以外に作成することはできません。"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

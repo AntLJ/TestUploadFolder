@@ -1,0 +1,4 @@
+LIBRARY "HIMA_LOG.DLL"
+
+EXPORTS
+	CreateDlg

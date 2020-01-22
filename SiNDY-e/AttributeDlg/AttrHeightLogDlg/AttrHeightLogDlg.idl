@@ -1,0 +1,18 @@
+// AttrHeightLogDlg.idl : AttrHeightLogDlg の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (AttrHeightLogDlg.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(D3FC9A35-F1A2-4534-91D5-154D2FFBEFDA),
+	version(1.0),
+	helpstring("AttrHeightLogDlg 1.0 タイプ ライブラリ")
+]
+library AttrHeightLogDlgLib
+{
+	importlib("stdole2.tlb");
+};

@@ -1,0 +1,4 @@
+LIBRARY "KLINK_POINT.DLL"
+
+EXPORTS
+	CreateDlg

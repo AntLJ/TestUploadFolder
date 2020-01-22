@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BldNameNoAddInfoExtracter", "BldNameNoAddInfoExtracter.vcxproj", "{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6} = {5B0E0545-3D1E-4233-BF0B-55BC76969BD6}
+		{2B2235A9-B5F7-4111-843D-2C34E5154944} = {2B2235A9-B5F7-4111-843D-2C34E5154944}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArcHelperEx_vc11", "..\..\LIB\ArcHelperEx\build\ArcHelperEx_vc11.vcxproj", "{2B2235A9-B5F7-4111-843D-2C34E5154944}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sindylib_base_vc11", "..\..\LIB\TDC\sindylib_base\build\sindylib_base_vc11.vcxproj", "{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_English|Win32 = Debug_English|Win32
+		Debug_MBCS|Win32 = Debug_MBCS|Win32
+		Debug|Win32 = Debug|Win32
+		Release_English|Win32 = Release_English|Win32
+		Release_MBCS|Win32 = Release_MBCS|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug_English|Win32.ActiveCfg = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug_English|Win32.Build.0 = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug_MBCS|Win32.ActiveCfg = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug_MBCS|Win32.Build.0 = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Debug|Win32.Build.0 = Debug|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release_English|Win32.ActiveCfg = Release|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release_English|Win32.Build.0 = Release|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release_MBCS|Win32.ActiveCfg = Release|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release_MBCS|Win32.Build.0 = Release|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release|Win32.ActiveCfg = Release|Win32
+		{7492AF0E-A06F-42B1-80BC-8EADFD2193B1}.Release|Win32.Build.0 = Release|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug_English|Win32.ActiveCfg = Debug_English|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug_English|Win32.Build.0 = Debug_English|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug_MBCS|Win32.ActiveCfg = Debug_MBCS|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug_MBCS|Win32.Build.0 = Debug_MBCS|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Debug|Win32.Build.0 = Debug|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release_English|Win32.ActiveCfg = Release_English|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release_English|Win32.Build.0 = Release_English|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release_MBCS|Win32.ActiveCfg = Release_MBCS|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release_MBCS|Win32.Build.0 = Release_MBCS|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release|Win32.ActiveCfg = Release|Win32
+		{2B2235A9-B5F7-4111-843D-2C34E5154944}.Release|Win32.Build.0 = Release|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug_English|Win32.ActiveCfg = Debug_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug_English|Win32.Build.0 = Debug_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug_MBCS|Win32.ActiveCfg = Debug_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug_MBCS|Win32.Build.0 = Debug_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Debug|Win32.Build.0 = Debug|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release_English|Win32.ActiveCfg = Release_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release_English|Win32.Build.0 = Release_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release_MBCS|Win32.ActiveCfg = Release_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release_MBCS|Win32.Build.0 = Release_English|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release|Win32.ActiveCfg = Release|Win32
+		{5B0E0545-3D1E-4233-BF0B-55BC76969BD6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

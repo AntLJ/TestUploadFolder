@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\MFCTestApp.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFCTestApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MFCTESTAPP_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MFCTestApp"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,177,50,16
+    PUSHBUTTON      "キャンセル",IDCANCEL,203,177,50,16
+    COMBOBOX        IDC_COMBO1,157,7,156,69,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "スタティック",IDC_STATIC2,157,32,156,137
+    LTEXT           "スタティック",IDC_STATIC3,165,48,28,8
+    EDITTEXT        IDC_EDIT1,253,47,53,20,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,165,73,109,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Button1",IDC_BUTTON1,281,73,25,20
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,165,96,141,73
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_TABSTOP,7,7,150,162
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MFCTestApp.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "MFCTestApp.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MFCTESTAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 157
+        VERTGUIDE, 165
+        VERTGUIDE, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MFCTESTAPP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x6161, 0x6161, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6262, 0x6262, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6363, 0x6363, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6464, 0x6464, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6565, 0x6565, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x6161, 0x6161, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x6262, 0x6262, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x6363, 0x6363, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x6464, 0x6464, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x6565, 0x6565, "\000" 
+    0
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\MFCTestApp.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

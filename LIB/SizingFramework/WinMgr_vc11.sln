@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinMgr_vc11", "WinMgr_vc11.vcxproj", "{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Afxdll|Win32 = Debug Afxdll|Win32
+		Debug|Win32 = Debug|Win32
+		Release Afxdll|Win32 = Release Afxdll|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Debug Afxdll|Win32.ActiveCfg = Debug Afxdll|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Debug Afxdll|Win32.Build.0 = Debug Afxdll|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Debug|Win32.Build.0 = Debug|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Release Afxdll|Win32.ActiveCfg = Release Afxdll|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Release Afxdll|Win32.Build.0 = Release Afxdll|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Release|Win32.ActiveCfg = Release|Win32
+		{11700ED1-DEB7-41C0-8EAF-EA161ACF2966}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+/**
+@page introduction 開発の目的
+
+<p>
+ATLやMFCでダイアログを作成する際、避けて通れないのが各コントロールの配置の問題である。<br>
+通常ダイアログエディタで配置を行うが、コントロールの数が多くなったりレイアウトを綺麗に<br>
+しようとするとかなり面倒な作業となる。<br>
+さらに面倒なのが、ダイアログの拡大・縮小に対してコントロールのリサイズを行うことである。<br>
+これを自前のコードでやることを考えると、吐き気すら伴う。
+</p>
+<p>
+このライブラリは、そうしたツール本来の開発目的とはかけ離れた部分で開発者が苦労すること<br>
+が無いように、最小限の手間だけでコントロールの配置問題やダイアログのリサイズ時の再配置<br>
+を行うことを目的としたライブラリである。
+</p>
+<p>
+なお、本ライブラリの基本部分はMSDNマガジン（2001/7月号）に掲載されたウインドウ配置管理<br>
+クラスライブラリを元に、MFC、ATL（+WTL）両方で使用できるように手直し＋若干の機能追加と<br>
+バグ修正を行ったものである。<br>
+@sa 
+July 2001 issue of MSDN Magazine.<br>
+<a href="http://msdn.microsoft.com/msdnmag/issues/01/07/default.asp">http://msdn.microsoft.com/msdnmag/issues/01/07/default.asp</a><br>
+<br>
+ATL porting.<br>
+<a href="http://www.codeguru.com/cpp/com-tech/atl/misc/article.php/c3563/">http://www.codeguru.com/cpp/com-tech/atl/misc/article.php/c3563/</a><br>
+<br>
+参考書籍：<br>
+MSDN マガジン 2001/7月号<br>
+*/

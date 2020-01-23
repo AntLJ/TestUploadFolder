@@ -1,0 +1,156 @@
+/**
+@page usage2 高度な使い方
+
+@section usage_high_0 サイズバーの使用
+
+ダイアログサイズに合わせてで各コントロールのサイズを自動的に調整することは出来るようになったが、<br>
+例えばツリーコントロールとテキストエリアが横並びにあった場合、ツリーコントロールの領域を拡大した<br>
+い場合もあれば、テキストエリアの領域を拡大したい場合もあるだろう。<br>
+そのような場合、サイズバーを設置することで任意のサイズに手動で変更出来るようになる。
+
+@subsection usage_high_0_1 定義
+
+ダイアログクラスのメンバ変数としてCSizerBarを定義するだけである。
+
+@code
+...
+private:
+	CSizerBar m_wndSizerBar;
+@endcode
+
+@subsection usage_high_0_2 実装
+
+m_wndSizerBarの実体をOninitDialog内で作成する。
+
+@code
+	BOOL OnInitDialog(HWND hwnd, LPARAM lParam)
+	{
+		SetMsgHandled(FALSE); // CSizeableDlgのメッセージハンドラにまわすため
+
+		m_wndSizerBar.Create(WS_VISIBLE|WS_CHILD, *this, m_winMgr, IDC_SIZERBAR);
+        ...
+@endcode
+
+ちなみに、IDC_SIZERBARはここと配置マップで使用するので、あらかじめresource.h等に追記しておく必要\n
+がある。
+
+後は配置マップで適切な箇所に配置することで、手動でのリサイズが可能になる。
+
+@code
+...
+RCFIXED(IDC_SIZERBAR, 4) // 4ピクセル幅を持つサイズバー
+...
+@endcode
+
+なお、実行時サイズバーはダイアログ背景と同じであるため、どこに存在するか分かりづらいかもしれない。\n
+
+@section usage_high_1 配置マップを切り替える
+
+オリジナルには無い機能の一つに、配置マップを切り替える機能がある。\n
+一つのダイアログ上で複数の見せ方をしたい（特に、タブでの切り替えによる表示の変更等）時に使用する。\n
+切り替え自体は以下のコードを呼べばよい。
+
+@code
+...
+m_winMgr.ChangeMgrMap(DEFAULT2);
+...
+// 再配置
+m_winMgr.InitToFitSizeFromCurrent(this);
+m_winMgr.CalcLayout(this);
+m_winMgr.SetWindowPositions(this);
+...
+@endcode
+
+DEFAULT2は、二つ目の配置マップの名前である。勿論、この名前である必要は無い。\n
+実際には、表示の必要の有無に応じてコントロールのON/OFFを切り替える必要もある\n
+と思う。幸い配置マップには制御対象コントロールIDが記録されているので、それを\n
+使用することでごく短いコードで制御が可能である。\n
+
+以下に、配置マップ単位で表示切替をする関数を記載しておくので参考にして欲しい。
+
+@code
+// ウィンドウマップに登録されているコントロールの表示を切り替える
+void ShowDlgItem( WINRECT* r, int nCmdShow ) const
+{
+	if( ! r )
+		return;
+
+	if( 0 < r->GetID() )
+		::ShowWindow( GetDlgItem(r->GetID()), nCmdShow );
+	// 子供が存在するなら子供の処理
+	if( r->IsGroup() )
+		ShowDlgItem( r->Children(), nCmdShow );
+	// 自分の次のものを処理
+	ShowDlgItem( r->Next(), nCmdShow );
+}
+@endcode
+
+@section usage_high_2 リサイズ時のちらつきを無くす
+
+せっかく綺麗に配置したのに、リサイズ時のちらつきが全てを台無しにする。\n
+なんとかリサイズ時をちらつきを抑えたいと思うのは、当然のことだろう。\n
+少し面倒だが、ちらつきを極限まで無くす方法を以下に示す。
+
+@subsection usage_high_2_1 グループボックス未使用の場合
+
+ベースダイアログ側で WS_CLIPCHILDREN をつける。\n
+グループボックスを使用していなければ、これをするだけでちらつきがほぼ無くなる。
+
+グループボックスを使用している場合は、少し面倒である。
+
+@subsection usage_high_2_2 グループボックスを使用している場合
+
+グループボックスを使用している場合、上記ウィンドウスタイルをセットすることにより\n
+グループボックス内に配置しているコントロールの枠が消えてしまう。
+
+そこで、グループボックスに WS_CLIPSIBLINGS|WS_CLIPCHILDRENとWS_EX_TRANSPARENT を\n
+セットする。これでグループボックス内に配置してあるコントロールの枠が消えることは\n
+無くなったが、それらとグループボックスの隙間が全く描画されなくなるため、再描画の\n
+タイミングでグループボックス背景を塗りつぶす必要がある。\n
+実際にはWM_ERASEBACKGROUNDメッセージを処理するのだが、サブクラス化してメッセージ\n
+マップに追加するのも面倒なので、上記メッセージを処理するCEraseBackgroundクラスを\n
+用意してある。
+
+しかしこれでもまだ問題がある（詳細は忘れた…）。なので、グループボックスと同じサ\n
+イズになるようにオーナードローピクチャボックスを貼る。その際、ピクチャボックスは\n
+グループボックスよりもZオーダーが若い必要がある。
+
+以上、まとめると以下のようになる。
+
+@code ダイアログクラス .h
+...
+CEraseBackground* m_pPic; // ピクチャボックススーパークラス化用
+...
+@endcode
+
+@code 配置マップ
+...
+BEGINROWS(WRCT_TOFIT, IDC_STATIC_GROUP, RCMARGINS(0,0)) // グループボックス
+	BEGINROWS(WRCT_TOFIT, IDC_STATIC_GORUP_BK, RCMARGINS(0,0) // ピクチャボックス
+    ...
+	ENDGROUP()
+ENDGROUP()
+...
+@endcode
+
+@code ダイアログクラス .cpp
+LRESULT CTestDlg::OnInitDialog( HWND hWnd, LPARAM lParam )
+{
+	SetMsgHandled(FALSE); // CSizeableDlgのメッセージハンドラにまわすため
+
+	// ピクチャボックススーパークラス化	
+	m_pPic = new CEraseBackground( GetDlgItem(IDC_STATIC_GROUP_BK) ); // WM_DESTROYでdeleteするのを忘れずに！！
+
+	// WS_CLIPCHILDRENをつける
+	DWORD dwForceStyle = WS_CLIPCHILDREN;
+	DWORD dwStyle = GetStyle();
+	if((dwStyle & dwForceStyle) != dwForceStyle)
+		ModifyStyle(0, dwForceStyle);
+	...
+}
+@endcode
+
+グループボックス周りのタブオーダーを\n
+グループボックス内Ctrl < グループボックス < ピクチャボックス\n
+としないと全てが水の泡なので、うまくいかない場合はタブオーダーを確認しよう。
+*/

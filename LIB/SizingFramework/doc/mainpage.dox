@@ -1,0 +1,42 @@
+/**
+@mainpage @projectname
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 動作保証OS:
+Windows XP SP2
+
+@if Develop
+@version
+@fileversion<br>
+@productversion
+@endif
+
+@date @lastupdate
+
+@section toc_outline 概略
+
+- @subpage introduction
+- @subpage overview
+- @subpage history
+
+@section toc_design 解説
+
+- @subpage usage
+- @subpage usage2
+
+@section toc_input サンプル
+
+- ATL
+	- ATLTestAppDlg.h
+	- ATLTestAppDlg.cpp
+	- ATLTestApp/DlgMap.h
+- MFC
+	- MFCTestAppDlg.h
+	- MFCTestAppDlg.cpp
+	- MFCTestApp/DlgMap.h
+*/

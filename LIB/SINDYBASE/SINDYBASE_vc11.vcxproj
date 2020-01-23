@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SINDYBASE</ProjectName>
+    <ProjectGuid>{AC43E3E4-6417-40F3-8948-4FF2369D25B5}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>sindybase_vc11</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>sindybase_vc11-gd</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../;../GDB;../WKH;../strcode/include;../ZCL;../ZIN;../ZIN2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(Configuration)/SINDYBASE.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(Configuration)/</AssemblerListingLocation>
+      <ObjectFileName>$(Configuration)/</ObjectFileName>
+      <ProgramDataBaseFileName>$(Configuration)/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\lib\sindybase_vc11.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DLL Release/SINDYBASE.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../;../GDB;../WKH;../strcode/include;../ZCL;../ZIN;../ZIN2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(Configuration)/SINDYBASE.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(Configuration)/</AssemblerListingLocation>
+      <ObjectFileName>$(Configuration)/</ObjectFileName>
+      <ProgramDataBaseFileName>$(Configuration)/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\lib\sindybase_vc11-gd.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(Configuration)/SINDYBASE.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SINDY2INCODE.cpp" />
+    <ClCompile Include="SindyAttrdef.cpp" />
+    <ClCompile Include="SindyDataset.cpp" />
+    <ClCompile Include="SindyDBConnection.cpp" />
+    <ClCompile Include="SindyFeatureClass.cpp" />
+    <ClCompile Include="SindyInfTable.cpp" />
+    <ClCompile Include="SindyLineClass.cpp" />
+    <ClCompile Include="SindyLinkQueue.cpp" />
+    <ClCompile Include="SindyLinkTable.cpp" />
+    <ClCompile Include="SindyLqTable.cpp" />
+    <ClCompile Include="SindyPointClass.cpp" />
+    <ClCompile Include="SindyPolygonClass.cpp" />
+    <ClCompile Include="SindyTable.cpp" />
+    <ClCompile Include="SindyTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="INAttrDef.h" />
+    <ClInclude Include="SINDY2INCODE.h" />
+    <ClInclude Include="SindyAttrdef.h" />
+    <ClInclude Include="SindyDataset.h" />
+    <ClInclude Include="SindyDBConnection.h" />
+    <ClInclude Include="SindyFeatureClass.h" />
+    <ClInclude Include="SindyInfTable.h" />
+    <ClInclude Include="SindyLineClass.h" />
+    <ClInclude Include="SindyLinkQueue.h" />
+    <ClInclude Include="SindyLinkTable.h" />
+    <ClInclude Include="SindyLqTable.h" />
+    <ClInclude Include="SindyPointClass.h" />
+    <ClInclude Include="SindyPolygonClass.h" />
+    <ClInclude Include="SindyTable.h" />
+    <ClInclude Include="SindyTools.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

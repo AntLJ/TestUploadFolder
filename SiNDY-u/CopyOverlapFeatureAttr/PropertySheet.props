@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(ArcGIS)\ArcSDE\include;$(ArcGIS)\$(Desktop)\bin;$(ArcGIS)\$(Desktop)\com;$(ArcGIS)\$(DeveloperKit)\include;$(EXTERNAL_LIB)\boost\boost_1_56_0\include;$(EXTERNAL_LIB)\WTL\WTL_8_1_12085\Include</IncludePath>
+    <LibraryPath>$(EXTERNAL_LIB)\boost\boost_1_56_0\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

@@ -1,0 +1,57 @@
+PGDBのフィーチャクラスをコピーするプログラム2007/4/13
+
+【機能】
+PGDBの中の特定フィーチャクラスを別のPGDBにコピーします。
+IDを含め、全て元の状態と同じ形でコピーします。
+
+【使用法】
+Usage:CopyLayer [オプション] <メッシュコード> <拡張子>
+　　　CopyLayer [オプション] -L <メッシュリスト> <拡張子>
+ オプション:
+       -S <コピー元ディレクトリ>
+       -T <コピー先ディレクトリ>
+　　　 -F 強制上書き（削除後に追加）モード
+
+
+指定する拡張子とコピーの対象の関係は以下の通り
+	frm:City_Site, City_Line, City_Area, City_Tunnel, City_Road
+	hig:Building, Building_Line, Building_Step, Building_Roof
+	ral:City_Station, City_Railway
+	adm:City_Admin, Gou_Point, CS_Addr_Point
+	avc:City_Annotation, City_Disp_Line
+	svy:City_Survey_Point
+	sho:Mapple_Chiban, Mapple_HAL
+
+【特記事項】
+１．コピー先にデータセット「city」があることを期待します（自動には作らない）。
+
+【最新バージョン】
+FILEVERSION FILEVERSION 1.6.1.10 PRODUCTVERSION 1.6.1.0
+
+【更新履歴】
+2007/06/27	FILEVERSION 1.1.0.2 PRODUCTVERSION 1.1.0.0
+		本ファイルに不足情報を加筆修正。
+
+2007/09/05	FILEVERSION 1.2.0.3 PRODUCTVERSION 1.2.0.0
+		VC8対応（新メイン化も）
+
+2007/10/19	FILEVERSION 1.2.0.3 PRODUCTVERSION 1.2.0.0
+		「City_Survey_Point」に対応
+
+2007/12/11	FILEVERSION FILEVERSION 1.4.0.5 PRODUCTVERSION 1.4.0.0
+		エクスポート情報用テーブル「EXPORT_INFO」に対応
+
+2008/01/15	FILEVERSION 1.5.1.7 PRODUCTVERSION 1.5.1.0
+		[Bug 5743] ExportPgdbでsvyがEXPORT_INFOテーブルに出力されない
+		と同じバグが内在していたので修正
+
+2008/03/24	FILEVERSION FILEVERSION 1.6.0.8 PRODUCTVERSION 1.6.0.0
+		[Bug 6946] [u][要望]コピー対象を追加して欲しい。（S社データ）　に対応
+		標準エラー出力にバージョン情報を出力するよう変更
+		コピー元がなかった時のメッセージ変更（検証時に見つけた問題）
+
+2010/08/10	FILEVERSION FILEVERSION 1.6.1.9 PRODUCTVERSION 1.6.1.0
+		[bug 8090] [u][要望]CSPにも対応して欲しい　に対応
+
+2013/12/11 FILEVERSION FILEVERSION 1.6.1.10 PRODUCTVERSION 1.6.1.0
+		GEOSPACE案件のためのスキーマ変更に対応。

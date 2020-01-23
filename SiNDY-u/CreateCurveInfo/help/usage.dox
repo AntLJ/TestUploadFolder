@@ -1,0 +1,222 @@
+/**
+@page usage 使用方法
+
+@section usage_environment 実行環境
+
+<p>ツールの実行には「shapelib_vc90.dll」が必要。
+<br>開発者が「CreateCurveInfo.exe」と同じ格納場所に格納し、使用者はそれを「CreateCurveInfo.exe」と一緒にコピーして同じディレクトリに置くものとする。
+
+@section usage_args コマンドライン引数
+
+<table>
+<tr>
+	<th>必須/任意</th>
+	<th>スイッチ</th>
+	<th>スイッチ（短縮形）</th>
+	<th>パラメータ</th>
+	<th>備考</th>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--road_db</td>
+	<td>-R</td>
+	<td>道路データベース</td>
+	<td>接続するDBを、<a href="http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_workspace">sindy::create_workspace()がサポートしている形式</a>で指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--mesh_db</td>
+	<td>-M</td>
+	<td>２次メッシュデータベース</td>
+	<td>接続するDBを、<a href="http://orias.mr.ipc.pioneer.co.jp/pukiwiki/index.php?sindy_workspace">sindy::create_workspace()がサポートしている形式</a>で指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--meshlist</td>
+	<td>-m</td>
+	<td>出力対象２次メッシュコードのメッシュリストファイルパス or 対象２次メッシュコード</td>
+	<td>対象メッシュが１メッシュである場合は、２次メッシュコードを直接指定することが可能。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--output_dir</td>
+	<td>-o</td>
+	<td>Shapeファイル出力ディレクトリパス</td>
+	<td>　
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--logfile</td>
+	<td>-l</td>
+	<td>ログファイルパス</td>
+	<td>　
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--max_roc_for_region_deletion</td>
+	<td>-r</td>
+	<td>領域削除のための最大曲率半径（低速域用）（m）</td>
+	<td>@ref max_roc_for_region_deletionを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--max_roc_for_region_deletion_high</td>
+	<td>-t</td>
+	<td>領域削除のための最大曲率半径（高速域用）（m）</td>
+	<td>@ref max_roc_for_region_deletionを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--max_roc_of_section</td>
+	<td>-w</td>
+	<td>区間の最大曲率半径（低速域用）（m）</td>
+	<td>@ref max_roc_of_sectionを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--max_roc_of_section_high</td>
+	<td>-u</td>
+	<td>区間の最大曲率半径（高速域用）（m）</td>
+	<td>@ref max_roc_of_sectionを指定する。
+	<td>
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--straight_angle</td>
+	<td>-s</td>
+	<td>直線と見なす角度（度）</td>
+	<td>@ref straight_angleを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--roc_point_interval</td>
+	<td>-i</td>
+	<td>曲率半径を求める点の間隔（m）</td>
+	<td>@ref roc_pointを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--curve_certify_angle</td>
+	<td>-c</td>
+	<td>カーブ認定角度（度）</td>
+	<td>@ref curve_certify_angleを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--fitting_point_interval</td>
+	<td>-F</td>
+	<td>円弧がベジエ曲線にフィットするかを評価する点の間隔（m）</td>
+	<td>@ref fitting_point_intervalを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--fitting_threshold</td>
+	<td>-f</td>
+	<td>円弧がベジエ曲線にフィットすると見なす閾値（m）</td>
+	<td>@ref fitting_thresholdを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>必須</b></td>
+	<td>--section_min_angle</td>
+	<td>-n</td>
+	<td>区間に対応する円弧の最小角度（度）</td>
+	<td>@ref section_min_angleを指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--query_where_clause</td>
+	<td>-q</td>
+	<td>対象リンク指定クエリ</td>
+	<td>対象としたいリンクをクエリ(Where句)で指定する。クエリは""で囲むこと。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--create_each_mesh</td>
+	<td>-e</td>
+	<td>メッシュごとにShapeを作成する</td>
+	<td>指定した場合、メッシュごとに分かれたShapeファイル群を出力する。
+	<br>指定しなかった場合、全データを含む一組のShapeファイルを出力する。
+	<br>@ref output_filename_and_dir_configを参照のこと。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--shp05_dir_config</td>
+	<td>-d</td>
+	<td>SHP05のディレクトリ構成で出力する</td>
+	<td>指定した場合、SHP05のディレクトリ構成でShapeファイルを出力する。
+	<br>但し、--create_each_meshが同時に指定されていないと無意味。
+	<br>@ref output_filename_and_dir_configを参照のこと。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--verification_logfile</td>
+	<td>-v</td>
+	<td>検証用ログファイルパス</td>
+	<td>@ref verification_logfileを出力させたい場合は指定する。
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--log_handling_process</td>
+	<td>-p</td>
+	<td>処理過程をログファイルに出力する</td>
+	<td>下記のような、処理過程の色々な情報をログファイルに出力する。<br>
+- 一本道のうち、最初に着目したリンク
+- 変曲点
+- 追加した構成点
+- 曲率半径を求める点
+- フィット評価の結果
+	</td>
+</tr>
+<tr>
+	<td align="center"><b>任意</b></td>
+	<td>--log_fit_evaluating_process</td>
+	<td>-a</td>
+	<td>フィット評価過程をログファイルに出力する</td>
+	<td>「ベジエ曲線とフィットしたか否かを判定した円周上の点」の情報を全て出力する。<br>--log_handling_processとコンセプトは同じだが、こちらは情報量が非常に多いので、別々に指定できるようにした。
+	</td>
+</tr>
+</table>
+
+<br>
+
+@section effect サーバへの影響
+
+<table>
+<tr>
+	<td>編集</td>
+	<td>なし</td>
+</tr><tr>
+	<td>実行後のサーバメンテナンス</td>
+	<td>不要</td>
+</tr><tr>
+	<td>実行中のサーバへの接続可否</td>
+	<td>可</td>
+</tr><tr>
+	<td>実行中のサーバへの編集可否</td>
+	<td>可</td>
+</tr><tr>
+	<td>実行中のデータへの編集可否</td>
+	<td>可</td>
+</tr>
+</table>
+
+*/

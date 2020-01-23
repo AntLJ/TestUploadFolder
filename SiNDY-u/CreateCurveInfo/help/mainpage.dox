@@ -1,0 +1,32 @@
+/**
+@mainpage カーブ情報データ作成ツール
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 動作保証OS:
+- Windows XP SP3
+
+@par 動作環境:
+
+@version
+- @fileversion
+- @productversion
+
+@date @lastupdate
+
+@section toc_outline 概略
+
+- @subpage introduction
+- @subpage overview
+- @subpage glossary
+- @subpage history
+- @subpage problem
+
+@section toc_design 操作説明
+
+- @subpage usage
+*/

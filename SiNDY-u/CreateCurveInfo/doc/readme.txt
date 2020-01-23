@@ -1,0 +1,2 @@
+\\win\tdc\Tools\SiNDY-u\road\CreateCurveInfo
+Ç÷îΩâfçœÇ›ÅB

@@ -1,0 +1,198 @@
+/**
+@page usage 使用法
+
+@verbatim
+DBOutput.exe <接続DB> <テーブル名> <設定ファイル> <その他オプション> (> 出力ログ)
+@endverbatim
+
+出力先は、標準出力です。
+
+@section example_command 実行例
+
+- SDE の場合
+@verbatim
+DBOutput.exe <接続プロパティ(user/pass/version/instance/server> <テーブル名> <設定ファイル> <その他オプション> (> 出力ログ)
+@endverbatim
+
+- PGDB の場合
+@verbatim
+DBOutput.exe <mdbファイルパス> <テーブル名> <設定ファイル> <その他オプション> (> 出力ログ)
+@endverbatim
+
+- Shape の場合
+@verbatim
+DBOutput.exe <Shapeファイルを含むフォルダパス> <Shapeファイル名> <設定ファイル> <その他オプション> (> 出力ログ)
+@endverbatim
+
+@section usage_option その他オプションについて
+ - 任意指定です
+<table>
+<tr>
+	<th>オプション</th>
+	<th>説明</th>
+	<th>指定例</th>
+</tr>
+<tr>
+	<th><b>-w</b></th>
+	<td>where句指定</td>
+	<td>
+		<i>-w "NAME_STRING1 = '熊野%%'</i><br>
+		※SDE・Shapeのワイルドカードは[%][_]<br>
+		  PGDBのワイルドカードは[*][?]
+	</td>
+</tr>
+<tr>
+	<th><b>-ol</b></th>
+	<td>OBJECTIDリスト指定</td>
+	<td>
+		<i>-ol oidlist.txt</i><br>
+		※他のオプションとの併用はできません。
+	</td>
+</tr>
+<tr>
+	<th><b>-ml</b></th>
+	<td>メッシュリスト指定</td>
+	<td>
+		<i>-ml meshlist.txt</i><br>
+		※当該メッシュ内のオブジェクトのみが出力対象です。<br>
+		※PGDB, Shapeは非対応です。<br>
+		※図形なしのテーブルには使用できません。
+	</td>
+</tr>
+<tr>
+	<th><b>-lp</b></th>
+	<td>ポリゴンに対する座標を重心(Centroid)ではなくポリゴン内の点(LabelPoint)で返す</td>
+	<td>
+		<i>-lp</i><br>
+		※対象フィーチャがポリゴンの場合、かつ設定ファイルで出力に位置情報が指定されている場合のみ有効です。
+	</td>
+</tr>
+<tr>
+	<th><b>-s</b></th>
+	<td>指定した項目がテーブルに無い場合エラーとしない(スキップして出力する)</td>
+	<td>
+		<i>-s</i>
+	</td>
+</tr>
+</table>
+
+@section usage_config 設定ファイルについて
+出力したい属性を設定ファイルに羅列します。
+以下にサンプルを示します。
+
+@verbatim
+########################################################
+# DBOutput.exe 設定ファイル(サンプル)
+# ※行頭に[#]でコメント行です。
+#
+# ・位置情報フィールドについて
+# ※ポイントならその位置  ラインなら線上の中間位置  ポリゴンなら重心（オプション -lp 指定時はポリゴン内の点）
+# LONGITUDE	 ... 経度(10進度)
+# LATITUDE	 ... 緯度(10進度)
+# CITYMESH	 ... 都市地図メッシュXY のメッシュコード
+# BASEMESH	 ... ベースメッシュ(２次メッシュ)XY のメッシュコード
+# MIDDLEMESH ... ミドルメッシュXYのメッシュコード
+# MESHX		 ... メッシュX(CITYMESH or BASEMESH or MIDDLEMESH が指定されていないときは、ベースメッシュX)
+# MESHY		 ... メッシュY(CITYMESH or BASEMESH or MIDDLEMESH が指定されていないときは、ベースメッシュY)
+# POINTS     ... オブジェクトの構成点数
+# ISLINEAR   ... 線形オブジェクトか否か
+# DUMMY      ... ダミーフィールド(必ずこのフィールドに同じもの(空タブ含む)を出力したいときに指定)
+########################################################
+OBJECTID
+MODIFYDATE
+ANNOCLASS_C
+ANNOCLASS_C_DOMAIN
+BLDCLASS_C
+BLDCLASS_C_DOMAIN
+BGCLASS_C
+BGCLASS_C_DOMAIN
+NAME_STRING1
+LONGITUDE
+LATITUDE
+DUMMY
+DUMMY=テスト
+
+@endverbatim
+
+@section usage_config_detail 特殊設定項目
+図形なしのテーブルには、位置情報関連・形状情報関連の項目は指定できません。
+
+<table>
+<tr>
+	<th>フィールド名</th>
+	<th>説明</th>
+</tr>
+<tr>
+	<th colspan="2" style="background-color:#879ECB;">位置情報関連</th>
+</tr>
+<tr>
+	<th>LONGITUDE</th>
+	<td>経度(10進度)</td>
+</tr>
+<tr>
+	<th>LATITUDE</th>
+	<td>緯度(10進度)</td>
+</tr>
+<tr>
+	<th>CITYMESH</td>
+	<td>都市地図メッシュXYのメッシュコード</td>
+</tr>
+<tr>
+	<th>BASEMESH</td>
+	<td>ベースメッシュ(2次メッシュ)XYのメッシュコード</td>
+</tr>
+<tr>
+	<th>MIDDLEMESH</td>
+	<td>ミドルメッシュXYのメッシュコード</td>
+</tr>
+<tr>
+	<th>MESHX</td>
+	<td>メッシュX(CITYMESH or BASEMESH or MIDDLEMESH が指定されていないときは、ベースメッシュX)</td>
+</tr>
+<tr>
+	<th>MESHY</td>
+	<td>メッシュY(CITYMESH or BASEMESH or MIDDLEMESH が指定されていないときは、ベースメッシュY)</td>
+</tr>
+<tr>
+	<th colspan="2" style="background-color:#879ECB;">形状情報関連</th>
+</tr>
+<tr>
+	<th>POINTS</td>
+	<td>オブジェクトの構成点数</td>
+</tr>
+<tr>
+	<th>LENGTH</td>
+	<td>
+		オブジェクトの長さ(SHAPE.LENフィールドを持っていないオブジェクトにも対応する為)<br>
+		※ ポイントのときは、-1<br>
+		※ ポリゴンのときは、境界線の長さ
+	</td>
+</tr>
+<tr>
+	<th>AREA</td>
+	<td>
+		オブジェクトの面積(SHAPE.AREAフィールドを持っていないオブジェクトにも対応する為)<br>
+		※ ポリゴン以外は、-1
+	</td>
+</tr>
+<tr>
+	<th>ISLINEAR</td>
+	<td>
+		線形オブジェクトか否か？(ライン・ポリゴンのみ有効)<br>
+		線形   : 1  非線形 : 0 (ポイントの場合は、常に0)
+	</td>
+</tr>
+<tr>
+	<th colspan="2" style="background-color:#879ECB;">その他情報関連</th>
+</tr>
+<tr>
+	<th>DUMMY</td>
+	<td>
+		ダミーフィールド<br>
+		Ex1) 空タブ出力したいとき線形 ... <b><i>DUMMY</i></b><br>
+		Ex2) 何か固定値を出力したいとき線形 ... <b><i>DUMMY:2008/08/18</i></b><br>
+	</td>
+</tr>
+</table>
+
+*/

@@ -1,0 +1,15 @@
+@echo off
+
+set BIN=\\morioka\dfs\Tools\SiNDY-u\map\DeleteAddrPoint\DeleteAddrPoint.exe
+
+set WORKDIR=\\seginus-l12600\verification\SiNDY-u\map\DeleteAddrPoint\DeleteCheck
+
+set INPUT=%WORKDIR%\input.txt
+
+set OUTPUT=%WORKDIR%\output.txt
+
+set DB_MAIN=SINUP2009B/SINUP2009B/SDE.EDT_SINUP2009B/5151/garnet2
+
+set FC_TARGET=Gou_Point
+
+%BIN% %INPUT% %OUTPUT%

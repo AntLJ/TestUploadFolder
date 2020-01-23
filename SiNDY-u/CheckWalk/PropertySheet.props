@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(ArcGIS)\$(Desktop)\com;$(ArcGIS)\$(DeveloperKit)\include;$(EXTERNAL_LIB)\WTL\WTL_8_1_12085\Include;$(EXTERNAL_LIB)\OpenglLib\vtk5.10.1\include\vtk-5.10;$(EXTERNAL_LIB)\boost\boost_1_56_0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir_71A)lib;$(EXTERNAL_LIB)\boost\boost_1_56_0\lib;$(EXTERNAL_LIB)\OpenglLib\vtk5.10.1\lib\vc11</LibraryPath>
+    <_PropertySheetDisplayName>PropertySheet</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

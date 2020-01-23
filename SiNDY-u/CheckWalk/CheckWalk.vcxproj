@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E315A2CE-D2DA-4EE0-9CF5-800CAA630897}</ProjectGuid>
+    <RootNamespace>CheckWalk</RootNamespace>
+    <ProjectName>CheckWalk</ProjectName>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\LIB;..\..\LIB\sindy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+      <AdditionalOptions>/Zm187 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\LIB\TDC\sindylib_core\lib;..\..\LIB\sindy\lib;..\..\LIB\crd_cnv\lib;..\..\LIB\ArcHelperEx\lib;..\..\LIB\WinLib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\LIB;..\..\LIB\sindy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>-Zm177 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\LIB\TDC\sindylib_core\lib;..\..\LIB\sindy\lib;..\..\LIB\crd_cnv\lib;..\..\LIB\ArcHelperEx\lib;..\..\LIB\WinLib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arguments.cpp" />
+    <ClCompile Include="FieldLists.cpp" />
+    <ClCompile Include="HeightNodeCheckFunction.cpp" />
+    <ClCompile Include="HeightNodePositionCheckFunction.cpp" />
+    <ClCompile Include="LinkRelationCheckFunction.cpp" />
+    <ClCompile Include="OutputLog.cpp" />
+    <ClCompile Include="PedxingCheckFunction.cpp" />
+    <ClCompile Include="RoadLinkCheckFunction.cpp" />
+    <ClCompile Include="ScrambleAreaCheckFunction.cpp" />
+    <ClCompile Include="UndergroundCheckFunction.cpp" />
+    <ClCompile Include="DatabaseControl.cpp" />
+    <ClCompile Include="FeatureObjects.cpp" />
+    <ClCompile Include="HeightInfoMgr.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="POICheckFunction.cpp" />
+    <ClCompile Include="Properties.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CheckWalk.cpp" />
+    <ClCompile Include="TimeReg.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="WalkCodeListCheckFunction.cpp" />
+    <ClCompile Include="WalkLinkCheckFunction.cpp" />
+    <ClCompile Include="WalkLinkOfBaseMeshCheckFunction.cpp" />
+    <ClCompile Include="WalkNodeCheckFunction.cpp" />
+    <ClCompile Include="WalkNoPassageCheckFunction.cpp" />
+    <ClCompile Include="WalkOnewayCheckFunction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arguments.h" />
+    <ClInclude Include="FieldLists.h" />
+    <ClInclude Include="HeightNodeCheckFunction.h" />
+    <ClInclude Include="HeightNodePositionCheckFunction.h" />
+    <ClInclude Include="LinkRelationCheckFunction.h" />
+    <ClInclude Include="PedxingCheckFunction.h" />
+    <ClInclude Include="RoadLinkCheckFunction.h" />
+    <ClInclude Include="ScrambleAreaCheckFunction.h" />
+    <ClInclude Include="UndergroundCheckFunction.h" />
+    <ClInclude Include="CheckWalk.h" />
+    <ClInclude Include="DatabaseControl.h" />
+    <ClInclude Include="FeatureObjects.h" />
+    <ClInclude Include="HeightInfoMgr.h" />
+    <ClInclude Include="OutputLog.h" />
+    <ClInclude Include="POICheckFunction.h" />
+    <ClInclude Include="Properties.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeReg.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="value.h" />
+    <ClInclude Include="WalkCodeListCheckFunction.h" />
+    <ClInclude Include="WalkLinkCheckFunction.h" />
+    <ClInclude Include="WalkLinkOfBaseMeshCheckFunction.h" />
+    <ClInclude Include="WalkNodeCheckFunction.h" />
+    <ClInclude Include="WalkNoPassageCheckFunction.h" />
+    <ClInclude Include="WalkOnewayCheckFunction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CheckWalk.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CheckWalk.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureObjects.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeReg.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Properties.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseControl.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="HeightInfoMgr.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="POICheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="UndergroundCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputLog.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkNodeCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkLinkCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="HeightNodeCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="HeightNodePositionCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadLinkCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkCodeListCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkNoPassageCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkOnewayCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkLinkOfBaseMeshCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkRelationCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldLists.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="PedxingCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrambleAreaCheckFunction.cpp">
+      <Filter>ソース\CheckFunction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arguments.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureObjects.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="value.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputLog.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeReg.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckWalk.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="Properties.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseControl.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="HeightInfoMgr.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="POICheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="UndergroundCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkNodeCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkLinkCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="HeightNodeCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="HeightNodePositionCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="RoadLinkCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkCodeListCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkNoPassageCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkOnewayCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkLinkOfBaseMeshCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkRelationCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldLists.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="PedxingCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrambleAreaCheckFunction.h">
+      <Filter>ヘッダ\CheckFunction</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CheckWalk.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{63db1ef7-cb75-4ac1-8987-178b959a0018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b004005e-8dd9-43a7-983d-35fbfb169fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\CheckFunction">
+      <UniqueIdentifier>{9071ba68-1ac8-4d1e-be02-89347b6c1e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\CheckFunction">
+      <UniqueIdentifier>{2c539709-ea3f-4216-8e61-e72de8e94d12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

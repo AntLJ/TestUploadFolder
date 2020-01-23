@@ -1,0 +1,60 @@
+## -------------------------------------
+## 歩行者NW チェックツール設定ファイル
+## -------------------------------------
+## 実行時オプションに本ファイルを指定してください
+## 先頭行に「#(半角シャープ)」をつけるとコメントとして扱います。
+
+[Check]
+## チェックしたい対象以外は削除、もしくはコメントアウトしてください
+## 複数指定はできません
+
+## すべてのチェックを実行
+target = all
+
+[Database]
+## 道路NW DB
+road = WALKNAVI2015B@arion(SDE.EDT_WALKNAVI2015B)
+
+## 歩行者NW DB
+walk = WALKNAVI2015B@arion(SDE.EDT_WALKNAVI2015B)
+
+## メッシュ DB
+mesh = REFERENCE@arion(SDE.DEFAULT)
+
+## 駅出入口POI DB
+station = RAILWAY@arion(SDE.REL_DB-150710M-020A_RAILWAY)
+
+## 地下街出入口POI DB
+poi = RAILWAY@arion(SDE.REL_DB-150710M-020A_RAILWAY)
+
+# 地下街ポリゴン DB
+under = SINDY2016A@eris(SDE.DEFAULT)
+
+[File]
+## 都市地図メッシュコードリスト
+mesh_list = \\win\tdc\Common\dev2-4G\05_Project\22期\歩行者NW\成果物\歩行者NWチェッカー\16.1.0.12\meshlist.txt
+
+## 相対高さ付与ツールで使用した設定ファイルのパスを指定してください
+## 違うファイルを指定するとチェックがエラーになる可能性があります。
+height_node_ini = \\win\tdc\Tools\SiNDY-u\walk\HeightNodeCreater\def\sample_height_def.xml
+
+[Threshold]
+## チェックで使用する閾値を指定してください。
+
+## 微小距離閾値(m)
+dist = 0.01
+
+## 近傍距離閾値(m)
+neighbor = 100.0
+
+## 関連ID距離閾値(m)
+refer_id = 50.0
+
+## 角度閾値(°)
+angle = 30.0
+
+## リンク紐付距離閾値(m)
+buddy_dist = 50.0
+
+## リンク紐付角度閾値(°)
+buddy_angle = 80.0

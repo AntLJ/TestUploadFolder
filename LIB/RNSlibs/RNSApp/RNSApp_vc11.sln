@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RNSApp", "RNSApp_vc11.vcxproj", "{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RNS", "..\RNS\RNS_vc11.vcxproj", "{011B737E-84FE-4671-91A8-B842814286A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug for English|Win32 = Debug for English|Win32
+		Debug|Win32 = Debug|Win32
+		FinalCheck|Win32 = FinalCheck|Win32
+		Release for English|Win32 = Release for English|Win32
+		Release|Win32 = Release|Win32
+		Single Thread Debug|Win32 = Single Thread Debug|Win32
+		Single Thread FinalCheck|Win32 = Single Thread FinalCheck|Win32
+		Single Thread Release|Win32 = Single Thread Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Debug for English|Win32.ActiveCfg = Debug for English|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Debug for English|Win32.Build.0 = Debug for English|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Debug|Win32.Build.0 = Debug|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.FinalCheck|Win32.ActiveCfg = FinalCheck|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.FinalCheck|Win32.Build.0 = FinalCheck|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Release for English|Win32.ActiveCfg = Release for English|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Release for English|Win32.Build.0 = Release for English|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Release|Win32.ActiveCfg = Release|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Release|Win32.Build.0 = Release|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread Debug|Win32.ActiveCfg = Single Thread Debug|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread Debug|Win32.Build.0 = Single Thread Debug|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread FinalCheck|Win32.ActiveCfg = Single Thread FinalCheck|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread FinalCheck|Win32.Build.0 = Single Thread FinalCheck|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread Release|Win32.ActiveCfg = Single Thread Release|Win32
+		{DCC312D1-2EDA-41D6-B6F7-20DC60EB52E4}.Single Thread Release|Win32.Build.0 = Single Thread Release|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Debug for English|Win32.ActiveCfg = Debug for English|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Debug for English|Win32.Build.0 = Debug for English|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Debug|Win32.Build.0 = Debug|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.FinalCheck|Win32.ActiveCfg = FinalCheck|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.FinalCheck|Win32.Build.0 = FinalCheck|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Release for English|Win32.ActiveCfg = Release for English|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Release for English|Win32.Build.0 = Release for English|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Release|Win32.ActiveCfg = Release|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Release|Win32.Build.0 = Release|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread Debug|Win32.ActiveCfg = Single Thread Debug|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread Debug|Win32.Build.0 = Single Thread Debug|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread FinalCheck|Win32.ActiveCfg = Single Thread FinalCheck|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread FinalCheck|Win32.Build.0 = Single Thread FinalCheck|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread Release|Win32.ActiveCfg = Single Thread Release|Win32
+		{011B737E-84FE-4671-91A8-B842814286A4}.Single Thread Release|Win32.Build.0 = Single Thread Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

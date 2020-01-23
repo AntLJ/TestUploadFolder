@@ -1,0 +1,722 @@
+/**
+@page list 機能チェックリスト
+
+@htmlonly
+<b>最新ファイルバージョン	：1.1.4.12</b><br>
+<b>最終更新日				：2010/05/17</b><br><br>
+<b>担当者					：相澤 理</b><br><br>
+
+-------------------------------------------------------<br>
+最新フルチェック実行バージョン：1.0.0.1<br>
+最新フルチェック実行日時：2007/6/29<br>
+2次確認担当者：制作技術Ｇ 菅原(拓)<br>
+-------------------------------------------------------<br>
+
+<table border="1">
+    <tr>
+      <td align="center" bgcolor="#66cc00">小分類</td>
+      <td bgcolor="#66cc00" style="text-align: center;">番号</td>
+      <td align="center" bgcolor="#66cc00">チェック項目</td>
+      <td bgcolor="#66cc00" style="text-align: center;">Bug no.</td>
+      <td bgcolor="#66cc00" style="text-align: center;">チェックVer</td>
+    </tr>
+   <tr>
+      <td bgcolor="#ceff9c" rowspan="8">INヘッダ情報</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><a>1</a></td>
+      <td bgcolor="#ceff9c">2次メッシュコード次数の値が「2」以外である場合、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">2</td>
+      <td bgcolor="#ceff9c">2次メッシュコードが負の値、もしくは7桁以上だった場合にエラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">3</td>
+      <td bgcolor="#ceff9c">ファイル判別子が、仕様で定義された値と異なる場合に、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">4</td>
+      <td bgcolor="#ceff9c">縮尺が「25,000」と異なる場合に、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">5</td>
+      <td bgcolor="#ceff9c">ポリゴン最大形状点数が0では無い値の場合に、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">6</td>
+      <td bgcolor="#ceff9c">レイヤ数に7以上の値が入っていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">7</td>
+      <td bgcolor="#ceff9c">レイヤIDに仕様とは異なる値が入っていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff9c" style="text-align: center;">8</td>
+      <td bgcolor="#ceff9c">レイヤ先頭のオフセットアドレスに実測値と異なる値が入力されていた場合、エラーを検出するか？</td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ceff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    
+   <tr>
+      <td bgcolor="#ccff66" rowspan="23">道路リンクレイヤ</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a>1</a></td>
+      <td bgcolor="#ccff66">INデータにリンクレイヤが存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">2</td>
+      <td bgcolor="#ccff66">表示種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">3</td>
+      <td bgcolor="#ccff66">経路種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">4</td>
+      <td bgcolor="#ccff66">管理者コードが仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">5</td>
+      <td bgcolor="#ccff66">バイパスフラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">6</td>
+      <td bgcolor="#ccff66">自動車専用フラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">7</td>
+      <td bgcolor="#ccff66">道路幅員に仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">8</td>
+      <td bgcolor="#ccff66">交通規制種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">9</td>
+      <td bgcolor="#ccff66">交通規制条件種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">10</td>
+      <td bgcolor="#ccff66">駐車場種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">11</td>
+      <td bgcolor="#ccff66">駐車場リンク種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">12</td>
+      <td bgcolor="#ccff66">行政区域コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">13</td>
+      <td bgcolor="#ccff66">リンク補間点に重複がある場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">14</td>
+      <td bgcolor="#ccff66">道路番号に負の値もしくは、508以上の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">15</td>
+      <td bgcolor="#ccff66"><s>上下関係に「0」以外の値が入力されていた場合に、エラーを検出するか？</s><br>ReservedEに統合</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">16</td>
+      <td bgcolor="#ccff66">属性種別コードの傾斜角度と傾斜フラグの値に不整合がある場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">17</td>
+      <td bgcolor="#ccff66">属性種別コードのReservedDに「0」以外の値が入力されいていた場合に、エラーを検出するか？<br>旧地面からの相対高チェック</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">18</td>
+      <td bgcolor="#ccff66">属性種別コードのReservedEに「0」以外の値が入力されいていた場合に、エラーを検出するか？<br>旧上下関係チェック</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">19</td>
+      <td bgcolor="#ccff66">属性種別コードのReservedDに「0」以外の値が入力されいていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">20</td>
+      <td bgcolor="#ccff66">属性種別コードのリンク内属性が仕様と異なる値が含まれている場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">21</td>
+      <td bgcolor="#ccff66">VICS情報の順or逆方向VICS番号が「1～4095」以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">22</td>
+      <td bgcolor="#ccff66">VICS情報のVICS区分が「1～4」以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ceff66" style="text-align: center;">23</td>
+      <td bgcolor="#ccff66">VICS情報のVICSメッシュがリリース対象のメッシュ以外の値が入力されていた場合に、エラーを検出するか？<br>-lオプションを指定した場合は、LATEST_DIRにあるmntのメッシュリスト。</td>
+      <td bgcolor="#ccff66" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ccff66" style="text-align: center;"><b>1.0.3.9</b></td>
+    </tr>
+    
+   <tr>
+      <td bgcolor="#ffff9c" rowspan="15">ノードレイヤ</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a>1</a></td>
+      <td bgcolor="#ffff9c">INデータにノードレイヤが存在しない場合、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">2</td>
+      <td bgcolor="#ffff9c">信号機フラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">3</td>
+      <td bgcolor="#ffff9c">ノード種別コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">4</td>
+      <td bgcolor="#ffff9c">正規化座標の値に負の値もしくは、「1,000,0001」以上の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">5</td>
+      <td bgcolor="#ffff9c">道路高さ有効フラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">6</td>
+      <td bgcolor="#ffff9c">道路高さ有効フラグが「無効」、かつ道路相対高さに「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">7</td>
+      <td bgcolor="#ffff9c">Reserved領域1に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">8</td>
+      <td bgcolor="#ffff9c">Reserved領域2に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">9</td>
+      <td bgcolor="#ffff9c">Reserved領域4に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">10</td>
+      <td bgcolor="#ffff9c">Reserved領域5に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">11</td>
+      <td bgcolor="#ffff9c">接続リンク本数に負の値もしくは、「9」以上の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">12</td>
+      <td bgcolor="#ffff9c">接続ノードがノードレイヤに存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">13</td>
+      <td bgcolor="#ffff9c"><s>接続ノードが無い箇所に通行禁止ビットが立っていた場所場合に、エラーを検出するか？</s></td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">14</td>
+      <td bgcolor="#ffff9c">接続ノードIDが28bit以上のデータとして入力された場合、エラーを検出するか？</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.1.4.12</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffff9c" style="text-align: center;">15</td>
+      <td bgcolor="#ffff9c">接続ノードIDの上位4ビットはReserved領域となっているか？（値が入っている場合はNG）</td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><a></a><br>
+      </td>
+      <td bgcolor="#ffff9c" style="text-align: center;"><b>1.1.4.12</b></td>
+    </tr>
+         
+   <tr>
+      <td rowspan="28" bgcolor="#99ffcc">新交通規制レイヤ<br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;">1</td>
+      <td bgcolor="#99ffcc">INデータに新交通規制レイヤが存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">2</td>
+      <td bgcolor="#99ffcc">Reserved領域1に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">3</td>
+      <td bgcolor="#99ffcc">Reserved領域2に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">4</td>
+      <td bgcolor="#99ffcc">Reserved領域3に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">5</td>
+      <td bgcolor="#99ffcc">Reserved領域4に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">6</td>
+      <td bgcolor="#99ffcc">曜日指定コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">7</td>
+      <td bgcolor="#99ffcc">曜日指定が全曜日、時間指定が0:00～24:00、月日指定が1/1～12/31になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">8</td>
+      <td bgcolor="#99ffcc">曜日指定、時間指定、月日指定が全て 0 になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">9</td>
+      <td bgcolor="#99ffcc">月日指定があるのに、時間指定が 0 になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">10</td>
+      <td bgcolor="#99ffcc">時間指定があるのに、月日指定が 0 になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">11</td>
+      <td bgcolor="#99ffcc">曜日指定があるのに、時間指定が 0 になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">12</td>
+      <td bgcolor="#99ffcc">曜日指定があるのに、月日指定が 0 になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">13</td>
+      <td bgcolor="#99ffcc">月日指定コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">14</td>
+      <td bgcolor="#99ffcc">時間指定コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">15</td>
+      <td bgcolor="#99ffcc">ノード列に重複が存在する場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">16</td>
+      <td bgcolor="#99ffcc">条件無し規制(通常規制または未調査)なのに、曜日指定が「0」でない場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">17</td>
+      <td bgcolor="#99ffcc">条件無し規制(通常規制または未調査)なのに、時間指定が「0」でない場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">18</td>
+      <td bgcolor="#99ffcc">条件無し規制(通常規制または未調査)なのに、月日指定が「0」でない場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">19</td>
+      <td bgcolor="#99ffcc">規制条件の値に仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">20</td>
+      <td bgcolor="#99ffcc">規制種別の値に仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">21</td>
+      <td bgcolor="#99ffcc">リンク規制時、通行規制に「未調査・作業中」もしくは、仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">22</td>
+      <td bgcolor="#99ffcc">ノード列規制時、通行規制に「未調査・作業中」以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">23</td>
+      <td bgcolor="#99ffcc">（0規制対応）開始0月、終了0月の場合はエラー出力されないようになっているか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.2.7</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">24</td>
+      <td bgcolor="#99ffcc">（季節規制制対応）季節規制フラグに0,1以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.4.10</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">25</td>
+      <td bgcolor="#99ffcc">（季節規制制対応）季節規制フラグのReserved領域に0以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.4.10</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">26</td>
+      <td bgcolor="#99ffcc">（季節規制制対応）季節規制フラグが1のとき、通年規制が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.4.10</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">27</td>
+      <td bgcolor="#99ffcc">（季節規制制対応）季節規制フラグが1のとき、全曜日以外の値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.4.10</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#99ffcc" style="text-align: center;">28</td>
+      <td bgcolor="#99ffcc">（季節規制制対応）季節規制フラグが1のとき、0月規制が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#99ffcc" style="text-align: center;"><b>1.0.4.10</b></td>
+    </tr>
+
+    <tr>
+      <td rowspan="17" bgcolor="#d8bfd8">ノード情報レイヤ<br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;">1</td>
+      <td bgcolor="#d8bfd8">INデータにノード情報レイヤが存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">2</td>
+      <td bgcolor="#d8bfd8">ノード情報種別コードが仕様と異なる場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">3</td>
+      <td bgcolor="#d8bfd8">地先種別コードが仕様と異なる場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">4</td>
+      <td bgcolor="#d8bfd8">方面案内ではないのに地先種別コードに「0」の値が入力されている場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">5</td>
+      <td bgcolor="#d8bfd8">案内コードが仕様と異なる場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">6</td>
+      <td bgcolor="#d8bfd8">強制誘導ではないのに案内コードに「0」の値が入力されている場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">7</td>
+      <td bgcolor="#d8bfd8">ノード列に重複するノードが存在する場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">8</td>
+      <td bgcolor="#d8bfd8">漢字名称に半角文字が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">9</td>
+      <td bgcolor="#d8bfd8">漢字名称に使用禁止文字が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">10</td>
+      <td bgcolor="#d8bfd8">カナ名称に半角数字が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">11</td>
+      <td bgcolor="#d8bfd8">カナ名称に使用禁止文字が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">12</td>
+      <td bgcolor="#d8bfd8">Reserved領域1に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+     <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">13</td>
+      <td bgcolor="#d8bfd8">Reserved領域2に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">14</td>
+      <td bgcolor="#d8bfd8">Reserved領域3に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">15</td>
+      <td bgcolor="#d8bfd8">Reserved領域4に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+     <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">16</td>
+      <td bgcolor="#d8bfd8">Reserved領域5に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#d8bfd8" style="text-align: center;">17</td>
+      <td bgcolor="#d8bfd8">Reserved領域6に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#d8bfd8" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    
+    <tr>
+      <td rowspan="8" bgcolor="#ccffcc">レーン情報レイヤ<br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;">1</td>
+      <td bgcolor="#ccffcc">INデータにレーン情報レイヤが存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">2</td>
+      <td bgcolor="#ccffcc">左側増減レーン数に「-33」以下もしくは「33」以上の値が入力されている場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr> 
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">3</td>
+      <td bgcolor="#ccffcc">右側増減レーン数に「-33」以下もしくは「33」以上の値が入力されている場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">4</td>
+      <td bgcolor="#ccffcc">交差点進入レーン数に「0」以下もしくは「33」以上の値が入力されている場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">5</td>
+      <td bgcolor="#ccffcc">レーン情報において、交差点進入レーン数以上のビットが1になっている場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">6</td>
+      <td bgcolor="#ccffcc">Reserved領域1に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">7</td>
+      <td bgcolor="#ccffcc">Reserved領域2に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ccffcc" style="text-align: center;">8</td>
+      <td bgcolor="#ccffcc">Reserved領域3に「0」より大きい値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ccffcc" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    
+    <tr>
+      <td rowspan="1" bgcolor="#ffe4e1">リンク情報レイヤ<br></td>
+      <td bgcolor="#ffe4e1" style="text-align: center;">1</td>
+      <td bgcolor="#ffe4e1">INデータにリンク情報レイヤが存在する場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffe4e1" style="text-align: center;"><br></td>
+      <td bgcolor="#ffe4e1" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+  
+    <tr>
+      <td rowspan="6" bgcolor="#ffdead">リンク拡張レイヤ<br></td>
+      <td bgcolor="#ffdead" style="text-align: center;">1</td>
+      <td bgcolor="#ffdead">INデータにリンク拡張レイヤが存在しない場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffdead" style="text-align: center;">2</td>
+      <td bgcolor="#ffdead">リンク情報のキーIDに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffdead" style="text-align: center;">3</td>
+      <td bgcolor="#ffdead">主従区分コードに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffdead" style="text-align: center;">4</td>
+      <td bgcolor="#ffdead">規制速度に仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffdead" style="text-align: center;">5</td>
+      <td bgcolor="#ffdead">浮島フラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffdead" style="text-align: center;">6</td>
+      <td bgcolor="#ffdead">細街路作業エリア判別フラグに仕様と異なる値が入力されていた場合に、エラーを検出するか？</td>
+      <td bgcolor="#ffdead" style="text-align: center;"><a></a><br></td>
+      <td bgcolor="#ffdead" style="text-align: center;"><b>1.0.0.1</b></td>
+    </tr>
+</table>
+@endhtmlonly
+*/

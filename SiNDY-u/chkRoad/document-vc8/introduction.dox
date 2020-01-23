@@ -1,0 +1,6 @@
+/**
+@page introduction 開発の目的
+
+道路INデータの整合性を判定するために、本ツールを作成する。<br>
+WS版のchkRoadをWindows版に移行することでの作業効率化を図る。
+*/

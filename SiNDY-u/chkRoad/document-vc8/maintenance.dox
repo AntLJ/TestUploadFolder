@@ -1,0 +1,27 @@
+/**
+@page maintenance メンテナンスの有無
+
+<b>サーバメンテナンス有無/編集データ接続有無</b><br>
+
+<table>
+	<tr>
+			<td>メンテナンス要否</td>
+			<td>実行中サーバの接続可否</td>
+			<td>実行中データへの編集可否</td>
+			<td>実行中サーバへの編集可否</td>
+	</tr>
+	<tr>
+			<td><b><center>×</center></b></td>
+			<td><b><center>○</center></b></td>
+			<td><b><center>○</center></b></td>
+			<td><b><center>○</center></b></td>
+	</tr>
+</table>
+
+<b> ○：要または、可<br></b>
+<b> ×：否</b><br>
+<b>@htmlonly<font color ="#FF0000">
+<b># INデータ操作のみなので、サーバについては考慮しなくて良い<br></b>
+</font>@endhtmlonly</b><br>
+
+*/

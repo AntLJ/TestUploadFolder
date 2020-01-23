@@ -1,0 +1,31 @@
+/**
+@mainpage @projectname
+
+<center>
+@image html ipc_logo.png
+<br>
+ƒCƒ“ƒNƒŠƒƒ“ƒgPŠ”®‰ïĞ<br>
+</center>
+
+@par “®ì•ÛØOS:
+- Windows XP SP3
+
+@par “®ìŠÂ‹«:
+
+@if Develop
+@version
+- @fileversion
+- @productversion
+@endif
+
+@date @lastupdate
+
+@section toc_outline ŠT—ª
+
+- @subpage introduction
+- @subpage overview
+- @subpage maintenance
+- @subpage verify
+- @subpage list
+- @subpage history
+*/

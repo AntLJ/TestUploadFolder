@@ -1,0 +1,73 @@
+/**
+@page overview 機能概要
+
+<b>機能概要：</b><br>
+道路INデータ(*.mnt, *.rdg)を読み込んで、データ内容に不整合が無いかを判定する。<br>
+ツールの起動方法は以下の「起動操作」を参照のこと。<br>
+標準出力にチェックでエラーと判定された項目が出力される。<br>
+
+<b>@htmlonly<font color ="#FF0000">起動操作：</font>@endhtmlonly</b><br>
+実行はコマンドプロンプトを立ち上げて、ツールを起動する。
+
+@verbatim
+chkRoad.exe <config.txt> <仕向け先> [-l(--latest)]
+@endverbatim
+
+- <config.txt>	： config.txtのパス<br>
+- <仕向け先>	： 仕向け先を指定（PEC,OTEHR）<br>
+- [-l(--latest)]： B版以降で差分リリースする場合に指定するオプション<br>
+
+<b>config.txtで設定するパラメータ</b><br>
+<table>
+ <tr>
+  <td>MNT_DIR</td>
+  <td>道路データディレクトリ</td>
+ </tr>
+ <tr>
+  <td>POL_DIR</td>
+  <td>pol_code.txtが格納されているディレクトリ</td>
+ </tr>
+ <tr>
+  <td>LATEST_DIR</td>
+  <td>-lオプションを指定した場合のみ有効な変数。<br>差分の元となっているデータディレクトリを指定する。</td>
+ </tr>
+</table>
+
+<table border="0">
+<tr>
+	<td>@image html "cmd02.png"</td>
+</tr>
+<tr>
+	<td>@image html "config02.png"</td>
+</tr>
+</table>
+
+<p><b>チェック結果</b></p><br>
+標準出力に結果は出力される。<br>
+出力結果は以下のフォーマットで出力される。<br>
+
+<table>
+	<tr>
+			<td>2次メッシュコード</td>
+			<td>エラーコード</td>
+			<td>エラー対象レイヤ</td>
+			<td>エラーメッセージ</td>
+			<td>対象オブジェクトID</td>
+			<td>エラー属性値</td>
+	</tr>
+	<tr>
+			<td>10進数</td>
+			<td>文字列</td>
+			<td>文字列</td>
+			<td>文字列</td>
+			<td>16進数/文字列</td>
+			<td>10進数/16進数/文字列</td>
+	</tr>
+</table>
+
+<table border="0">
+<tr>
+	<td>@image html "log.png"</td>
+</tr>
+</table>
+*/

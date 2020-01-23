@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClaimDiff", "ClaimDiff.vcxproj", "{49BB0A1F-0CC6-400D-A758-614BE13543E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_ForWN|Win32 = Debug_ForWN|Win32
+		Debug|Win32 = Debug|Win32
+		Release_ForWN|Win32 = Release_ForWN|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Debug_ForWN|Win32.ActiveCfg = Debug_ForWN|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Debug_ForWN|Win32.Build.0 = Debug_ForWN|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Debug|Win32.Build.0 = Debug|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Release_ForWN|Win32.ActiveCfg = Release_ForWN|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Release_ForWN|Win32.Build.0 = Release_ForWN|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Release|Win32.ActiveCfg = Release|Win32
+		{49BB0A1F-0CC6-400D-A758-614BE13543E2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

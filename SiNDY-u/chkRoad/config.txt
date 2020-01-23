@@ -1,0 +1,13 @@
+# --------------------------------------------------------------------- #
+#  道路系テキストデータチェック用 
+#　　　　　　　　　　　　　　　　　　　　　　新規：2007/05/24 　齋藤
+#
+# MNT_DIRにリリースデータの/dataに該当するパスを入力してください。
+# POL_DIRにはpol_code.txtが格納されているディレクトリを入力してください。
+# LATEST_DIRにはMNT_DIRの元となるディレクトリを指定してくださいが格納されているディレクトリを入力してください。
+# --------------------------------------------------------------------- #
+
+#MNT_DIR		C:\temps\inchec\A\road\data
+MNT_DIR		C:\temp\INRegulationAdjustCheck_test\bug
+POL_DIR		C:\temp\INRegulationAdjustCheck_test\bug
+#LATEST_DIR	\\Globe\TDC\release_data\DB-090239S-020\latest\road\data

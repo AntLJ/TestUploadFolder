@@ -1,0 +1,82 @@
+CityMesh更新ツール 2007/11/6 宿澤秀和
+
+【ツール名】
+CityMeshUpdater.exe
+
+
+【目的・処理内容】
+・cvsファイルに基づいてCITYMESHレイヤの更新を行います。
+  CITYMESHはバージョン対応レイヤ、非対応レイヤどちらでも可能です。
+
+1. 以下の項目を入力
+ サーバ
+ ユーザ
+ パスワード
+ 更新元csvファイル
+ 更新先フィーチャクラス名
+2.
+上記情報でSDEに接続し、更新先フィーチャクラスのバージョン対応/非対応を調べる
+ 2.1. バージョン対応の場合は以下の情報を入力
+  更新元バージョン
+  更新先バージョン
+3. 更新をかけ、件数等をログに出力
+ 3.1. バージョン対応の場合
+  CITYMESH更新ツール処理フロー[バージョン対応時].xls に従って更新
+ 3.2. バージョン非対応の場合
+  更新先フィーチャクラスに直接更新
+
+
+※詳細は CITYMESH更新ツール処理フロー[バージョン対応時].xls をご覧ください
+
+
+
+【使用法】
+CityMeshUpdater.exe起動
+
+ダイアログ入力例）
+接続サーバ：nereid
+接続ユーザ：reference
+パスワード：reference
+更新元csvファイル：update.csv
+更新先フィーチャクラス名：CITYMESH
+
+
+（CITYMESHがバージョン対応レイヤだった場合）
+更新元バージョン：SDE.Current07B
+更新先バージョン：SDE.Current08A
+
+
+OK押下で処理が開始されます。
+コンソールとログファイルに経過が出力されます。
+ログファイルは「更新先バージョン_日付.log」という名前で CityMeshUpdater.exe と同フォルダに作られます。
+
+
+
+【ログファイル出力例】
+--
+　CityMesh更新ツール
+　nakasato@nereid
+　更新元バージョン：SDE.Current07B
+　更新先バージョン：SDE.Current08A
+　実更新先バージョン：NAKASATO.update_citymesh
+
+　CITYMESHテーブルのSDE.DEFAULTと更新元バージョンの差分を取得...3 [Records] (a)
+　(a)からTMP_CITYMESHとの重複レコードを削除...0 [delete](b)
+　(b)を実更新先バージョンに更新...3 [Update](c)
+
+　(c)とTMP_CITYMESHとの差分を(c)に更新...
+　計3件が更新されました。
+
+
+【最新バージョン】
+FILEVERSION 1.0.3.5 PRODUCTVERSION 1.0.0.0
+
+【更新履歴】
+2007/11/07	FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0
+初回リリース
+
+2009/04/13	FILEVERSION 1.0.2.1 PRODUCTVERSION 1.0.0.0
+バージョン非対応レイヤの更新に対応
+
+2014/2/4 FILEVERSION 1.0.3.5 PRODUCTVERSION 1.0.0.0
+StopEditOperationとStopEditingの順番が逆だったので修正（bug 10187）

@@ -1,0 +1,107 @@
+/**
+@page verify 検証記録
+
+<table>
+	<tr>
+		<td><b>ツールバージョン</b></td>
+		<td><b>検証日時</b></td>
+		<td><b>検証内容</b></td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.1.5.13</b><br><b>PRODUCTVERSION 1.1.0.0</b>
+		<td><b>2010/10/28</b></td>
+		<td>・文字コードについて細かく対応<br>
+<b>【方面案内、交差点漢字名称の許可文字列】</b><br>
+‘ー’		（0x815B）長音記号<br>
+‘・’		（0x8145）中黒<br>
+‘々’		（0x8158）<br>
+‘ヶ’		（0x8396）<br>
+‘、’		（0x8141）<br>
+‘～’		（0x8160）<br>
+‘（’		（0x8169）全角カッコ<br>
+‘）’		（0x816A）<br>
+‘〆’		（0x8159）<br>
+‘．’		（0x8144）全角ピリオド<br>
+‘－’		（0x817C）全角マイナス<br>
+‘　‘		（0x817F）全角スペース<br>
+全角数字		（0x824F～0x8258）<br>
+全角アルファベット	（0x8260～0x8279）大文字　（0x281～0x829A）小文字<br>
+全角ひらがな	（0x829F～0x82F1）<br>
+全角カタカナ	（0x8340～0x8394）<br>
+全角漢字		（0x889F～0x9872）第一水準　（0x989F～0xEAA4）第二水準<br>
+<br><br>
+<b>【方面案内、交差点名称カナ名称の許可文字列】</b><br>
+	‘ｰ’		（0x00B0）　半角カタカナに含まれる<br>
+	‘･’		（0x00A5）<br>
+	‘(’		（0x0028）<br>
+	‘)’		（0x0029）<br>
+	‘~’		（0x007E）<br>
+	‘.’		（0x002E）<br>
+	半角カタカナ	（0x00A6～0x00DF）<br><br>
+		<b>\\\\seginus-l12600\\verification\\IN\\chkRoad\\F1.1.5.13
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.1.4.12</b><br><b>PRODUCTVERSION 1.1.0.0</b>
+		<td><b>2010/05/17</b></td>
+		<td><b>[bug7890]</b>　道路ノード28bit化に伴う仕様変更対応。<br>
+               下記のデータにチェックを流して、旧バージョンと比較し、エラー出力が意図したものになっているか確認。<br>
+		<b>\\\\seginus-l12600\\verification\\IN\\chkRoad\\F1.1.4.12
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.4.10</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2009/10/19</b></td>
+		<td><b>[bug7298]</b>　季節規制チェックに対応。<br>
+               下記のデータにチェックを流して、旧バージョンと比較し、エラー出力が意図したものになっているか確認。<br>
+		<b>\\\\seginus-l12600\\verification\\IN\\chkRoad\\F1.0.4.10
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.3.9</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2009/03/03</b></td>
+		<td><b>[bug6506]</b>　広域フラグと元道路相対高を制限してほしいに対応。<br>
+			<b>[bug6873]</b>　属性種別コードのチェックを追加して欲しいに対応。<br>
+               下記のデータにチェックを流して、旧バージョンと比較し、エラー出力が意図したものになっているか確認。<br>
+		<b>\\\\morioka\\dfs\\Tools\\IN\\chkRoad\\kensho\\data_F1.0.3.9
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.2.8</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2008/10/24</b></td>
+		<td><b>09春向けのIN仕様変更</b>　不要レイヤを読込まないよう修正。<br>
+               下記のデータにチェックを流して、旧バージョンと比較し、不要レイヤ分の出力が無いか確認。<br>
+		<b>\\\\morioka\\dfs\Tools\\IN\\chkRoad\\verify_ta_suga\\data
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.2.7</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2008/08/28</b></td>
+		<td><b>0規制対応</b>　「毎月」を追加。<br>
+               下記のデータにチェックを流して、エラーがないか確認。<br>
+		<b>INデータ</b>：\\\\morioka\\dfs\\Tools\\IN\\chkRoad\\kensho\\data_0kisei
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.2.5</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2007/10/23</b></td>
+		<td><b>[Bug 5993]対応</b>　新仕様で追加された表示種別と経路種別を修正する。<br>
+               下記のデータにチェックを流して、種別が認識されていることを確認する。<br>
+		<b>INデータ</b>：//morioka/dfs/Tools/SiNDY-u/road/SindyRoadConvert/検証資料/08春対応/BT(KIWI-C)
+		</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.2.4</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2007/7/23</b></td>
+		<td><b>[Bug 5410]対応</b> POL_DIRとMNT_DIR以下に指定のデータが存在しない場合にエラーを返すよう修正する。<br>
+		設定ファイルに存在しないパスを記述し検証した結果、上記のBugが改善されたことを確認する。</td>
+	</tr>
+	<tr>
+		<td><b>FILEVERSION 1.0.1.2</b><br><b>PRODUCTVERSION 1.0.0.0</b>
+		<td><b>2007/7/4</b></td>
+		<td><b>[Bug 5385]対応</b>　道路番号チェックを国道のみチェックするよう修正する。<br>
+			<b>[Bug 5386]対応</b>　ノード列の重複チェックから最終ノードを除くように修正する。<br>
+		DB-070703S-010Aで検証し、上記のBugが改善されたことを確認する。</td>
+	</tr>
+</table>
+*/

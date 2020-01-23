@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="document"
+	ProjectGUID="{43562A89-FA57-409A-B431-8EDF0D11E07F}"
+	Keyword="MakeFileProj"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release"
+			IntermediateDirectory=".\Release"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set INTDIR=$(IntDir)&#x0D;&#x0A;set OUTDIR=$(OutDir)&#x0D;&#x0A;make $(ConfigurationName)"
+				ReBuildCommandLine="set INTDIR=$(IntDir)&#x0D;&#x0A;set OUTDIR=$(OutDir)&#x0D;&#x0A;make $(ConfigurationName) /a"
+				CleanCommandLine="rm $(IntDir)\* $(OutDir)\*"
+				Output="$(OutDir)\$(SolutionName).chm"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Develop|Win32"
+			OutputDirectory=".\Develop"
+			IntermediateDirectory=".\Develop"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set INTDIR=$(IntDir)&#x0D;&#x0A;set OUTDIR=$(OutDir)&#x0D;&#x0A;make $(ConfigurationName)"
+				ReBuildCommandLine="set INTDIR=$(IntDir)&#x0D;&#x0A;set OUTDIR=$(OutDir)&#x0D;&#x0A;make $(ConfigurationName) /a"
+				CleanCommandLine="rm $(IntDir)\* $(OutDir)\*"
+				Output="$(OutDir)\$(SolutionName)(develop).chm"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="ドキュメント ファイル"
+			Filter="dox"
+			>
+			<File
+				RelativePath="history.dox"
+				>
+			</File>
+			<File
+				RelativePath="introduction.dox"
+				>
+			</File>
+			<File
+				RelativePath=".\list.dox"
+				>
+			</File>
+			<File
+				RelativePath="mainpage.dox"
+				>
+			</File>
+			<File
+				RelativePath=".\maintenance.dox"
+				>
+			</File>
+			<File
+				RelativePath="overview.dox"
+				>
+			</File>
+			<File
+				RelativePath=".\verify.dox"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="スクリプト ファイル"
+			>
+			<File
+				RelativePath="make.bat"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="設定ファイル"
+			>
+			<File
+				RelativePath="doxyfile"
+				>
+			</File>
+			<File
+				RelativePath="makefile"
+				>
+			</File>
+			<File
+				RelativePath=".\version.bat"
+				>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

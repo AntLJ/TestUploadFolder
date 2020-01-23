@@ -1,0 +1,30 @@
+/**
+@page history 更新履歴
+- <b>2010/10/28 FILEVERSION 1.1.5.13 PRODUCTVERSION 1.1.0.0</b>
+  - 方面案内、交差点名称漢字、カナ名称のチェックを厳密にするよう修正
+- <b>2009/10/27 FILEVERSION 1.1.4.12 PRODUCTVERSION 1.1.0.0</b>
+  - [bug7890]道路ノード28bit化に伴う仕様変更対応
+- <b>2009/10/27 FILEVERSION 1.0.4.11 PRODUCTVERSION 1.0.0.0</b>
+  - [bug7330]使用許可文字に「〆」を追加。
+- <b>2009/10/19 FILEVERSION 1.0.4.10 PRODUCTVERSION 1.0.0.0</b>
+  - [bug7298]季節規制チェック対応。
+- <b>2009/03/03 FILEVERSION 1.0.3.9 PRODUCTVERSION 1.0.0.0</b>
+  - [bug6506]広域フラグと元道路相対高を制限してほしいに対応。
+  - [bug6873]属性種別コードのチェックを追加して欲しいに対応。
+  - VICS情報のチェック追加。これに伴い、差分チェックを行う場合はコマンドラインからオプション指定できるように修正。
+  - data以下にあるmntファイルのみを検索対象とするように修正。
+- <b>2008/10/24 FILEVERSION 1.0.2.8 PRODUCTVERSION 1.0.0.0</b>
+  - [bug6502]09春向けのIN仕様変更で、不要レイヤを読込まないように修正。
+- <b>2008/08/28 FILEVERSION 1.0.2.7 PRODUCTVERSION 1.0.0.0</b>
+  - 0規制対応。
+- <b>2007/10/23 FILEVERSION 1.0.2.5 PRODUCTVERSION 1.0.0.0</b>
+  - [Bug 5593]　新仕様(08春)版対応として、「都市間高速道路」と「クラリオン様向けマッチングリンク」を追加。
+- <b>2007/07/23 FILEVERSION 1.0.2.4 PRODUCTVERSION 1.0.0.0</b>
+  - [Bug 5410]　指定パスにpol_code.txtまたは、*.mntが存在しない場合エラーを出力するよう修正する。
+- <b>2007/07/04 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.0.0</b>
+  - [Bug 5385]　道路番号チェックを国道のみチェックするよう修正する。
+  - [Bug 5386]　ノード列の重複チェックから最終ノードを除くように修正する。
+- <b>2007/06/29 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+
+*/

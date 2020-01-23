@@ -1,0 +1,9 @@
+set WORK_DIR=\\Morioka\dfs\Tools\SiNDY-u\map\CheckTelTPError
+set BIN_DIR=\\Morioka\dfs\Tools\SiNDY-u\map\CheckTelTPError
+
+set DB_ADDRESS=SINDY2009B/SINDY2009B/SDE.EDT_SINDY2009B/5151/topaz2
+set FC_TELTP_POINT=SiNDYTEST.TelTP_Point
+
+%BIN_DIR%\CheckTelTPError.exe %WORK_DIR%\list\input_add.txt %WORK_DIR%\log\output_add.txt
+
+pause

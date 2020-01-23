@@ -1,0 +1,40 @@
+/**
+@page history 更新履歴
+- <b>2014/10/17 FILEVERSION 1.0.8.10 PRODUCTVERSION 1.0.8.0
+  - [GS]15春整備対応にて、CITY_SITEの新規属性「工事中道路」、「料金所レーン」をNG種別に追加
+
+- <b>2012/09/21 FILEVERSION 1.0.7.8 PRODUCTVERSION 1.0.7.0</b>
+  - [Bug 9295] [u][要望]CheckTelTPPointで同一シーケンスを持つポイントが複数存在する場合はエラーとする に対応
+    - TelTP内に調査結果コードが【該当施設あり】同士で同一シーケンスを持つものが存在した場合は、エラー
+    - Errorコードが連番になっていなかったため、連番となるように振り直し
+
+- <b>2010/09/07	FILEVERSION 1.0.6.7 PRODUCTVERSION 1.0.6.0</b>
+  - 加除移行対応による、ADDXY_Cの宣言部分の変更
+  - ログヘッダ出力部分が直書きだったのを、自身のツール名、FILEVERSION、PRODUCTVERSIONを取ってくるよう修正
+
+- <b>2010/07/21	FILEVERSION 1.0.5.6 PRODUCTVERSION 1.0.5.0</b>
+  - Arc9.3.1対応のみ
+
+- <b>2010/01/25	FILEVERSION 1.0.5.6 PRODUCTVERSION 1.0.5.0</b>
+  - [bug 7437] [u][要望]ログにADDXY_Cを追加して欲しい に対応
+    - ログの最終列にADDXY_Cを追加して欲しい
+    - ダム上に置かれているポイントはエラーとしないで欲しい
+
+- <b>2007/12/12	FILEVERSION 1.0.4.4 PRODUCTVERSION 1.0.4.0</b>
+  - 全件チェックの際に原因不明で途中で止まる現象を修正
+
+- <b>2007/11/30	FILEVERSION 1.0.3.3 PRODUCTVERSION 1.0.3.0</b>
+  - [Bug 5699]に対応
+  - [Bug 5707]に対応(CheckExTPのバグ、海属性のエラー検出)
+  - [Bug 5701]に対応
+
+- <b>2007/11/14	FILEVERSION 1.0.2.2 PRODUCTVERSION 1.0.2.0</b>
+  - [Bug 5675]に対応
+
+- <b>2007/11/02	FILEVERSION 1.0.1.1 PRODUCTVERSION 1.0.1.0</b>
+  - E6、E7エラーを検出されなかったバグを修正
+  - 不正な背景属性に「NULL」（細街路）を追加
+		  
+- <b>2007/10/23	FILEVERSION 1.0.0.0 PRODUCTVERSION 1.0.0.0</b>
+  - 新規作成
+*/

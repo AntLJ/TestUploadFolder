@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winlib_vc11", "winlib_vc11.vcxproj", "{CBEB2339-5612-4E8C-A838-6150FCC58018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.Debug|Win32.Build.0 = Debug|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.MBCS Debug|Win32.ActiveCfg = MBCS Debug|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.MBCS Debug|Win32.Build.0 = MBCS Debug|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.MBCS Release|Win32.ActiveCfg = MBCS Release|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.MBCS Release|Win32.Build.0 = MBCS Release|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.Release|Win32.ActiveCfg = Release|Win32
+		{CBEB2339-5612-4E8C-A838-6150FCC58018}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,91 @@
+/**
+@page usage 使用方法
+
+@verbatim
+実行例
+DiffImportPGDB.exe [option] -O [PGDB Directory] -N [PGDB Directory] -M [meshlist] -S [suffix] -L [Log Directory]
+ex. DiffImportPGDB.exe -O org\PGDB -N new\PGDB -M import\mesh.txt -S hig -L import\log
+@endverbatim
+
+ <b>optionについて</b>
+ - -O [--old] <編集前PGDBディレクトリ> ：編集前PGDBベースディレクトリを指定 (必須)
+ - -N [--new] <編集後PGDBディレクトリ> ：編集後PGDBベースディレクトリを指定 (必須)<br>
+ どちらも<em><指定ディレクトリ>\\<1次メッシュ>\\<都市地図メッシュ>.mdb</em><br>
+ という構造であることを前提としている
+
+ - -M [--mesh] <メッシュリストパス> :メッシュリストのパスを指定 (必須)<br>
+
+ - -S [--suffix] <拡張子> :拡張子を指定 (必須)<br>
+
+ - -L [--logdir] <ログファイル格納ディレクトリ> :ログ出力先を指定 (必須)<br>
+
+ - -T [--test] ：テストモード<br> 
+ 子バージョン作成、差分のチェック等は行うがインポートは行わない
+
+ - -J [--tdc_priority] ：国内優先モード<br> 
+ 差分取り込み対象がSiNDY上でも変更されている場合、差分の反映は行わない<br> 
+ 通常時はメッセージを出力し、変更する
+
+ - -F [--force] ：バージョン非対応モード<br> 
+ バージョン対応されていなくても実行できるモード<br> 
+ やむを得ない場合のみ使用すること
+
+ - -E [--except_sde] ：PGDB、FGDBインポートモード<br>
+ SiNDY(ArcSDE)ではなくPGDB、FGDBに対して差分を反映する<br> 
+ インポート先のPGDB、FGDBに都市地図メッシュがあることが前提<br> 
+ さらに環境変数 FC_CITYMESH=CITYMESH とする必要あり
+
+ - -G [--geospace] <レイヤリストパス> ：GEOSPACEインポートモード<br> 
+ レイヤリストで指定されたレイヤについて、既存のオブジェクトを全て削除してから新規追加分の反映を行う<br> 
+ 指定されていないレイヤについては通常(メッシュコマンドUと同等)の差分反映となる
+
+ - -D [--availdate] <日付> ：POI_POINT有効日付<br> 
+ POI_POINTに設定する有効日付を指定する。詳細は「挙動について」を参照のこと。
+
+ - -I [--only_import] ：マージなしモード<br>
+ インポートのみ行う(メッシュ境界マージ以降の処理を行わない)
+
+ - -P [--empty_db] ：空DBインポートモード<br>
+ インポート先の状態に関わらず、新旧PGDBに差分(追加、変更)があればインポートする
+
+ <b>meshlistについて</b>
+ 
+ コマンド付きメッシュコード（都市地図の8桁メッシュ）リストファイルを指定
+ - コマンド
+   - U ：通常の差分更新。形状変更、属性変更、新規追加が反映される <b>(特に理由がなければこれを指定してください)</b>
+   - D ：メッシュ内のオブジェクトを削除する
+   - A ：-Nで指定したPGDB内のオブジェクトを全て追加
+   - N ：メッシュ内のオブジェクトを削除し、-Nで指定したPGDB内のオブジェクトを全て追加
+
+ - メッシュ指定例<br>
+ 59414140,U<br>
+ 59414141,U<br>
+ ...
+
+ <b>suffixについて</b>
+ 
+ 拡張子により処理対象のレイヤが変わる
+
+ - frm ：City_Site, City_Line, City_Area, City_Tunnel, City_Road, City_Divider
+ - hig ：Building, Building_Line, Building_Step, Building_Roof
+ - ral ：City_Station, City_Railway
+ - adm ：City_Admin
+ - gou ：Gou_Point, CS_Addr_Point
+ - poi ：Export_Poi_Point
+
+ <b>環境変数について</b>
+ - DB_ANY ：接続先DB（必須）
+ - OPERATOR ：最終編集者に設定する文字列（必須）
+ - WORK_VERSION ：作業用子バージョン名（指定がなければツール名と日付から自動で作成する）
+ - FC_xx ：反映先のフィーチャクラス名を変更できる(指定がなければツール内で定義されている名称を利用する)
+
+ @verbatim
+ バッチファイルでの環境変数設定例
+ set DB_ANY=SiNDY2014/SiNDY2014/SDE.DEFAULT/5151/coral2 
+ set OPERATOR=y_mukai
+ set WORK_VERSION=DiffImport
+ set FC_BUILDING=Building
+ set FC_CITYMESH=Reference.CityMesh
+ @endverbatim
+
+*/

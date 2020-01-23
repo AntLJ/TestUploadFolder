@@ -1,0 +1,53 @@
+@ECHO OFF
+REM 変数は極力最初に設定
+REM 通常、初回のみ変更すれば良いもの
+set DB_ANY=sindy2013a/sindy2013a/SDE.DEFAULT/5151/ruby2
+set OLD_PATH=\\morioka\dfs\Map2\common\WORK\13autumn_pre\PGDB\
+set NEW_PATH=\\morioka\dfs\Map2\common\WORK\13autumn\PGDB\
+set OPERATOR=shanghai_13aut
+set WORK_VERSION=Import
+set OPTION=
+
+REM 通常は、仮インポート時だけ特有
+set FC_CITY_SITE=City_Site
+set FC_CITY_LINE=City_Line
+set FC_BUILDING=Building
+set FC_BUILDING_LINE=Building_LINE
+set FC_BUILDING_STEP=Building_STEP
+set FC_CITY_STATION=City_Station
+set FC_CITY_RAILWAY=City_Railway
+
+REM 通常変更の必要がないもの
+set BINDIR=.\
+set LOG_DIR=.\log\
+set IMP_HIG_LOG=%LOG_DIR%hig.log
+set IMP_FRM_LOG=%LOG_DIR%frm.log
+set IMP_RAL_LOG=%LOG_DIR%ral.log
+
+REM 毎回変更するもの
+set MESHLIST=121214_インポート（平面）.txt
+
+REM 建物
+IF EXIST %IMP_HIG_LOG% (
+	ECHO ログファイル%IMP_HIG_LOG%が存在します。
+	ECHO 処理を中止する場合はCTRL+Cを押して下さい。
+	PAUSE
+)
+%BINDIR%DiffImportPGDB %OPTION% -O %OLD_PATH% -N %NEW_PATH% %MESHLIST% hig 2>> %IMP_HIG_LOG%
+
+REM 背景
+IF EXIST %IMP_FRM_LOG% (
+	ECHO ログファイル%IMP_HIG_LOG%が存在します。
+	ECHO 処理を中止する場合はCTRL+Cを押して下さい。
+	PAUSE
+)
+%BINDIR%DiffImportPGDB %OPTION% -O %OLD_PATH% -N %NEW_PATH% %MESHLIST% frm 2>> %IMP_FRM_LOG%
+
+REM 鉄道
+IF EXIST %IMP_RAL_LOG% (
+	ECHO ログファイル%IMP_HIG_LOG%が存在します。
+	ECHO 処理を中止する場合はCTRL+Cを押して下さい。
+	PAUSE
+)
+%BINDIR%DiffImportPGDB %OPTION% -O %OLD_PATH% -N %NEW_PATH% %MESHLIST% ral 2>> %IMP_RAL_LOG%
+

@@ -1,0 +1,67 @@
+/**
+@page history 更新履歴
+
+- <b> 2015/07/17 FILEVERSION 15.2.0.32</b>
+ - bug 11257 -[u]メッシュ境界でbuildingがマージされない に対応
+ - 新フロー対応にて、メッシュ境界をまたぐオブジェクトのUPDATE_Cの扱いについて修正
+
+- <b> 2015/07/07 FILEVERSION v:15.2.0.26</b>
+ - bug 11258 - [u]オブジェクトが重複してインポートされる に対応
+ - オブジェクトが重複する不具合の改修
+ - NULL形状がインポートされる不具合の改修
+
+- <b> 2015/06/12 FILEVERSION 15.2.0.25</b>
+ - 新フロー対応による旧フローでの不具合を修正
+ - あわせて bug 10979 - [u][GS]マージに失敗しフィーチャが削除される にも対応
+
+- <b> 2015/04/07 FILEVERSION 15.2.0.21</b>
+ - GS向け新インポートフロー対応
+ - ORG_OBJIDをキーにインポート対象を探すように変更
+ - 「削除」「追加」のUPDATE_Cを使用するように修正
+ - インポート時、旧PGDBのORG_OBJIDが0であればエラーメッセージを出力するように修正
+ - インポート時、旧PGDBのUPDATE_Cが0以外であればエラーメッセージを出力するように修正
+
+- <b> 2015/02/16 FILEVERSION 15.2.0.19</b>
+  - 「マージなし」「空DBインポート」オプションを追加。
+
+- <b> 2015/01/27 FILEVERSION 15.2.0.18</b>
+  - -S frm でcity_dividerをインポートできるように修正。city_bridge_lineは対象から除外。
+
+- <b> 2014/08/12 FILEVERSION 1.0.10.17 PRODUCTVERSION 1.0.10.0</b>
+  - [bug 10519][u][GS][要望]メッシュ境界でのマージ条件を変更してほしい の対応漏れ分の修正
+  - [bug 10509][u][GS][要望]logの出力方法を変更してほしい に対応
+
+- <b> 2014/07/08 FILEVERSION 1.0.9.13 PRODUCTVERSION 1.0.9.0</b>
+  - [bug 10519][u][GS][要望]メッシュ境界でのマージ条件を変更してほしい に対応
+
+- <b> 2014/06/09 FILEVERSION 1.0.8.12 PRODUCTVERSION 1.0.8.0</b>
+  - suffix に poi を指定した際は PGDB の Export_Poi_Point レイヤを対象にするよう変更
+  - poi のインポート条件を修正
+
+- <b> 2014/03/07 FILEVERSION 1.0.7.8 PRODUCTVERSION 1.0.7.0</b>
+  - suffix に poi 追加
+
+- <b> 2014/02/24 FILEVERSION 1.0.6.7 PRODUCTVERSION 1.0.6.0</b>
+  - Gオプションで任意のレイヤを指定するように修正
+
+- <b> 2014/01/23 FILEVERSION 1.0.5.6 PRODUCTVERSION 1.0.5.0</b>
+  - Gオプションで全てのレイヤを削除できるように修正
+
+- <b>2013/12/19 FILEVERSION 1.0.4.5 PRODUCTVERSION 1.0.4.0</b>
+  - エラー出力を修正
+
+- <b>2013/10/21 FILEVERSION 1.0.3.4 PRODUCTVERSION 1.0.3.0</b>
+  - インポート時に既存家形と階数ポリゴンを削除できるように-G(GEOSPACEのG)オプション追加
+
+- <b>2013/09/27 FILEVERSION 1.0.2.3 PRODUCTVERSION 1.0.2.0</b>
+  - GEOSPACE協業に伴う修正
+
+- <b>2013/08/06 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.1.0</b>
+  - [bug 9989] 対応
+
+- <b>2013/06/25 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - Arc10.1対応 バージョンは変更なし
+
+- <b>2013/04/16 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+*/

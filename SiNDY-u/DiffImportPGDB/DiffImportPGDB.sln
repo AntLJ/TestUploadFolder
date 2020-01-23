@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiffImportPGDB", "DiffImportPGDB.vcxproj", "{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.Debug|Win32.Build.0 = Debug|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.MBCS Release|Win32.Build.0 = Release|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.Release|Win32.ActiveCfg = Release|Win32
+		{949DFD80-7DEF-47E3-B8C5-0463DDD3A5E5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

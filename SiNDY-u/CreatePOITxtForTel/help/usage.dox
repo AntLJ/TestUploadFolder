@@ -1,0 +1,53 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CreatePOITxtForTel.exe --poi_db <POIデータSDE接続先> --addr_db <住所データSDE接続先> --map_db <地図データSDE接続先>
+ --poi_fc <フィーチャクラス名(POI_POINT)> --poi_sub_fc <フィーチャクラス名(POI_SUB_POINT)> --admin_fc <フィーチャクラス名(CITY_ADMIN)> --building_fc <フィーチャクラス名(BUILDING)>
+ --contents_master <テーブル名(CONTENTS_MASTER)> --list <出力対象種別表リスト> --rsp_idn <出力対象IDNCODE>
+ --out <POI_POINT出力ファイル名> --out_sub <POI_SUB_POINT出力ファイル名>
+※標準出力に実行ログが出力されます。
+@endverbatim
+
+ <b>optionについて</b>
+ - --poi_db	[ＰＯＩデータSDE接続先]	(必須)
+ - --addr_db	[住所データSDE接続先]		(必須)
+ - --map_db	[地図データSDE接続先]		(必須)<br>
+ 形式は [ユーザ名]/[パスワード]/[バージョン]/[インスタンス(5151)]/[サーバ名]
+
+ - --poi_fc			[POI_POINTフィーチャクラス名]		(必須)
+ - --poi_sub_fc		[POI_SUB_POINTフィーチャクラス名]	(必須)
+ - --admin_fc		[CITY_ADMINフィーチャクラス名]		(必須)
+ - --building_fc		[BUILDINGフィーチャクラス名]		(必須)
+ - --contents_master	[コンテンツマスタテーブル名]		(必須)<br>
+ 形式は [ユーザ名].[フィーチャクラス名]
+
+ - --list	[出力対象種別表リスト]	(必須)
+
+ - --rsp_idn		[出力対象のIDNCODE]	(必須)
+
+ - --out			[POI_POINT出力ファイル名]		(必須)
+ - --out_sub		[POI_SUB_POINT出力ファイル名]	(必須)<br>
+ 存在しない場合は作ります
+
+ <b>出力対象種別表リストについて</b><br>
+地図制作Gで変更要望がない限り固定となります。<br>
+<a href="file:\\win\tdc\Tools\SiNDY-u\poi\CreatePOITxtForTel\master_list.txt" target="_blank">出力対象種別表リスト</a>
+  - フォーマット
+@verbatim
+<データ分類コード> <データ分類名称> <店舗コード> <店舗名称> <位置品質利用フラグ> <精度向上利用フラグ> <重要コンテンツフラグ>
+※タブ区切りです。
+@endverbatim
+
+ <b>実行ログの中で要確認メッセージ</b>
+  - 「<b>\#Warning マスタと一致する情報がリストにありません(情報が古いか確認) : [データ分類コード],[店舗コード]</b>」<br>
+  ⇒ 出力対象種別表リストがSDE上のコンテンツマスタリストと整合が取れていない状態です。問題ないことがほとんどですが、地図制作Gに更新すべきか確認して下さい。
+  - 「<b>\#Fatal Error マスタ情報がありません : [コンテンツマスタID]</b>」<br>
+  ⇒ SDEデータ自体に不整合が出ている状態で、まず有り得ません。もし、出たらSiNDY-bチームへ報告すべきです。
+  - 「<b>\#Error 行政界情報取得できない : [データ分類コード]-[店舗コード]-[シーケンス]</b>」<br>
+  ⇒ POIデータが行政界上にプロットされています。制作Gには、プロットしないようお願いしているので、まず地図制作Gに修正するか確認して下さい。
+  - 「<b>\#Warning IDNCODE : [コード値] の出力件数が0件です</b>」<br>
+  ⇒ --rsp_idnオプションで指定したIDNCODEが不正であるか、サブポイントの属性として適さない値です。Warning出力されたIDNCODEについて地図制作Gに確認して下さい。
+  
+
+*/

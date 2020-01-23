@@ -1,0 +1,51 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CreateAddrWorkTxt.exe [作成モードオプション] [各種オプション]
+※ 環境変数 DB_ADDRESS, FC_TARGET_POINT, FC_CITY_ADMIN も設定する必要あり
+@endverbatim
+
+@section env 環境変数について(全て必須)
+- DB_ADDRESS      ... 住所系SDE接続プロパティ
+- FC_TARGET_POINT ... ターゲット住所ポイントテーブル名(号 or 家形リンク or CS)
+- FC_CITY_ADMIN   ... 都市地図行政界テーブル名
+
+@section option オプションについて
+- 作成モードオプション ... いずれか必須指定
+  - -gpw ... 号ポイント中間データ作成モード
+  - -kpw ... 家形リンクポイント中間データ作成モード
+  - -csw ... CSポイント中間データ作成モード
+- 各種オプション
+  - -out ... 出力先(必須) 号・家形リンク->出力ディレクトリ CS->出力ファイル名
+  - -log ... ログファイル名(必須)
+  - -jdb ... 住所DB接続先(家形リンク時のみ必須)
+  - 実行エリア指定オプション(未指定は、全国)
+    - -cl <市区町村コードリスト>
+    - -cs <市区町村コード>
+    - -cr <開始市区町村コード>-<終了市区町村コード>
+
+@section example 実行例
+@verbatim
+
+set DB_ADDRESS=FIX200905/FIX200905/SDE.DEFAULT/5151/topaz2
+set FC_CITY_ADMIN=City_Admin
+
+rem 号ポイント中間データ作成(市区町村コードリスト指定)
+set FC_TARGET_POINT=Gou_Point
+
+CreateAddrWorkTxt.exe -gpw -out gpw -log gpw.log -cl citycode.txt
+
+rem 家形リンクポイント中間データ作成(市区町村コード範囲指定)
+set FC_TARGET_POINT=KLink_Point
+
+CreateAddrWorkTxt.exe -kpw -out kpw -log kpw.log -jdb y0907/y0907@delltcp -cr 01000-13000
+
+rem CSポイント中間データ作成
+set FC_TARGET_POINT=CS_Addr_Point
+
+CreateAddrWorkTxt.exe -csw -out csw.txt -log csw.log
+
+@endverbatim
+
+*/

@@ -1,0 +1,18 @@
+/**
+@page history 更新履歴
+
+- <b>2010/07/27 FILEVERSION 1.1.0.5 PRODUCTVERSION 1.1.0.0</b>
+  - Arc931対応
+
+- <b>2010/06/23 FILEVERSION 1.1.0.4 PRODUCTVERSION 1.1.0.0</b>
+  - [bug7975]住所・家形リンクデータで利用されないポイントはデータ化しないで欲しいに対応
+
+- <b>2009/11/17 FILEVERSION 1.0.2.3 PRODUCTVERSION 1.0.2.0</b>
+  - 家形リンク中間データ作成処理高速化
+
+- <b>2009/09/29 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.1.0</b>
+  - AddrLibの修正に伴いリビルド(キャッシュを無駄に作らなくなっただけ)
+
+- <b>2009/08/27 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+*/

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--road_db E:\works\Tools\SiNDY-u\CreateAdamRoadLinkage\実行環境\road.gdb    --adam_db E:\works\Tools\SiNDY-u\CreateAdamRoadLinkage\実行環境\lane.gdb    --diff_db E:\works\Tools\SiNDY-u\CreateAdamRoadLinkage\実行環境\差分FGDB\compare_road\diff.gdb    --mesh_list E:\works\Tools\SiNDY-u\CreateAdamRoadLinkage\実行環境\mesh.txt    --log_dir E:\works\Tools\SiNDY-u\CreateAdamRoadLinkage\実行環境</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,19 @@
+@echo off
+
+rem 環境変数設定
+set DB_ADDRESS=prodaddr/prodaddr/SDE.TP_Work/5151/topaz2
+set FC_EXTP_POINT=ExTP_Point
+set JDB_CONNECT_NEW=y0711e/y0711e@delltcp
+set JDB_CONNECT_OLD=y0705e/y0705e@delltcp
+
+echo %TIME% > time_071030.txt
+
+rem 参照モードで実行
+CnvExTPAddrcode.exe -c ref -l sample_仮コード11桁対応リスト.txt > ref.log
+
+rem 編集モードで実行
+CnvExTPAddrcode.exe -c update -l sample_仮コード11桁対応リスト.txt > edit.log
+
+echo %TIME% >> time_071030.txt
+
+pause

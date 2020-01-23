@@ -1,0 +1,46 @@
+/**
+@page history 更新履歴
+
+- <b>2007/06/27 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+	- バージョン情報付加
+
+- <b>2007/06/27 FILEVERSION 1.1.0.2 PRODUCTVERSION 1.1.0.0</b>
+	- VC8対応（新メイン化含む）
+
+- <b>2008/08/07 FILEVERSION 1.1.1.3 PRODUCTVERSION 1.1.1.0</b>
+	- 標準エラー出力にツールのバージョン情報を出力するよう変更
+	- 検証時に見つけた問題を修正（メッセージの一部）
+
+- <b>2009/09/14 FILEVERSION 2.0.0.4 PRODUCTVERSION 2.0.0.0</b>
+	- [bug 7211] [u][要望]チェック項目を追加して欲しい。(CheckPriorGPと統合) に対応
+	- 「AddrLib」を使用して大幅に書き換え（VC9化含む）
+
+- <b>2009/12/01 FILEVERSION 2.1.0.5 PRODUCTVERSION 2.1.0.0</b>
+	- [bug 7438] [u][要望]5桁不一致を出力するようにして欲しい に対応
+
+- <b>2010/10/08 FILEVERSION 2.2.0.6 PRODUCTVERSION 2.2.0.0</b>
+	- [bug 8248] [u][要望]通り名のコードを持つポイントは行政界との妥当性をチェックして欲しい。 に対応
+	- 加除コード対応
+	- 接続時リトライ対応
+
+- <b>2011/03/01 FILEVERSION 2.2.1.7 PRODUCTVERSION 2.2.1.0</b>
+	- [bug 8508] [u][要望]11桁一致の時点でエラーとしてほしい(CSCheck) に対応
+
+- <b>2011/10/26 FILEVERSION 2.3.1.10 PRODUCTVERSION 2.3.1.0</b>
+	- [bug 8804] [u][要望]GOU・CSPに対してADDRCODE2を考慮したチェックにしてほしい に対応
+	- エラーメッセージを変更
+	- [bug 8981] [u][要望]親番レベルが「00000」のCSPをエラーにしてほしい に対応
+
+- <b>2013/12/16 FILEVERSION 2.4.2.12 PRODUCTVERSION 2.4.2.0</b>
+	- GS対応 コード値変更における対応
+
+- <b>2014/01/22 FILEVERSION 2.4.2.13 PRODUCTVERSION 2.4.2.0</b>
+	- GS対応 CITY_SITEから「その他道(74)」が削除されたためツールを修正
+
+- <b>2014/08/26 FILEVERSION 2.4.3.14 PRODUCTVERSION 2.4.3.0</b>
+	- 15春対応 CITY_SITEに「工事中道路(77)」、「料金所レーン(78)」が追加されたためツールを修正
+
+- <b>2015/01/21 FILEVERSION 15.2.0.15 PRODUCTVERSION 15.2.0.15</b>
+	- 15秋対応 CITY_SITEの「料金所レーン(78)」がCITY_DIVIDERとして整備されるため、ツールを修正
+
+*/

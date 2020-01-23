@@ -1,0 +1,10 @@
+DB_MAP	sindytest/sindytest/CSCheck/5151/galatea
+DB_ADDRESS	sindytest/sindytest/CSCheck/5151/galatea
+DB_BASE	sindytest/sindytest/CSCheck/5151/galatea
+DB_RULE	reference/reference/SDE.DEFAULT/5151/spinel2
+FC_CITY_ADMIN	City_Admin
+FC_CS_ADDR_POINT	CS_Addr_Point
+FC_CITY_SITE	City_Site
+FC_BASE_SITE	Base_Site
+FC_GOU_POINT	Gou_Point
+JDB_CONNECT	y0807e/y0807e@delltcp

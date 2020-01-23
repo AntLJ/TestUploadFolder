@@ -1,0 +1,62 @@
+CSポイントチェックプログラム 2007/6/27 梶浦
+
+【機能】
+CS_Addr_Pointの妥当性チェックを行います。
+
+【使用法】
+Usage:CSCheck [-C <設定ファイル>] -G
+　　　　　　　[-C <設定ファイル>] -L <8桁リストファイル>
+
+「設定ファイル」に記述できる項目は（環境変数共通）
+
+DB_MAP			：都市地図背景参照先DB
+DB_BASE			：中縮背景参照先DB
+DB_ADDRESS		：行政界、CSポイント参照先DB
+DB_RULE			：ルール参照先DB
+FC_CITY_ADMIN		：行政界レイヤ名
+FC_CS_ADDR_POINT	：CSポイントレイヤ名
+FC_CITY_SITE		：都市地図背景レイヤ名
+FC_BASE_SITE		：中縮背景レイヤ名
+FC_GOU_POINT		：号ポイントレイヤ名
+JDB_CONNECT		：住所マスター接続文字列
+
+【特記事項】
+１．バージョン2.0で機能追加したために、全国分の実行時間が2時間超かかるようになりました。
+　　（DBのコンディションにもよる）
+
+【最新バージョン】
+FILEVERSION 2.3.1.10 PRODUCTVERSION 2.3.1.0
+
+【更新履歴】
+2007/06/27　	FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0
+		バージョン情報付加
+
+2007/06/27　	FILEVERSION 1.1.0.2 PRODUCTVERSION 1.1.0.0
+		VC8対応（新メイン化含む）
+
+2008/08/07	FILEVERSION 1.1.1.3 PRODUCTVERSION 1.1.1.0
+		標準エラー出力にツールのバージョン情報を出力するよう変更
+		検証時に見つけた問題を修正（メッセージの一部）
+
+2009/09/14	FILEVERSION 2.0.0.4 PRODUCTVERSION 2.0.0.0
+		[bug 7211] [u][要望]チェック項目を追加して欲しい。(CheckPriorGPと統合)　に対応
+		「AddrLib」を使用して大幅に書き換え（VC9化含む）
+
+2009/12/01	FILEVERSION 2.1.0.5 PRODUCTVERSION 2.1.0.0
+		[bug 7438] [u][要望]5桁不一致を出力するようにして欲しい　に対応
+
+2010/10/08	FILEVERSION 2.2.0.6 PRODUCTVERSION 2.2.0.0
+		[bug 8248] [u][要望]通り名のコードを持つポイントは行政界との妥当性をチェックして欲しい。
+		に対応
+		加除コード対応
+		接続時リトライ対応
+
+2011/03/01	FILEVERSION 2.2.1.7 PRODUCTVERSION 2.2.1.0
+		[bug 8508] [u][要望]11桁一致の時点でエラーとしてほしい(CSCheck)
+		に対応
+
+2011/10/26	FILEVERSION 2.3.1.10 PRODUCTVERSION 2.3.1.0
+		[bug 8804] [u][要望]GOU・CSPに対してADDRCODE2を考慮したチェックにしてほしい に対応
+		エラーメッセージを変更
+		[bug 8981] [u][要望]親番レベルが「00000」のCSPをエラーにしてほしい に対応 
+

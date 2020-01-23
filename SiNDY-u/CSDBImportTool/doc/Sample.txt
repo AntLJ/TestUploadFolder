@@ -1,0 +1,18 @@
+"ID","STATUS","ERR_TYPE","ERR_TITLE","TDC_F","WORK_F","INQ1","SIRIUS_ID","POI_ID","LOC01_NAME","LOC01_LAT","LOC01_LONG","LOC02_NAME","LOC02_LAT","LOC02_LONG","LOC03_NAME","LOC03_LAT","LOC03_LONG","LOC04_NAME","LOC04_LAT","LOC04_LONG","LOC05_NAME","LOC05_LAT","LOC05_LONG","LOC06_NAME","LOC06_LAT","LOC06_LONG","LOC07_NAME","LOC07_LAT","LOC07_LONG","LOC08_NAME","LOC08_LAT","LOC08_LONG","LOC09_NAME","LOC09_LAT","LOC09_LONG","LOC10_NAME","LOC10_LAT","LOC10_LONG","INQ2_01FCT","INQ2_01DTL","INQ2_01TGT","INQ2_02FCT","INQ2_02DTL","INQ2_02TGT","INQ2_03FCT","INQ2_03DTL","INQ2_03TGT","INQ2_04FCT","INQ2_04DTL","INQ2_04TGT","INQ2_05FCT","INQ2_05DTL","INQ2_05TGT","INQ2_06FCT","INQ2_06DTL","INQ2_06TGT","INQ2_07FCT","INQ2_07DTL","INQ2_07TGT","INQ2_08FCT","INQ2_08DTL","INQ2_08TGT","INQ2_09FCT","INQ2_09DTL","INQ2_09TGT","INQ2_10FCT","INQ2_10DTL","INQ2_10TGT"
+"CSDB00000066","対応完了","住所","ローソン白樺湖 位置違い","1","0","住所データ「1570-1」の新規追加希望
+
+02春まで存在していた「1570-1」が03春より削除されてしまっています。
+各資料にて妥当な位置を確認しましたので、可能であれば住所データの追加願います。
+
+ローソンHP
+http://www.econ.ne.jp/map/
+
+Domap
+http://www.do-map.net/emmctl.htm?ENC=j4R%2Fq3iwilAPBviJvZzCVxYa1f3RhtOgjFpzcSFV%2BlngshXcdw5txNwyPyCSO38Vl3ENvtasyjNKqFtr5ekILkfJip%2BBAPIUm3DxMn2gRcLmYeWxdqBK385b5EunTckkv1qXxlhiMZzQ%2FXdkUfSu%2FmduzwFBJxbuIkuEPCRL6xWhhOaIWB3HaAYFwetBjC7yWGdlHznQWOJaFzdJdOuWBduSkgEoq2UjzBeFSTiYuLFEH0d5XFDHh9Kr3DS9j0%2Fbm1igq7DQbqqwSWiWd9fcxNzCZLrBDLwHH5OFuStVLC5A25ylhh0hpsr5B%2BgJMDWD8A5xuhAynOU%3D&x=393&y=120
+
+タウンページ
+http://itp.ne.jp/servlet/jp.ne.itp.sear.SBSSVBasicSearch?Location=%92%B7%96%EC%8C%A7%96%6B%8D%B2%8B%76%8C%53%97%A7%89%C8%92%AC&Location_fix=&Name=%83%8D%81%5B%83%5C%83%93&free_word=&Category=&Category_fix=&submitType=&menuType=&Gyoumu_cate=7&Media_cate=pda&c_gid=SW0110&n_gid=&r_gid=SW0110&index_dsp=0&index_50on=&c_total=&jsy_pref_name=&jsy_shiku_name=&jsy_cho_name=&jsy_chome_name=&list_cate=&jsy_cate=&jsy_level=&jsy_pref_code=&jsy_shiku_code=&jsy_cho_code=&jsy_chome_code=&jb_code=&Location_select=&r_code=&sta_code=&cate_code=&lm_code=&area_code=&hX=&hY=&rg_area=&rg_shosai=&post_no=&Theme_cate=&theme_code=&theme_level=&Theme_50on=&matu_level=&cont_id=a00&al_code=&iword=%83%8D%81%5B%83%5C%83%93&gcf=7",,"30-0p-200276516","誤","36.125291667","138.272227778","正","36.106958333","138.245580556",,,,,,,,,,,,,,,,,,,,,,,,,,"小字（白樺湖）、04dataでは大字で取得されていた為。
+ハローぺージを参考に行政界を修正し『大字芦田八ケ野1570-1』で取得する。
+S-20324-29","11末メジャー(DB-0311EM-011A)
+8上月度(DB-0308BS-011A)
+9末メジャー(DB-0309ES-011A)",,,,,,,,,,,,,,,,,,,,,,,,,,,

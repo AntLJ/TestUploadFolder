@@ -1,0 +1,328 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CSCheck.exe [-C <設定ファイル>] -G
+CSCheck.exe [-C <設定ファイル>] -L <8桁リストファイル>
+@endverbatim
+
+@section usage_option オプション
+
+<table>
+<tr bgcolor="#AFEEEE">
+	<th colspan="2">オプション</th>
+</tr>
+<tr>
+	<td>-C <設定ファイル></td>
+	<td>設定ファイルを指定する</td>
+</tr>
+<tr>
+	<td>-G</td>
+	<td>全国分のデータに対しチェックをかける</td>
+</tr>
+<tr>
+	<td>-L <8桁住所コードリストファイル></td>
+	<td>指定した8桁住所コードリストに示されているエリアに対してチェックをかける</td>
+</tr>
+</table>
+
+@section usage_config 設定ファイル
+
+接続先DBやフィーチャクラス名等の情報は設定ファイルに記述する。
+
+@verbatim
+<識別子>□<設定内容>
+※□はタブ1文字
+@endverbatim
+
+<b>《識別子一覧》</b>
+<table>
+<tr bgcolor="#AFEEEE">
+	<th>識別子</th>
+	<th>設定内容</th>
+</tr>
+<tr>
+	<td>DB_MAP</td>
+	<td>都市地図背景参照先DB</td>
+</tr>
+<tr>
+	<td>DB_BASE</td>
+	<td>中縮背景参照先DB</td>
+</tr>
+<tr>
+	<td>DB_ADDRESS</td>
+	<td>住所系（行政界・号ポイント・CSポイント）参照先DB</td>
+</tr>
+<tr>
+	<td>DB_RULE</td>
+	<td>ルール参照先DB</td>
+</tr>
+<tr>
+	<td>FC_CITY_ADMIN</td>
+	<td>都市地図行政界フィーチャクラス名</td>
+</tr>
+<tr>
+	<td>FC_CS_ADDR_POINT</td>
+	<td>CSポイントフィーチャクラス名</td>
+</tr>
+<tr>
+	<td>FC_CITY_SITE</td>
+	<td>都市地図背景フィーチャクラス名</td>
+</tr>
+<tr>
+	<td>FC_CITY_DIVIDER</td>
+	<td>都市料金所分離帯フィーチャクラス名</td>
+</tr>
+<tr>
+	<td>FC_BASE_SITE</td>
+	<td>中縮背景フィーチャクラス名</td>
+</tr>
+<tr>
+	<td>FC_GOU_POINT</td>
+	<td>号ポイントフィーチャクラス名</td>
+</tr>
+<tr>
+	<td>JDB_CONNECT</td>
+	<td>住所マスター接続文字列</td>
+</tr>
+</table>
+
+<b>《設定ファイル作成例》</b>
+@verbatim
+DB_MAP	ronly/ronly/SDE.EDT_SINDY2011B/5151/ruby2
+DB_ADDRESS	ronly/ronly/SDE.EDT_SINDY2011B/5151/topaz2
+DB_BASE	ronly/ronly/SDE.EDT_SINDY2011B/5151/onyx
+DB_RULE	reference/reference/SDE.DEFAULT/5151/spinel2
+FC_CITY_ADMIN	SINDY2011B.City_Admin
+FC_CS_ADDR_POINT	SINDY2011B.CS_Addr_Point
+FC_CITY_SITE	SINDY2011B.City_Site
+FC_CITY_DIVIDER	SINDY2011B.City_Divider
+FC_BASE_SITE	SINDY2011B.Base_Site
+FC_GOU_POINT	SINDY2011B.Gou_Point
+JDB_CONNECT	y1107/y1107@delltcp
+@endverbatim
+
+@section error_message エラーメッセージ
+
+<b>《エラーメッセージ一覧》</b>
+<table width="1500">
+<tr bgcolor="#AFEEEE">
+	<th width="80">エラーレベル</th>
+	<th width="70">対象FC(1)</th>
+	<th width="70">対象FC(2)</th>
+	<th width="440">エラーメッセージ</th>
+	<th width="600">詳細</th>
+	<th width="240">備考</th>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】住所コードが20桁でない</td>
+	<td>CSポイントの住所コードが20桁でない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】地番コードが「00000」</td>
+	<td>CSポイントの地番コード（住所コード20桁のうち12～16桁目）が「00000」である。</td>
+	<td>[bug 8981] で追加</td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>GP</td>
+	<td>【CSP】同一20桁コードの号ポイント（優先）が存在</td>
+	<td>CSポイントと同一20桁コードの号ポイント（優先フラグON）が存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>GP</td>
+	<td>【CSP】同一20桁コードの号ポイント（通常）が存在</td>
+	<td>CSポイントと同一20桁コードの号ポイント（優先フラグOFF）が存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>GP</td>
+	<td>【CSP】同一20桁コードの号ポイント（優先）が存在（CODE2）</td>
+	<td>CSポイントと同一20桁コードの号ポイント（通称行政界／優先フラグON）が存在する。</td>
+	<td>[bug 8804] で追加</td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>GP</td>
+	<td>【CSP】同一20桁コードの号ポイント（通常）が存在（CODE2）</td>
+	<td>CSポイントと同一20桁コードの号ポイント（通称行政界／優先フラグOFF）が存在する。</td>
+	<td>[bug 8804] で追加</td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】住所コードが無効</td>
+	<td>CSポイントの住所コード（先頭11桁）が無効である（住所マスタ上で施行されていない）。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】情報ソースに記述がない</td>
+	<td>CSポイントの情報ソースに何も記述されていない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】行政界（符号界）と住所コード11桁が一致</td>
+	<td>CSポイントと行政界とで住所コード11桁が一致しており、行政界が街区符号界である。</td>
+	<td>拡張号番号フラグを使用すれば号ポイントとして整備できるため</td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】行政界と住所コード5桁が不一致</td>
+	<td>CSポイントと行政界とで住所コード5桁が一致していない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】行政界と住所コード8桁が不一致</td>
+	<td>CSポイントと行政界とで住所コード8桁が一致していない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】行政界と住所コード8桁は不一致だが大字名称が一致（京都市）</td>
+	<td>京都市（261xx）であり、行政界と住所コード8桁は不一致だが大字名称が一致する。</td>
+	<td>[bug 8248] 対応による</td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】行政界（CODE2）と住所コード16桁が一致</td>
+	<td>CSポイントと行政界（符号界／通称行政界）とで住所コード16桁が一致している。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】行政界と住所コード11桁が一致</td>
+	<td>CSポイントと行政界とで住所コード11桁が一致している。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>WARNING</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】行政界（CODE2）と住所コード11桁が一致</td>
+	<td>CSポイントと行政界（通称行政界）とで住所コード11桁が一致している。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】行政界ポリゴンの取得に失敗</td>
+	<td>CSポイントを含む行政界ポリゴンが取得できない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】不正な種別の都市地図背景ポリゴン上に存在</td>
+	<td>CSポイントが不正な種別（水系など）の都市地図背景ポリゴン上に存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】都市料金所分離帯ポリゴン上に存在</td>
+	<td>CSポイントが都市料金所分離帯ポリゴン上に存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】不正な種別の中縮背景ポリゴン上に存在</td>
+	<td>CSポイントが不正な種別（水系など）の中縮背景ポリゴン上に存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>CS</td>
+	<td>【要修正】【CSP】同一20桁コードのCSポイントが存在</td>
+	<td>同一20桁コードのCSポイントが存在する。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】都市地図背景ポリゴンの取得に失敗</td>
+	<td>CSポイントを含む都市地図背景ポリゴンが取得できない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【CSP】中縮背景ポリゴンの取得に失敗</td>
+	<td>CSポイントを含む中縮背景ポリゴンが取得できない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>GP</td>
+	<td>-</td>
+	<td>【要修正】【GOU】号ポイント（優先）の20桁化に失敗</td>
+	<td>優先フラグの立っている号ポイントなのに住所コード20桁が生成できない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>CS</td>
+	<td>-</td>
+	<td>【要修正】【CSP】住所コード未設定</td>
+	<td>CSポイントに住所コードが設定されていない。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>GP</td>
+	<td>GP</td>
+	<td>【GOU】同一20桁コードの号ポイント（優先）が存在（CODE2）</td>
+	<td>優先フラグの立っている号ポイントの中に同一20桁コードを持つものが存在する（いずれかが通称行政界）。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>ERROR</td>
+	<td>GP</td>
+	<td>GP</td>
+	<td>【要修正】【GOU】同一20桁コードの号ポイント（優先）が存在</td>
+	<td>優先フラグの立っている号ポイントの中に同一20桁コードを持つものが存在する。</td>
+	<td></td>
+</tr>
+</table>
+※通称行政界 : 「住所コード2（ADDRCODE2）」が整備されている行政界。
+
+*/

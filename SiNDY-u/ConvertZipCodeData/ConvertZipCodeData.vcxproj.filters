@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertZipCodeData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvZipPol.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvRep.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvCentroid.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvRelZipAddr.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arguments.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>リソースファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertZipCodeData.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvZipPol.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvBase.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvRep.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvCentroid.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvRelZipAddr.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{2062d823-5edb-4ff3-83d5-21585dbdadc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー">
+      <UniqueIdentifier>{1fab5787-e0c6-4a48-81f8-cd8485dadaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{8c4e19a2-807a-4b9a-9896-6ef44fb8b142}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ConvertZipCodeData.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

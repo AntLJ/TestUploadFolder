@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="CheckZipCodeArea.cpp" />
+    <ClCompile Include="Arguments.cpp">
+      <Filter>Arguments</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckTable.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckTableAndMaster.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPolygon.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPolygonAndTable.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBase.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckTableAndAddr.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPolygonAndAddr.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckAll.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckUtil.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="CheckZipCodeArea.h" />
+    <ClInclude Include="Arguments.h">
+      <Filter>Arguments</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckTable.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckTableAndMaster.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckPolygon.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckPolygonAndTable.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBase.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckTableAndAddr.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckPolygonAndAddr.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckAll.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckUtil.h">
+      <Filter>Check</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CheckZipCodeArea.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Arguments">
+      <UniqueIdentifier>{cb7701c0-3832-4f34-bba5-02bf55326ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{dd40f544-ec4c-40ae-9b33-4831483f5298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Check">
+      <UniqueIdentifier>{eb766a4a-ed86-42c9-8058-64eea9285cf1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

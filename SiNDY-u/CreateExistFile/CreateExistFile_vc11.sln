@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateExistFile", "CreateExistFile.vcxproj", "{7338C6ED-EE9A-42C8-B91F-15C55810EE3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD251DE2-79AE-4F87-8188-FD5D98617C0C} = {AD251DE2-79AE-4F87-8188-FD5D98617C0C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDEAccess_vc11", "..\SDEAccess\SDEAccess_vc11.vcxproj", "{AD251DE2-79AE-4F87-8188-FD5D98617C0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7338C6ED-EE9A-42C8-B91F-15C55810EE3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7338C6ED-EE9A-42C8-B91F-15C55810EE3E}.Debug|Win32.Build.0 = Debug|Win32
+		{7338C6ED-EE9A-42C8-B91F-15C55810EE3E}.Release|Win32.ActiveCfg = Release|Win32
+		{7338C6ED-EE9A-42C8-B91F-15C55810EE3E}.Release|Win32.Build.0 = Release|Win32
+		{AD251DE2-79AE-4F87-8188-FD5D98617C0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD251DE2-79AE-4F87-8188-FD5D98617C0C}.Debug|Win32.Build.0 = Debug|Win32
+		{AD251DE2-79AE-4F87-8188-FD5D98617C0C}.Release|Win32.ActiveCfg = Release|Win32
+		{AD251DE2-79AE-4F87-8188-FD5D98617C0C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

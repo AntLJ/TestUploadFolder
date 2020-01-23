@@ -1,0 +1,35 @@
+/**
+@page usage 使用方法
+
+@section usage_exec 実行方法
+
+@verbatim
+CreateEtcLinkList.exe
+ --road_database <DB指定文字列>
+ --output_dir <出力ディレクトリ>
+@endverbatim
+
+@section usage_args コマンドライン引数
+
+<table>
+<tr><th>スイッチ</th><th>内容</th></tr>
+<tr>
+	<td>--road_database <DB指定文字列></td>
+	<td>接続するDBを指定する。
+	<br><DB指定文字列>は下記の形式でなければならない。
+	<br><b>　ユーザ名@サーバ名(バージョン名)</b>
+	<br>例：sindy2007\@onyx(SDE.DEFAULT)
+	</td>
+</tr>
+<tr>
+	<td>--output_dir <出力ディレクトリ></td>
+	<td>etc_link.txtを出力するディレクトリパスを指定する。
+	</td>
+</tr>
+</table>
+
+<br>
+*/
+
+
+

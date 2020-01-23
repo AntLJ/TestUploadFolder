@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateHazardPolyShp", "CreateHazardPolyShp.vcxproj", "{9457708D-321B-40B0-A9A7-51AB0512369C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9457708D-321B-40B0-A9A7-51AB0512369C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9457708D-321B-40B0-A9A7-51AB0512369C}.Debug|Win32.Build.0 = Debug|Win32
+		{9457708D-321B-40B0-A9A7-51AB0512369C}.Release|Win32.ActiveCfg = Release|Win32
+		{9457708D-321B-40B0-A9A7-51AB0512369C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

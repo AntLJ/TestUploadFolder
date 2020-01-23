@@ -1,0 +1,33 @@
+/**
+@page overview 機能概要
+
+@section process 処理内容
+
+下記の手順により、指定されたSiNDY道路DBより必要な情報を取得し、etc_link.txtを作成する。
+
+	(1) Road_Link::UPDOWNCLASS_Cが「ETC専用ランプリンク」または「ETC接続一般道リンク」であるリンクを抽出
+<br>(2) 各リンク上の中点の存在する２次メッシュコードを取得(crd_cnv使用)
+<br>(3) ファイル出力
+
+
+@section effect サーバへの影響
+
+<table>
+<tr>
+	<td>編集</td>
+	<td>なし</td>
+</tr><tr>
+	<td>実行後のサーバメンテナンス</td>
+	<td>不要</td>
+</tr><tr>
+	<td>実行中のサーバへの接続可否</td>
+	<td>可</td>
+</tr><tr>
+	<td>実行中のサーバへの編集可否</td>
+	<td>可</td>
+</tr><tr>
+	<td>実行中のデータへの編集可否</td>
+	<td>可</td>
+</tr>
+</table>
+*/

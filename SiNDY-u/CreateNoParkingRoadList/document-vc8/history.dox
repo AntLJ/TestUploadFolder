@@ -1,0 +1,17 @@
+/**
+@page history 更新履歴
+
+- <b>2010/07/15 FILEVERSION 1.1.1.7 PRODUCTVERSION 1.0.0.0</b>
+   - Arc9.3.1対応
+- <b>2009/05/22 FILEVERSION 1.1.0.5 PRODUCTVERSION 1.0.0.0</b>
+   - 裏設定モードのチェックが間違えていたので修正
+- <b>2009/05/20 FILEVERSION 1.1.0.4 PRODUCTVERSION 1.0.0.0</b>
+   - 駐車禁止路線データにマッチする道路リンクをshape出力する機能をRelease版でも使用できるように修正
+- <b>2009/04/14 FILEVERSION 1.1.0.3 PRODUCTVERSION 1.0.0.0</b>
+  - 駐車禁止路線データが「PGDB」から「shape」で提供されることになったので、どちらからも読込めるように修正
+  - DEBUG版で、駐車禁止路線データにマッチする道路リンクをshape出力する機能追加（単に駐車禁止路線と取得した道路リンクが合っているかの確認用）
+- <b>2007/11/19 FILEVERSION 1.0.1.2 PRODUCTVERSION 1.0.0.0</b>
+  - 閾値を5mから20mに変更
+- <b>2007/10/04 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+*/

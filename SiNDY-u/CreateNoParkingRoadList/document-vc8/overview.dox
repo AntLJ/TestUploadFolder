@@ -1,0 +1,93 @@
+/**
+@page overview 機能概要
+
+@section tool_info 機能概要
+
+駐禁取締路線参照PGDBデータ(*.mdb)、もしくはshapeデータ(*.shp)を読み込んで、指定したDBの道路リンクと比較する。<br>
+ツールの起動方法は以下の「起動操作」を参照のこと。<br>
+出力先に指定したファイルに<b>駐禁取締路線に該当するリンクのリスト</b>が作成される。<br>
+また、出力リンクリストの形状データが欲しければ設定ファイルの[<b>OUTPUTSHAPE</b>]を設定すればOK。<br>
+
+<b>@htmlonly<font color ="#FF0000">起動操作：</font>@endhtmlonly</b><br>
+実行はコマンドプロンプトを立ち上げて、ツールを起動する。
+
+<p><b>CreateNoParkingRoadList.exe <config.txt></b></p>
+
+- <b>@htmlonly<font color ="#0033CC">config.txt</font>@endhtmlonly</b>
+：各種パラメータを記述しているファイルパス<br>
+
+<b>config.txtの内容</b><br>
+<table border="0">
+<tr>
+	<td>@image html "config.png"</td>
+</tr>
+</table>
+
+@verbatim
+##################################################
+#
+# 設定ファイル(サンプル)
+#
+##################################################
+
+# 駐車禁止路線（道路サーバ）
+SDESERVER		tr2009D@beryl(SDE.DEFAULT)
+
+# 駐車禁止取締路線データ
+NOPARKINGDATA	C:\test\CreateNoParking.mdb	(PGDBの場合はファイル名を指定)
+NOPARKINGDATA	C:\test			(Shapeの場合はディレクトリ名を指定)
+
+# 出力リストのパス
+OUTPUTFILE		C:\test\noparking_list.txt
+
+# 出力リストのshapeデータ
+OUTPUTSHAPE	C:\test\shape		(指定しなければ出力されない)
+
+@endverbatim
+
+
+@section output_list 出力ファイル内容について
+
+駐禁取締路線に20mのバッファを持たせ、バッファに8割以上の長さが含まれている有料ではない基本道路を<br>
+抽出している。<br>
+
+ファイル内容は以下の通りである。
+
+<table>
+<tr>
+	<th bgcolor="CCCCFF">2次メッシュコード</td>
+	<th bgcolor="CCCCFF">FromノードID</td>
+	<th bgcolor="CCCCFF">ToノードID</td>
+	<th bgcolor="CCCCFF">駐車禁止取締種別コード</td>
+</tr>
+<tr>
+	<td>10進数</td>
+	<td>10進数</td>
+	<td>10進数</td>
+	<td>10進数<br>1：最重点取締路線<br>2：重点取締路線</td>
+</tr>
+</table>
+<b>＊記述はEUC(改行LF)で記述する。</b><br>
+
+
+以下に出力ファイルの例を載せる。<br>
+
+<table border="0">
+<tr>
+	<td>@image html "output.png"</td>
+</tr>
+</table>
+
+
+@section output_shape 出力shapeデータについて
+出力リストの道路リンクをShape出力する。<br>
+
+属性は <b>オブジェクトID</b>,<b>FROMノードID</b>,<b>TOノードNODE_ID</b>,<b>取締り属性</b> <br>
+
+<table border="0">
+<tr>
+	<td>@image html "shape01.png"</td>
+</tr>
+</table>
+
+*/

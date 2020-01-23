@@ -1,0 +1,109 @@
+/**
+@page extract 抽出条件
+
+ - 抽出条件 <b>一時停止ポイントが未付与 かつ 以下の条件</b>
+<table>
+<tr>
+	<th colspan=3 bgcolor="#ff69b4">流出リンク条件</th>
+	<th colspan=3 bgcolor="#ffd700">流出ノード条件</th>
+</tr>
+<tr>
+	<th bgcolor="#ff69b4">道路標示種別</th>
+	<th bgcolor="#ff69b4">抽出条件</th>
+	<th bgcolor="#ff69b4">幅員の条件</th>
+	<th bgcolor="#ffd700">信号機有無</th>
+	<th bgcolor="#ffd700">接続リンク数</th>
+</tr>
+<tr>
+	<td>細街路L2</td>
+	<td>roadclass_c = 9<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>-</td>
+	<td>-</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>細街路L1</td>
+	<td>roadclass_c = 8<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>-</td>
+	<td>-</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>その他道路(間引き対象)</td>
+	<td>roadclass_c = 7<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>-</td>
+	<td>-</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>その他道路</td>
+	<td>roadclass_c in (6, 108)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>-</td>
+	<td>-</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>指定市の一般市道</td>
+	<td>roadclass_c in (5, 107)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満<br>5.5m以上13.0m未満</td>
+	<td>信号機なし</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>指定市の一般市道</td>
+	<td>roadclass_c in (5, 107)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満</td>
+	<td>信号機あり</td>
+	<td>3本以上接続している<br>うち主要地方道以上のリンクが2本以上</td>
+</tr>
+<tr>
+	<td>一般都道府県道</td>
+	<td>roadclass_c in (4, 106)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満<br>5.5m以上13.0m未満</td>
+	<td>信号機なし</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>一般都道府県道</td>
+	<td>roadclass_c in (4, 106)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満</td>
+	<td>信号機あり</td>
+	<td>3本以上接続している<br>うち国道以上のリンクが2本以上</td>
+</tr>
+<tr>
+	<td>主要地方道(都道府県)(指定市)</td>
+	<td>roadclass_c in (2, 3, 104, 105)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満<br>5.5m以上13.0m未満</td>
+	<td>信号機なし</td>
+	<td>3本以上接続している</td>
+</tr>
+<tr>
+	<td>国道</td>
+	<td>roadclass_c in (1, 103)<br>main_lincclass_c <> 8<br>updownclass_c in (0, 6)</td>
+	<td>3.0ｍ以上5.5ｍ未満<br>5.5m以上13.0m未満</td>
+	<td>信号機なし</td>
+	<td>3本以上接続している</td>
+</tr>
+</table>
+
+ - 除外条件 (下記の条件をみたす場合は抽出対象とみなさない)
+<ol>
+	<li>2条道路×1条道路の2条側のリンク<br>
+		※リンク種別：本線（上下分離）かつ一方通行が付与されているリンク
+	<li>単独ノードに接続するリンク<br>
+	<li>一方通行(無条件)を逆走するリンク<br>
+		※車種別(大型車)は対象外、時間別は規制なしとして扱う
+	<li>通行不可及び通行禁止(無条件)が付与されたリンク<br>
+		※車種別(大型車)は対象外、時間別は規制なしとして扱う
+	<li>流入リンク以外に接続している全てのリンクに一時停止ポイントが付与されている流出ノード<br>
+		※一時停止標識は原則、全方向に設置されない(警察庁資料)
+	<li>流入リンクが1本のみの流出ノード<br>
+		※ただし、接続しているリンクが一通・通禁・不可で除外されて流入リンクが1本になった場合のみ
+	<li>ランプリンク
+	<li>roadclass_c >= 201となるリンク
+</ol>
+
+- ログフォーマットについて<br>
+  "一時停止データチェック内容.xlsx"を参照のこと
+
+*/

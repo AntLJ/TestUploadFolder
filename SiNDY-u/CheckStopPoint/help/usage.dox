@@ -1,0 +1,34 @@
+/**
+@page usage 使用方法
+
+@verbatim
+[抽出モード]
+CheckStopPoint.exe --db_road [arg] --db_stop [arg] --db_mesh [arg] --output [arg] --meshlist [arg] --extract
+[チェックモード]
+CheckStopPoint.exe --db_road [arg] --db_stop [arg] --db_mesh [arg] --output [arg] --meshlist [arg] --db_road_past [arg] --check
+@endverbatim
+
+ - --db_road [arg]
+   - [必須]道路DB接続先
+
+ - --db_stop [arg]
+   - [必須]一時停止DB接続先
+
+ - --db_mesh [arg]
+   - [必須]メッシュDB接続先
+
+ - --output [arg]
+   - [必須]ログファイルパス
+
+ - --meshlist [arg]
+   - [必須]処理対象メッシュリストパス
+
+ - --db_road_past [arg]
+   - [チェックモードでのみ必須]経年変化前の道路DB接続先
+
+ - --extract, --check
+   - [いずれかが必須]実行モードを指定
+     抽出モード(extract)、チェックモード(check)
+
+
+*/

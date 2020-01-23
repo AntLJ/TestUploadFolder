@@ -1,0 +1,24 @@
+/**
+@page usage 使用方法
+
+@verbatim
+ConvSJIStoUTF8.exe [オプション]
+@endverbatim
+
+- オプション
+ - [-l] [Layername]：処理対象レイヤ名指定(必須)
+ - [-m] [meshlist]：メッシュリスト指定(citycode, roadcode以外必須)
+ - [-d] [Datasetname]：データセット名(Citymap,Road等)(必須)
+ - [-i] [filepass]：入力シェイプファイルパス(基点)(必須)
+ - [-o] [filepass]：出力シェイプファイルパス(基点)(必須)
+ - [-x] [logfile]：ログ出力ファイル指定(必須)
+ - [-a] [AllLayerList]：レイヤ指定ミス判別用全レイヤ記述ファイル(必須)
+ - [-g] [IgnoreFields]：変換無視フィールド指定ファイル(必須)
+
+- 注意事項
+ - ファイルパス(基点)とは、データセット名の手前まで。
+  - ex:F:\\05Shape_work\\DB-110355S-000\\A\\map\\data\\other 以下にCitymap等ある場合は、otherまで指定
+ - 変換無視フィールド指定ファイルで指定されるのは、数字のみや数字と半角のみといった、UTF8変換しても確実にコードが変わらないフィールドのみ。
+  - ex:ADMレイヤのCITYCODE, TRNレイヤのMIDLINKID 等
+
+*/

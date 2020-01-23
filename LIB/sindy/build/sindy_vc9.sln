@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AEA4C7F-7257-4393-AAB0-55AA8EE3B37E}"
+	ProjectSection(SolutionItems) = preProject
+		..\workspace.h = ..\workspace.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workspace", "workspace", "{ACB8E5AA-2263-4548-91B6-09EFCB97419B}"
+	ProjectSection(SolutionItems) = preProject
+		..\workspace\address.h = ..\workspace\address.h
+		..\workspace\name.h = ..\workspace\name.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "schema_draft", "schema_draft\schema_draft_vc9.vcproj", "{B7600C7E-3068-498D-8648-88F716C2414B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "schema", "schema\schema_vc9.vcproj", "{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MBCS Debug|Win32 = MBCS Debug|Win32
+		MBCS Release|Win32 = MBCS Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7600C7E-3068-498D-8648-88F716C2414B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.Debug|Win32.Build.0 = Debug|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.MBCS Debug|Win32.ActiveCfg = Debug|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.MBCS Debug|Win32.Build.0 = Debug|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.MBCS Release|Win32.ActiveCfg = Release|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.MBCS Release|Win32.Build.0 = Release|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.Release|Win32.ActiveCfg = Release|Win32
+		{B7600C7E-3068-498D-8648-88F716C2414B}.Release|Win32.Build.0 = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Debug|Win32.Build.0 = Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Debug|Win32.ActiveCfg = MBCS Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Debug|Win32.Build.0 = MBCS Debug|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Release|Win32.ActiveCfg = MBCS Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.MBCS Release|Win32.Build.0 = MBCS Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release|Win32.ActiveCfg = Release|Win32
+		{B2B09C5E-D72B-40E2-931F-49B17C5DB10F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACB8E5AA-2263-4548-91B6-09EFCB97419B} = {9AEA4C7F-7257-4393-AAB0-55AA8EE3B37E}
+	EndGlobalSection
+EndGlobal

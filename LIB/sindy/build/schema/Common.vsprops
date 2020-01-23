@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Schema Common"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories=""
+		RuntimeTypeInfo="false"
+		UsePrecompiledHeader="2"
+	/>
+	<Tool
+		Name="VCLibrarianTool"
+		IgnoreAllDefaultLibraries="true"
+	/>
+</VisualStudioPropertySheet>

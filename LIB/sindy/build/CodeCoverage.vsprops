@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Code Coverage"
+	DeleteExtensionsOnClean="*.obj;*.ilk;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.pdb;*.coverage;$(TargetPath)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		DebugInformationFormat="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		GenerateDebugInformation="true"
+		Profile="true"
+	/>
+	<Tool
+		Name="VCNMakeTool"
+		BuildCommandLine=""
+		ReBuildCommandLine=""
+		CleanCommandLine=""
+		Output=""
+		PreprocessorDefinitions=""
+		IncludeSearchPath=""
+		ForcedIncludes=""
+		AssemblySearchPath=""
+		ForcedUsingAssemblies=""
+		CompileAsManaged=""
+	/>
+	<Tool
+		Name="VCPostBuildEventTool"
+		Description="コードカバレッジ情報を収集しています..."
+		CommandLine="set UNIQUECOVERAGEPATH=$(OutDir)\$(ConfigurationName) %DATE:/=.% %TIME::=.%.coverage&#x0D;&#x0A;vsinstr /coverage $(Excludes) &quot;$(TargetPath)&quot;&#x0D;&#x0A;vsperfcmd /start:coverage /output:&quot;$(CoveragePath)&quot;&#x0D;&#x0A;$(TargetPath)&#x0D;&#x0A;vsperfcmd /shutdown&#x0D;&#x0A;cp &quot;$(CoveragePath)&quot; &quot;%UNIQUECOVERAGEPATH%&quot;&#x0D;&#x0A;&quot;%UNIQUECOVERAGEPATH%&quot;&#x0D;&#x0A;"
+	/>
+	<UserMacro
+		Name="Excludes"
+		Value="/exclude:std::* /exclude:stdext::* /exclude:boost::* /exclude:ATL::* /exclude:Atl* /exclude:CAtl* /exclude:_com_ptr_t* /exclude:_com_IIID* /exclude:CppUnit::*"
+	/>
+	<UserMacro
+		Name="CoveragePath"
+		Value="$(OutDir)\$(ConfigurationName).coverage"
+	/>
+</VisualStudioPropertySheet>

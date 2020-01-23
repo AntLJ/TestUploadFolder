@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="SiNDY Common"
+	OutputDirectory="$(SolutionDir)..\lib"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(SolutionDir)..\.."
+		WarningLevel="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="$(SolutionDir)..\lib"
+		SubSystem="2"
+		TargetMachine="1"
+	/>
+	<UserMacro
+		Name="LibName"
+		Value="$(SolutionName)_$(ProjectName)$(LibNamePostfix)"
+	/>
+</VisualStudioPropertySheet>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Convert>
+    <!--
+対象テーブル全てに適用されるルールはConvertTableと同列で定義する
+レイヤ単位で条件を付けたい場合はConvertTableの中で定義する
+全てに適用されるルールは、レイヤ単位でのルールより優先される
+AND条件は、<and>タグで囲んだ中に記述する
+OR条件は、<or>タグで囲んだ中に記述する
+<and><or>は互いに入れ子にすることができる
+条件が一つだけの場合は<and><or>は不要
+
+条件は<expression>タグで指定する
+valueに条件、messageには条件に合致しなかった場合のログを指定することができる
+<expression>は上位ほど処理の優先順位が高い
+
+内部コマンド
+$()で囲まれているものは内部コマンドとなる
+内部コマンドは、実行時にダイレクトに反映される
+・ORG、DSTで始まる場合
+  データそのものの情報で置き換えられる
+  ・ORG.カラム名でカラム値に置き換えられる
+  ・ORG.TABLEでテーブル名をに置き換えられる
+・OPTで始まる場合
+  オプションの値で置き換えられる
+
+-->
+    <!-- ソース側のループ -->
+    <LoopCondition target="SRC">
+      <!-- SRCに対応するDSTを特定するための条件 -->
+      <!-- SRC主体のループの場合、UpdateConditionとDeleteConditionはDSTが特定できないと処理対象とならない事に注意 -->
+      <TargetCondition>
+        <expression value="$(SRC.ORG_OBJID) = $(DST.OBJECTID)" />
+      </TargetCondition>
+      <!-- 更新条件（全体適用） -->
+      <UpdateCondition>
+        <and>
+          <or>
+            <expression value= "$(SRC.UPDATE_C) = 1" />
+            <expression value= "$(SRC.UPDATE_C) = 2" />
+            <expression value= "$(SRC.UPDATE_C) = 3" />
+          </or>
+          <or>
+            <expression value = "$(SRC.MODIFYDATE) is null" />
+            <!-- SRC.MODIFYDATEがnullじゃなく、下の条件が成立しない場合はこのメッセージが出力される -->
+            <or message ="WARNNING: $(SRC.TABLE)[$(SRC.OBJECTID)] : 更新先の日付が新しいため更新しません SRC.MODIFYDATE:$(SRC.MODIFYDATE) DST.MODIFYDATE:$(DST.MODIFYDATE) DST.PROGMODIFYDATE:$(DST.PROGMODIFYDATE)" >
+              <expression value = "$(SRC.MODIFYDATE) > $(DST.MODIFYDATE)" />
+              <expression value = "$(SRC.MODIFYDATE) > $(DST.PROGMODIFYDATE)" />
+            </or>
+          </or>
+        </and>
+      </UpdateCondition>
+      <!-- 削除条件（全体適用）-->
+      <!-- 削除条件はDST側ループで設定するのでここではナシ -->
+      <!-- 追加条件（全体適用）-->
+      <CreateCondition>
+        <!-- ORG_OBJID がNULLのものは全て新規となる -->
+        <expression value="$(SRC.ORG_OBJID) is null" />
+      </CreateCondition>
+    </LoopCondition>
+    <!-- DST側のループ -->
+    <LoopCondition target="DST">
+      <!-- DSTに対応するSRCを特定するための条件 -->
+      <!-- DST主体のループの場合、UpdateConditionとDeleteConditionは全てが対象となる事に注意 -->
+      <TargetCondition>
+        <expression value="$(DST.OBJECTID) = $(SRC.ORG_OBJID)" />
+      </TargetCondition>      
+      <!-- 削除条件（全体適用）-->
+      <DeleteCondition>
+        <expression value="$(SRC.) is empty" /> <!-- SRC側が見つからないものを削除する -->
+      </DeleteCondition>
+    </LoopCondition>
+      <!-- 更新時追加情報（全体適用）-->
+    <!-- この項目は、UpdateConditionとCreateConditionで処理されたものに対する追加更新である。 -->
+    <AdditionalUpdate type ="SiNDY" /> <!-- SiNDY標準の更新履歴を付与する -->
+    <!-- コンバートテーブル定義 -->
+    <ConvertTable name = "CITY_SITE" />
+    <ConvertTable name = "CITY_LINE" />
+    <ConvertTable name = "CITY_AREA" />
+    <ConvertTable name = "CITY_BRIDGE_LINE" />
+    <ConvertTable name = "CITY_TUNNEL" />
+    <ConvertTable name = "BUILDING" />
+    <ConvertTable name = "BUILDING_LINE" />
+    <ConvertTable name = "BUILDING_STEP" />
+    <ConvertTable name = "BUILDING_ROOF" />
+    <ConvertTable name = "CITY_STATION" />
+    <ConvertTable name = "CITY_ADMIN" />
+  </Convert>
+</root>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FBC063A-5A16-4159-863F-86BD64D24D3C}</ProjectGuid>
+    <RootNamespace>Diff2Sindy</RootNamespace>
+    <ProjectName>Diff2Sindy</ProjectName>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../LIB;../../LIB/TDC/sindylib_base;../../LIB/TDC/sindylib_core;../../LIB/crd_cnv;../../LIB/TDC/sindy;../../LIB/WinLib;../../LIB/TDC/useful_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <AdditionalOptions>-Zm112</AdditionalOptions>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../LIB/crd_cnv/lib;../../LIB/TDC/sindylib_core/lib;../../LIB/TDC/sindylib_base/lib;../../LIB/sindy/lib;../../LIB/ArcHelperEx/lib;../../LIB/WinLib/lib</AdditionalLibraryDirectories>
+      <MinimumRequiredVersion />
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../LIB;../../LIB/TDC/sindylib_base;../../LIB/TDC/sindylib_core;../../LIB/crd_cnv;../../LIB/TDC/sindy;../../LIB/WinLib;../../LIB/TDC/useful_headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalOptions>-Zm112</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../LIB/crd_cnv/lib;../../LIB/TDC/sindylib_core/lib;../../LIB/TDC/sindylib_base/lib;../../LIB/sindy/lib;../../LIB/ArcHelperEx/lib;../../LIB/WinLib/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arguments.cpp" />
+    <ClCompile Include="ClippingDefinitionManager.cpp" />
+    <ClCompile Include="ClipUtility.cpp" />
+    <ClCompile Include="Conditions.cpp" />
+    <ClCompile Include="ConvertingDefinitionManager.cpp" />
+    <ClCompile Include="DBReplicater.cpp" />
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="LotClipProcessor.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MergingDefinitionManager.cpp" />
+    <ClCompile Include="MeshClipProcessor.cpp" />
+    <ClCompile Include="PathFinder.cpp" />
+    <ClCompile Include="PathUtillity.cpp" />
+    <ClCompile Include="PGFGDBConvertProcessor.cpp" />
+    <ClCompile Include="PGFGDBMergeProcessor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Diff2Sindy.cpp" />
+    <ClCompile Include="TableNamesSearcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arguments.h" />
+    <ClInclude Include="ClippingDefinitionManager.h" />
+    <ClInclude Include="ClipUtility.h" />
+    <ClInclude Include="Conditions.h" />
+    <ClInclude Include="ConvertingDefinitionManager.h" />
+    <ClInclude Include="DBReplicater.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="ListProcessor.h" />
+    <ClInclude Include="LotClipProcessor.h" />
+    <ClInclude Include="MergingDefinitionManager.h" />
+    <ClInclude Include="MeshClipProcessor.h" />
+    <ClInclude Include="Notifier.h" />
+    <ClInclude Include="PathFinder.h" />
+    <ClInclude Include="PathUtility.h" />
+    <ClInclude Include="PGFGDBConvertProcessor.h" />
+    <ClInclude Include="PGFGDBExportProcessor.h" />
+    <ClInclude Include="PGFGDBImportProcessor.h" />
+    <ClInclude Include="PGFGDBMergeProcessor.h" />
+    <ClInclude Include="PPLProcessor.h" />
+    <ClInclude Include="Processor.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TableNamesSearcher.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Diff2Sindy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Diff2Sindy.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="config\ClipDef.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="config\ConvertDef.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="config\ConvertDef_GS.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="config\MergeDef.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Convert>
+    <!--
+対象テーブル全てに適用されるルールはConvertTableと同列で定義する
+レイヤ単位で条件を付けたい場合はConvertTableの中で定義する
+全てに適用されるルールは、レイヤ単位でのルールより優先される
+AND条件は、<and>タグで囲んだ中に記述する
+OR条件は、<or>タグで囲んだ中に記述する
+<and><or>は互いに入れ子にすることができる
+条件が一つだけの場合は<and><or>は不要
+
+条件は<expression>タグで指定する
+valueに条件、messageには条件に合致しなかった場合のログを指定することができる
+<expression>は上位ほど処理の優先順位が高い
+
+内部コマンド
+$()で囲まれているものは内部コマンドとなる
+内部コマンドは、実行時にダイレクトに反映される
+・ORG、DSTで始まる場合
+  データそのものの情報で置き換えられる
+  ・ORG.カラム名でカラム値に置き換えられる
+  ・ORG.TABLEでテーブル名をに置き換えられる
+・OPTで始まる場合
+  オプションの値で置き換えられる
+
+-->
+    <!-- ソース側のループ -->
+    <LoopCondition target="SRC">
+      <!-- SRCに対応するDSTを特定するための条件 -->
+      <!-- SRC主体のループの場合、UpdateConditionとDeleteConditionはDSTが特定できないと処理対象とならない事に注意 -->
+      <TargetCondition>
+<!--        <expression value="$(SRC.ORG_OBJID) = $(DST.OBJECTID)" /> -->
+<!--        <expression value="$(SRC.OBJECTID) = $(DST.OBJECTID)" /> -->
+        <!-- SRC側のORG_OBJIDに該当するDSTが存在しない場合は警告メッセージを出す -->
+        <!-- ただし、SRC側のORG_OBJIDがNULLの場合には出力させない -->
+        <and>
+          <expression value="$(SRC.ORG_OBJID) is not null" />
+          <expression value="$(SRC.ORG_OBJID) = $(DST.OBJECTID)" message="WARNNING: $(SRC.TABLE)[$(SRC.ORG_OBJID)] :SiNDY上のデータが既に削除されています" />
+        </and>
+      </TargetCondition>
+      <!-- 更新条件（全体適用） -->
+      <UpdateCondition>
+        <and>
+          <or>
+            <expression value= "$(SRC.UPDATE_C) = 1" />
+            <expression value= "$(SRC.UPDATE_C) = 2" />
+          </or>
+          <!-- 更新先の日付が指定した基準日より新しいものは警告を出す -->
+          <!-- この時、条件の指定としては更新対象として問題ない条件を指定することに注意 -->
+          <or message ="WARNNING: $(SRC.TABLE)[$(SRC.OBJECTID)] : 更新先の日付が新しいため更新しません 基準日:$(OPT.basic-date) DST:$(DST.MODIFYDATE)" >
+            <expression value = "$(DST.MODIFYDATE) = null" />
+            <expression value = "$(OPT.basic-date) &gt; $(DST.MODIFYDATE)" />
+          </or>
+        </and>
+      </UpdateCondition>
+      <!-- 削除条件（全体適用）-->
+      <DeleteCondition>
+        <expression value="$(SRC.UPDATE_C) = 8" />
+      </DeleteCondition>
+      <!-- 追加条件（全体適用）-->
+      <CreateCondition>
+        <expression value="$(SRC.UPDATE_C) = 4" />
+      </CreateCondition>
+    </LoopCondition>
+      <!-- 更新時追加情報（全体適用）-->
+    <!-- この項目は、UpdateConditionとCreateConditionで処理されたものに対する追加更新である。 -->
+    <AdditionalUpdate type ="SiNDY" /> <!-- SiNDY標準の更新履歴を付与する -->
+    <!-- コンバートテーブル定義 -->
+    <ConvertTable name = "CITY_SITE" />
+  </Convert>
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Clip type ="LOT"> <!-- ロット境界でクリップする。他は未実装 -->
+    <ClipTable name = "CITY_SITE" />
+    <ClipTable name = "CITY_LINE" />
+    <ClipTable name = "CITY_BRIDGE_LINE" />
+    <ClipTable name = "CITY_TUNNEL" />
+    <ClipTable name = "BUILDING" />
+    <ClipTable name = "BUILDING_LINE" />
+    <ClipTable name = "BUILDING_STEP" />
+    <ClipTable name = "BUILDING_ROOF" />
+    <ClipTable name = "CITY_STATION" />
+    <ClipTable name = "CITY_ADMIN" />
+    <AdditionalUpdate>
+      <!-- expression value="$(DST.MODIFY_DATE) = $(NOW)" -->
+      <!-- 最終的にはこうやって個別で追加更新できるように -->
+      <!-- expression value="$(DST.PROGMODIFY_NAME) = sindy2sindy" -->
+      <SiNDYHistory value="FALSE" />
+      <!-- Store時にMODIFY_DATE、PROGMODIFY_NAME、UPDATE_C、UPDATETYPE_Cを更新する -->
+    </AdditionalUpdate>    
+  </Clip>
+</root>

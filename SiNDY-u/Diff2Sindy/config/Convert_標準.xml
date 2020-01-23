@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Convert>
+    <!-- ソース側のループ -->
+    <LoopCondition target="SRC">
+      <!-- SRCに対応するDSTを特定するための条件 -->
+      <!-- SRC主体のループの場合、UpdateConditionとDeleteConditionはDSTが特定できないと処理対象とならない事に注意 -->
+      <TargetCondition>
+        <expression value="$(SRC.ORG_OBJID) = $(DST.OBJECTID)" />
+      </TargetCondition>
+      <!-- 更新条件（全体適用） -->
+      <UpdateCondition>
+        <or>
+          <expression value= "$(SRC.UPDATE_C) = 1" />
+          <expression value= "$(SRC.UPDATE_C) = 2" />
+        </or>
+      </UpdateCondition>
+      <!-- 削除条件（全体適用）-->
+      <DeleteCondition>
+        <expression value="$(SRC.UPDATE_C) = 8" />
+      </DeleteCondition>
+      <!-- 追加条件（全体適用）-->
+      <CreateCondition>
+        <expression value="$(SRC.UPDATE_C) = 4" />
+      </CreateCondition>
+    </LoopCondition>
+    <!-- 更新時追加情報（全体適用）-->
+    <!-- この項目は、UpdateConditionとCreateConditionで処理されたものに対する追加更新である。 -->
+    <AdditionalUpdate type ="SiNDY" /> <!-- SiNDY標準の更新履歴を付与する -->
+    <!-- コンバートテーブル定義 -->
+    <ConvertTable name = "CITY_SITE" />
+  </Convert>
+</root>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Merge>
+    <MergeTable name = "CITY_SITE">
+      <MergeCondition>
+        <expression value="$(SRC.BGCLASS_C) = $(DST.BGCLASS_C)" />
+      </MergeCondition>      
+    </MergeTable>
+    <MergeTable name = "CITY_LINE">
+      <MeregCondition>
+        <and>
+          <expression value="$(SRC.BGCLASS_C) = $(DST.GBCLASS_C)" />
+          <or>
+            <expression value="$(SRC.BGCLASS_C) = 3" />
+            <expression value="$(SRC.BGCLASS_C) = 4" />
+            <expression value="$(SRC.BGCLASS_C) = 5" />
+            <expression value="$(SRC.BGCLASS_C) = 15" />
+            <expression value="$(SRC.BGCLASS_C) = 16" />
+            <expression value="$(SRC.BGCLASS_C) = 17" />
+          </or>
+        </and>        
+      </MeregCondition>      
+    </MergeTable>
+    <MergeTable name = "CITY_AREA">
+      <MergeConditon>
+        <and>
+          <expression value="$(SRC.AREACLASS_C) = $(DST.AREACLASS_C)" />
+          <expression value="$(SRC.AREACLASS_C) = 1" />
+        </and>
+      </MergeConditon>
+    </MergeTable>
+    <MergeTable name = "CITY_BRIDGE_LINE">
+      <MergeCondition>
+        <expression value="$(SRC.BRIDGECLASS_C) = $(DST.BRIDGECLASS_C)" />
+      </MergeCondition>      
+    </MergeTable>
+    <MergeTable name = "CITY_TUNNEL">
+      <MergeCondition>
+        <expression value="$(SRC.TUNNELCLASS_C) = $(DST.TUNNELCLASS_C)" />
+      </MergeCondition>
+    </MergeTable>
+    <MergeTable name = "BUILDING">
+      <MergeConditon>
+        <and>
+          <expression value="$(SRC.BLDCLASS_C) = $(DST.BLDCLASS_C)" />
+          <expression value="$(SRC.CORRIDOR_F) = $(DST.CORRIDOR_F)" />
+          <expression value="$(SRC.NOWALL_F) = $(DST.NOWALL_F)" />
+          <or>
+            <!-- 属性が一緒、又はどちらか一方（両方も含む）がnull -->
+            <expression value="$(SRC.GEOSPACE_ID) = $(DST.GEOSPACE_ID)" />
+            <expression value="$(SRC.GEOSPACE_ID) is null" />
+            <expression value="$(DST.GEOSPACE_ID) is null" />
+          </or>
+        </and>        
+      </MergeConditon>
+      <!-- NULLじゃない方の属性を採用する -->
+      <SelectAttribute fieldName="GEOSPACE_ID" condition="NOT NULL" />
+    </MergeTable>
+    <MergeTable name = "BUILDING_LINE">
+      <MergeConditon>
+        <and>
+          <expression value="$(SRC.BLDCLASS_C) = $(DST.BLDCLASS_C)" />
+          <or>
+            <!-- 0 <= BLDCLASS_C <= 4 -->
+            <expression value="$(SRC.BLDCLASS_C) &gt;= 0" />
+            <expression value="$(SRC.BLDCLASS_C) &lt;= 4" />
+          </or>
+        </and>
+      </MergeConditon>
+    </MergeTable>
+    <MergeTable name = "BUILDING_STEP">
+      <MergeCondition>
+        <expression value="$(SRC.FLOORS) = $(DST.FLOORS)" />
+      </MergeCondition>
+    </MergeTable>
+    <MergeTable name = "BUILDING_ROOF">
+      <MergeCondition>
+        <expression value="$(SRC.RFCLASS_C) = $(DST.RFCLASS_C)" />
+      </MergeCondition>
+    </MergeTable>
+    <MergeTable name = "CITY_STATION">
+      <MergeCondition>
+        <and>
+          <expression value="$(SRC.STATIONCLASS_C) = $(DST.STATIONCLASS_C)" />
+          <expression value="$(SRC.UNDERGROUND_F) = $(DST.UNDERGROUND_F)" />
+        </and>
+      </MergeCondition>
+    </MergeTable>
+    <MergeTable name = "CITY_ADMIN">
+      <MergeCondition>
+        <and>
+          <expression value="$(SRC.AREACLASS_C) = $(DST.AREACLASS_C)" />
+          <expression value="$(SRC.AREACLASS_C) = 0" />
+          <expression value="$(SRC.AREACLASS_C) = 1" />
+          <expression value="$(SRC.CITYCODE) = $(DST.CITYCODE)" />
+          <expression value="$(SRC.ADDRCODE) = $(DST.ADDRCODE)" />
+          <expression value="$(SRC.ADDRCODE2) = $(DST.ADDRCODE2)" />
+          <expression value="$(SRC.GAIKUFUGO) = $(DST.GAIKUFUGO)" />
+          <expression value="$(SRC.EXTGAIKUFUGO) = $(DST.EXTGAIKUFUGO)" />
+          <expression value="$(SRC.ADDRCLASS_C) = $(DST.ADDRCLASS_C)" />
+          <expression value="$(SRC.MANAGE_F) = $(DST.MANAGE_F)" />
+          <expression value="$(SRC.COLORCODE) = $(DST.COLORCODE)" />
+          <expression value="$(SRC.CONVTYPE_C) = $(DST.CONVTYPE_C)" />
+        </and>        
+      </MergeCondition>      
+    </MergeTable>
+    <AdditionalUpdate>
+      <!-- expression value="$(DST.MODIFY_DATE) = $(NOW)" -->
+      <!-- 最終的にはこうやって個別で追加更新できるように -->
+      <!-- expression value="$(DST.PROGMODIFY_NAME) = sindy2sindy" -->
+      <SiNDYHistory value="FALSE" />
+      <!-- Store時にMODIFY_DATE、PROGMODIFY_NAME、UPDATE_C、UPDATETYPE_Cを更新する -->
+    </AdditionalUpdate>
+  </Merge>
+</root>

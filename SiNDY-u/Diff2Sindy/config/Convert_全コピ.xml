@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Convert>
+    <!-- ソース側のループ -->
+    <LoopCondition target="SRC">
+      <CreateCondition>
+        <!-- 何も条件指定がない場合は全て対象とする -->
+      </CreateCondition>
+    </LoopCondition>
+    <!-- 更新時追加情報（全体適用）-->
+    <!-- この項目は、UpdateConditionとCreateConditionで処理されたものに対する追加更新である。 -->
+    <AdditionalUpdate type ="SiNDY" /> <!-- SiNDY標準の更新履歴を付与する -->
+    <!-- コンバートテーブル定義 -->
+    <ConvertTable name = "CITY_SITE" />
+  </Convert>
+</root>

@@ -1,0 +1,29 @@
+/**
+@mainpage @projectname
+
+<center>
+<br>
+ƒCƒ“ƒNƒŠƒƒ“ƒgPŠ”®‰ïĞ<br>
+</center>
+
+@par “®ì•ÛØOS:
+- Windows 7
+
+@par “®ìŠÂ‹«:
+
+@version
+- @fileversion
+- @productversion
+
+@date @lastupdate
+
+@section toc_outline ŠT—ª
+
+- @subpage introduction
+- @subpage overview
+- @subpage history
+
+@section toc_design ‘€ìà–¾
+
+- @subpage usage
+*/

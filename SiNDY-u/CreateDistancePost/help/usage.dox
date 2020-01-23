@@ -1,0 +1,33 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CreatekDistancePost.exe	[--db] 処理DB			
+						[--road_list] 対象路線一覧のファイルパス			
+						[--pitch] ピッチ			
+						[--out_dir] エラーログ出力パス			
+						[--roadclass_cost] 対象道路種別コスト定義ファイルパス			
+						[--linkclass_cost] 対象リンク種別コスト定義ファイルパス			
+						[--getlink_buffer]  リンク特定バッファ			
+
+@endverbatim
+
+	-db ユーザ名@サーバ名(バージョン名)
+
+	-road_list 対象路線一覧[1列目：路線コード　2列目：方向コード　2列目：距離標記号]
+
+	-pitch 10.0/1.0/0.1[km]
+
+	-out_dir 全角パス可能
+
+	-roadclass_cost roadclass_cost
+					[1列目：道路種別コード(ROADCLASS_C)]※対象のみ
+					[2列目：道路種別コスト]※一般的な規制速度を設定
+
+	-linkclass_cost linkclass_cost
+					[1列目：主リンク種別コード(MAIN_LINKCLASS_C)]※対象のみ
+					[2列目：主リンク種別コスト]
+
+	-getlink_buffer 整数[m]
+	
+*/

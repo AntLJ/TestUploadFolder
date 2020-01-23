@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Arguments.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreateDistancePost.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CFeatureClass.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateDistancePost.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LIB\WinLib\build\winutil.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LIB\WinLib\build\WKSHelper.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LIB\WinLib\build\TimeTrace.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\Dijkstra.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkArrivedInfo.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkBranch.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkBranchTo.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\Link.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkCostList.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkTraceSpace.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinksCache.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\ArrivedInfo.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\Route.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="tracer\LinkTracer.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="COutput.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CStdOutput.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Arguments.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreateDistancePost.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="CFeatureClass.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateDistancePost.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LIB\WinLib\winutil.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LIB\WinLib\WKSHelper.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LIB\WinLib\TimeTrace.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\Dijkstra.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkArrivedInfo.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkBranch.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkBranchTo.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\Link.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkCostList.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkTraceSpace.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinksCache.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\ArrivedInfo.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\Route.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer\LinkTracer.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogger.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="CStdOutput.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="COutput.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CreateDistancePost.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{4b89bc27-51c8-4838-8961-29a9faddaa93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f26b3f92-b096-4bd6-8e9c-b328dd74ba95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d68d3bae-0b51-4b82-a552-3b4d1dc957a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tracer">
+      <UniqueIdentifier>{5ae4f3d9-4559-4599-b0b7-4a30520910b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

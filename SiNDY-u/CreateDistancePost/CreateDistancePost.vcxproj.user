@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--db "C:\Temp\\distance_post_20140912\distance_post_20140912.mdb" --road_list "C:\Temp\\distance_post_20140912\setting\road_list.txt" --pitch 10 --out_dir "C:\Temp\\distance_post_20141023\create_log" --roadclass_cost "C:\Temp\\distance_post_20141023\setting\roadclass_cost.txt" --linkclass_cost "C:\Temp\\distance_post_20141023\setting\linkclass_cost.txt" --getlink_buffer 8</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

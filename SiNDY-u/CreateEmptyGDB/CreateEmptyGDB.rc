@@ -1,0 +1,333 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,1
+ PRODUCTVERSION 16,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "FGDB/PGDBの生成・空レイヤの追加を行う"
+            VALUE "CompanyName", "インクリメントP株式会社"
+            VALUE "FileDescription", "空GDB生成ツール"
+            VALUE "FileVersion", "16.2.0.1"
+            VALUE "InternalName", "CreateEmptyGDB"
+            VALUE "LegalCopyright", "Copyright (C) 2016 INCREMENT P CORP., All rights reserved."
+            VALUE "OriginalFilename", "CreateEmptyGDB.exe"
+            VALUE "ProductName", "SiNDY-u"
+            VALUE "ProductVersion", "16.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_LOG_START_TIME      "開始時刻"
+    IDS_LOG_END_TIME        "終了時刻"
+    IDS_LOG_SUCCESS         "正常終了"
+    IDS_LOG_ABEND           "異常終了"
+    IDS_PARAMETER_HAVE_PROBLEM "コマンドライン引数に問題があります"
+    IDS_OPTION_INPUT        "インプットDB情報"
+    IDS_OPTION_OUTPUT       "アウトプットDB情報"
+    IDS_OPTION_MESH         "メッシュリスト"
+    IDS_OPTION_MESHDB       "メッシュ参照先DB"
+    IDS_OPTION_MESH_LAYERNAME "メッシュレイヤ名"
+    IDS_OPTION_CONFIG       "生成レイヤ定義ファイルパス"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_DB_FORMAT    "生成するDBのフォーマット"
+    IDS_OPTION_RUNLOG       "実行ログファイルパス"
+    IDS_OPTION_ERRLOG       "エラーログファイルパス"
+    IDS_REQUIRED_PARAMETER  "必須パラメータが足りません"
+    IDS_NONE_NECESSARY_PARAMETER "オプションは必須です"
+    IDS_IS_NOT_FILE         "はファイルではありません"
+    IDS_CANT_OPEN_MESHLIST  "メッシュリストを開けません"
+    IDS_DETECT_NON_NUMBER_ON_MESHLIST "メッシュリストに数値以外のものが指定されています。"
+    IDS_DETECT_DIFF_DIGIT   "メッシュリストの桁数が揃っていません"
+    IDS_DETECT_UNKOWN_TAG   "未定義のタグです"
+    IDS_FAILED_OPEN_LOG     "ログファイルのオープンに失敗"
+    IDS_NECESSARY_MESHLIST_TO_CREATE "メッシュ出力機能を使用するにはメッシュリストが必要です"
+    IDS_NECESSARY_MESHLIST_TO_FOLDER "outputにフォルダを指定する場合はメッシュリストが必要です"
+    IDS_NONE_SUPPORT_FORMAT "formatにはmdbかgdbしか指定できません"
+    IDS_CANT_APPOINT_FORMAT "formatが指定できるのはoutputにフォルダを指定した場合だけです"
+    IDS_NONE_SUPPORT_FILE_FORMAT "outputファイルの拡張子にはmdbかgdbしか指定できません"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONNECT_INPUTDB     "入力DBに接続失敗"
+    IDS_FAILED_OPEN_TABLE   "入力DBのテーブルを開けません"
+    IDS_FAILED_CREATE_GDB   "空GDBの作成に失敗しました"
+    IDS_FAILED_CREATE_FOLDER "フォルダの作成に失敗しました"
+    IDS_FAILED_MESHCODE_DIGIT "メッシュリストに指定できるのは8桁と10桁のコードだけです"
+    IDS_ATTR_IS_NECESSARY   "必要な属性が指定されていません"
+    IDS_DETECT_UNKOWN_OPT   "対応外の値が指定されています"
+    IDS_DEFAULT_INVALID     "デフォルト値がデータタイプに合っていません"
+    IDS_DETECT_UNKOWN_TYPE  "作成できないフィールドタイプが指定されています"
+    IDS_SAME_NAME_TAG       "同じname値をもつタグが複数定義されています"
+    IDS_WARN_EXIST_TABLE_DEF "定義済みであるため無視します"
+    IDS_EXIST_COLUMN_DEF    "入力テーブルに存在するカラムの定義を無視します"
+    IDS_CONNECT_OUTPUTDB    "出力先のDBに接続失敗"
+    IDS_EXIST_DIFF_DATASET  "プロパティの異なるデータセットが出力先に存在します"
+    IDS_FAILED_CREATE_LAYER "空レイヤの生成に失敗"
+    IDS_UNKOWN_DB           "出力先のDBの種類を特定できません"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DONT_ASSUME_FILE    "メッシュ生成先として想定外のファイルが存在します"
+    IDS_FAILED_SEARCH_MESH  "出力対象のメッシュを検索できません"
+    IDS_CANT_APPOINT_MESHDB "出力対象がSDEの場合、メッシュ出力機能は使用できません"
+    IDS_FAILED_CREATE_RECORD "レコードの生成に失敗"
+    IDS_FAILED_CREATE_DATASET "データセットの作成に失敗"
+    IDS_WARN_EXIST_DOMAIN   "出力先に同名のドメインが存在するため、作成しません"
+    IDS_FAILED_OPEN_DATASET "データセットを開くことに失敗しました"
+    IDS_WARN_EXIST_LAYER    "出力先に同名のレイヤが存在するため、作成しません"
+    IDS_FAILED_CREATE_CURSOR "insertカーソルの生成に失敗"
+    IDS_FAILED_CREATE_FCBUFFER "featureBufferの生成に失敗"
+    IDS_FAILED_CURSOR_FLUSH "insertカーソルのFlushに失敗"
+    IDS_FAILED_OUTPUT_INDEX "出力先のフィールドが見つかりません"
+    IDS_FAILED_SEARCH_OUTDB_MESH "出力先のメッシュを検索できません"
+    IDS_WARN_EXIST_MESH     "出力先に同じメッシュコードをもつメッシュがあるため、出力しません"
+    IDS_FAILED_FIND_MESH    "入力DBに出力対象のメッシュが存在しません"
+    IDS_DETECT_INVALIED_LENGTH "lengthには自然数しか指定できません"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_OPTIONAL_TAG "[任意]"
+    IDS_OPTION_REQUIRED_TAG "[必須]"
+    IDS_MESHLIST_IS_UNNECESSARY 
+                            "メッシュリストはmesh_dbを指定するか、outputにフォルダを指定した場合に指定できます"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,2,0,1
+ PRODUCTVERSION 16,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "Comments", "the tool create FGDB/PGDB, and add empty table/featureclass."
+            VALUE "CompanyName", "INCREMENT P CORPORATION"
+            VALUE "FileDescription", "CreateEmptyGDB"
+            VALUE "FileVersion", "16.2.0.1"
+            VALUE "InternalName", "CreateEmptyGDB"
+            VALUE "LegalCopyright", "Copyright (C) 2016 INCREMENT P CORP., All rights reserved."
+            VALUE "OriginalFilename", "CreateEmptyGDB.exe"
+            VALUE "ProductName", "SiNDY-u"
+            VALUE "ProductVersion", "16.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_LOG_START_TIME      "Start time"
+    IDS_LOG_END_TIME        "End time"
+    IDS_LOG_SUCCESS         "Success"
+    IDS_LOG_ABEND           "Abend"
+    IDS_PARAMETER_HAVE_PROBLEM "A command line argument has a problem."
+    IDS_OPTION_INPUT        "Input DB"
+    IDS_OPTION_OUTPUT       "Output DB"
+    IDS_OPTION_MESH         "MeshList"
+    IDS_OPTION_MESHDB       "Mesh DB"
+    IDS_OPTION_MESH_LAYERNAME "Mesh Layer Name"
+    IDS_OPTION_CONFIG       "Config Filepath"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_DB_FORMAT    "Create DB format"
+    IDS_OPTION_RUNLOG       "Run Log Filepath"
+    IDS_OPTION_ERRLOG       "Error Log Filepath"
+    IDS_REQUIRED_PARAMETER  "Required parameter is insufficient."
+    IDS_NONE_NECESSARY_PARAMETER "is required."
+    IDS_IS_NOT_FILE         "is not file."
+    IDS_CANT_OPEN_MESHLIST  "Failed to open meshlist."
+    IDS_DETECT_NON_NUMBER_ON_MESHLIST "Non-number is included in meshlist."
+    IDS_DETECT_DIFF_DIGIT   "It does not keep a figure of meshlist."
+    IDS_DETECT_UNKOWN_TAG   "Undefined tag"
+    IDS_FAILED_OPEN_LOG     "Failed to open log file."
+    IDS_NECESSARY_MESHLIST_TO_CREATE 
+                            "Meshlist is necessary to use a mesh output function."
+    IDS_NECESSARY_MESHLIST_TO_FOLDER 
+                            "When I appoint a folder to ""output"" option, meshlist is necessary."
+    IDS_NONE_SUPPORT_FORMAT """format"" option can appoint only mdb or gdb."
+    IDS_CANT_APPOINT_FORMAT "When it appoints a folder in ""output"" option that I can appoint ""format"" option. "
+    IDS_NONE_SUPPORT_FILE_FORMAT 
+                            "The extension of the output file can appoint only ""mdb"" or ""gdb""."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONNECT_INPUTDB     "Failed to connect input db."
+    IDS_FAILED_OPEN_TABLE   "Failed to open the table in input db."
+    IDS_FAILED_CREATE_GDB   "Failed to create empty GDB."
+    IDS_FAILED_CREATE_FOLDER "Failed to create the folder."
+    IDS_FAILED_MESHCODE_DIGIT 
+                            "It is only eight columns and ten columns that I can appoint it in meshlist"
+    IDS_ATTR_IS_NECESSARY   "A necessary attribute is not appointed."
+    IDS_DETECT_UNKOWN_OPT   "A value out of the correspondence is appointed."
+    IDS_DEFAULT_INVALID     "A default value does not match type."
+    IDS_DETECT_UNKOWN_TYPE  "type which I cannot make is appointed."
+    IDS_SAME_NAME_TAG       "Plural tags of the same name exist."
+    IDS_WARN_EXIST_TABLE_DEF "Because it is defined, I ignore it."
+    IDS_EXIST_COLUMN_DEF    "I ignore the definition of the column which there is on an input table."
+    IDS_CONNECT_OUTPUTDB    "Failed to connect output db."
+    IDS_EXIST_DIFF_DATASET  "There is the different data set of the property in the destination."
+    IDS_FAILED_CREATE_LAYER "Failed to create layer."
+    IDS_UNKOWN_DB           "I cannot identify a kind of DB of the destination."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DONT_ASSUME_FILE    "An unexpected file exists as mesh generation."
+    IDS_FAILED_SEARCH_MESH  "I cannot search mesh for the output."
+    IDS_CANT_APPOINT_MESHDB "In the case of SDE, an output object cannot use the mesh output function."
+    IDS_FAILED_CREATE_RECORD "Failed to create record."
+    IDS_FAILED_CREATE_DATASET "Failed to create dataset."
+    IDS_WARN_EXIST_DOMAIN   "Because there is a domain of the same name in the destination, I do not make it."
+    IDS_FAILED_OPEN_DATASET "Failed to open dataset."
+    IDS_WARN_EXIST_LAYER    "Because there is a layer of the same name in the destination, I do not make it."
+    IDS_FAILED_CREATE_CURSOR "Failed to create insert cursor."
+    IDS_FAILED_CREATE_FCBUFFER "Failed to create featureBuffer."
+    IDS_FAILED_CURSOR_FLUSH "Failed to Flush of insert cursor."
+    IDS_FAILED_OUTPUT_INDEX "Field of the destination is not found."
+    IDS_FAILED_SEARCH_OUTDB_MESH "Mesh of the destination is not found."
+    IDS_WARN_EXIST_MESH     "Because there is a layer of the same meshcode in the destination, I do not make it."
+    IDS_FAILED_FIND_MESH    "There is not mesh for the output in input DB."
+    IDS_DETECT_INVALIED_LENGTH """length"" can appoint only natural number."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPTION_OPTIONAL_TAG "[optional]"
+    IDS_OPTION_REQUIRED_TAG "[required]"
+    IDS_MESHLIST_IS_UNNECESSARY 
+                            """mesh"" option can be appointed when ""mesh_db"" option is appointed or  ""output"" option is appointed to a folder ."
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

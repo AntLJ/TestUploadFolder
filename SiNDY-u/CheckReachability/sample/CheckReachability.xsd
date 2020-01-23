@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+                  elementFormDefault="qualified"
+                  xmlns="http://tempuri.org/XMLSchema.xsd"
+                  xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CheckReachability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="regionlayers" type="regionlayers_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="regionlayers_type">
+    <xs:sequence>
+      <xs:element name="regionlayer" type="regionlayer_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="regionlayer_type">
+    
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,49 @@
+/**
+@page usage 使い方
+
+@verbatim
+CheckReachability.exe
+Allowed options:
+  --road-database arg   SiNDY道路データベース
+  --region-database arg リージョンデータベース
+  --node-list arg       道路ノードIDリスト
+  --config-file arg     設定ファイル
+@endverbatim
+
+<table>
+<tr><th>オプション</th><th>説明</th></tr>
+<tr>
+  <td>--road-database arg</td>
+  <td>
+    検査の対象となるSiNDY道路データベースを
+    
+    - <strong>「<em>user</em>@@<em>server</em>(<em>version</em>)」形式の文字列</strong><br>
+    - <strong>.sdeファイルパス</strong><br>
+    - <strong>PGDBファイルパス</strong>
+    
+    のいずれかで指定する。
+  </td>
+</tr>
+<tr>
+  <td>--region-database arg</td>
+  <td>
+    @ref regionの形状参照元データベースを
+    
+    - <strong>「<em>user</em>@@<em>server</em>(<em>version</em>)」形式の文字列</strong><br>
+    - <strong>.sdeファイルパス</strong><br>
+    - <strong>PGDBファイルパス</strong>
+    
+    のいずれかで指定する。
+  </td>
+</tr>
+<tr>
+  <td>--config-file arg</td>
+  <td>@ref config_fileを指定する。</td>
+</tr>
+<tr>
+  <td>--node-list arg</td>
+  <td>@ref node_listを指定する。</td>
+</tr>
+</table>
+
+*/

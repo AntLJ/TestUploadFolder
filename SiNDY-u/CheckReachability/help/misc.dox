@@ -1,0 +1,38 @@
+/**
+@page node_list 道路ノードIDリスト
+
+検査対象となる道路ノードのIDを改行区切りで列挙したテキストファイル。
+
+@section node_list_example 例
+@verbatim
+10636815
+12088611
+12370196
+@endverbatim
+*/
+
+/**
+@page region リージョン
+
+幅優先探索法を用いて上位の@ref region_layerに属する道路リンクへの経路を探索する範囲。<br>
+範囲には<strong>空間的なもの</strong>（@ref region_unit、@ref region_overlap）と<strong>属性的なもの</strong>（@ref region_whereclause）がある。
+
+@section region_unit ユニット
+
+経路探索の始点と成り得る道路リンクを内包する形状。
+
+@section region_overlap オーバーラップ
+
+経路探索に用いられる道路リンクを内包する形状。
+
+@section region_whereclause Where句
+
+経路探索に用いられる道路リンクの属性を限定するWhere句。
+*/
+
+/**
+@page region_layer リージョンレイヤ
+
+同一レベルの@ref regionをまとめたもの。<br>
+@ref region_layerには上下関係があり、<strong>下位のレイヤは上位のレイヤに含まれる道路リンクを含まなければならない</strong>という決まりがある。
+*/

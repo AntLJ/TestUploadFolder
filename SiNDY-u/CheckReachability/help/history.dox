@@ -1,0 +1,29 @@
+/**
+@page history 更新履歴
+
+- <strong>2010/11/15 FILEVERSION 1.1.2.11 PRODUCTVERSION 1.1.2.0</strong>
+  - Arc9.3.1用おまじない追加
+- <strong>2010/07/05 FILEVERSION 1.1.2.10 PRODUCTVERSION 1.1.2.0</strong>
+  - Arc9.3.1対応
+- <strong>2007/04/17 FILEVERSION 1.1.1.8 PRODUCTVERSION 1.1.1.0</strong>
+  - <strong>Version 1.1.0</strong>で一方通行の向きが逆になっていた点を修正
+- <strong>2007/04/16 FILEVERSION 1.1.0.7 PRODUCTVERSION 1.1.0.0</strong>
+  - 経路探索用グラフの頂点を「道路リンクと向き」から「道路ノード」に、辺を「道路リンク同士のつながり」から「道路リンク」に変更
+    - メモリ使用量の軽減と、処理速度の向上のため
+- <strong>2007/04/09 FILEVERSION 1.0.3.6 PRODUCTVERSION 1.0.3.0</strong>
+  - １プロセスに割り当て可能な仮想メモリ空間の限界を超えてしまい、処理が中断される不具合を修正
+    - メモリ解放処理開始条件の１つとして「プロセス使用可能メモリ残量が100MB以下」を追加
+    - @ref region読み込み時に std::bad_alloc 例外が発生したら、メモリ解放処理を行った上で再度読み込みを試みる
+- <strong>2007/04/04 FILEVERSION 1.0.2.4 PRODUCTVERSION 1.0.2.0</strong>
+  - 経路探索処理を各階層ごとに別スレッド化
+    - アルゴリズムの都合であり、高速化のためではない
+  - メモリの空き容量が少なくなった時に実行されるキャッシュ解放処理が正しく動作しない不具合を修正
+  - @ref regionの@ref region_overlap範囲を経路探索できない不具合を修正
+  - @ref region範囲外の道路ノードIDを指定されると落ちる不具合を修正
+- <strong>2007/01/17 FILEVERSION 1.0.1.3 PRODUCTVERSION 1.0.1.0</strong>
+  - 経路探索用一時コンテナのアロケータを、標準のものからBoost Pool Standard Allocatorsに変更し、経路探索の速度を向上
+- <strong>2006/11/16 FILEVERSION 0.2.0.2 PRODUCTVERSION 0.2.0.0</strong>
+  - 設定ファイルによる通行可能道路リンク指定機能を追加
+- <strong>2006/10/17 FILEVERSION 0.1.0.0 PRODUCTVERSION 0.1.0.0</strong>
+  - 指定した道路ノードから、フェリー以外の道路リンクを伝って広域道路リンクに辿り付けることを確認するチェックツールとして新規作成
+*/

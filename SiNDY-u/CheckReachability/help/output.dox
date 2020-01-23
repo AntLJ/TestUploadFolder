@@ -1,0 +1,30 @@
+/**
+@page output 出力
+
+@section stdout 標準出力
+
+検査結果を出力する。<br>
+1ノード1行、フィールドの区切り文字はタブ。
+
+@subsection stdout_format 各行のフォーマット
+-# 道路ノードID
+-# 最上位@ref region_layerへの経路有無（○×）
+-# 最上位@ref region_layerからの経路有無（○×）
+
+対象道路ノードIDがデータベースに存在しなかったら経路有無は<strong>「×」</strong>。<br>
+対象道路ノードを含む@ref regionが存在しなかったら経路有無は<strong>「×」</strong>。
+
+上記のフォーマットに当てはまらない行はエラー情報である。
+
+@section stderr 標準エラー出力
+
+先頭2行はデータベースへの接続成否報告を、それ以降は現在検査中の道路ノードIDを出力する。
+
+@verbatim
+リージョンデータベースを開く ..... OK
+SiNDY道路データベースを開く . OK
+10636815
+12088611
+12370196
+@endverbatim
+*/

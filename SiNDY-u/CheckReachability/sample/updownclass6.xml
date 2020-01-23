@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<CheckReachability>
+  <regionlayers>
+    <!-- UPDOWNCLASS_C=6のリンクを辿って広域道路リンクに辿り付けるかのチェック用リージョン設定・Kiwiリージョン使用版 -->
+    <regionlayer>
+      <unit>R1_unit</unit>
+      <overlap>R1_overlap</overlap>
+      <whereclause>((UPDOWNCLASS_C = 6 AND WIDEAREA_F = 0) OR NOT (NAVICLASS_C = 201 OR WIDEAREA_F = 0 OR UPDOWNCLASS_C = 6)) AND NAVICLASS_C IN (101, 102, 1, 103, 403, 2, 104, 3, 105, 4, 106, 5, 107, 6, 108)</whereclause>
+    </regionlayer>
+    <regionlayer>
+      <unit>R2_unit</unit>
+      <overlap>R2_overlap</overlap>
+      <whereclause>((UPDOWNCLASS_C = 6 AND WIDEAREA_F = 0) OR NOT (NAVICLASS_C = 201 OR WIDEAREA_F = 0 OR UPDOWNCLASS_C = 6)) AND NAVICLASS_C IN (101, 102, 1, 103, 403, 2, 104, 3, 105, 106)</whereclause>
+    </regionlayer>
+    <regionlayer>
+      <unit>R3_unit</unit>
+      <overlap>R3_overlap</overlap>
+      <whereclause>((UPDOWNCLASS_C = 6 AND WIDEAREA_F = 0) OR NOT (NAVICLASS_C = 201 OR WIDEAREA_F = 0 OR UPDOWNCLASS_C = 6)) AND NAVICLASS_C IN (101, 102, 1, 103)</whereclause>
+    </regionlayer>
+    <regionlayer>
+      <whereclause>NOT (NAVICLASS_C = 201 OR WIDEAREA_F = 0 OR UPDOWNCLASS_C = 6)</whereclause>
+    </regionlayer>
+  </regionlayers>
+</CheckReachability>

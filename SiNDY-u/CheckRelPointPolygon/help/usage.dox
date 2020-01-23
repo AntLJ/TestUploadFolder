@@ -1,0 +1,33 @@
+/**
+@page usage 使用方法
+
+@verbatim
+CheckRelPointPolygon.exe [オプション]
+@endverbatim
+
+<table>
+<tr bgcolor="#90EE90">
+	<td>オプション</td><td>説明</td><td>必須/任意</td><td>例</td>
+</tr><tr>
+	<td>--point-con</td><td>ポイントの接続先名称</td><td bgcolor="#FF6347">必須</td><td>C:/temp/test.mdb</td>
+</tr><tr>
+	<td>--poly-con</td><td>比較元の接続先名称</td><td bgcolor="#FF6347">必須</td><td>C:\temp/test2.mdb</td>
+</tr><tr>
+	<td>--point</td><td>ポイントレイヤ名</td><td bgcolor="#FF6347">必須</td><td>POI_POINT</td>
+</tr><tr>
+	<td>--polygon</td><td>ポリゴンレイヤ名</td><td bgcolor="#FF6347">必須</td><td>UNDERGROUND_AREA</td>
+</tr><tr>
+	<td>--point-where</td><td>ポイントのWHERE句</td><td>任意</td><td>"CONTENTS_CODE=289000001"</td>
+</tr><tr>
+	<td>--poly-where</td><td>ポリゴンのWHERE句</td><td>任意</td><td>"OBJECTID IN (100,2000)"</td>
+</tr><tr>
+	<td>--runlog</td><td>実行ログ</td><td bgcolor="#FF6347">必須</td><td>C:/temp/run_log.txt</td>
+</tr><tr>
+	<td>--outlog</td><td>エラーログ</td><td bgcolor="#FF6347">必須</td><td>C:/temp/err_log.txt</td>
+</tr>
+
+@section attention 注意事項
+処理対象のポイント、ポリゴンが多い場合はこのツールを極力使用しないこと<br>
+検索回数が多いため、処理に時間がかかり、サーバに負担がかかります
+
+*/

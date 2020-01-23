@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Common Properties"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		EnablePREfast="true"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="../../LIB/sindy/lib;../../LIB/boost/lib"
+	/>
+</VisualStudioPropertySheet>

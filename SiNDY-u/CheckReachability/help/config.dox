@@ -1,0 +1,73 @@
+/**
+@page config_file 設定ファイル
+
+@ref region_layerの定義が記されたXMLファイル。
+
+@par 例:
+@ref config_file_example
+
+<hr>
+
+@section config_element_CheckReachability <CheckReachability>
+
+@ref config_fileの最上位要素。
+
+<strong>子要素</strong>
+<table>
+<tr style="background:#ccffcc"><th>名称</th><th>出現制約</th></tr>
+<tr><td>@ref config_element_regionlayers</td><td>1個</td></tr>
+</table>
+
+<hr>
+
+@section config_element_regionlayers <regionlayers>
+
+@ref config_element_regionlayerを順位昇順で列挙する要素。
+
+<strong>子要素</strong>
+<table>
+<tr style="background:#ccffcc"><th>名称</th><th>出現制約</th></tr>
+<tr><td>@ref config_element_regionlayer</td><td>1個以上</td></tr>
+</table>
+
+<hr>
+
+@section config_element_regionlayer <regionlayer>
+
+@ref region_layerを定義する要素。
+
+<strong>子要素</strong>
+<table>
+<tr style="background:#ccffcc"><th>名称</th><th>出現制約</th></tr>
+<tr><td>@ref config_element_unit</td><td>0～1個</td></tr>
+<tr><td>@ref config_element_overlap</td><td>0～1個</td></tr>
+<tr><td>@ref config_element_whereclause</td><td>1個</td></tr>
+</table>
+
+<hr>
+
+@section config_element_unit <unit>
+
+@ref region_layerのユニット形状を納めたフィーチャクラス名を定義するテキスト要素。<br>
+ユニットで区切らない場合、この要素は省略できる。
+
+<hr>
+
+@section config_element_overlap <overlap>
+
+@ref region_layerのオーバーラップ形状を納めたフィーチャクラス名を定義するテキスト要素。<br>
+<strong>@ref config_element_unitを省略した場合、この要素も省略しなければならない。</strong>
+
+<hr>
+
+@section config_element_whereclause <whereclause>
+
+@ref region_layerの道路リンク選定Where句を定義するテキスト要素。
+
+*/
+
+/**
+@page config_file_example kiwi_no_ferry.xml
+
+@include kiwi_no_ferry.xml
+*/

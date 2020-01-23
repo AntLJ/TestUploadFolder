@@ -1,0 +1,12 @@
+/**
+@page overview 機能概要
+指定されたポイント、ポリゴンの関係を調べる。<br>
+
+@section function チェック内容
+  - ポリゴン上にポイントが存在するか
+  - ポイントがポリゴンに包含されているか
+  - ポリゴン同士で接触しているポリゴンが存在するか
+
+@section checktarget チェック対象
+[point-where]、[poly-where]のWHERE句で検索されたものがチェック対象
+*/

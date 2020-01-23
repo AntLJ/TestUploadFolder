@@ -1,0 +1,7 @@
+/**
+@page history 更新履歴
+- <b>2014/1/15 FILEVERSION 1.0.0.2 PRODUCTVERSION 1.0.0.0</b>
+  - チェック対象を任意に絞れるように引数でWHERE句を指定できるようにした
+- <b>2014/1/6 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+*/

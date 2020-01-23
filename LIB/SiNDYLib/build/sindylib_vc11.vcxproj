@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL Debug|Win32">
+      <Configuration>DLL Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL Release|Win32">
+      <Configuration>DLL Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL_Release_English|Win32">
+      <Configuration>DLL_Release_English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_English|Win32">
+      <Configuration>Release_English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA46E805-8060-44FB-BBCC-7B1D25768FB8}</ProjectGuid>
+    <RootNamespace>sindylib</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_English|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_English|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)-u</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_English|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)-u</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)-ugd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)_vc11\</IntDir>
+    <TargetName>$(ProjectName)-ugd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)_vc11\</IntDir>
+    <TargetName>$(ProjectName)-u</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_English|Win32'">
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>$(Configuration)_vc11\</IntDir>
+    <TargetName>$(ProjectName)-u</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\DLLRelease/sindylib.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;SINDYLIB_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/opt:ref,icf %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../sdelib/lib;../../sindy/lib;../../geos/lib;../../crd_cnv/lib;../../ArcHelperEx/lib;../../WinLib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName)_dll.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(IntDir)$(TargetName).pgd</ProfileGuidedDatabase>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_English|Win32'">
+    <Midl>
+      <TypeLibraryName>.\DLLRelease/sindylib.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;SINDYLIB_EXPORTS;WIN32;SINDY_FOR_ENGLISH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/opt:ref,icf %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../sdelib/lib;../../sindy/lib;../../geos/lib;../../crd_cnv/lib;../../ArcHelperEx/lib;../../WinLib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName)_dll.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>$(IntDir)$(TargetName).pgd</ProfileGuidedDatabase>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\DLLDebug/sindylib.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../geos/source/headers;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;SINDYLIB_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../sdelib/lib;../../sindy/lib;../../geos/lib;../../crd_cnv/lib;../../ArcHelperEx/lib;../../WinLib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName)_dll.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProfileGuidedDatabase>$(IntDir)$(TargetName).pgd</ProfileGuidedDatabase>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_LIB;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/sindylib.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/sindylib.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_English|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../;../../ArcHelperEx;../../tlb;../../crd_cnv;../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN32;SINDY_FOR_ENGLISH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/sindylib.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnnoGlobals.cpp" />
+    <ClCompile Include="Annotation.cpp" />
+    <ClCompile Include="Annotations.cpp" />
+    <ClCompile Include="DispLine.cpp" />
+    <ClCompile Include="RelAnnotation.cpp" />
+    <ClCompile Include="RelAnnotationParameter.cpp" />
+    <ClCompile Include="AbleLayers.cpp" />
+    <ClCompile Include="AnnotationClass.cpp" />
+    <ClCompile Include="AnnotationClassTable.cpp" />
+    <ClCompile Include="AttributeRistrict.cpp" />
+    <ClCompile Include="AutoValue.cpp" />
+    <ClCompile Include="BackGroundClassTable.cpp" />
+    <ClCompile Include="ConnectUserTable.cpp" />
+    <ClCompile Include="CreatableLayers.cpp" />
+    <ClCompile Include="CreatableLayersTable.cpp" />
+    <ClCompile Include="DeletableLayersTable.cpp" />
+    <ClCompile Include="DispNaviRelationTable.cpp" />
+    <ClCompile Include="DispOtherRelationTable.cpp" />
+    <ClCompile Include="EditAttrLayersTable.cpp" />
+    <ClCompile Include="EditHistoryTable.cpp" />
+    <ClCompile Include="EditMeshTable.cpp" />
+    <ClCompile Include="LayerNamesTable.cpp" />
+    <ClCompile Include="LockAreaTable.cpp" />
+    <ClCompile Include="LockMeshTable.cpp" />
+    <ClCompile Include="LogicRule.cpp" />
+    <ClCompile Include="MovableLayersTable.cpp" />
+    <ClCompile Include="OperatorTable.cpp" />
+    <ClCompile Include="RoadAttributeTable.cpp" />
+    <ClCompile Include="RoadDispClassTable.cpp" />
+    <ClCompile Include="RoadNaviClassTable.cpp" />
+    <ClCompile Include="Rule.cpp" />
+    <ClCompile Include="SharedDeleteLayersTable.cpp" />
+    <ClCompile Include="SharedMoveLayersTable.cpp" />
+    <ClCompile Include="WorkPurposeTable.cpp" />
+    <ClCompile Include="Info.cpp" />
+    <ClCompile Include="LinkQueue.cpp" />
+    <ClCompile Include="LQ.cpp" />
+    <ClCompile Include="RelRoad.cpp" />
+    <ClCompile Include="RoadLink.cpp" />
+    <ClCompile Include="RoadNetwork.cpp" />
+    <ClCompile Include="RoadNode.cpp" />
+    <ClCompile Include="ListLong.cpp" />
+    <ClCompile Include="ListString.cpp" />
+    <ClCompile Include="meshutil.cpp" />
+    <ClCompile Include="ModifyCheck.cpp" />
+    <ClCompile Include="Progressor.cpp" />
+    <ClCompile Include="SpatialIndex.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="VersionedWorkspaceDiff.cpp" />
+    <ClCompile Include="AnnotationCommunity.cpp" />
+    <ClCompile Include="CacheAttribute.cpp" />
+    <ClCompile Include="Container.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeatureClass.cpp" />
+    <ClCompile Include="FeatureContainer.cpp" />
+    <ClCompile Include="Features.cpp" />
+    <ClCompile Include="FieldMap.cpp" />
+    <ClCompile Include="ModelContainContainer.cpp" />
+    <ClCompile Include="NameString.cpp" />
+    <ClCompile Include="Row.cpp" />
+    <ClCompile Include="RowClassFactory.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="TableTypeUtil.cpp" />
+    <ClCompile Include="Workspace.cpp" />
+    <ClCompile Include="Workspaces.cpp" />
+    <ClCompile Include="EnumSegment.cpp" />
+    <ClCompile Include="EnumSplitPoint.cpp" />
+    <ClCompile Include="EnumVertex.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GeometryContainer.cpp" />
+    <ClCompile Include="GeometryConvert.cpp" />
+    <ClCompile Include="GeomtryCheck.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointCollection.cpp" />
+    <ClCompile Include="PointIterator.cpp" />
+    <ClCompile Include="RelationalOpeartor.cpp" />
+    <ClCompile Include="SegmentCollection.cpp" />
+    <ClCompile Include="MoveFeedback.cpp" />
+    <ClCompile Include="ChangeVersionUtil.cpp" />
+    <ClCompile Include="GlobalArgument.cpp" />
+    <ClCompile Include="LocalReconcile.cpp" />
+    <ClCompile Include="ErrorCode.cpp" />
+    <ClCompile Include="ErrorObject.cpp" />
+    <ClCompile Include="SiNDYLogFunctions.cpp" />
+    <ClCompile Include="SiNDYLib.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DLL_Release_English|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_English|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AnnoGlobals.h" />
+    <ClInclude Include="..\Annotation.h" />
+    <ClInclude Include="..\Annotations.h" />
+    <ClInclude Include="..\DispLine.h" />
+    <ClInclude Include="..\RelAnnotation.h" />
+    <ClInclude Include="..\RelAnnotationParameter.h" />
+    <ClInclude Include="..\AbleLayers.h" />
+    <ClInclude Include="..\AnnotationClass.h" />
+    <ClInclude Include="..\AnnotationClassTable.h" />
+    <ClInclude Include="..\AttributeRistrict.h" />
+    <ClInclude Include="..\AutoValue.h" />
+    <ClInclude Include="..\BackGroundClass.h" />
+    <ClInclude Include="..\BackGroundClassTable.h" />
+    <ClInclude Include="..\ConnectUser.h" />
+    <ClInclude Include="..\ConnectUserTable.h" />
+    <ClInclude Include="..\CreatableLayers.h" />
+    <ClInclude Include="..\CreatableLayersTable.h" />
+    <ClInclude Include="..\DeletableLayers.h" />
+    <ClInclude Include="..\DeletableLayersTable.h" />
+    <ClInclude Include="..\DispNaviRelation.h" />
+    <ClInclude Include="..\DispNaviRelationTable.h" />
+    <ClInclude Include="..\DispOtherRelation.h" />
+    <ClInclude Include="..\DispOtherRelationTable.h" />
+    <ClInclude Include="..\EditAttrLayers.h" />
+    <ClInclude Include="..\EditAttrLayersTable.h" />
+    <ClInclude Include="..\EditHistory.h" />
+    <ClInclude Include="..\EditHistoryTable.h" />
+    <ClInclude Include="..\EditMesh.h" />
+    <ClInclude Include="..\EditMeshTable.h" />
+    <ClInclude Include="..\GeometryRule.h" />
+    <ClInclude Include="..\GlobalRules.h" />
+    <ClInclude Include="..\LayerNames.h" />
+    <ClInclude Include="..\LayerNamesTable.h" />
+    <ClInclude Include="..\LockArea.h" />
+    <ClInclude Include="..\LockAreaTable.h" />
+    <ClInclude Include="..\LockMesh.h" />
+    <ClInclude Include="..\LockMeshTable.h" />
+    <ClInclude Include="..\MovableLayers.h" />
+    <ClInclude Include="..\MovableLayersTable.h" />
+    <ClInclude Include="..\Operator.h" />
+    <ClInclude Include="..\OperatorTable.h" />
+    <ClInclude Include="..\RoadAttribute.h" />
+    <ClInclude Include="..\RoadAttributeTable.h" />
+    <ClInclude Include="..\RoadDispClass.h" />
+    <ClInclude Include="..\RoadDispClassTable.h" />
+    <ClInclude Include="..\RoadNaviClass.h" />
+    <ClInclude Include="..\RoadNaviClassTable.h" />
+    <ClInclude Include="..\Rule.h" />
+    <ClInclude Include="..\SharedDeleteLayers.h" />
+    <ClInclude Include="..\SharedDeleteLayersTable.h" />
+    <ClInclude Include="..\SharedMoveLayers.h" />
+    <ClInclude Include="..\SharedMoveLayersTable.h" />
+    <ClInclude Include="..\WorkPurpose.h" />
+    <ClInclude Include="..\WorkPurposeTable.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Info.h" />
+    <ClInclude Include="..\LinkQueue.h" />
+    <ClInclude Include="..\LinkQueues.h" />
+    <ClInclude Include="..\LQ.h" />
+    <ClInclude Include="..\RelNode.h" />
+    <ClInclude Include="..\RelRoad.h" />
+    <ClInclude Include="..\RoadLink.h" />
+    <ClInclude Include="..\RoadNetwork.h" />
+    <ClInclude Include="..\RoadNode.h" />
+    <ClInclude Include="..\clsidutil.h" />
+    <ClInclude Include="..\ListLong.h" />
+    <ClInclude Include="..\ListString.h" />
+    <ClInclude Include="..\meshutil.h" />
+    <ClInclude Include="..\ModifyCheck.h" />
+    <ClInclude Include="..\Progressor.h" />
+    <ClInclude Include="..\sindycomutil.h" />
+    <ClInclude Include="..\SpatialIndex.h" />
+    <ClInclude Include="..\util.h" />
+    <ClInclude Include="..\VersionedWorkspaceDiff.h" />
+    <ClInclude Include="..\AnnotationCommunity.h" />
+    <ClInclude Include="..\EditDef.h" />
+    <ClInclude Include="..\RuleCommunity.h" />
+    <ClInclude Include="..\CacheAttribute.h" />
+    <ClInclude Include="..\ClassUtil.h" />
+    <ClInclude Include="..\Container.h" />
+    <ClInclude Include="..\Feature.h" />
+    <ClInclude Include="..\FeatureClass.h" />
+    <ClInclude Include="..\FeatureContainer.h" />
+    <ClInclude Include="..\Features.h" />
+    <ClInclude Include="..\FeatureTableType.h" />
+    <ClInclude Include="..\FieldMap.h" />
+    <ClInclude Include="..\ModelContainContainer.h" />
+    <ClInclude Include="..\NameString.h" />
+    <ClInclude Include="..\Row.h" />
+    <ClInclude Include="..\RowClassFactory.h" />
+    <ClInclude Include="..\Table.h" />
+    <ClInclude Include="..\TableType.h" />
+    <ClInclude Include="..\TableTypeUtil.h" />
+    <ClInclude Include="..\Workspace.h" />
+    <ClInclude Include="..\Workspaces.h" />
+    <ClInclude Include="..\EnumSegment.h" />
+    <ClInclude Include="..\EnumSplitPoint.h" />
+    <ClInclude Include="..\EnumVertex.h" />
+    <ClInclude Include="..\Geometry.h" />
+    <ClInclude Include="..\GeometryIterator.h" />
+    <ClInclude Include="..\Point.h" />
+    <ClInclude Include="..\PointIterator.h" />
+    <ClInclude Include="..\MoveFeedback.h" />
+    <ClInclude Include="..\ChangeVersionUtil.h" />
+    <ClInclude Include="..\exportimport.h" />
+    <ClInclude Include="..\GlobalFiles.h" />
+    <ClInclude Include="..\LocalReconcile.h" />
+    <ClInclude Include="..\ErrorCode.h" />
+    <ClInclude Include="..\ErrorCodeBase.h" />
+    <ClInclude Include="..\ErrorObject.h" />
+    <ClInclude Include="..\SiNDYLogFunctions.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sindylib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

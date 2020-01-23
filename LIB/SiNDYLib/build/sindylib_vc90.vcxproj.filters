@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Annotation">
+      <UniqueIdentifier>{0e35617b-15ac-4dc0-8807-0a4081818342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rule">
+      <UniqueIdentifier>{117ccd6d-f5e8-4ce2-9e2c-18655eb721b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winlib">
+      <UniqueIdentifier>{a31e4153-a73d-4edf-ae69-69e0576c6ed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b05f8267-9752-42f1-8a56-dc6f44a2cf19}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{7217f2cf-8a40-4432-bd1a-6c5865ac4e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{d2019916-6d7c-4324-b744-2debcf99e2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Community">
+      <UniqueIdentifier>{80de16ff-f3c2-443b-8723-ae674eecc548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{b3323d4e-6ff5-4c5d-8bd1-e8756e07f02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{e3fc7958-c101-407a-8633-e83b7849f8bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feedback">
+      <UniqueIdentifier>{ee557fdf-37e9-4348-aca6-367ef52389fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Globals">
+      <UniqueIdentifier>{1ac98e7f-a426-4956-aaee-e20ae6d3fd36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{f5625d94-72c6-4078-a3ae-a81403bbd3a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnnoGlobals.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Annotation.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Annotations.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="DispLine.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="RelAnnotation.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="RelAnnotationParameter.cpp">
+      <Filter>Annotation</Filter>
+    </ClCompile>
+    <ClCompile Include="AbleLayers.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnotationClass.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnotationClassTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeRistrict.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoValue.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGroundClassTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectUserTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatableLayers.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatableLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DeletableLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DispNaviRelationTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DispOtherRelationTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="EditAttrLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="EditHistoryTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="EditMeshTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerNamesTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="LockAreaTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="LockMeshTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicRule.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadAttributeTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadDispClassTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadNaviClassTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rule.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedDeleteLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMoveLayersTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkPurposeTable.cpp">
+      <Filter>Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinLib\winutil.cpp">
+      <Filter>winlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Info.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueue.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="LQ.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RelRoad.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadLink.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadNode.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ListLong.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ListString.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="meshutil.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyCheck.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Progressor.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SpatialIndex.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionedWorkspaceDiff.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnotationCommunity.cpp">
+      <Filter>Community</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheAttribute.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Container.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureClass.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureContainer.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Features.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldMap.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelContainContainer.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="NameString.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Row.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="RowClassFactory.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="TableTypeUtil.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Workspace.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Workspaces.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumSegment.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumSplitPoint.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumVertex.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryContainer.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryConvert.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GeomtryCheck.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="PointCollection.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="PointIterator.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="RelationalOpeartor.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentCollection.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveFeedback.cpp">
+      <Filter>Feedback</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeVersionUtil.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalArgument.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalReconcile.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorCode.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorObject.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLogFunctions.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="SiNDYLib.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AnnoGlobals.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Annotation.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Annotations.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DispLine.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RelAnnotation.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RelAnnotationParameter.h">
+      <Filter>Annotation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AbleLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AnnotationClass.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AnnotationClassTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AttributeRistrict.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AutoValue.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BackGroundClass.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BackGroundClassTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ConnectUser.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ConnectUserTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreatableLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CreatableLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DeletableLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DeletableLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DispNaviRelation.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DispNaviRelationTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DispOtherRelation.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DispOtherRelationTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditAttrLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditAttrLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditHistory.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditHistoryTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditMesh.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditMeshTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GeometryRule.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GlobalRules.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LayerNames.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LayerNamesTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LockArea.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LockAreaTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LockMesh.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LockMeshTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MovableLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MovableLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Operator.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OperatorTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadAttribute.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadAttributeTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadDispClass.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadDispClassTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadNaviClass.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadNaviClassTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Rule.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedDeleteLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedDeleteLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedMoveLayers.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedMoveLayersTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WorkPurpose.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WorkPurposeTable.h">
+      <Filter>Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WinLib\winutil.h">
+      <Filter>winlib</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Info.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LinkQueue.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LinkQueues.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LQ.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RelNode.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RelRoad.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadLink.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RoadNode.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clsidutil.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LicenseFunctions.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ListLong.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ListString.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\meshutil.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ModifyCheck.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Progressor.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sindycomutil.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SpatialIndex.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VersionedWorkspaceDiff.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AnnotationCommunity.h">
+      <Filter>Community</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EditDef.h">
+      <Filter>Community</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RuleCommunity.h">
+      <Filter>Community</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CacheAttribute.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClassUtil.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Container.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Feature.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FeatureClass.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FeatureContainer.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Features.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FeatureTableType.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldMap.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ModelContainContainer.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NameString.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Row.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RowClassFactory.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Table.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableType.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TableTypeUtil.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Workspace.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Workspaces.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumSegment.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumSplitPoint.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EnumVertex.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Geometry.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GeometryIterator.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Point.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PointIterator.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MoveFeedback.h">
+      <Filter>Feedback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChangeVersionUtil.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\exportimport.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GlobalFiles.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LocalReconcile.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrorCode.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrorCodeBase.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ErrorObject.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SiNDYLogFunctions.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\sindylib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

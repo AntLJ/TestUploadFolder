@@ -1,0 +1,139 @@
+/**
+@page except_fields インポート除外フィールドについて
+
+@section except_fieldlist インポート除外フィールドの書式
+
+「--except_fieldlist」で指定されたテキストファイルに記載されている情報が、「インポート除外フィールド」の設定である。<br>
+このテキストファイルはタブ区切りテキストで指定し、第1フィールドが「テーブル名称」、第2フィールドが「フィールド名称群」となる。<br>
+「テーブル名称」はテーブル(あるいはフィーチャクラス)の名称そのものである。<br>
+「フィールド名称群」はカンマ区切りでインポート除外フィールドを列挙したものである。<br>
+例えば、「ROAD_LINK」の「LEGALSPEED_C」と「TRIP_SPEED」をインポート対象としたくない場合は、下記のように記述する。<br>
+
+@verbatim
+ROAD_LINK	LEGALSPEED_C,TRIP_SPEED
+@endverbatim
+
+なお、このテキストファイルの中に同一のテーブル名が2行にわたって記述されるのはNGとする。<br>
+1テーブルに必要な除外フィールドは1行にまとめて記述すること。<br>
+
+@section about_except_field インポート除外フィールドの意味
+
+インポート除外フィールドが設定されているテーブルは、それ以外のテーブルと比較して下記の差異がある。<br>
+
+ - コンフリクト条件の違い
+  - 通常のテーブルのコンフリクト条件は下記のいずれかに該当することである
+   - SDEの「MODIFYDATE」と編集前PGDBの「ORG_MODIFYDATE」が異なる 
+   - SDEの「OPERATOR」と編集前PGDBの「ORG_OPERATOR」が異なる
+   - SDEと編集前PGDBで「PROGMODIFYDATE」の値が異なる
+   - SDEと編集前PGDBで「MODIFYPROGNAME」の値が異なる
+  - インポート除外フィールドが設定されているテーブルのコンフリクト条件は下記のとおり
+   - 別表「コンフリクト条件に含まれないフィールド」に記載されている以外のフィールド値が異なる
+   - 比較対象はSDEと編集後PGDBである
+ - フィールドの反映の違い
+  - インポート除外フィールドは、PGDBで編集されていたとしても属性のインポートは行われない
+
+コンフリクト条件に含まれないフィールド
+<table>
+<tr><th>SDEフィールド名</th><th nowrap >PGDBフィールド名</th><th>備考</th></tr>
+<tr>
+	<td>[インポート除外フィールド]</td>
+	<td>[インポート除外フィールド]</td>
+	<td>これはインポートしない属性なので比較の必要なし</td>
+</tr>
+<tr>
+	<td>MODIFYDATE</td>
+	<td>ORG_MODIFYDATE</td>
+	<td>これは、必ず異なるはず</td>
+</tr>
+<tr>
+	<td>OPERATOR</td>
+	<td>ORG_OPERATOR</td>
+	<td>これは、必ず異なるはず</td>
+</tr>
+<tr>
+	<td>FROM_NODE_ID</td>
+	<td>FROM_NODE_ID</td>
+	<td>対応フィールドが異なるため一致するはずはない</td>
+</tr>
+<tr>
+	<td>TO_NODE_ID</td>
+	<td>TO_NODE_ID</td>
+	<td>対応フィールドが異なるため一致するはずはない</td>
+</tr>
+<tr>
+	<td>INF_ID</td>
+	<td>INF_ID</td>
+	<td>対応フィールドが異なるため一致するはずはない</td>
+</tr>
+<tr>
+	<td>LINK_ID</td>
+	<td>LINK_ID</td>
+	<td>対応フィールドが異なるため一致するはずはない</td>
+</tr>
+<tr>
+	<td>PURPOSE_C</td>
+	<td>PURPOSE_C</td>
+	<td>SDEには別の値が設定されるため、ここで見るのは無意味</td>
+</tr>
+<tr>
+	<td>PROGMODIFYDATE</td>
+	<td>PROGMODIFYDATE</td>
+	<td>SDEには別の値が設定されるため、ここで見るのは無意味</td>
+</tr>
+<tr>
+	<td>MODIFYPROGNAME</td>
+	<td>MODIFYPROGNAME</td>
+	<td>SDEには別の値が設定されるため、ここで見るのは無意味</td>
+</tr>
+</table>
+
+@section forbidden_field インポート除外フィールドに指定できないフィールド
+
+インポート除外フィールドに設定できないフィールドは下記のとおり。<br>
+これは、NWの整合性に深くかかわるものであったり、設定することに意味がないためである。<br>
+
+<table>
+<tr><th>フィールド名</th><th>備考</th></tr>
+<tr>
+	<td>OBJECTID</td>
+	<td>これによって対応を取るため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>SHAPE</td>
+	<td>形状はNWの整合性に深くかかわるため、コンフリクトは致命的。</td>
+</tr>
+<tr>
+	<td>PURPOSE_C</td>
+	<td>SDEには別の値が設定されるため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>PROGMODIFYDATE</td>
+	<td>SDEには別の値が設定されるため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>MODIFYPROGNAME</td>
+	<td>SDEには別の値が設定されるため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>MODIFYDATE</td>
+	<td>コンフリクト判定の前提条件となるため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>OPERATOR</td>
+	<td>コンフリクト判定の前提条件となるため、設定は意味がない</td>
+</tr>
+<tr>
+	<td>*_ID</td>
+	<td>NWの整合性に深くかかわるため、コンフリクトは致命的。</td>
+</tr>
+<tr>
+	<td>*_RF</td>
+	<td>NWの整合性に深くかかわるため、コンフリクトは致命的。</td>
+</tr>
+<tr>
+	<td>*_LQRF</td>
+	<td>NWの整合性に深くかかわるため、コンフリクトは致命的。</td>
+</tr>
+</table>
+
+*/

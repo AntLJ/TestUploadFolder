@@ -1,0 +1,38 @@
+/**
+@mainpage @projectname
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 動作保証OS:
+- Windows 7 SP1
+
+@par 動作環境:
+- ArcGIS 10.1
+
+@version
+- @fileversion
+- @productversion
+
+@date @lastupdate
+
+@section toc_outline 概略
+
+- @subpage introduction
+- @subpage overview
+- @subpage history
+
+@section toc_design 操作説明
+
+- @subpage usage
+
+@section except_fields インポート除外フィールドについて
+
+- @subpage except_fieldlist
+- @subpage about_except_field
+- @subpage forbidden_field
+
+*/

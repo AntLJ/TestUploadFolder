@@ -1,0 +1,40 @@
+# バージョン間の差分抽出プログラム設定ファイル例　2003,07,15 梶浦
+# 先頭の#は、コメントを表します（無視されます）。
+# 改行だけの行も無視されます。
+# 設定項目は、<項目><タブ><設定値>が基本です。
+# 1行当たり、256バイトまでしかサポートしていません。
+# 
+
+#対象レイヤ用サーバ接続文字列
+DB_ANY	sinup/sinup/SDE.SiNUP200307/5151/garnet
+
+#住所コード検索用サーバ接続文字列（-A指定時に使用）
+DB_ADDRESS	sinup/sinup/SDE.SiNUP200307/5151/garnet
+
+#建物検索用サーバ接続文字列(-K指定時に使用)
+DB_MAP	sinup/sinup/SDE.SiNUP200307/5151/garnet
+
+#メッシュリスト出力用メッシュポリゴンのレイヤ名（-M,-K指定時に使用）
+FC_MESH	REFERENCE.CityMesh
+
+#住所コード出力用行政界レイヤ名（-A指定時に使用）
+FC_CITY_ADMIN	City_Admin
+
+#比較の基準となるバージョン名（必須）
+#大文字・小文字も区別します。
+OLD_VERSION	SDE.DEFAULT
+
+#住所コード用の元バージョン（指定がなければ、「OLD_VERSION」を使用）
+#大文字・小文字も区別します。
+OLD_ADM_VERSION	SDE.DEFAULT
+
+#対象レイヤ名（最低1つは必須：同一サーバ上のものしか対応していない）
+#対象レイヤ名は、タブの次から有効
+TGT_LAYERS
+	City_Site
+	City_Line
+	City_Annotation
+	City_DispLine
+	City_Admin
+	Gou_Point
+END

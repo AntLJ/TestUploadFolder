@@ -1,0 +1,47 @@
+/**
+@page usage 使用法
+
+@section usage_exec 実行方法
+
+@verbatim
+CreateLinkPatch.exe -d <DB指定文字列> -r <路線コード指定ファイル> -l <出力ログファイル> -p <出力リンクパッチファイル> [-u]
+@endverbatim
+
+@section usage_args コマンドライン引数
+
+<table>
+<tr><th>スイッチ</th><th>内容</th></tr>
+<tr>
+	<td>-d <DB指定文字列></td>
+	<td>接続するDBを指定する。
+	<br><DB指定文字列>は下記の形式でなければならない。
+	<br><b>　ユーザ名@サーバ名(バージョン名)</b>
+	<br>例：sindy2008\@onyx(SDE.DEFAULT)
+	</td>
+</tr>
+<tr>
+	<td>-r <路線コード指定ファイル></td>
+	<td>@ref APPR_ATTR_FILE のファイルパスを指定する。
+	</td>
+</tr>
+<tr>
+	<td>-l <出力ログファイル></td>
+	<td>出力する@ref LOG_FILEのファイルパスを指定する。
+	</td>
+</tr>
+<tr>
+	<td>-p <出力リンクパッチファイル></td>
+	<td>出力する@ref LINK_PATCHのファイルパスを指定する。
+	</td>
+</tr>
+<tr>
+	<td>-u</td>
+	<td>出力される@ref LINK_PATCHの改行コードをUNIX環境で使用されるLFにする。
+	<br>デフォルトはWindows環境で使用されるCR+LF。
+	</td>
+</tr>
+</table>
+
+<br>
+*/
+

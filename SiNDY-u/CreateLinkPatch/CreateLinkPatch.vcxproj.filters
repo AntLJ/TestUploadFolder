@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45d777fc-36ce-43e9-82bb-05b66c1b3ae8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Data Source">
+      <UniqueIdentifier>{a4c47f00-56a5-4a82-97d4-dc60eb5842d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility Source">
+      <UniqueIdentifier>{4ae5f44f-b326-46d0-8463-d050fb0ce29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{618ca8fc-a435-4a55-94cf-8395b3701753}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Utility Header">
+      <UniqueIdentifier>{d5d7362f-1c48-401d-aadc-b84fc3955239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data Header">
+      <UniqueIdentifier>{ab2fb2ea-7d0b-497a-acbd-2449550340e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Files">
+      <UniqueIdentifier>{dd0f9193-c290-463d-9df3-42bb5101f116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1df34500-d2be-4214-9545-97fa1282cfb3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CreateLinkPatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppropriateAttribute.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmedLink.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EtcLinkList.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayNodeCollection.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkPatch.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadLinkCollection.cpp">
+      <Filter>Source Files\Data Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLineArg.cpp">
+      <Filter>Source Files\Utility Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBAccess.cpp">
+      <Filter>Source Files\Utility Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBHandleBase.cpp">
+      <Filter>Source Files\Utility Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBInfo.cpp">
+      <Filter>Source Files\Utility Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp">
+      <Filter>Source Files\Utility Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SINDY2INCODE.cpp">
+      <Filter>External Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SindyAttrdef.cpp">
+      <Filter>External Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CreateLinkPatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLineArg.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBAccess.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHandleBase.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBInfo.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalFunction.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>Header Files\Utility Header</Filter>
+    </ClInclude>
+    <ClInclude Include="AppropriateAttribute.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfirmedLink.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="EtcLinkList.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayNodeCollection.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkPatch.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RoadLinkCollection.h">
+      <Filter>Header Files\Data Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GDBError.h">
+      <Filter>External Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INAttrDef.h">
+      <Filter>External Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SINDY2INCODE.h">
+      <Filter>External Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SindyAttrdef.h">
+      <Filter>External Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

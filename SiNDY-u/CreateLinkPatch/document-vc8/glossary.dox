@@ -1,0 +1,75 @@
+/**
+@page glossary 用語
+
+@section APPR_ATTR_FILE 路線コード指定ファイル
+
+<p>	入力ファイル。
+<br>リンクパッチの対象とする路線の@ref ROAD_CODEと、その路線に属するリンクが保持すべき@ref ROADCLASS_Cを指定するファイル。
+<br>@ref ROADCLASS_Cが、ここで指定したもの以外の値であるようなリンクが抽出対象となる。
+</p>
+
+<p>各レコードのフォーマットは下記の通り。デリミタはTab。
+</p>
+
+<table>
+<tr>
+	<th>項番</th>
+	<th>フィールド</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td>@ref ROAD_CODE</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>@ref ROADCLASS_C</td>
+</tr>
+</table>
+
+
+@section LINK_PATCH リンクパッチファイル
+<p>	出力ファイル。本ツール実行の目的であるリンクパッチファイル。
+<br>スイッチにより改行コードを変更することが可能。
+</p>
+
+@section LOG_FILE ログファイル
+<p>	出力ファイル。SiNDY自由形式ログで出力される。
+<br>@ref LINK_PATCHに出力されるか否かに関わらず、チェックした全てのリンクの情報が出力される。
+<br>FLAGフィールドの値は、@ref LINK_PATCHに出力されるものが1、出力されないものが0。
+</p>
+
+@section ROAD_CODE 路線コード
+
+<p>	SiNDY::Road_Link::ROAD_CODEフィールドの呼称のひとつ。
+<br>路線番号、路線ID、路線名称IDなどとも呼ばれる。
+</p>
+
+@section ROADCLASS_C 道路標示種別
+<p>	SiNDY::Road_Link::ROADCLASS_Cフィールドの呼称。
+</p>
+
+@section Road_Link リンク
+<p> SiNDY::Road_Linkフィーチャクラスの呼称。
+<br>または、これに属するフィーチャを指す。
+<br>丁寧に呼ぶなら道路リンク。
+</p>
+
+@section Main_Link 本線リンク
+<p>	高速道路の本線を表現するリンク。
+<br>本線同士の接続部など特殊な場合を除き、通常は0でない路線コードを持つ。
+
+@section Sub_Link ランプリンク
+<p>	高速道路の本線と非高速道路を結ぶリンク。
+<br>但し、厳密にはランプリンクではないが、ツールの処理上は同様に扱われるリンクも存在しており、
+<br>ここでは便宜上、高速道路を構成するリンクのうち、本線リンク以外のものをまとめてランプリンクと呼んでいる。
+</p>
+
+@section Highway_Node ハイウェイノード
+<p> SiNDY::HighwayNodeフィーチャクラスの呼称。
+<br>または、これに属するフィーチャを指す。
+<br>本ツールではリンク追跡時の終端判定などのために参照している。
+</p>
+
+<br>
+*/
+

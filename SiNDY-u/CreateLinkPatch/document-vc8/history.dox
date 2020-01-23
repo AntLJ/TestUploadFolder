@@ -1,0 +1,19 @@
+/**
+@page history 更新履歴
+- <b>2011/2/4  FILEVERSION 2.0.2.3 PRODUCTVERSION 2.0.2.0</b>
+  - [bug 8377][u]レプリカからのHWY変換を可能にして欲しい に対応
+- <b>2010/7/20 FILEVERSION 2.0.1.2 PRODUCTVERSION 2.0.1.0</b>
+  - Arc9.3.1対応
+- <b>2007/12/4 FILEVERSION 2.0.0.1 PRODUCTVERSION 2.0.0.0</b>
+  - VC8対応
+  - [Bug 5700] etc_link.txtの出力機能を廃止(CreateEtcLinkListへ移行）
+  - 標準出力、標準エラー出力への出力内容を見直し
+- <b>2006/11/9 FILEVERSION 1.0.1.1 PRODUCTVERSION 1.0.1.1</b>
+  - 前回リリースで追加した(*)の機能は不要と判明したので、出力しないように変更
+- <b>2006/10/26 FILEVERSION 1.0.1.0 PRODUCTVERSION 1.0.1.0</b>
+  - (*)tdc_link.patchにETC専用ランプリンクの表示用種別コード・経路用種別コードを変更するためのレコードを出力するように変更
+  - スマートIC用道路リンクリスト(etc_link.txt)出力機能を追加
+- <b>2005/11/14 FILEVERSION 1.0.0.0 PRODUCTVERSION 1.0.0.0</b>
+  - 新規作成
+  
+  */

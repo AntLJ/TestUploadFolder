@@ -1,0 +1,23 @@
+/**
+@page overview 機能概要
+
+@section flow_read 読み込み
+
+-# @ref APPR_ATTR_FILEを読み込む。
+-# @ref 下記の条件を満たすような@ref Road_Linkを順に読み込む。
+	- @ref APPR_ATTR_FILEに記述されている@ref ROAD_CODEを持つリンク（主に本線リンクであることを想定）
+	- 上記の本線リンクに付随する、本線リンク以外のリンク（ランプリンクなど）
+-# @ref 全ての@ref Highway_Nodeを読み込む。
+
+@section flow_attr_check 属性チェック
+
+-# 読み込まれている全ての本線リンクの@ref ROADCLASS_Cをチェックする。
+-# 本線リンクに接続している、本線リンク以外のリンクを探し、読み込まれているリンクのうち、
+	そこから追跡できる全てのリンクの@ref ROADCLASS_Cをチェックする。
+
+@section flow_write 書き込み
+
+-# チェック結果を@ref LINK_PATCHに出力する。
+
+<br>
+*/

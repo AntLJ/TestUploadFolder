@@ -1,0 +1,37 @@
+/**
+@mainpage @projectname
+
+<center>
+@image html ipc_logo.png
+<br>
+インクリメントP株式会社<br>
+</center>
+
+@par 動作保証OS: 
+- Windows XP SP2
+
+@par 動作環境: 
+- ArcGIS Desktop 9.1 SP2
+
+@par 作成者： 
+- 増田　真吉
+
+@if Develop
+@version
+- @fileversion
+- @productversion
+@endif
+
+@date @lastupdate
+
+@section toc_outline 概略
+
+- @subpage introduction
+- @subpage overview
+- @subpage history
+- @subpage maintenance
+
+@section toc_design 操作説明
+- @subpage operation
+
+*/

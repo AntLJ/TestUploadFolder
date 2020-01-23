@@ -1,0 +1,9 @@
+/**
+@page history 更新履歴
+
+- <b>2008/03/06 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.1</b>
+  - 初期バージョン
+  
+- <b>2009/07/28 FILEVERSION 1.0.0.2 PRODUCTVERSION 1.0.0.0</b>
+  - メッシュリストが無効だったので有効になるように修正
+*/

@@ -1,0 +1,18 @@
+/**
+@page introduction 開発の目的
+PND向けに05Shapeデータをリリースしている、株式会社エディア（Edia Co.,Ltd.）から
+開発商品にはスマートICを含めないので「スマートICのリンクを識別したい」という要望があった。<br>
+そのため、本ツールではスマートICリンクリスト(smartic_link.txt)とそのリンク間引き後に浮きノードとなる
+ノードリスト(smart_node.txt)を作成する。<br>
+
+製品情報：<br>
+http://maplus-navi.jp/products/maplus2/
+
+<table border="0">
+<tr>
+	<td>@image html "PND.png"</td>
+</tr>
+</table>
+
+
+*/

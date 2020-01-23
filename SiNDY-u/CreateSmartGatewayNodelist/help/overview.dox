@@ -1,0 +1,26 @@
+/**
+@page overview 機能概要
+<b>機能概要：</b><br>
+SiNDY道路系サーバに接続して特定の指定条件をもとに、Road_NodeのOBJECTIDリストを作成する。
+
+<b>データ抽出条件：</b><br>
+
+ ◆ <p><b> Facil_Info_Point </p></b> <br>
+	・  FACILCLASS_C = 7 	(スマートIC) の　ROAD_CODE,ROAD_SEQ <br>
+
+ ◆ <p><b> Highway_Node </p></b><br>
+	①  TOLLCLASS_C = 4	(出入口ノード) <br>
+	②  Facil_Info_Poin::FACILCLASS_C = 7　の ROAD_CODE,ROAD_SEQ <br>
+	③  INOUT_C が 1または2<br>
+	
+ ◆ <p><b> Road_Node </p></b><br>
+	①かつ②を満たすHighway_Nodeと同位置にあるノードのOIDのリストを出力 <br>
+	
+<b> 出力ファイル：</b><br>
+
+<p><b><接続ユーザ>_SmartNodeList.txt</p></b><br>
+
+内容：<br>
+Road_NodeのOBJECTIDの羅列<br>
+
+*/

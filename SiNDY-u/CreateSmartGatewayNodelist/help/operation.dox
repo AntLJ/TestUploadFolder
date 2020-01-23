@@ -1,0 +1,46 @@
+/**
+@page operation 操作説明
+
+<b>ツールの起動方法：</b><br>
+
+実行はコマンドプロンプトを立ち上げて、ツールを起動する。
+
+<p><b>CreateSmartGatewayNodelist.exe <config.txt></b></p>
+
+- <config.txt>	： config.txtのパス<br>
+
+<b>config.txtで設定するパラメータ</b><br>
+<table>
+	<tr>
+			<td>SERVER</td>
+			<td>接続サーバ<br>
+			    例)onyx</td>
+	</tr>
+	<tr>
+			<td>INSTANCE</td>
+			<td>インスタンス<br>
+				例) 5151</td>
+	</tr>
+	<tr>
+			<td>USER</td>
+			<td>ユーザ<br>
+				例) FIX200705</td>
+	</tr>
+	<tr>
+			<td>PASSWORD/td>
+			<td>パスワード<br>
+				例) FIX200705</td>
+	</tr>
+	<tr>
+			<td>VERSION</td>
+			<td>バージョン<br>
+				例) SDE.DEFAULT</td>
+	</tr>
+	<tr>
+			<td>OUTPUT</td>
+			<td>ファイル出力先<br>
+				例) D:/Tmp</td>
+	</tr>
+</table>
+*/
+*/

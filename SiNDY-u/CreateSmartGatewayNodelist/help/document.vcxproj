@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43562A89-FA57-409A-B431-8EDF0D11E07F}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <NMakeBuildCommandLine>set INTDIR=$(IntDir)
+set OUTDIR=$(OutDir)
+make $(Configuration)</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set INTDIR=$(IntDir)
+set OUTDIR=$(OutDir)
+make $(Configuration) /a</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rm $(IntDir)* $(OutDir)*</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(SolutionName).chm</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <OutDir>.\Develop\</OutDir>
+    <IntDir>.\Develop\</IntDir>
+    <NMakeBuildCommandLine>set INTDIR=$(IntDir)
+set OUTDIR=$(OutDir)
+make $(Configuration)</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set INTDIR=$(IntDir)
+set OUTDIR=$(OutDir)
+make $(Configuration) /a</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rm $(IntDir)* $(OutDir)*</NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(SolutionName)(develop).chm</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup></ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="history.dox" />
+    <None Include="introduction.dox" />
+    <None Include="mainpage.dox" />
+    <None Include="maintenance.dox" />
+    <None Include="operation.dox" />
+    <None Include="overview.dox" />
+    <None Include="make.bat" />
+    <None Include="doxyfile" />
+    <None Include="makefile" />
+    <None Include="version.bat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+  <ItemGroup>
+    <None Include="../../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>
+

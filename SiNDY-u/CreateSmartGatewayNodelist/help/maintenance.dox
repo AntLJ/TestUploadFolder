@@ -1,0 +1,12 @@
+/**
+@page maintenance ツール実行時のサーバへの影響
+<table>
+	<tr>
+		<td>SDE編集</td>
+		<td>なし</td></tr>
+	<tr>
+		<td>実行後のメンテナンス</td>
+		<td>不要</td>
+	</tr>
+</table>
+*/

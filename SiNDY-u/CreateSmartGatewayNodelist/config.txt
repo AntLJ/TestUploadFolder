@@ -1,0 +1,9 @@
+#接続情報
+SERVER	onyx.mr.ipc.pioneer.co.jp
+INSTANCE	5151
+USER	FIX200705
+PASSWORD	FIX200705
+VERSION	SDE.DEFAULT
+#ファイル出力先
+OUTPUT	.
+

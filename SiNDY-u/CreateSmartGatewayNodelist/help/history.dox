@@ -1,0 +1,7 @@
+/**
+@page history 更新履歴
+
+- <b>2007/6/26 FILEVERSION 1.0.0.1 PRODUCTVERSION 1.0.0.0</b>
+  - 初期バージョン
+  - 【検証】SiNDYFreeStyleLogUpdaterを用いて出力したファイルをSort・Uniqしたものと、比較し一致することを確認。
+*/

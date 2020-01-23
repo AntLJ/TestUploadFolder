@@ -1,0 +1,38 @@
+/**
+@page operation ツール実行方法
+
+<b>@htmlonly<font color ="#000080">実行方法：</font>@endhtmlonly</b><br>
+
+<b>CreateSmartICList.exe	<設定ファイル></b>
+
+<b>@htmlonly<font color ="#000080">設定ファイル：</font>@endhtmlonly</b><br>
+
+<table border="0">
+<tr>
+	<td>@image html "Sample.png"</td>
+</tr>
+</table>
+
+<b>@htmlonly<font color ="#000080">設定ファイル詳細：</font>@endhtmlonly</b><br>
+
+<table>
+<tr>
+	<td><b>【DB接続設定】</b><br>
+	</td>	
+	<td>NW道路接続サーバを指定する<br>
+		・サーバの方法指定は下記の通り<br>
+		<b>@htmlonly<font color ="#000080"><ユーザ名>＠<接続サーバ>(バージョン)</font>@endhtmlonly</b><br>
+		(例：FIX200802@onyx(SDE.DEFAULT))<br>
+		</td></tr>
+<tr>	
+	<td><b>【メッシュリスト】</b></td>
+	<td><b>Meshlist</b><br>
+	    リリース対象の2メッシュコードリスト</td></tr>	
+<tr>
+	<td><b>【出力先】</b></td>
+	<td><b>Out</b><br>
+		ログ出力先。<br>
+		出力ファイルを出力するディレクトリパスを記載すること</td></tr>
+</table>
+
+*/

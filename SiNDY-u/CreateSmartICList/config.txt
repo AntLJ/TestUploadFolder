@@ -1,0 +1,5 @@
+NwDB	FIX200702@jade(SDE.DEFAULT)
+Meshlist	D:\SVN\SiNDY-u\CreateSmartICList\meshlist.txt
+Out	./
+
+

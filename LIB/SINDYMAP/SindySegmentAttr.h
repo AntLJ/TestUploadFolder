@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) INCREMENT P CORP. All Rights Reserved.
+ *
+ * THIS SOFTWARE IS PROVIDED BY INCREMENT P CORP., WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ * AND NONINFRINGEMENT.
+ *
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+ * CLAIM, DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+ * OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+*/
+
+// SindySegmentAttr.h: SindySegmentAttr クラスのインターフェイス
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_SINDYSEGMENTATTR_H__FECA51A3_337D_41B5_A42F_2C20924F6131__INCLUDED_)
+#define AFX_SINDYSEGMENTATTR_H__FECA51A3_337D_41B5_A42F_2C20924F6131__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "SindyLineClass.h"
+
+class SindySegmentAttr : public SindyLineClass  
+{
+public:
+	SindySegmentAttr(SindyDBConnection *cDBConnection);
+	virtual ~SindySegmentAttr();
+
+};
+
+#endif // !defined(AFX_SINDYSEGMENTATTR_H__FECA51A3_337D_41B5_A42F_2C20924F6131__INCLUDED_)

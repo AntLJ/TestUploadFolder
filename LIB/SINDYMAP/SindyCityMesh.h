@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) INCREMENT P CORP. All Rights Reserved.
+ *
+ * THIS SOFTWARE IS PROVIDED BY INCREMENT P CORP., WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ * AND NONINFRINGEMENT.
+ *
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+ * CLAIM, DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+ * OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+*/
+
+// SindyCityMesh.h: SindyCityMesh クラスのインターフェイス
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_SINDYCITYMESH_H__83C83F86_FC52_4933_AF2E_C676AABABFF8__INCLUDED_)
+#define AFX_SINDYCITYMESH_H__83C83F86_FC52_4933_AF2E_C676AABABFF8__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "SindyMeshFeature.h"
+
+class SindyCityMesh : public SindyMeshFeature  
+{
+public:
+	SindyCityMesh(SindyDBConnection *cDBConnection);
+	virtual ~SindyCityMesh();
+
+};
+
+#endif // !defined(AFX_SINDYCITYMESH_H__83C83F86_FC52_4933_AF2E_C676AABABFF8__INCLUDED_)

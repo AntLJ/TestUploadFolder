@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SINDYMAP</ProjectName>
+    <ProjectGuid>{7F4D40FB-7875-4884-8678-33D4E93AB909}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>sindymap_vc11</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>sindymap_vc11-gd</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\;..\GDB;..\strcode\include;..\WKH;..\SINDYBASE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/SINDYMAP.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <OutputFile>.\lib\sindymap_vc11.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DLL Release/SINDYMAP.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\GDB;..\strcode\include;..\WKH;..\SINDYBASE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/SINDYMAP.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\lib\sindymap_vc11-gd.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DLL Debug/SINDYMAP.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SindyAccessPoint.cpp" />
+    <ClCompile Include="SindyAccessStore.cpp" />
+    <ClCompile Include="SindyAnnotation.cpp" />
+    <ClCompile Include="SindyBaseAdmin.cpp" />
+    <ClCompile Include="SindyBaseAnnotation.cpp" />
+    <ClCompile Include="SindyBaseMesh.cpp" />
+    <ClCompile Include="SindyByway.cpp" />
+    <ClCompile Include="SindyCityAnnotation.cpp" />
+    <ClCompile Include="SindyCityMesh.cpp" />
+    <ClCompile Include="SindyDirguide.cpp" />
+    <ClCompile Include="SindyDupliLink.cpp" />
+    <ClCompile Include="SindyEtcTollgate.cpp" />
+    <ClCompile Include="SindyFacilInfoPoint.cpp" />
+    <ClCompile Include="SindyGrad.cpp" />
+    <ClCompile Include="SindyGuide.cpp" />
+    <ClCompile Include="SindyHighwayFacil.cpp" />
+    <ClCompile Include="SindyHighwayNode.cpp" />
+    <ClCompile Include="SindyHighwayPoint.cpp" />
+    <ClCompile Include="SindyHighwayText.cpp" />
+    <ClCompile Include="SindyInterNavi.cpp" />
+    <ClCompile Include="SindyIntersection.cpp" />
+    <ClCompile Include="SindyLane.cpp" />
+    <ClCompile Include="SindyMeshFeature.cpp" />
+    <ClCompile Include="SindyMiddleAnnotation.cpp" />
+    <ClCompile Include="SindyMiddleMesh.cpp" />
+    <ClCompile Include="SindyParkingShape.cpp" />
+    <ClCompile Include="SindyRoadCodeList.cpp" />
+    <ClCompile Include="SindyRoadLink.cpp" />
+    <ClCompile Include="SindyRoadNetwork.cpp" />
+    <ClCompile Include="SindyRoadNode.cpp" />
+    <ClCompile Include="SindyRoute.cpp" />
+    <ClCompile Include="SindySegmentAttr.cpp" />
+    <ClCompile Include="SindyTimeNoPassage.cpp" />
+    <ClCompile Include="SindyTimeOneway.cpp" />
+    <ClCompile Include="SindyTurnreg.cpp" />
+    <ClCompile Include="SindyUturn.cpp" />
+    <ClCompile Include="SindyVics.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SindyAccessPoint.h" />
+    <ClInclude Include="SindyAccessStore.h" />
+    <ClInclude Include="SindyAnnotation.h" />
+    <ClInclude Include="SindyBaseAdmin.h" />
+    <ClInclude Include="SindyBaseAnnotation.h" />
+    <ClInclude Include="SindyBaseMesh.h" />
+    <ClInclude Include="SindyByway.h" />
+    <ClInclude Include="SindyCityAnnotation.h" />
+    <ClInclude Include="SindyCityMesh.h" />
+    <ClInclude Include="SindyDirguide.h" />
+    <ClInclude Include="SindyDupliLink.h" />
+    <ClInclude Include="SindyEtcTollgate.h" />
+    <ClInclude Include="SindyFacilInfoPoint.h" />
+    <ClInclude Include="SindyGrad.h" />
+    <ClInclude Include="SindyGuide.h" />
+    <ClInclude Include="SindyHighwayFacil.h" />
+    <ClInclude Include="SindyHighwayNode.h" />
+    <ClInclude Include="SindyHighwayPoint.h" />
+    <ClInclude Include="SindyHighwayText.h" />
+    <ClInclude Include="SindyInterNavi.h" />
+    <ClInclude Include="SindyIntersection.h" />
+    <ClInclude Include="SindyLane.h" />
+    <ClInclude Include="SindyMeshFeature.h" />
+    <ClInclude Include="SindyMiddleAnnotation.h" />
+    <ClInclude Include="SindyMiddleMesh.h" />
+    <ClInclude Include="SindyParkingShape.h" />
+    <ClInclude Include="SindyRoadCodeList.h" />
+    <ClInclude Include="SindyRoadLink.h" />
+    <ClInclude Include="SindyRoadNetwork.h" />
+    <ClInclude Include="SindyRoadNode.h" />
+    <ClInclude Include="SindyRoute.h" />
+    <ClInclude Include="SindySegmentAttr.h" />
+    <ClInclude Include="SindyTimeNoPassage.h" />
+    <ClInclude Include="SindyTimeOneway.h" />
+    <ClInclude Include="SindyTurnreg.h" />
+    <ClInclude Include="SindyUturn.h" />
+    <ClInclude Include="SindyVics.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include="../../Project/LicenseHeaderMaster.licenseheader" />
+  </ItemGroup>
+</Project>

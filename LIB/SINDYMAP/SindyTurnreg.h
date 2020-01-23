@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) INCREMENT P CORP. All Rights Reserved.
+ *
+ * THIS SOFTWARE IS PROVIDED BY INCREMENT P CORP., WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ * AND NONINFRINGEMENT.
+ *
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+ * CLAIM, DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+ * OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+*/
+
+// SindyTurnreg.h: SindyTurnreg クラスのインターフェイス
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_SINDYTURNREG_H__1553C2DE_0B92_4987_B195_6ADF92117E8F__INCLUDED_)
+#define AFX_SINDYTURNREG_H__1553C2DE_0B92_4987_B195_6ADF92117E8F__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "SindyLinkQueue.h"
+
+class SindyTurnreg : public SindyLinkQueue  
+{
+public:
+	SindyTurnreg(SindyDBConnection *cDBConnection);
+	virtual ~SindyTurnreg();
+
+};
+
+#endif // !defined(AFX_SINDYTURNREG_H__1553C2DE_0B92_4987_B195_6ADF92117E8F__INCLUDED_)

@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) INCREMENT P CORP. All Rights Reserved.
+ *
+ * THIS SOFTWARE IS PROVIDED BY INCREMENT P CORP., WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+ * AND NONINFRINGEMENT.
+ *
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+ * CLAIM, DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING
+ * OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+*/
+
+// SindyBaseAdmin.h: SindyBaseAdmin クラスのインターフェイス
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_SINDYBASEADMIN_H__DA936432_B646_4873_8A9E_62DA2B2BE4DD__INCLUDED_)
+#define AFX_SINDYBASEADMIN_H__DA936432_B646_4873_8A9E_62DA2B2BE4DD__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "SindyPolygonClass.h"
+
+class SindyBaseAdmin : public SindyPolygonClass  
+{
+public:
+	SindyBaseAdmin(SindyDBConnection *cDBConnection);
+	virtual ~SindyBaseAdmin();
+
+};
+
+#endif // !defined(AFX_SINDYBASEADMIN_H__DA936432_B646_4873_8A9E_62DA2B2BE4DD__INCLUDED_)
